@@ -12,7 +12,9 @@ namespace DMTesting
             Dictionary<string, Genre> genreDictionary = new()
             {
                 { "Heavy", new Genre("Heavy Metal", BPM.Medium, "Standard", TimeSignature.Static) },
-                { "Thrash", new Genre("Thrash Metal", BPM.Fast, "Standard", TimeSignature.Static) }
+                { "Thrash", new Genre("Thrash Metal", BPM.Fast, "Standard", TimeSignature.Static) },
+                { "Death", new Genre("Death Metal", BPM.Insane, "Standard", TimeSignature.Static)},
+                { "Tech Death", new Genre("Technical Death Metal", BPM.Insane, "Standard", TimeSignature.Dynamic)}
             };
             string genreIndicator = "Your genre is:";
 
@@ -67,6 +69,20 @@ namespace DMTesting
                         //Console.WriteLine($"BPM: {genreDictionary[genreKey].bpm}");
                         //Console.WriteLine($"Tuning: {genreDictionary[genreKey].tuning}");
                         //Console.WriteLine($"Time Signature: {genreDictionary[genreKey].timeSignature}");
+                    }
+                }
+                else if (BPMInput == Convert.ToString(BPM.Insane))
+                {
+                    if(TimeSigInput == Convert.ToString(TimeSignature.Static))
+                    {
+                        string genreKey = "Death";
+                        GenreDisplay(genreKey, genreDictionary, genreIndicator);
+
+                    }
+                    else if(TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
+                    {
+                        string genreKey = "Tech Death";
+                        GenreDisplay(genreKey, genreDictionary, genreIndicator);
                     }
                 }
 
