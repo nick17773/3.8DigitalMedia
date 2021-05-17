@@ -9,8 +9,8 @@ namespace DMTesting
         {
             Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>
             {
-                { "Heavy", new Genre("Heavy Metal", BPM.Medium, "Standard", (4, 4)) },
-                { "Thrash", new Genre("Thrash Metal", BPM.Fast, "Standard", (4, 4)) }
+                { "Heavy", new Genre("Heavy Metal", BPM.Medium, "Standard", TimeSignature.Static) },
+                { "Thrash", new Genre("Thrash Metal", BPM.Fast, "Standard", TimeSignature.Static) }
             };
 
             var genreIndicator = "Your genre is:";
@@ -49,7 +49,15 @@ namespace DMTesting
     {
         Slow,
         Medium,
-        Fast
+        Fast,
+        Insane
+    }
+
+    public enum TimeSignature
+    {
+        Dynamic,
+        Static,
+        Weird
     }
 
     public class Genre
@@ -57,9 +65,10 @@ namespace DMTesting
         public string name;
         public BPM bpm;
         public string tuning;
-        public (int, int) timeSignature;
+        //public (int, int) timeSignature;
+        public TimeSignature timeSignature;
 
-        public Genre(string name, BPM bpm, string tuning, (int, int) timeSignature)
+        public Genre(string name, BPM bpm, string tuning, /*(int, int) timeSignature*/ TimeSignature timeSignature)
         {
             this.name = name;
             this.bpm = bpm;
