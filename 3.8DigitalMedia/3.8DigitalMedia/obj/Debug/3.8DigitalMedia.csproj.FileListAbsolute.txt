@@ -1,0 +1,15 @@
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\3.8DigitalMedia.exe.config
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\3.8DigitalMedia.exe
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\3.8DigitalMedia.pdb
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia.csprojAssemblyReference.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\MainWindow.g.cs
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\App.g.cs
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia_MarkupCompile.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia_MarkupCompile.lref
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\MainWindow.baml
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia.g.resources
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\_3._8DigitalMedia.Properties.Resources.resources
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia.csproj.GenerateResource.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia.csproj.CoreCompileInputs.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia.exe
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia.pdb

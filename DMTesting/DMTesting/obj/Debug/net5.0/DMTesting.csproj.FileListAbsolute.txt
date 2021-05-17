@@ -1,0 +1,16 @@
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\bin\Debug\net5.0\DMTesting.exe
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\bin\Debug\net5.0\DMTesting.deps.json
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\bin\Debug\net5.0\DMTesting.runtimeconfig.json
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\bin\Debug\net5.0\DMTesting.runtimeconfig.dev.json
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\bin\Debug\net5.0\DMTesting.dll
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\bin\Debug\net5.0\ref\DMTesting.dll
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\bin\Debug\net5.0\DMTesting.pdb
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.csprojAssemblyReference.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.AssemblyInfoInputs.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.AssemblyInfo.cs
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.csproj.CoreCompileInputs.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.dll
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\ref\DMTesting.dll
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.pdb
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\DMTesting\DMTesting\obj\Debug\net5.0\DMTesting.genruntimeconfig.cache

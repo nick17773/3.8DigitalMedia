@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace _3._8DigitalMedia
 {
@@ -22,7 +23,39 @@ namespace _3._8DigitalMedia
     {
         public MainWindow()
         {
+
+            Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>();
+
+            genreDictionary.Add("Lol", new Genre("Lol", BPM.Slow, "Stadard", (4, 4)));
+
+
             InitializeComponent();
+            Debug.WriteLine(genreDictionary["Lol"]);
+            Console.WriteLine(genreDictionary["Lol"]);
+        }
+        
+    }
+
+    public enum BPM
+    {
+        Slow,
+        Medium,
+        Fast
+    }
+
+    public class Genre
+    {
+        string name;
+        BPM bpm;
+        string tuning;
+        (int, int) timeSignature;
+
+        public Genre(string name, BPM bpm, string tuning, (int, int) timeSignature)
+        {
+            this.name = name;
+            this.bpm = bpm;
+            this.tuning = tuning;
+            this.timeSignature = timeSignature;
         }
     }
 }
