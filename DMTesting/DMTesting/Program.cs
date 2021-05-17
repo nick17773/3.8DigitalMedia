@@ -9,11 +9,37 @@ namespace DMTesting
         {
             Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>
             {
-                { "Heavy Metal", new Genre("Heavy Metal", BPM.Medium, "Standard", (4, 4)) },
-                { "Thrash Metal", new Genre("Thrash Metal", BPM.Fast, "Standard", (4, 4)) }
+                { "Heavy", new Genre("Heavy Metal", BPM.Medium, "Standard", (4, 4)) },
+                { "Thrash", new Genre("Thrash Metal", BPM.Fast, "Standard", (4, 4)) }
             };
 
+            var genreIndicator = "Your genre is:";
+            Console.WriteLine("Tuning Input");
+            var TuningInput = Console.ReadLine();
+            
+            if(TuningInput == "Standard")
+            {
+                
 
+                Console.WriteLine("BPM Input");
+                var BPMInput = Console.ReadLine();
+                if(BPMInput == "Fast")
+                {
+                    Console.WriteLine(genreIndicator);
+                    Console.WriteLine(genreDictionary["Thrash"].name);
+                    Console.WriteLine($"BPM: {genreDictionary["Thrash"].bpm}");
+                    Console.WriteLine($"Tuning: {genreDictionary["Thrash"].tuning}");
+                    Console.WriteLine($"Time Signature: {genreDictionary["Thrash"].timeSignature}");
+                }
+                else if (BPMInput == "Medium")
+                {
+                    Console.WriteLine(genreIndicator);
+                    Console.WriteLine(genreDictionary["Heavy"].name);
+                    Console.WriteLine($"BPM: {genreDictionary["Heavy"].bpm}");
+                    Console.WriteLine($"Tuning: {genreDictionary["Heavy"].tuning}");
+                    Console.WriteLine($"Time Signature: {genreDictionary["Heavy"].timeSignature}");
+                }
+            }
 
             //Debug.WriteLine(genreDictionary["Lol"]);
 
