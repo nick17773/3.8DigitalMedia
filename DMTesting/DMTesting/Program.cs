@@ -25,12 +25,36 @@ namespace DMTesting
             string genreIndicator = "Your genre is:";
             Console.WriteLine("Tuning Input");
             var TuningInput = Console.ReadLine();
+            while (string.IsNullOrEmpty(TuningInput))
+            {
+                Console.WriteLine("Tuning value cannot be empty!");
+                Console.WriteLine("Tuning Input");
+                TuningInput = Console.ReadLine();
+            }
             Console.WriteLine("BPM Input");
             var BPMInput = Console.ReadLine();
+            while (string.IsNullOrEmpty(BPMInput))
+            {
+                Console.WriteLine("BPM value cannot be empty!");
+                Console.WriteLine("BPM Input");
+                BPMInput = Console.ReadLine();
+            }
             Console.WriteLine("Time Singature Input");
             var TimeSigInput = Console.ReadLine();
+            while (string.IsNullOrEmpty(TimeSigInput))
+            {
+                Console.WriteLine("Time Signature value cannot be empty!");
+                Console.WriteLine("Time Signature Input");
+                TimeSigInput = Console.ReadLine();
+            }
             Console.WriteLine("Song Length Input");
             var SongLengthInput = Console.ReadLine();
+            while (string.IsNullOrEmpty(SongLengthInput))
+            {
+                Console.WriteLine("Song Length value cannot be empty!");
+                Console.WriteLine("Song Length Input");
+                SongLengthInput = Console.ReadLine();
+            }
             if (TuningInput == Convert.ToString(Tuning.Standard))
             {
                 if (BPMInput == Convert.ToString(BPM.Fast))
@@ -117,7 +141,7 @@ namespace DMTesting
                 Console.WriteLine($"BPM: {genreDictionary[genreKey].bpm}");
                 Console.WriteLine($"Tuning: {genreDictionary[genreKey].tuning}");
                 Console.WriteLine($"Time Signature: {genreDictionary[genreKey].timeSignature}");
-                Console.WriteLine($"Song Length {genreDictionary[genreKey].songLength}");
+                Console.WriteLine($"Song Length: {genreDictionary[genreKey].songLength}");
 
             }
 
