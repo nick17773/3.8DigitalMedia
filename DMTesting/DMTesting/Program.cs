@@ -142,7 +142,6 @@ namespace DMTesting
     public enum Tuning
     {
         Standard,
-        Drop,
         Low,
         Special
     }
