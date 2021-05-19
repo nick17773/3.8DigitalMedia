@@ -6,7 +6,45 @@
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+
+    <Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="GenreNameLabel" Content="Label" Grid.Column="1" Margin="10" Grid.Row="2" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="BPMBox" HorizontalAlignment="Left" Margin="69,31,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" SelectionChanged="BPMBox_SelectionChanged">
+            <ComboBoxItem x:Name="Slow" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="MediumBPM" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Fast" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Insane" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+
+        </ComboBox>
+        <ComboBox x:Name="SongLengthBox" HorizontalAlignment="Left" Margin="69,32,0,0" Grid.Row="4" VerticalAlignment="Top" Width="120" SelectionChanged="SongLengthBox_SelectionChanged">
+            <ComboBoxItem x:Name="Short" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="MediumLength" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Long" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Extreme" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="TimeSigBox" HorizontalAlignment="Left" Margin="69,31,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" SelectionChanged="TimeSigBox_SelectionChanged">
+            <ComboBoxItem x:Name="Static" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Dynamic" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Weird" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox x:Name="TuningBox" HorizontalAlignment="Left" Margin="69,36,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" SelectionChanged="TuningBox_SelectionChanged">
+            <ComboBoxItem x:Name="Standard" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Low" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Special" Content="ComboBoxItem" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
     </Grid>
+
+
 </Window>
