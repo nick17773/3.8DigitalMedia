@@ -101,19 +101,19 @@ namespace _3._8DigitalMedia
             string TimeSigInput = Convert.ToString(TimeSigLabel.Content);
             string SongLengthInput = Convert.ToString(SongLengthLabel.Content);
 
-            if (TuningInput == Convert.ToString(Tuning.Standard))
+            if (TuningInput == Standard)
             {
-                if (BPMInput == Convert.ToString(BPM.Fast))
+                if (BPMInput == Fast)
                 {
-                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
+                    if (TimeSigInput == Static)
                     {
-                        if (SongLengthInput == Convert.ToString(SongLength.Medium))
+                        if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Thrash";
                             suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
-                        else if (SongLengthInput == Convert.ToString(SongLength.Long))
+                        else if (SongLengthInput == Long)
                         {
                             genreKey = "Power";
                             suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
@@ -121,33 +121,33 @@ namespace _3._8DigitalMedia
                         }
                     }
                 }
-                else if (BPMInput == Convert.ToString(BPM.Medium))
+                else if (BPMInput == MediumBPMS)
                 {
-                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
+                    if (TimeSigInput == Static)
                     {
 
-                        if (SongLengthInput == Convert.ToString(SongLength.Short))
+                        if (SongLengthInput == Short)
                         {
                             genreKey = "Industrial";
                             suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
-                        else if (SongLengthInput == Convert.ToString(SongLength.Medium))
+                        else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Heavy";
                             suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
                     }
-                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
+                    else if (TimeSigInput == Dynamic)
                     {
-                        if (SongLengthInput == Convert.ToString(SongLength.Medium))
+                        if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Prog";
                             suggestedBands = "Dream Theatre, Opeth, Gojira, Mastodon";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
-                        else if (SongLengthInput == Convert.ToString(SongLength.Long))
+                        else if (SongLengthInput == Long)
                         {
                             genreKey = "Groove";
                             suggestedBands = "Pantera, Damageplan, HellYeah, Lamb of God";
@@ -155,51 +155,59 @@ namespace _3._8DigitalMedia
                         }
                     }
                 }
-                else if (BPMInput == Convert.ToString(BPM.Insane))
+                else if (BPMInput == Insane)
                 {
-                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
+                    if (TimeSigInput == Static)
                     {
-                        genreKey = "Death";
-                        suggestedBands = "Death, Possessed, Obituary, Carcass";
-                        GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                        
+                        if(SongLengthInput == MediumLength)
+                        {
+                            genreKey = "Death";
+                            suggestedBands = "Death, Possessed, Obituary, Carcass";
+                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                        }
                     }
-                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
+                    else if (TimeSigInput == Dynamic)
                     {
-                        genreKey = "Tech Death";
-                        suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
-                        GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                        
+                        if (SongLengthInput == MediumLength)
+                        {
+                            genreKey = "Tech Death";
+                            suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
+                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                        }
                     }
                 }
             }
-            else if (TuningInput == Convert.ToString(Tuning.Low))
+            else if (TuningInput == Low)
             {
-                if (BPMInput == Convert.ToString(BPM.Slow))
+                if (BPMInput == Slow)
                 {
-                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
+                    if (TimeSigInput == Static)
                     {
-                        if (SongLengthInput == Convert.ToString(SongLength.Long))
+                        if (SongLengthInput == Long)
                         {
                             genreKey = "Doom";
                             suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
                             GenreDisplay(genreKey, genreDictionary,  suggestedBands);
                         }
-                        else if (SongLengthInput == Convert.ToString(SongLength.Medium))
+                        else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Death/Doom";
                             suggestedBands = "Paradise Lost, Anathema, Corrupted, The Eternal";
                             GenreDisplay(genreKey, genreDictionary,  suggestedBands);
                         }
                     }
-                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
+                    else if (TimeSigInput == Dynamic)
                     {
 
-                        if (SongLengthInput == Convert.ToString(SongLength.Long))
+                        if (SongLengthInput == Long)
                         {
                             genreKey = "Sludge";
                             suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
                             GenreDisplay(genreKey, genreDictionary,  suggestedBands);
                         }
-                        else if (SongLengthInput == Convert.ToString(SongLength.Medium))
+                        else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Djent";
                             suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
@@ -207,15 +215,15 @@ namespace _3._8DigitalMedia
                         }
                     }
                 }
-                else if (BPMInput == Convert.ToString(BPM.Medium))
+                else if (BPMInput == MediumBPMS)
                 {
-                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
+                    if (TimeSigInput == Static)
                     {
                         genreKey = "Alt";
                         suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
                     }
-                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
+                    else if (TimeSigInput == Dynamic)
                     {
                         genreKey = "Nu";
                         suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
