@@ -42,6 +42,7 @@ namespace _3._8DigitalMedia
                 { "Prog", new Genre("Progressive Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium) },
                 { "Groove", new Genre("Groove Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long) },
                 { "Thrash", new Genre("Thrash Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Medium) },
+                { "Black", new Genre("Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium) },
                 { "Death", new Genre("Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium) },
                 { "Tech Death", new Genre("Technical Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium) },
                 { "Doom", new Genre("Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Long) },
@@ -120,6 +121,15 @@ namespace _3._8DigitalMedia
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
                     }
+                    else if (TimeSigInput == Dynamic)
+                    {
+                        if(SongLengthInput == MediumLength)
+                        {
+                            genreKey = "Black";
+                            suggestedBands = "Mayhem, Darkthrone, Venom, Paracoccidioidomicosisproctitissarcomucosis";
+                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                        }
+                    }
                 }
                 else if (BPMInput == MediumBPMS)
                 {
@@ -163,7 +173,7 @@ namespace _3._8DigitalMedia
                         if(SongLengthInput == MediumLength)
                         {
                             genreKey = "Death";
-                            suggestedBands = "Death, Possessed, Obituary, Carcass";
+                            suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
                     }
