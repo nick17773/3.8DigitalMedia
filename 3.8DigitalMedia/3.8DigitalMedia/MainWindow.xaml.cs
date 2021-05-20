@@ -15,26 +15,28 @@ namespace _3._8DigitalMedia
     /// </summary>
     public partial class MainWindow : Window
     {
-        
-        
-        public MainWindow()
-        {
-            
-            InitializeComponent();
+        public string genreKey;
+        public string suggestedBands;
 
-            
-            
+        public string Slow = Convert.ToString(BPM.Slow);
+        public string MediumBPMS = Convert.ToString(BPM.Medium);
+        public string Fast = Convert.ToString(BPM.Fast);
+        public string Insane = Convert.ToString(BPM.Insane);
 
-        }
-        public void GenreAlgorithm()
-        {
-            var TuningInput = TuningBox.SelectedValue;
-            var BPMInput = BPMBox.SelectedValue;
-            var TimeSigInput = TimeSigBox.SelectedValue;
-            var SongLengthInput = SongLengthBox.SelectedValue;
+        public string Standard = Convert.ToString(Tuning.Standard);
+        public string Low = Convert.ToString(Tuning.Low);
+        public string Special = Convert.ToString(Tuning.Special);
 
+        public string Static = Convert.ToString(TimeSignature.Static);
+        public string Dynamic = Convert.ToString(TimeSignature.Dynamic);
+        public string Weird = Convert.ToString(TimeSignature.Weird);
 
-            Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>()
+        public string Short = Convert.ToString(SongLength.Short);
+        public string MediumLength = Convert.ToString(SongLength.Medium);
+        public string Long = Convert.ToString(SongLength.Long);
+        public string Extreme = Convert.ToString(SongLength.Extreme);
+
+        public Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>()
             {
                 { "Heavy", new Genre("Heavy Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium) },
                 { "Prog", new Genre("Progressive Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium) },
@@ -52,41 +54,66 @@ namespace _3._8DigitalMedia
                 { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Short) }
             };
 
+        public MainWindow()
+        {
 
-            string genreKey;
-            string suggestedBands;
+            InitializeComponent();
 
-            Short.Content = SongLength.Short;
-            MediumLength.Content = SongLength.Medium;
-            Long.Content = SongLength.Long;
-            Extreme.Content = SongLength.Extreme;
-            Slow.Content = BPM.Slow;
+            
+
+            SlowBPM.Content = BPM.Slow;
             MediumBPM.Content = BPM.Medium;
-            Fast.Content = BPM.Fast;
-            Insane.Content = BPM.Insane;
-            Static.Content = TimeSignature.Static;
-            Dynamic.Content = TimeSignature.Dynamic;
-            Weird.Content = TimeSignature.Weird;
-            Standard.Content = Tuning.Standard;
-            Low.Content = Tuning.Low;
-            Special.Content = Tuning.Special;
-            //string TuningInput = TuningInputBox.Text;
-            //string BPMInput = BPMInputBox.Text;
-            //string TimeSigInput = TimeSigInputBox.Text;
-            //string SongLengthInput = SongLengthInputBox.Text;
-            if (TuningInput == Standard.Content)
+            FastBPM.Content = BPM.Fast;
+            InsaneBPM.Content = BPM.Insane;
+
+            StandardTuning.Content = Tuning.Standard;
+            LowTuning.Content = Tuning.Low;
+            SpecialTuning.Content = Tuning.Special;
+
+            StaticTimeSig.Content = TimeSignature.Static;
+            DynamicTimeSig.Content = TimeSignature.Dynamic;
+            WeirdTimeSig.Content = TimeSignature.Weird;
+
+            ShortSongLength.Content = SongLength.Short;
+            MediumSongLength.Content = SongLength.Medium;
+            LongSongLength.Content = SongLength.Long;
+            ExtremeSongLength.Content = SongLength.Extreme;
+
+            
+
+            
+            
+
+
+
+
+
+
+
+
+        }
+        public void Check()
+        {
+            
+
+            string TuningInput = Convert.ToString(TuningLabel.Content);
+            string BPMInput = Convert.ToString(BPMLabel.Content);
+            string TimeSigInput = Convert.ToString(TimeSigLabel.Content);
+            string SongLengthInput = Convert.ToString(SongLengthLabel.Content);
+
+            if (TuningInput == Convert.ToString(Tuning.Standard))
             {
-                if (BPMInput == Fast.Content)
+                if (BPMInput == Convert.ToString(BPM.Fast))
                 {
-                    if (TimeSigInput == Static.Content)
+                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
                     {
-                        if (SongLengthInput == MediumLength.Content)
+                        if (SongLengthInput == Convert.ToString(SongLength.Medium))
                         {
                             genreKey = "Thrash";
                             suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
-                        else if (SongLengthInput == Long.Content)
+                        else if (SongLengthInput == Convert.ToString(SongLength.Long))
                         {
                             genreKey = "Power";
                             suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
@@ -94,33 +121,33 @@ namespace _3._8DigitalMedia
                         }
                     }
                 }
-                else if (BPMInput == MediumBPM.Content)
+                else if (BPMInput == Convert.ToString(BPM.Medium))
                 {
-                    if (TimeSigInput == Static.Content)
+                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
                     {
 
-                        if (SongLengthInput == Short.Content)
+                        if (SongLengthInput == Convert.ToString(SongLength.Short))
                         {
                             genreKey = "Industrial";
                             suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
-                        else if (SongLengthInput == MediumLength.Content)
+                        else if (SongLengthInput == Convert.ToString(SongLength.Medium))
                         {
                             genreKey = "Heavy";
                             suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
                     }
-                    else if (TimeSigInput == Dynamic.Content)
+                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
                     {
-                        if (SongLengthInput == MediumLength.Content)
+                        if (SongLengthInput == Convert.ToString(SongLength.Medium))
                         {
                             genreKey = "Prog";
                             suggestedBands = "Dream Theatre, Opeth, Gojira, Mastodon";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
                         }
-                        else if (SongLengthInput == Long.Content)
+                        else if (SongLengthInput == Convert.ToString(SongLength.Long))
                         {
                             genreKey = "Groove";
                             suggestedBands = "Pantera, Damageplan, HellYeah, Lamb of God";
@@ -128,15 +155,15 @@ namespace _3._8DigitalMedia
                         }
                     }
                 }
-                else if (BPMInput == Insane.Content)
+                else if (BPMInput == Convert.ToString(BPM.Insane))
                 {
-                    if (TimeSigInput == Static.Content)
+                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
                     {
                         genreKey = "Death";
                         suggestedBands = "Death, Possessed, Obituary, Carcass";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
                     }
-                    else if (TimeSigInput == Dynamic.Content)
+                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
                     {
                         genreKey = "Tech Death";
                         suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
@@ -144,35 +171,35 @@ namespace _3._8DigitalMedia
                     }
                 }
             }
-            else if (TuningInput == Low.Content)
+            else if (TuningInput == Convert.ToString(Tuning.Low))
             {
-                if (BPMInput == Slow.Content)
+                if (BPMInput == Convert.ToString(BPM.Slow))
                 {
-                    if (TimeSigInput == Static.Content)
+                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
                     {
-                        if (SongLengthInput == Long.Content)
+                        if (SongLengthInput == Convert.ToString(SongLength.Long))
                         {
                             genreKey = "Doom";
                             suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            GenreDisplay(genreKey, genreDictionary,  suggestedBands);
                         }
-                        else if (SongLengthInput == MediumLength.Content)
+                        else if (SongLengthInput == Convert.ToString(SongLength.Medium))
                         {
                             genreKey = "Death/Doom";
                             suggestedBands = "Paradise Lost, Anathema, Corrupted, The Eternal";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            GenreDisplay(genreKey, genreDictionary,  suggestedBands);
                         }
                     }
-                    else if (TimeSigInput == Dynamic.Content)
+                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
                     {
 
-                        if (SongLengthInput == Long.Content)
+                        if (SongLengthInput == Convert.ToString(SongLength.Long))
                         {
                             genreKey = "Sludge";
                             suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            GenreDisplay(genreKey, genreDictionary,  suggestedBands);
                         }
-                        else if (SongLengthInput == MediumLength.Content)
+                        else if (SongLengthInput == Convert.ToString(SongLength.Medium))
                         {
                             genreKey = "Djent";
                             suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
@@ -180,32 +207,39 @@ namespace _3._8DigitalMedia
                         }
                     }
                 }
-                else if (BPMInput == MediumBPM.Content)
+                else if (BPMInput == Convert.ToString(BPM.Medium))
                 {
-                    if (TimeSigInput == Static.Content)
+                    if (TimeSigInput == Convert.ToString(TimeSignature.Static))
                     {
                         genreKey = "Alt";
                         suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
                     }
-                    else if (TimeSigInput == Dynamic.Content)
+                    else if (TimeSigInput == Convert.ToString(TimeSignature.Dynamic))
                     {
                         genreKey = "Nu";
                         suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
                     }
-
                 }
             }
+            if (BPMInput == "" &&
+                TuningInput == "" &&
+                TimeSigInput == "" &&
+                SongLengthInput == "")
+            {
+                GenreLabel.Content = "PLEASE SELECT SOME VALUES BEFORE PRESSING CALCULATE";
+                SuggestedBandsLabel.Content = "NO SUGGESTED BANDS FOR UNKNOWN GENRE";
+            }
         }
+
         public void GenreDisplay(string genreKey, Dictionary<string, Genre> genreDictionary, string suggestedBands)
         {
             
-            GenreNameLabel.Content = genreDictionary[genreKey].name;
-            Debug.WriteLine(genreDictionary[genreKey].name);
+            GenreLabel.Content = genreDictionary[genreKey].name;
+            SuggestedBandsLabel.Content = suggestedBands;
+            
         }
-
-
         public enum SongLength
         {
             Short,
@@ -234,7 +268,6 @@ namespace _3._8DigitalMedia
             Static,
             Weird
         }
-
         public class Genre
         {
             public string name;
@@ -253,24 +286,11 @@ namespace _3._8DigitalMedia
             }
         }
 
-        private void BPMBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            GenreAlgorithm();
-        }
+        
 
-        private void TuningBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            GenreAlgorithm();
-        }
-
-        private void TimeSigBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            GenreAlgorithm();
-        }
-
-        private void SongLengthBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            GenreAlgorithm();
+            Check();
         }
     }
 }
