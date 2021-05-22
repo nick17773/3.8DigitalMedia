@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="850">
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="460" Width="850">
 
     <Grid x:Name="MainGrid" HorizontalAlignment="Left" Height="418" VerticalAlignment="Top" Width="840">
         <Grid.RowDefinitions>
@@ -20,39 +20,41 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="BPMLabel" Content="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
-        <ComboBox x:Name="BPMBox" HorizontalAlignment="Left" Margin="10,36,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120"  >
-            <ComboBoxItem x:Name="SlowBPM" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="MediumBPM" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="FastBPM" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="InsaneBPM" Content="" HorizontalAlignment="Left" Width="118"/>
+        <Label x:Name="BPMLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
+        <ComboBox x:Name="BPMBox" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="260" Height="63" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  >
+            <ComboBoxItem x:Name="SlowBPM" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="MediumBPM" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="FastBPM" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="InsaneBPM" Content="" HorizontalAlignment="Left" Width="260"/>
 
         </ComboBox>
-        <Label x:Name="TuningLabel" Content="{Binding SelectionBoxItem, ElementName=TuningBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,31,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
-        <ComboBox x:Name="TuningBox" HorizontalAlignment="Left" Margin="10,31,0,0" Grid.Row="2" VerticalAlignment="Top" Width="120" >
-            <ComboBoxItem x:Name="StandardTuning" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="LowTuning" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="SpecialTuning" Content="" HorizontalAlignment="Left" Width="118"/>
+        <Label x:Name="TuningLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TuningBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,31,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
+        <ComboBox x:Name="TuningBox" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="260" Height="64" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
+            <ComboBoxItem x:Name="StandardTuning" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="LowTuning" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="SpecialTuning" Content="" HorizontalAlignment="Left" Width="260"/>
 
         </ComboBox>
-        <Label x:Name="TimeSigLabel" Content="{Binding SelectionBoxItem, ElementName=TimeSigBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,29,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
-        <ComboBox x:Name="TimeSigBox" HorizontalAlignment="Left" Margin="10,29,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" >
-            <ComboBoxItem x:Name="StaticTimeSig" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="DynamicTimeSig" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="WeirdTimeSig" Content="" HorizontalAlignment="Left" Width="118"/>
+        <Label x:Name="TimeSigLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TimeSigBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,29,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
+        <ComboBox x:Name="TimeSigBox" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="260" Height="64" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
+            <ComboBoxItem x:Name="StaticTimeSig" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="DynamicTimeSig" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="WeirdTimeSig" Content="" HorizontalAlignment="Left" Width="260"/>
 
         </ComboBox>
-        <Label x:Name="SongLengthLabel" Content="{Binding SelectionBoxItem, ElementName=SongLengthBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,27,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
-        <ComboBox x:Name="SongLengthBox" HorizontalAlignment="Left" Margin="10,27,0,0" Grid.Row="4" VerticalAlignment="Top" Width="120" >
-            <ComboBoxItem x:Name="ShortSongLength" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="MediumSongLength" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="LongSongLength" Content="" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="ExtremeSongLength" Content="" HorizontalAlignment="Left" Width="118"/>
+        <Label x:Name="SongLengthLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=SongLengthBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,27,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
+        <ComboBox x:Name="SongLengthBox" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="260" Height="63" FontSize="18" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
+            <ComboBoxItem x:Name="ShortSongLength" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="MediumSongLength" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="LongSongLength" Content="" HorizontalAlignment="Left" Width="260"/>
+            <ComboBoxItem x:Name="ExtremeSongLength" Content="" HorizontalAlignment="Left" Width="260"/>
 
         </ComboBox>
         <Label x:Name="GenreLabel" Content="Genre Will Appear Here" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Height="84" Width="560" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Grid.ColumnSpan="2"/>
-        <Button Content="Click to Calculate Genre" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="244" Height="64" FontSize="18"/>
+        <Button Content="Click to Calculate Genre" Click="Button_Click" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="260" Height="64" FontSize="18"/>
         <Label x:Name="SuggestedBandsLabel" Content="" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Height="84" Width="560" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Grid.ColumnSpan="2"/>
+        <Button Content="Click to Show Genre Definitions" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="260" Height="64" Click="Button_Click_1" FontSize="18"/>
+        <Button Content="Close" Grid.Column="2" HorizontalAlignment="Left" Margin="195,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
     </Grid>
 
 

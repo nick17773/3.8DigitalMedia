@@ -95,12 +95,17 @@ namespace _3._8DigitalMedia
         }
         public void Check()
         {
-            
 
-            string TuningInput = Convert.ToString(TuningLabel.Content);
-            string BPMInput = Convert.ToString(BPMLabel.Content);
-            string TimeSigInput = Convert.ToString(TimeSigLabel.Content);
-            string SongLengthInput = Convert.ToString(SongLengthLabel.Content);
+
+            //string TuningInput = Convert.ToString(TuningLabel.Content);
+            //string BPMInput = Convert.ToString(BPMLabel.Content);
+            //string TimeSigInput = Convert.ToString(TimeSigLabel.Content);
+            //string SongLengthInput = Convert.ToString(SongLengthLabel.Content);
+
+            string TuningInput = Convert.ToString(TuningLabel.Tag);
+            string BPMInput = Convert.ToString(BPMLabel.Tag);
+            string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
+            string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
 
             if (TuningInput == Standard)
             {
@@ -309,6 +314,17 @@ namespace _3._8DigitalMedia
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Check();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Window1 genreWindow = new Window1();
+            genreWindow.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }

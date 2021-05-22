@@ -5,8 +5,152 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
-    <Grid>
-        
+        Title="Window1" Height="900" Width="1200"
+        FontSize="16" WindowStartupLocation="CenterScreen"
+        >
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Genre Definitions" Grid.Column="3" HorizontalContentAlignment="Center" Height="49" VerticalContentAlignment="Center" FontSize="20"/>
+
+        <Label x:Name="GenreName" Content="Genre Name:" Grid.Row="1" Height="48" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="GenreBPM" Content="Beats Per Minute:" Grid.Row="1" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="GenreTuning" Content="Tuning:" Grid.Row="1" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="GenreTimeSig" Content="Time Signature:" Grid.Row="1" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="GenreSongLength" Content="Song Length:" Grid.Row="1" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="HeavyName" Content="" Grid.Row="2" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="HeavyBPM" Content="" Grid.Row="2" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="HeavyTuning" Content="" Grid.Row="2" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="HeavyTimeSig" Content="" Grid.Row="2" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="HeavySongLength" Content="" Grid.Row="2" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="ProgName" Content="" Grid.Row="3" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="ProgBPM" Content="" Grid.Row="3" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="ProgTuning" Content="" Grid.Row="3" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="ProgTimeSig" Content="" Grid.Row="3" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="ProgSongLength" Content="" Grid.Row="3" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="GrooveName" Content="" Grid.Row="4" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="GrooveBPM" Content="" Grid.Row="4" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="GrooveTuning" Content="" Grid.Row="4" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="GrooveTimeSig" Content="" Grid.Row="4" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="GrooveSongLength" Content="" Grid.Row="4" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <Label x:Name="IndustrialName" Content="" Grid.Row="5" Height="48" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="IndustrialBPM" Content="" Grid.Row="5" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="IndustrialTuning" Content="" Grid.Row="5" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="IndustrialTimeSig" Content="" Grid.Row="5" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="IndustrialSongLength" Content="" Grid.Row="5" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="ThrashName" Content="" Grid.Row="6" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="ThrashBPM" Content="" Grid.Row="6" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="ThrashTuning" Content="" Grid.Row="6" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="ThrashTimeSig" Content="" Grid.Row="6" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="ThrashSongLength" Content="" Grid.Row="6" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="BlackName" Content="" Grid.Row="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="BlackBPM" Content="" Grid.Row="7" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="BlackTuning" Content="" Grid.Row="7" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="BlackTimeSig" Content="" Grid.Row="7" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="BlackSongLength" Content="" Grid.Row="7" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <Label x:Name="PowerName" Content="" Grid.Row="8" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="PowerBPM" Content="" Grid.Row="8" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="PowerTuning" Content="" Grid.Row="8" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="PowerTimeSig" Content="" Grid.Row="8" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="PowerSongLength" Content="" Grid.Row="8" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="DeathName" Content="" Grid.Row="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="DeathBPM" Content="" Grid.Row="9" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DeathTuning" Content="" Grid.Row="9" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DeathTimeSig" Content="" Grid.Row="9" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DeathSongLength" Content="" Grid.Row="9" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="TechDeathName" Content="" Grid.Row="10" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="TechDeathBPM" Content="" Grid.Row="10" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="TechDeathTuning" Content="" Grid.Row="10" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="TechDeathTimeSig" Content="" Grid.Row="10" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="TechDeathSongLength" Content="" Grid.Row="10" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <Label x:Name="DoomName" Content="" Grid.Row="11" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="DoomBPM" Content="" Grid.Row="11" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DoomTuning" Content="" Grid.Row="11" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="DoomTimeSig" Content="" Grid.Row="11" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="DoomSongLength" Content="" Grid.Row="11" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <Label x:Name="DeathDoomName" Content="" Grid.Row="12" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="DeathDoomBPM" Content="" Grid.Row="12" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DeathDoomTuning" Content="" Grid.Row="12" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="DeathDoomTimeSig" Content="" Grid.Row="12" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label x:Name="DeathDoomSongLength" Content="" Grid.Row="12" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <Label x:Name="SludgeName" Content="" Grid.Row="13" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" />
+        <Label x:Name="SludgeBPM" Content="" Grid.Row="13" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="SludgeTuning" Content="" Grid.Row="13" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="SludgeTimeSig" Content="" Grid.Row="13" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="SludgeSongLength" Content="" Grid.Row="13" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="AltName" Content="" Grid.Row="14" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="AltBPM" Content="" Grid.Row="14" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="AltTuning" Content="" Grid.Row="14" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="AltTimeSig" Content="" Grid.Row="14" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="AltSongLength" Content="" Grid.Row="14" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="NuName" Content="" Grid.Row="15" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="NuBPM" Content="" Grid.Row="15" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="NuTuning" Content="" Grid.Row="15" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="NuTimeSig" Content="" Grid.Row="15" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="NuSongLength" Content="" Grid.Row="15" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Label x:Name="DjentName" Content="" Grid.Row="16" Height="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+        <Label x:Name="DjentBPM" Content="" Grid.Row="16" Height="48" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DjentTuning" Content="" Grid.Row="16" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DjentTimeSig" Content="" Grid.Row="16" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="DjentSongLength" Content="" Grid.Row="16" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="HeavyInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="150" Height="29" Click="HeavyInfo_Click"/>
+        <Button x:Name="ProgInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="150" Height="29" Click="ProgInfo_Click"/>
+        <Button x:Name="GrooveInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="150" Height="28" Click="GrooveInfo_Click"/>
+        <Button x:Name="IndustrialInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="150" Height="29" Click="IndustrialInfo_Click"/>
+        <Button x:Name="ThrashInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="150" Height="29" Click="ThrashInfo_Click"/>
+        <Button x:Name="BlackInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="150" Height="29" Click="BlackInfo_Click"/>
+        <Button x:Name="PowerInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" VerticalAlignment="Top" Width="150" Height="28" Click="PowerInfo_Click"/>
+        <Button x:Name="DeathInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="9" VerticalAlignment="Top" Width="150" Height="29" Click="DeathInfo_Click"/>
+        <Button x:Name="TechDeathInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="10" VerticalAlignment="Top" Width="150" Height="26"/>
+        <Button x:Name="DoomInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="11" VerticalAlignment="Top" Width="150" Height="26" Click="DoomInfo_Click"/>
+        <Button x:Name="DeathDoomInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="12" VerticalAlignment="Top" Width="150" Height="26" Click="DeathDoomInfo_Click"/>
+        <Button x:Name="SludgeInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="13" VerticalAlignment="Top" Width="150" Height="26" Click="SludgeInfo_Click"/>
+        <Button x:Name="AltInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="14" VerticalAlignment="Top" Width="150" Height="26" Click="AltInfo_Click"/>
+        <Button x:Name="NuInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="15" VerticalAlignment="Top" Width="150" Height="26" Click="NuInfo_Click"/>
+        <Button x:Name="DjentInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="16" VerticalAlignment="Top" Width="150" Height="26" Click="DjentInfo_Click"/>
+
+
     </Grid>
 </Window>
