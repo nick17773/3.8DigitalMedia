@@ -1,0 +1,240 @@
+﻿<Window x:Class="_3._8DigitalMedia.Summary"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._8DigitalMedia"
+        mc:Ignorable="d"
+        FontSize="16"
+        Title="Summary" Height="600" Width="1200">
+    <Grid>
+        <TabControl>
+            <TabItem x:Name="HeavyInfo" Header="Heavy Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ProgInfo" Header="Progressive Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="GrooveInfo" Header="Groove Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="IndustrialInfo" Header="Industrial Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ThrashInfo" Header="Thrash Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="BlackInfo" Header="Black Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="PowerInfo" Header="Power Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="DeathInfo" Header="Death Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="TechDeathInfo" Header="Technical Death Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="DoomInfo" Header="Doom Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="DeathDoomInfo" Header="Death/Doom Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SludgeInfo" Header="Sludge Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="AltInfo" Header="Alternative Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="NuInfo" Header="Nu Metal">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="DjentInfo" Header="Djent">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

@@ -135,21 +135,21 @@
         <Label x:Name="DjentTuning" Content="" Grid.Row="16" Height="48" Grid.Column="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label x:Name="DjentTimeSig" Content="" Grid.Row="16" Height="48" Grid.Column="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label x:Name="DjentSongLength" Content="" Grid.Row="16" Height="48" Grid.Column="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Button x:Name="HeavyInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="150" Height="29" Click="HeavyInfo_Click"/>
-        <Button x:Name="ProgInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="150" Height="29" Click="ProgInfo_Click"/>
-        <Button x:Name="GrooveInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="150" Height="28" Click="GrooveInfo_Click"/>
-        <Button x:Name="IndustrialInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="150" Height="29" Click="IndustrialInfo_Click"/>
-        <Button x:Name="ThrashInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="150" Height="29" Click="ThrashInfo_Click"/>
-        <Button x:Name="BlackInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="150" Height="29" Click="BlackInfo_Click"/>
-        <Button x:Name="PowerInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" VerticalAlignment="Top" Width="150" Height="28" Click="PowerInfo_Click"/>
-        <Button x:Name="DeathInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="9" VerticalAlignment="Top" Width="150" Height="29" Click="DeathInfo_Click"/>
-        <Button x:Name="TechDeathInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="10" VerticalAlignment="Top" Width="150" Height="26"/>
-        <Button x:Name="DoomInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="11" VerticalAlignment="Top" Width="150" Height="26" Click="DoomInfo_Click"/>
-        <Button x:Name="DeathDoomInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="12" VerticalAlignment="Top" Width="150" Height="26" Click="DeathDoomInfo_Click"/>
-        <Button x:Name="SludgeInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="13" VerticalAlignment="Top" Width="150" Height="26" Click="SludgeInfo_Click"/>
-        <Button x:Name="AltInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="14" VerticalAlignment="Top" Width="150" Height="26" Click="AltInfo_Click"/>
-        <Button x:Name="NuInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="15" VerticalAlignment="Top" Width="150" Height="26" Click="NuInfo_Click"/>
-        <Button x:Name="DjentInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="16" VerticalAlignment="Top" Width="150" Height="26" Click="DjentInfo_Click"/>
+        <Button x:Name="HeavyInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="150" Height="29" Click="Info_Click"/>
+        <Button x:Name="ProgInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="150" Height="29" Click="Info_Click"/>
+        <Button x:Name="GrooveInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="4" VerticalAlignment="Top" Width="150" Height="28" Click="Info_Click"/>
+        <Button x:Name="IndustrialInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="5" VerticalAlignment="Top" Width="150" Height="29" Click="Info_Click"/>
+        <Button x:Name="ThrashInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="150" Height="29" Click="Info_Click"/>
+        <Button x:Name="BlackInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="150" Height="29" Click="Info_Click"/>
+        <Button x:Name="PowerInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="8" VerticalAlignment="Top" Width="150" Height="28" Click="Info_Click"/>
+        <Button x:Name="DeathInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="9" VerticalAlignment="Top" Width="150" Height="29" Click="Info_Click"/>
+        <Button x:Name="TechDeathInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="10" VerticalAlignment="Top" Width="150" Height="26" Click="Info_Click"/>
+        <Button x:Name="DoomInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="11" VerticalAlignment="Top" Width="150" Height="26" Click="Info_Click"/>
+        <Button x:Name="DeathDoomInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="12" VerticalAlignment="Top" Width="150" Height="26" Click="Info_Click"/>
+        <Button x:Name="SludgeInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="13" VerticalAlignment="Top" Width="150" Height="26" Click="Info_Click"/>
+        <Button x:Name="AltInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="14" VerticalAlignment="Top" Width="150" Height="26" Click="Info_Click"/>
+        <Button x:Name="NuInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="15" VerticalAlignment="Top" Width="150" Height="26" Click="Info_Click"/>
+        <Button x:Name="DjentInfo" Content="More Info" Grid.Column="6" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="16" VerticalAlignment="Top" Width="150" Height="26" Click="Info_Click"/>
 
 
     </Grid>

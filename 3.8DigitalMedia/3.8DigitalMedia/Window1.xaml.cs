@@ -395,80 +395,13 @@ namespace _3._8DigitalMedia
             }
         }
 
-        private void HeavyInfo_Click(object sender, RoutedEventArgs e)
+        private void Info_Click(object sender, RoutedEventArgs e)
         {
 
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
+            Summary summary = new Summary();
+            summary.Show();
         }
 
-        private void ProgInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
 
-        private void GrooveInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void IndustrialInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void ThrashInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void BlackInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void PowerInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void DeathInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void TechDeathInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void DoomInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void DeathDoomInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void SludgeInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void AltInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void NuInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
-
-        private void DjentInfo_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show(FeatureNotImplementedMessage, FeatureNotImplementedTitle, MessageBoxButton.OK, MessageBoxImage.Warning);
-        }
     }
 }
