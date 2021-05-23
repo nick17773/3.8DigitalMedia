@@ -22,6 +22,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
 
                 </Grid>
             </TabItem>
@@ -38,6 +39,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="GrooveInfo" Header="Groove Metal">
@@ -53,6 +55,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="IndustrialInfo" Header="Industrial Metal">
@@ -68,6 +71,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="ThrashInfo" Header="Thrash Metal">
@@ -83,6 +87,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="BlackInfo" Header="Black Metal">
@@ -98,6 +103,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="PowerInfo" Header="Power Metal">
@@ -113,6 +119,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DeathInfo" Header="Death Metal">
@@ -128,6 +135,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="TechDeathInfo" Header="Technical Death Metal">
@@ -143,6 +151,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DoomInfo" Header="Doom Metal">
@@ -158,6 +167,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DeathDoomInfo" Header="Death/Doom Metal">
@@ -173,6 +183,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="SludgeInfo" Header="Sludge Metal">
@@ -188,6 +199,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="AltInfo" Header="Alternative Metal">
@@ -203,6 +215,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="NuInfo" Header="Nu Metal">
@@ -218,6 +231,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DjentInfo" Header="Djent">
@@ -233,6 +247,7 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="160" HorizontalContentAlignment="Center"/>
+                    <Label Content="Label" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="451" Grid.RowSpan="3" Width="1166"/>
                 </Grid>
             </TabItem>
         </TabControl>
