@@ -318,8 +318,10 @@ namespace _3._8DigitalMedia
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Window1 genreWindow = new Window1();
-            genreWindow.Show();
+            //Window1 genreWindow = new Window1();
+            //genreWindow.Show();
+            DataGridWindow newGenreWindow = new DataGridWindow();
+            newGenreWindow.Show();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3.8DigitalMedia.exe" size="57832">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3.8DigitalMedia.exe" size="129000">
       <assemblyIdentity name="3.8DigitalMedia" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>KYgpQUMoRAKaL/tvh7cRtAYMCYd+bpo/Bi+IaCoS340=</dsig:DigestValue>
+        <dsig:DigestValue>+MiFq7iKxwJzPabtGun4mBEkuNCYaVLUZ4wFET1NDsI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="_3._8DigitalMedia.DataGridWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_3._8DigitalMedia"
+        mc:Ignorable="d"
+        FontSize="18"
+        Title="DataGridWindow" Height="650" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DataGrid 
+            x:Name="GenreDataGrid" Height="475" VerticalAlignment="Top" HorizontalAlignment="Left" Width="934" Grid.Row="1" Grid.Column="1" Margin="10,10,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*" Header="Genre" Binding="{Binding Column1}"/>
+                <DataGridTextColumn Width="*" Header="Beats Per Minute" Binding="{Binding Column2}"/>
+                <DataGridTextColumn Width="*" Header="Tuning" Binding="{Binding Column3}"/>
+                <DataGridTextColumn Width="*" Header="Time Signature" Binding="{Binding Column4}"/>
+                <DataGridTextColumn Width="*" Header="SongLength" Binding="{Binding Column5}"/>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Label Content="Genre Definitions" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="104" Width="300" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36"/>
+        <Button Content="More Info" Grid.Column="1" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" Width="280" Height="104" Click="Button_Click" FontSize="36"/>
+    </Grid>
+</Window>
