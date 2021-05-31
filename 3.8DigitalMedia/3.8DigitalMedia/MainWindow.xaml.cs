@@ -326,7 +326,17 @@ namespace _3._8DigitalMedia
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            string ShutdownTitle = "Application Shutting down";
+            string ShutdownMessage = "Application is shutting down. All windows will close momentarily";
+            MessageBox.Show(ShutdownMessage, ShutdownTitle, MessageBoxButton.OK, MessageBoxImage.Information);
             Application.Current.Shutdown();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            //Show help window
+            HelpWindow helpWindow = new HelpWindow();
+            helpWindow.ShowDialog();
         }
     }
 }

@@ -6,30 +6,29 @@
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
         FontSize="18"
+        WindowStartupLocation="CenterScreen"
         Title="DataGridWindow" Height="650" Width="1200">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="8*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="8*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <DataGrid 
-            x:Name="GenreDataGrid" Height="475" VerticalAlignment="Top" HorizontalAlignment="Left" Width="934" Grid.Row="1" Grid.Column="1" Margin="10,10,0,0">
-            <DataGrid.Columns>
-                <DataGridTextColumn Width="*" Header="Genre" Binding="{Binding Column1}"/>
-                <DataGridTextColumn Width="*" Header="Beats Per Minute" Binding="{Binding Column2}"/>
-                <DataGridTextColumn Width="*" Header="Tuning" Binding="{Binding Column3}"/>
-                <DataGridTextColumn Width="*" Header="Time Signature" Binding="{Binding Column4}"/>
-                <DataGridTextColumn Width="*" Header="SongLength" Binding="{Binding Column5}"/>
+        <GroupBox Header="Genre Definitions" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="10" FontSize="36" FontWeight="Bold" BorderThickness="5">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="8*"/>
+                </Grid.RowDefinitions>
+                <Button Content="More Info" Margin="10,10,600,10" Click="Button_Click" FontSize="36" FontWeight="Normal"/>
+                <DataGrid 
+                x:Name="GenreDataGrid" FontSize="18" Grid.Row="1" Margin="10" FontWeight="Normal">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="*" Header="Genre" Binding="{Binding Column1}"/>
+                        <DataGridTextColumn Width="*" Header="Beats Per Minute" Binding="{Binding Column2}"/>
+                        <DataGridTextColumn Width="*" Header="Tuning" Binding="{Binding Column3}"/>
+                        <DataGridTextColumn Width="*" Header="Time Signature" Binding="{Binding Column4}"/>
+                        <DataGridTextColumn Width="*" Header="Song Length" Binding="{Binding Column5}"/>
 
-            </DataGrid.Columns>
+                    </DataGrid.Columns>
 
-        </DataGrid>
-        <Label Content="Genre Definitions" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="104" Width="300" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36"/>
-        <Button Content="More Info" Grid.Column="1" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" Width="280" Height="104" Click="Button_Click" FontSize="36"/>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>

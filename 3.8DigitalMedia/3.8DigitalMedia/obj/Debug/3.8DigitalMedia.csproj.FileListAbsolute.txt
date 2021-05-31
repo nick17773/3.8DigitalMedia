@@ -23,3 +23,5 @@ C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\Summary.baml
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\DataGridWindow.g.cs
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\DataGridWindow.baml
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\HelpWindow.g.cs
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\HelpWindow.baml
