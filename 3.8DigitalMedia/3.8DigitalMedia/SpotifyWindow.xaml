@@ -69,7 +69,7 @@
             <TabItem x:Name="DeathPlaylist" Header="Death Metal">
                 <Grid Margin="0">
                     <GroupBox Header="GroupBox" Margin="10">
-                        <wpf:ChromiumWebBrowser Margin="10"/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6IaXPOgpOxGo4TYZ4utWPc?si=0e47f53590334969"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
