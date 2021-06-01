@@ -62,7 +62,7 @@
             <TabItem x:Name="PowerPlaylist" Header="Power Metal">
                 <Grid Margin="0">
                     <GroupBox Header="GroupBox" Margin="10">
-                        <wpf:ChromiumWebBrowser Margin="10"/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6andvhDOLAwSzoXK7yzwhh?si=36cf95b7f9914e0c"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
