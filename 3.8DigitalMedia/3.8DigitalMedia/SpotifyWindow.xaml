@@ -15,81 +15,109 @@
         <!--
             <wpf:ChromiumWebBrowser Margin="10" Address="https://www.youtube.com/watch?v=dQw4w9WgXcQ" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"  />
         </GroupBox>-->
-        <TabControl>
-            <TabItem Header="Heavy Metal">
+        <TabControl x:Name="PlaylistTabs">
+            <TabItem x:Name="HeavyPlaylist" Header="Heavy Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
-                    
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/12qUjEd0PAuvBF3jPUqDvR?si=7c9e32ce949647c2"/>
+                    </GroupBox>
+
                 </Grid>
             </TabItem>
-            <TabItem Header="Progressive Metal">
+            <TabItem x:Name="ProgPlaylist" Header="Progressive Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/3jGBRGt97MsL1rFzgr1D5r?si=c4426a1d57d3435c"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Groove Metal">
+            <TabItem x:Name="GroovePlaylist" Header="Groove Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/3Cas4QVPyFUzUeQeRmmgX6?si=57fb3e13dec14848"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Industrial Metal">
+            <TabItem x:Name="IndustrialPlaylist" Header="Industrial Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/0qov0PVxn0cdxtYG2PxsB5?si=2c81604cb956468c"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Thrash Metal">
+            <TabItem x:Name="ThrashPlaylist" Header="Thrash Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10" >
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6ZcntSZh0Iul4E5VpKrly7?si=0dc4c37f6d4a4794"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Black Metal">
+            <TabItem x:Name="BlackPlaylist" Header="Black Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6SEgqJOrRgOEFO9XumGFat?si=7d322920c1b7458f"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Power Metal">
+            <TabItem x:Name="PowerPlaylist" Header="Power Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Death Metal">
+            <TabItem x:Name="DeathPlaylist" Header="Death Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Technical Death Metal">
+            <TabItem x:Name="TechDeathPlaylist" Header="Technical Death Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Doom Metal">
+            <TabItem x:Name="DoomPlaylist" Header="Doom Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Death/Doom Metal">
+            <TabItem x:Name="DeathDoomPlaylist" Header="Death/Doom Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Sludge Metal">
+            <TabItem x:Name="SludgePlaylist" Header="Sludge Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Alternative Metal">
+            <TabItem x:Name="AlternativePlaylist" Header="Alternative Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Nu Metal">
+            <TabItem x:Name="NuPlaylist" Header="Nu Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
-            <TabItem Header="Djent">
+            <TabItem x:Name="DjentPlaylist" Header="Djent">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="805" VerticalAlignment="Top" Width="1586"/>
+                    <GroupBox Header="GroupBox" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10"/>
+                    </GroupBox>
                 </Grid>
             </TabItem>
         </TabControl>

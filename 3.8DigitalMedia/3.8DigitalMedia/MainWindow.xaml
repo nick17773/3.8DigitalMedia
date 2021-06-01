@@ -86,6 +86,7 @@
                 <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Margin="10" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
+        <Button Content="Show Spotify Playlists" Grid.Column="1" Margin="20" Grid.Row="4" Click="Button_Click_4" FontSize="36"/>
     </Grid>
 
 

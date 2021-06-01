@@ -338,5 +338,11 @@ namespace _3._8DigitalMedia
             HelpWindow helpWindow = new HelpWindow();
             helpWindow.ShowDialog();
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            SpotifyWindow spotifyWindow = new SpotifyWindow();
+            spotifyWindow.Show();
+        }
     }
 }
