@@ -111,14 +111,14 @@
             <TabItem x:Name="NuPlaylist" Header="Nu Metal">
                 <Grid Margin="0">
                     <GroupBox Header="GroupBox" Margin="10">
-                        <wpf:ChromiumWebBrowser Margin="10" />
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/2FosuL92SfNtBBvQe2SqHx?si=298788be08e54b5e"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DjentPlaylist" Header="Djent">
                 <Grid Margin="0">
                     <GroupBox Header="GroupBox" Margin="10">
-                        <wpf:ChromiumWebBrowser Margin="10"/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6bMivgk0YBMG7PRwMRX3fA?si=255d682c3fc345f1"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
