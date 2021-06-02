@@ -209,7 +209,7 @@ namespace _3._8DigitalMedia
                         else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Death/Doom";
-                            suggestedBands = "Paradise Lost, Anathema, Corrupted, The Eternal";
+                            suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
                             GenreDisplay(genreKey, genreDictionary,  suggestedBands);
                         }
                     }
