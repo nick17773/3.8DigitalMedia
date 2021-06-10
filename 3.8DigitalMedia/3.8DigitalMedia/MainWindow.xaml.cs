@@ -118,12 +118,14 @@ namespace _3._8DigitalMedia
                             genreKey = "Thrash";
                             suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                         else if (SongLengthInput == Long)
                         {
                             genreKey = "Power";
                             suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                     }
                     else if (TimeSigInput == Dynamic)
@@ -133,6 +135,7 @@ namespace _3._8DigitalMedia
                             genreKey = "Black";
                             suggestedBands = "Mayhem, Darkthrone, Venom, Paracoccidioidomicosisproctitissarcomucosis";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                     }
                 }
@@ -146,12 +149,14 @@ namespace _3._8DigitalMedia
                             genreKey = "Industrial";
                             suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                         else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Heavy";
                             suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                     }
                     else if (TimeSigInput == Dynamic)
@@ -161,12 +166,14 @@ namespace _3._8DigitalMedia
                             genreKey = "Prog";
                             suggestedBands = "Dream Theatre, Opeth, Gojira, Mastodon";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                         else if (SongLengthInput == Long)
                         {
                             genreKey = "Groove";
                             suggestedBands = "Pantera, Damageplan, HellYeah, Lamb of God";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                     }
                 }
@@ -180,6 +187,7 @@ namespace _3._8DigitalMedia
                             genreKey = "Death";
                             suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                     }
                     else if (TimeSigInput == Dynamic)
@@ -190,6 +198,7 @@ namespace _3._8DigitalMedia
                             genreKey = "Tech Death";
                             suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                     }
                 }
@@ -205,12 +214,14 @@ namespace _3._8DigitalMedia
                             genreKey = "Doom";
                             suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
                             GenreDisplay(genreKey, genreDictionary,  suggestedBands);
+                            
                         }
                         else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Death/Doom";
                             suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
                             GenreDisplay(genreKey, genreDictionary,  suggestedBands);
+                            
                         }
                     }
                     else if (TimeSigInput == Dynamic)
@@ -221,12 +232,14 @@ namespace _3._8DigitalMedia
                             genreKey = "Sludge";
                             suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
                             GenreDisplay(genreKey, genreDictionary,  suggestedBands);
+                            
                         }
                         else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Djent";
                             suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                            
                         }
                     }
                 }
@@ -237,12 +250,14 @@ namespace _3._8DigitalMedia
                         genreKey = "Alt";
                         suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                        
                     }
                     else if (TimeSigInput == Dynamic)
                     {
                         genreKey = "Nu";
                         suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
+                        
                     }
                 }
             }
@@ -253,7 +268,145 @@ namespace _3._8DigitalMedia
             {
                 GenreLabel.Content = "PLEASE SELECT SOME VALUES BEFORE PRESSING CALCULATE";
                 SuggestedBandsLabel.Content = "NO SUGGESTED BANDS FOR UNKNOWN GENRE";
+               
             }
+            
+        }
+
+        public void GenreSuggestions(string genreKey, Dictionary<string, Genre> genreDictionary)
+        {
+            string TuningInput = Convert.ToString(TuningLabel.Tag);
+            string BPMInput = Convert.ToString(BPMLabel.Tag);
+            string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
+            string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
+            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
+            string SuggestedGenreByBPM = "Suggested Genres by BPM";
+            string SuggestedGenreByTuning = "Suggested Genres by Tuning";
+            //Debug.WriteLine(SuggestedGenreByBPM);
+            //Debug.WriteLine(SuggestedGenreByTuning);
+            foreach (var gv in GroupedValues)
+            {
+                //Debug.WriteLine(gv.Select(e => e.Value.bpm).First());
+                var Tuninglookup = gv.ToLookup(e => e.Value.tuning);
+                var BPMlookup = gv.ToLookup(e => e.Value.bpm);
+                var TimeSiglookup = gv.ToLookup(e => e.Value.timeSignature);
+                var SongLengthlookup = gv.ToLookup(e => e.Value.songLength);
+
+                //Debug.WriteLine(SuggestedGenreByBPM);
+                //Debug.WriteLine(SuggestedGenreByTuning);
+
+                if (BPMInput == Slow)
+                {
+                    
+                    var selectedBPM = BPMlookup[BPM.Slow];
+                    foreach (var str in selectedBPM)
+                    {
+                        
+                        Debug.WriteLine(str.Key);
+                    }
+                    
+                }
+                else if (BPMInput == MediumBPMS)
+                {
+                    
+                    var selectedBPM = BPMlookup[BPM.Medium];
+                    foreach (var str in selectedBPM)
+                    {
+                        Debug.WriteLine("Suggested BPM");
+                        Debug.WriteLine(str.Key);
+                        
+                    }
+                    
+                    if (TuningInput == Standard)
+                    {
+                        var selectedTuning = Tuninglookup[Tuning.Standard];
+                        foreach (var str in selectedTuning)
+                        {
+                            Debug.WriteLine("Suggested Tuning");
+                            Debug.WriteLine(str.Key);
+                            
+                        }
+                        
+                    }
+                    else if (TuningInput == Low)
+                    {
+                        var selectedTuning = Tuninglookup[Tuning.Low];
+                        foreach (var str in selectedTuning)
+                        {
+                            Debug.WriteLine("Suggested Tuning");
+                            Debug.WriteLine(str.Key);
+
+                        }
+
+                    }
+
+                }
+                else if (BPMInput == Fast)
+                {
+                    var selectedBPM = BPMlookup[BPM.Fast];
+                    foreach (var str in selectedBPM)
+                    {
+                        
+                        Debug.WriteLine(str.Key);
+                    }
+                    
+                }
+                else if (BPMInput == Insane)
+                {
+                    var selectedBPM = BPMlookup[BPM.Insane];
+                    foreach (var str in selectedBPM)
+                    {
+                        
+                        Debug.WriteLine(str.Key);
+                    }
+                    
+
+                }
+                //Debug.WriteLine(selected);
+                //foreach (var key in gv.Select(e => e.Key))
+                //{
+                //    Debug.WriteLine($" {key}");
+                //}
+            }
+
+            //var bpmSplit = genreDictionary.GroupBy(x => x.Value.bpm);
+            //var bpmGroupList = bpmSplit.Select(x => x.ToList()).ToList();
+            ////Debug.WriteLine(bpmGroupList);
+            //foreach(var str in bpmGroupList)
+            //{
+            //    foreach (var str2 in str)
+            //    {
+
+            //        //Debug.WriteLine(str2.Value.bpm);
+
+            //            var lookup = bpmGroupList.ToLookup(x => str2.Key, x => str2.Value.bpm);
+            //            foreach (var val in lookup)
+            //            {
+            //                var medBPMGroup = lookup[Convert.ToString(BPM.Medium)];
+            //                foreach(var val2 in medBPMGroup)
+            //                {
+            //                    Debug.WriteLine(val2);
+            //                }
+            //            }
+
+            //    }
+            //}
+
+
+            //if (genreDictionary[genreKey].bpm == BPM.Medium)
+            //{
+            //    var result = genreDictionary.Values
+            //         .GroupBy(x => x.bpm)
+            //         .Where(x => x.Count() > 0)
+            //         .Select(g => g.First());
+            //    foreach (var similar in result)
+            //    {
+            //        Debug.WriteLine(similar.name);
+
+            //    }
+            //}
+
+
         }
 
         public void GenreDisplay(string genreKey, Dictionary<string, Genre> genreDictionary, string suggestedBands)
@@ -314,6 +467,7 @@ namespace _3._8DigitalMedia
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Check();
+            GenreSuggestions(genreKey, genreDictionary);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

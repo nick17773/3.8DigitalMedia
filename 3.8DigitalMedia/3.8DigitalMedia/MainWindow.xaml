@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        FontSize="14"
+        FontSize="16"
         
         WindowState="Maximized"
         Title="MainWindow" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
 
-    <Grid x:Name="MainGrid" Margin="10">
+    <Grid x:Name="MainGrid" Margin="10" UseLayoutRounding="True">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition/>
@@ -23,7 +23,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <GroupBox Header="Definitions" Grid.RowSpan="4" Margin="20" Grid.Row="1" FontSize="36" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" BorderThickness="5" FontWeight="Bold">
+        <GroupBox Header="Definitions" Grid.RowSpan="3" Margin="10" Grid.Row="1" FontSize="36" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontWeight="Bold">
             <Grid Margin="10" UseLayoutRounding="True">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -35,50 +35,61 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="BPMBox" Margin="10" FontSize="24" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal"  >
-                    <ComboBoxItem x:Name="SlowBPM" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="MediumBPM" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="FastBPM" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="InsaneBPM" Content="" HorizontalAlignment="Left" Width="130"/>
+                <ComboBox x:Name="BPMBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal"  >
+                    <ComboBoxItem x:Name="SlowBPM" Content=""/>
+                    <ComboBoxItem x:Name="MediumBPM" Content=""/>
+                    <ComboBoxItem x:Name="FastBPM" Content=""/>
+                    <ComboBoxItem x:Name="InsaneBPM" Content=""/>
 
                 </ComboBox>
-                <ComboBox x:Name="TuningBox" Margin="10" FontSize="24" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal" >
-                    <ComboBoxItem x:Name="StandardTuning" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="LowTuning" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="SpecialTuning" Content="" HorizontalAlignment="Left" Width="130"/>
+                <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal" >
+                    <ComboBoxItem x:Name="StandardTuning" Content=""/>
+                    <ComboBoxItem x:Name="LowTuning" Content=""/>
+                    <ComboBoxItem x:Name="SpecialTuning" Content=""/>
 
                 </ComboBox>
-                <ComboBox x:Name="TimeSigBox" Margin="10" FontSize="24" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal" >
-                    <ComboBoxItem x:Name="StaticTimeSig" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="DynamicTimeSig" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="WeirdTimeSig" Content="" HorizontalAlignment="Left" Width="130"/>
+                <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal" >
+                    <ComboBoxItem x:Name="StaticTimeSig" Content=""/>
+                    <ComboBoxItem x:Name="DynamicTimeSig" Content=""/>
+                    <ComboBoxItem x:Name="WeirdTimeSig" Content=""/>
 
                 </ComboBox>
-                <ComboBox x:Name="SongLengthBox" Margin="10" FontSize="24" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal" >
-                    <ComboBoxItem x:Name="ShortSongLength" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="MediumSongLength" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="LongSongLength" Content="" HorizontalAlignment="Left" Width="130"/>
-                    <ComboBoxItem x:Name="ExtremeSongLength" Content="" HorizontalAlignment="Left" Width="130"/>
+                <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal" >
+                    <ComboBoxItem x:Name="ShortSongLength" Content=""/>
+                    <ComboBoxItem x:Name="MediumSongLength" Content=""/>
+                    <ComboBoxItem x:Name="LongSongLength" Content=""/>
+                    <ComboBoxItem x:Name="ExtremeSongLength" Content=""/>
 
 
                 </ComboBox>
-                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Normal"/>
-                <Label Content="Tuning" HorizontalAlignment="Center" Margin="10,0" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="1" FontWeight="Normal"/>
-                <Label Content="Time Signature" HorizontalAlignment="Center" Margin="10,0" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="2" FontWeight="Normal"/>
-                <Label Content="Song Length" HorizontalAlignment="Center" Margin="10,0" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="3" FontWeight="Normal"/>
+                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10,20" FontWeight="Normal"/>
+                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="1" FontWeight="Normal"/>
+                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="2" FontWeight="Normal"/>
+                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="3" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
         <Label x:Name="BPMLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="TuningLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TuningBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,31,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="TimeSigLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TimeSigBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,29,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="SongLengthLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=SongLengthBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,27,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
-        <Button Content="Click to Calculate Genre" Click="Button_Click" Margin="20" FontSize="36"/>
-        <Button Content="Click to Show Genre Definitions" Grid.Column="1" Margin="20" Click="Button_Click_1" FontSize="36"/>
-        <Button Content="Close" Grid.Column="2" Margin="400,20,20,20" Click="Button_Click_2" FontSize="36"/>
-        <Button Content="Help" Grid.Column="2" Margin="20,20,400,20" Click="Button_Click_3" FontSize="36"/>
-        <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" FontSize="36" FontWeight="Bold" BorderThickness="5" Margin="20">
+        <Border Grid.Column="1" Margin="10" BorderThickness="5" BorderBrush="Gray">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" FontSize="30"/>
+                <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" FontSize="30" Grid.Row="1"/>
+            </Grid>
+        </Border>
+        <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" FontSize="36" FontWeight="Bold" Margin="10">
             <Grid Margin="10">
                 <Grid.RowDefinitions>
+                    <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
@@ -86,7 +97,22 @@
                 <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Margin="10" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
-        <Button Content="Show Spotify Playlists" Grid.Column="1" Margin="20" Grid.Row="4" Click="Button_Click_4" FontSize="36"/>
+        <Border BorderBrush="Gray" BorderThickness="5" Grid.Column="2" Margin="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="Help" Margin="10" Click="Button_Click_3" FontSize="30"/>
+                <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" FontSize="30" Grid.Column="1"/>
+                <Button Content="Close" Margin="10" Click="Button_Click_2" FontSize="30" Grid.Column="2"/>
+            </Grid>
+        </Border>
     </Grid>
 
 
