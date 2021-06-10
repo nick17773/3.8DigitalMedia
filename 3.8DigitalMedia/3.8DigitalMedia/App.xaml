@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:_3._8DigitalMedia"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="GroupBox">
+            <Setter Property="BorderBrush" Value="Gray"/>
+            <Setter Property="BorderThickness" Value="5" />
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
     </Application.Resources>
 </Application>
