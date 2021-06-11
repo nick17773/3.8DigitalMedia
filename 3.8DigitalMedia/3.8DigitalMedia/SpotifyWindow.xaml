@@ -18,7 +18,7 @@
         <TabControl x:Name="PlaylistTabs">
             <TabItem x:Name="HeavyPlaylist" Header="Heavy Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Heavy Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/12qUjEd0PAuvBF3jPUqDvR?si=7c9e32ce949647c2"/>
                     </GroupBox>
 
@@ -26,98 +26,98 @@
             </TabItem>
             <TabItem x:Name="ProgPlaylist" Header="Progressive Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Progressive Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/3jGBRGt97MsL1rFzgr1D5r?si=c4426a1d57d3435c"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="GroovePlaylist" Header="Groove Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Groove Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/3Cas4QVPyFUzUeQeRmmgX6?si=57fb3e13dec14848"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="IndustrialPlaylist" Header="Industrial Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Industrial Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/0qov0PVxn0cdxtYG2PxsB5?si=2c81604cb956468c"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="ThrashPlaylist" Header="Thrash Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10" >
+                    <GroupBox Header="Thrash Metal Playlist" Margin="10" >
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6ZcntSZh0Iul4E5VpKrly7?si=0dc4c37f6d4a4794"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="BlackPlaylist" Header="Black Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Black Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6SEgqJOrRgOEFO9XumGFat?si=7d322920c1b7458f"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="PowerPlaylist" Header="Power Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Power Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6andvhDOLAwSzoXK7yzwhh?si=36cf95b7f9914e0c"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DeathPlaylist" Header="Death Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Death Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6IaXPOgpOxGo4TYZ4utWPc?si=0e47f53590334969"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="TechDeathPlaylist" Header="Technical Death Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Technical Death Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/27zR7yzrXp81Q0aqKZvlX3?si=0b3842067ab84c6a"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DoomPlaylist" Header="Doom Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Doom Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/125rt8TXVgFkBmC1vwZkXJ?si=1cd5be1ed7b34b73"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DeathDoomPlaylist" Header="Death/Doom Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Death/Doom Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/1rlso1EmHTJDxgevfqcIwg?si=2bee7fc57ec5432d"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="SludgePlaylist" Header="Sludge Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Sludge Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/28kmMb1MYh6DcPlD2fe2V6?si=98ebbc66109c412d"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="AlternativePlaylist" Header="Alternative Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Alternative Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/5CN6QvPiEVw9dG6u2U7ze5?si=a9e8255b567a4533"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="NuPlaylist" Header="Nu Metal">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Nu Metal Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/2FosuL92SfNtBBvQe2SqHx?si=298788be08e54b5e"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
             <TabItem x:Name="DjentPlaylist" Header="Djent">
                 <Grid Margin="0">
-                    <GroupBox Header="GroupBox" Margin="10">
+                    <GroupBox Header="Djent Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6bMivgk0YBMG7PRwMRX3fA?si=255d682c3fc345f1"/>
                     </GroupBox>
                 </Grid>

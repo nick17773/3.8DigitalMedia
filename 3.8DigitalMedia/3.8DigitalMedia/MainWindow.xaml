@@ -95,6 +95,28 @@
                 </Grid.RowDefinitions>
                 <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Margin="10" Grid.Row="1" FontWeight="Normal"/>
                 <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Margin="10" FontWeight="Normal"/>
+                <Expander Header="More Suggestions" Margin="10,10,10,-210" Grid.Row="2">
+                    <Grid Background="#FFE5E5E5" Margin="10,10,10,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="219*"/>
+                            <ColumnDefinition Width="370*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Label x:Name="SuggestedBPMLabel" Content="Suggested Genres By BPM" Margin="10" FontWeight="Normal" FontSize="24"/>
+                        <Label x:Name="SuggestedTuningLabel" Content="Suggested Genres By Tuning" Margin="10" FontWeight="Normal" Grid.Row="1" FontSize="24"/>
+                        <Label x:Name="SuggestedTimeSigLabel" Content="Suggested Genres By Time Signature" Margin="10" FontWeight="Normal" Grid.Row="2" FontSize="24"/>
+                        <TextBlock x:Name="SuggestedByBPM" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Column="1"/>
+                        <Label x:Name="SuggestedSongLengthLabel" Content="Suggested Genres By Song Length" Margin="10" FontWeight="Normal" Grid.Row="3" FontSize="24"/>
+                        <TextBlock x:Name="SuggestedByTuning" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="1" Grid.Column="1"/>
+                        <TextBlock x:Name="SuggestedByTimeSig" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="2" Grid.Column="1"/>
+                        <TextBlock x:Name="SuggestedBySongLength" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="3" Grid.Column="1"/>
+                    </Grid>
+                </Expander>
             </Grid>
         </GroupBox>
         <Border BorderBrush="Gray" BorderThickness="5" Grid.Column="2" Margin="10">

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="HelpWindow" Height="450" Width="800">
     <Grid>
-        <GroupBox Header="GroupBox" Margin="10">
+        <GroupBox Header="Help" Margin="10">
             <TextBlock Margin="10" TextWrapping="Wrap" FontSize="18" FontWeight="Normal"><Run Text="This is the help window. Below are instructions on how to use this program."/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" Text="Step 1: Enter the definitions of the unknown genre" TextDecorations="Underline"/><LineBreak/><Run FontWeight="Bold" TextDecorations="Underline"/><LineBreak/><Run Text="This is achieved by clicking the dropdown buttons on the left hand side of the program. If no definitions are entered, the program will not calculate anything, and will ask you to enter some definitions."/><LineBreak/><Run/><LineBreak/><Run FontWeight="Bold" Text="Step 2: Press the Calculate button" TextDecorations="Underline"/><LineBreak/><Run FontWeight="Bold" TextDecorations="Underline"/><LineBreak/><Run Text="Once pressed, the calculate button will run checks to confirm and calculate the unknown genre based on the definitions given. It will also suggest related genres, and bands that are well known within that genre."/></TextBlock>
         </GroupBox>
 

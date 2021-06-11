@@ -272,140 +272,199 @@ namespace _3._8DigitalMedia
             }
             
         }
-
-        public void GenreSuggestions(string genreKey, Dictionary<string, Genre> genreDictionary)
+        public void SuggestedBPMCheck()
+        {
+            string BPMInput = Convert.ToString(BPMLabel.Tag);
+            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
+            List<string> BPMValues = new List<string>();
+            foreach (var gv in GroupedValues)
+            {
+                var BPMlookup = gv.ToLookup(e => e.Value.bpm);
+                if(BPMInput == Slow)
+                {
+                    var selectedBPM = BPMlookup[BPM.Slow];
+                    foreach(var str in selectedBPM)
+                    {
+                        string selectedGenre = str.Key;
+                        BPMValues.Add(selectedGenre);
+                        string combinedBPMValues = String.Join(", ", BPMValues);
+                        SuggestedByBPM.Text = combinedBPMValues;
+                    }
+                }
+                else if(BPMInput == MediumBPMS)
+                {
+                    var selectedBPM = BPMlookup[BPM.Medium];
+                    foreach (var str in selectedBPM)
+                    {
+                        string selectedGenre = str.Key;
+                        BPMValues.Add(selectedGenre);
+                        string combinedBPMValues = String.Join(", ", BPMValues);
+                        SuggestedByBPM.Text = combinedBPMValues;
+                    }
+                }
+                else if(BPMInput == Fast)
+                {
+                    var selectedBPM = BPMlookup[BPM.Fast];
+                    foreach (var str in selectedBPM)
+                    {
+                        string selectedGenre = str.Key;
+                        BPMValues.Add(selectedGenre);
+                        string combinedBPMValues = String.Join(", ", BPMValues);
+                        SuggestedByBPM.Text = combinedBPMValues;
+                    }
+                }
+                else if(BPMInput == Insane)
+                {
+                    var selectedBPM = BPMlookup[BPM.Insane];
+                    foreach (var str in selectedBPM)
+                    {
+                        string selectedGenre = str.Key;
+                        BPMValues.Add(selectedGenre);
+                        string combinedBPMValues = String.Join(", ", BPMValues);
+                        SuggestedByBPM.Text = combinedBPMValues;
+                    }
+                }
+            }
+        }
+        public void SuggestedTuningCheck()
+        {
+            string TuningInput = Convert.ToString(TuningLabel.Tag);
+            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
+            List<string> TuningValues = new List<string>();
+            foreach(var gv in GroupedValues)
+            {
+                var Tuninglookup = gv.ToLookup(e => e.Value.tuning);
+                if(TuningInput == Standard)
+                {
+                    var selectedTuning = Tuninglookup[Tuning.Standard];
+                    foreach(var str in selectedTuning)
+                    {
+                        string selectedGenre = str.Key;
+                        TuningValues.Add(selectedGenre);
+                        string combinedTuningValues = String.Join(", ", TuningValues);
+                        SuggestedByTuning.Text = combinedTuningValues;
+                    }
+                }
+                else if(TuningInput == Low)
+                {
+                    var selectedTuning = Tuninglookup[Tuning.Low];
+                    foreach (var str in selectedTuning)
+                    {
+                        string selectedGenre = str.Key;
+                        TuningValues.Add(selectedGenre);
+                        string combinedTuningValues = String.Join(", ", TuningValues);
+                        SuggestedByTuning.Text = combinedTuningValues;
+                    }
+                }
+            }
+        }
+        public void SuggestedTimeSigCheck()
+        {
+            string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
+            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
+            List<string> TimeSigValues = new List<string>();
+            foreach(var gv in GroupedValues)
+            {
+                var TimeSiglookup = gv.ToLookup(e => e.Value.timeSignature);
+                if (TimeSigInput == Static)
+                {
+                    var selectedTimeSig = TimeSiglookup[TimeSignature.Static];
+                    foreach(var str in selectedTimeSig)
+                    {
+                        string selectedGenre = str.Key;
+                        TimeSigValues.Add(selectedGenre);
+                        string combinedTimeSigValues = String.Join(", ", TimeSigValues);
+                        SuggestedByTimeSig.Text = combinedTimeSigValues;
+                    }
+                }
+                else if (TimeSigInput == Dynamic)
+                {
+                    var selectedTimeSig = TimeSiglookup[TimeSignature.Dynamic];
+                    foreach (var str in selectedTimeSig)
+                    {
+                        string selectedGenre = str.Key;
+                        TimeSigValues.Add(selectedGenre);
+                        string combinedTimeSigValues = String.Join(", ", TimeSigValues);
+                        SuggestedByTimeSig.Text = combinedTimeSigValues;
+                    }
+                }
+            }
+        }
+        public void SuggestedSongLengthCheck()
+        {
+            string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
+            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
+            List<string> SongLengthValues = new List<string>();
+            foreach(var gv in GroupedValues)
+            {
+                var SongLengthlookup = gv.ToLookup(e => e.Value.songLength);
+                if(SongLengthInput == Short)
+                {
+                    var selectedSongLength = SongLengthlookup[SongLength.Short];
+                    foreach(var str in selectedSongLength)
+                    {
+                        string selectedGenre = str.Key;
+                        SongLengthValues.Add(selectedGenre);
+                        string combinedSongLengthValues = String.Join(", ", SongLengthValues);
+                        SuggestedBySongLength.Text = combinedSongLengthValues;
+                    }
+                }
+                else if(SongLengthInput == MediumLength)
+                {
+                    var selectedSongLength = SongLengthlookup[SongLength.Medium];
+                    foreach (var str in selectedSongLength)
+                    {
+                        string selectedGenre = str.Key;
+                        SongLengthValues.Add(selectedGenre);
+                        string combinedSongLengthValues = String.Join(", ", SongLengthValues);
+                        SuggestedBySongLength.Text = combinedSongLengthValues;
+                    }
+                }
+                else if(SongLengthInput == Long)
+                {
+                    var selectedSongLength = SongLengthlookup[SongLength.Long];
+                    foreach (var str in selectedSongLength)
+                    {
+                        string selectedGenre = str.Key;
+                        SongLengthValues.Add(selectedGenre);
+                        string combinedSongLengthValues = String.Join(", ", SongLengthValues);
+                        SuggestedBySongLength.Text = combinedSongLengthValues;
+                    }
+                }
+                else if(SongLengthInput == Extreme)
+                {
+                    var selectedSongLength = SongLengthlookup[SongLength.Extreme];
+                    foreach (var str in selectedSongLength)
+                    {
+                        string selectedGenre = str.Key;
+                        SongLengthValues.Add(selectedGenre);
+                        string combinedSongLengthValues = String.Join(", ", SongLengthValues);
+                        SuggestedBySongLength.Text = combinedSongLengthValues;
+                    }
+                }
+            }
+        }
+        public void GenreSuggestions()
         {
             string TuningInput = Convert.ToString(TuningLabel.Tag);
             string BPMInput = Convert.ToString(BPMLabel.Tag);
             string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
             string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
-            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
-            string SuggestedGenreByBPM = "Suggested Genres by BPM";
-            string SuggestedGenreByTuning = "Suggested Genres by Tuning";
-            //Debug.WriteLine(SuggestedGenreByBPM);
-            //Debug.WriteLine(SuggestedGenreByTuning);
-            foreach (var gv in GroupedValues)
+            SuggestedBPMCheck();
+            SuggestedTuningCheck();
+            SuggestedTimeSigCheck();
+            SuggestedSongLengthCheck();
+
+            if (TuningInput == "" 
+                && BPMInput == ""
+                && TimeSigInput == ""
+                && SongLengthInput == "")
             {
-                //Debug.WriteLine(gv.Select(e => e.Value.bpm).First());
-                var Tuninglookup = gv.ToLookup(e => e.Value.tuning);
-                var BPMlookup = gv.ToLookup(e => e.Value.bpm);
-                var TimeSiglookup = gv.ToLookup(e => e.Value.timeSignature);
-                var SongLengthlookup = gv.ToLookup(e => e.Value.songLength);
-
-                //Debug.WriteLine(SuggestedGenreByBPM);
-                //Debug.WriteLine(SuggestedGenreByTuning);
-
-                if (BPMInput == Slow)
-                {
-                    
-                    var selectedBPM = BPMlookup[BPM.Slow];
-                    foreach (var str in selectedBPM)
-                    {
-                        
-                        Debug.WriteLine(str.Key);
-                    }
-                    
-                }
-                else if (BPMInput == MediumBPMS)
-                {
-                    
-                    var selectedBPM = BPMlookup[BPM.Medium];
-                    foreach (var str in selectedBPM)
-                    {
-                        Debug.WriteLine("Suggested BPM");
-                        Debug.WriteLine(str.Key);
-                        
-                    }
-                    
-                    if (TuningInput == Standard)
-                    {
-                        var selectedTuning = Tuninglookup[Tuning.Standard];
-                        foreach (var str in selectedTuning)
-                        {
-                            Debug.WriteLine("Suggested Tuning");
-                            Debug.WriteLine(str.Key);
-                            
-                        }
-                        
-                    }
-                    else if (TuningInput == Low)
-                    {
-                        var selectedTuning = Tuninglookup[Tuning.Low];
-                        foreach (var str in selectedTuning)
-                        {
-                            Debug.WriteLine("Suggested Tuning");
-                            Debug.WriteLine(str.Key);
-
-                        }
-
-                    }
-
-                }
-                else if (BPMInput == Fast)
-                {
-                    var selectedBPM = BPMlookup[BPM.Fast];
-                    foreach (var str in selectedBPM)
-                    {
-                        
-                        Debug.WriteLine(str.Key);
-                    }
-                    
-                }
-                else if (BPMInput == Insane)
-                {
-                    var selectedBPM = BPMlookup[BPM.Insane];
-                    foreach (var str in selectedBPM)
-                    {
-                        
-                        Debug.WriteLine(str.Key);
-                    }
-                    
-
-                }
-                //Debug.WriteLine(selected);
-                //foreach (var key in gv.Select(e => e.Key))
-                //{
-                //    Debug.WriteLine($" {key}");
-                //}
+                SuggestedByBPM.Text = "ERROR";
+                SuggestedBySongLength.Text = "ERROR";
+                SuggestedByTimeSig.Text = "ERROR";
+                SuggestedByTuning.Text = "ERROR";
             }
-
-            //var bpmSplit = genreDictionary.GroupBy(x => x.Value.bpm);
-            //var bpmGroupList = bpmSplit.Select(x => x.ToList()).ToList();
-            ////Debug.WriteLine(bpmGroupList);
-            //foreach(var str in bpmGroupList)
-            //{
-            //    foreach (var str2 in str)
-            //    {
-
-            //        //Debug.WriteLine(str2.Value.bpm);
-
-            //            var lookup = bpmGroupList.ToLookup(x => str2.Key, x => str2.Value.bpm);
-            //            foreach (var val in lookup)
-            //            {
-            //                var medBPMGroup = lookup[Convert.ToString(BPM.Medium)];
-            //                foreach(var val2 in medBPMGroup)
-            //                {
-            //                    Debug.WriteLine(val2);
-            //                }
-            //            }
-
-            //    }
-            //}
-
-
-            //if (genreDictionary[genreKey].bpm == BPM.Medium)
-            //{
-            //    var result = genreDictionary.Values
-            //         .GroupBy(x => x.bpm)
-            //         .Where(x => x.Count() > 0)
-            //         .Select(g => g.First());
-            //    foreach (var similar in result)
-            //    {
-            //        Debug.WriteLine(similar.name);
-
-            //    }
-            //}
-
 
         }
 
@@ -467,7 +526,7 @@ namespace _3._8DigitalMedia
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Check();
-            GenreSuggestions(genreKey, genreDictionary);
+            GenreSuggestions();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
