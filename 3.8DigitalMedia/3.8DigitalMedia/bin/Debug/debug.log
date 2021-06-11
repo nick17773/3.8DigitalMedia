@@ -1,0 +1,110 @@
+[0611/113640.126:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113640.508:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113641.196:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113641.289:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113641.654:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113641.736:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113641.921:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113642.020:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113642.278:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.315:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.347:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.353:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.363:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.379:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.511:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.518:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113642.952:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113643.246:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113643.249:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113643.253:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113643.268:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113643.308:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113643.361:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113643.906:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113643.937:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113644.017:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113644.025:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.055:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.207:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.216:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.222:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.253:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.525:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113644.589:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113644.658:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113644.784:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.791:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.806:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.837:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113644.970:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113645.000:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113645.122:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113645.353:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113645.363:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113645.374:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113645.405:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113646.633:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0611/113648.536:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113648.586:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113648.833:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113649.165:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113649.172:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113649.174:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113649.206:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113649.762:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113649.798:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113650.071:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113650.328:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113650.337:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113650.351:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113650.385:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113651.226:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113651.235:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113651.993:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113652.036:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113652.364:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113652.769:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113652.771:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113652.780:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113652.805:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113653.230:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113653.319:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113653.863:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113654.278:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113654.309:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113654.333:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113654.358:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113655.184:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113655.214:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113655.339:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113655.382:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113655.641:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113656.002:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113656.006:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113656.009:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113656.037:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113656.929:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113657.129:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113657.178:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113657.381:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113657.535:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113657.578:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113657.906:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113658.237:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113658.254:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113658.260:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113658.270:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113658.442:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113658.508:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113658.870:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113659.189:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113659.221:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113659.232:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113659.244:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0611/113659.493:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113659.531:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.bd68288a.js (1)
+[0611/113700.066:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.f31c9e9f.js (1)
+[0611/113837.345:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
