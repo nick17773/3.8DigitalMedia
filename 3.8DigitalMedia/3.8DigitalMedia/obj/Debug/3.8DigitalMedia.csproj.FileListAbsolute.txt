@@ -113,3 +113,5 @@ C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\CefSharp.BrowserSubprocess.exe
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\CefSharp.BrowserSubprocess.pdb
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\App.baml
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\StartupWindow.g.cs
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\StartupWindow.baml
