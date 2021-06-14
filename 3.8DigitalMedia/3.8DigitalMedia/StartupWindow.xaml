@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
-        Title="StartupWindow" Margin="10">
-    <Grid Margin="10">
+        Title="StartupWindow" Width="800" Height="600" WindowStartupLocation="CenterScreen">
+    <Grid>
         <GroupBox Header="Welcome!" Margin="10">
             <Grid Margin="10">
-                <Button Content="Button" Margin="280,325,280,10" FontSize="30" FontWeight="Normal" Click="Button_Click"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="Button" FontSize="30" FontWeight="Normal" Click="Button_Click" Grid.Row="1" Margin="280,150,280,10"/>
             </Grid>
         </GroupBox>
 
