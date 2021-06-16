@@ -7,6 +7,7 @@
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         FontSize="16"
         Background="{DynamicResource MainBackgroundBrush1}"
+        Foreground="{DynamicResource MainTextColour}"
         WindowState="Maximized"
         Title="MainWindow" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
     
@@ -35,26 +36,26 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="BPMBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal"  >
+                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal" Background="{DynamicResource MainButtonColour}"  >
                     <ComboBoxItem x:Name="SlowBPM" Content=""/>
                     <ComboBoxItem x:Name="MediumBPM" Content=""/>
                     <ComboBoxItem x:Name="FastBPM" Content=""/>
                     <ComboBoxItem x:Name="InsaneBPM" Content=""/>
 
                 </ComboBox>
-                <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal" >
+                <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" Background="{DynamicResource MainButtonColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal" >
                     <ComboBoxItem x:Name="StandardTuning" Content=""/>
                     <ComboBoxItem x:Name="LowTuning" Content=""/>
                     <ComboBoxItem x:Name="SpecialTuning" Content=""/>
 
                 </ComboBox>
-                <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal" >
+                <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" Background="{DynamicResource MainButtonColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal" >
                     <ComboBoxItem x:Name="StaticTimeSig" Content=""/>
                     <ComboBoxItem x:Name="DynamicTimeSig" Content=""/>
                     <ComboBoxItem x:Name="WeirdTimeSig" Content=""/>
 
                 </ComboBox>
-                <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal" >
+                <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" Background="{DynamicResource MainButtonColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal" >
                     <ComboBoxItem x:Name="ShortSongLength" Content=""/>
                     <ComboBoxItem x:Name="MediumSongLength" Content=""/>
                     <ComboBoxItem x:Name="LongSongLength" Content=""/>
@@ -72,7 +73,7 @@
         <Label x:Name="TuningLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TuningBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,31,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="TimeSigLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TimeSigBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,29,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="SongLengthLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=SongLengthBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,27,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
-        <Border Grid.Column="1" Margin="10" BorderThickness="5" BorderBrush="Gray">
+        <Border Grid.Column="1" Margin="10" CornerRadius="5" BorderThickness="5">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="6*"/>
@@ -119,7 +120,7 @@
                 </Expander>
             </Grid>
         </GroupBox>
-        <Border BorderBrush="Gray" BorderThickness="5" Grid.Column="2" Margin="10">
+        <Border BorderThickness="5" CornerRadius="5" Grid.Column="2" Margin="10">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="2*"/>

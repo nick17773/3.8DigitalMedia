@@ -5,15 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
+        Foreground="{DynamicResource MainTextColour}"
         Background="{DynamicResource MainBackgroundBrush1}"
         Title="ThemeSetter" Height="450" Width="800">
         
     
     <Grid x:Name="MainGrid">
-        <ComboBox x:Name="ColourSelector" HorizontalAlignment="Left" Margin="460,218,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+        <ComboBox x:Name="ColourSelector" Background="{DynamicResource MainButtonColour}" HorizontalAlignment="Left" Margin="460,218,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" Template="{DynamicResource ComboBoxControlTemplate1}">
             <ComboBoxItem x:Name="Default" Content="Default Theme" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="Yellow" Content="Yellow" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="Brown" Content="Slayer" HorizontalAlignment="Left" Width="118"/>
+            <!--<ComboBox.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.WindowsBrushKey}" Color="{DynamicResource MainButtonColour}"/>
+                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{DynamicResource MainButtonColour}" />
+            </ComboBox.Resources>-->
         </ComboBox>
 
     </Grid>

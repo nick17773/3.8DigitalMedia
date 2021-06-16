@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         FontSize="18"
         Background="{DynamicResource MainBackgroundBrush1}"
+        Foreground="{DynamicResource MainTextColour}"
         Title="Summary" Height="650" Width="1250">
     <Grid>
         <TabControl Background="{DynamicResource MainBackgroundBrush1}">
