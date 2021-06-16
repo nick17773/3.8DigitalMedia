@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         FontSize="16"
-        
+        Background="{DynamicResource MainBackgroundBrush1}"
         WindowState="Maximized"
         Title="MainWindow" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
-
+    
     <Grid x:Name="MainGrid" Margin="10" UseLayoutRounding="True">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -133,6 +133,7 @@
                 <Button Content="Help" Margin="10" Click="Button_Click_3" FontSize="30"/>
                 <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" FontSize="30" Grid.Column="1"/>
                 <Button Content="Close" Margin="10" Click="Button_Click_2" FontSize="30" Grid.Column="2"/>
+                <Button Content="Button" Margin="10" Grid.Row="1" Click="Button_Click_5"/>
             </Grid>
         </Border>
     </Grid>

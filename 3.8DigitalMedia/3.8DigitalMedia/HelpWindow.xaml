@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
+        Background="{DynamicResource MainBackgroundBrush1}"
         Title="HelpWindow" Height="450" Width="800">
     <Grid>
         <GroupBox Header="Help" Margin="10">

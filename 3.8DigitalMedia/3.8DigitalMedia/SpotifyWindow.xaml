@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
+        Background="{DynamicResource MainBackgroundBrush1}"
         FontSize="18"
         Title="SpotifyWindow" Height="900" Width="1600">
     <Grid>
@@ -15,7 +16,7 @@
         <!--
             <wpf:ChromiumWebBrowser Margin="10" Address="https://www.youtube.com/watch?v=dQw4w9WgXcQ" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"  />
         </GroupBox>-->
-        <TabControl x:Name="PlaylistTabs">
+        <TabControl x:Name="PlaylistTabs" Background="{DynamicResource MainBackgroundBrush1}">
             <TabItem x:Name="HeavyPlaylist" Header="Heavy Metal">
                 <Grid Margin="0">
                     <GroupBox Header="Heavy Metal Playlist" Margin="10">

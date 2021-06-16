@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\App.xaml
-7-1760707297
+111587888728
 
-12-744551792
+131668841061
 16-2031052303
-DataGridWindow.xaml;HelpWindow.xaml;MainWindow.xaml;SpotifyWindow.xaml;StartupWindow.xaml;Summary.xaml;Window1.xaml;
+DataGridWindow.xaml;HelpWindow.xaml;MainWindow.xaml;Resources\Default\DefaultTheme.xaml;Resources\Slayer\SlayerDict.xaml;Resources\Yellow\Yellow.xaml;SpotifyWindow.xaml;StartupWindow.xaml;Summary.xaml;ThemeSetter.xaml;Window1.xaml;
 
-True
+False
 

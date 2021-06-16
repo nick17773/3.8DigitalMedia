@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
-using System.Diagnostics;
 
 namespace _3._8DigitalMedia
 {
@@ -60,7 +55,7 @@ namespace _3._8DigitalMedia
 
             InitializeComponent();
 
-            
+
 
             SlowBPM.Content = BPM.Slow;
             MediumBPM.Content = BPM.Medium;
@@ -80,10 +75,10 @@ namespace _3._8DigitalMedia
             LongSongLength.Content = SongLength.Long;
             ExtremeSongLength.Content = SongLength.Extreme;
 
-            
 
-            
-            
+
+
+
 
 
 
@@ -118,24 +113,24 @@ namespace _3._8DigitalMedia
                             genreKey = "Thrash";
                             suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                         else if (SongLengthInput == Long)
                         {
                             genreKey = "Power";
                             suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                     }
                     else if (TimeSigInput == Dynamic)
                     {
-                        if(SongLengthInput == MediumLength)
+                        if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Black";
                             suggestedBands = "Mayhem, Darkthrone, Venom, Paracoccidioidomicosisproctitissarcomucosis";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                     }
                 }
@@ -149,14 +144,14 @@ namespace _3._8DigitalMedia
                             genreKey = "Industrial";
                             suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                         else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Heavy";
                             suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                     }
                     else if (TimeSigInput == Dynamic)
@@ -166,14 +161,14 @@ namespace _3._8DigitalMedia
                             genreKey = "Prog";
                             suggestedBands = "Dream Theatre, Opeth, Gojira, Mastodon";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                         else if (SongLengthInput == Long)
                         {
                             genreKey = "Groove";
                             suggestedBands = "Pantera, Damageplan, HellYeah, Lamb of God";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                     }
                 }
@@ -181,24 +176,24 @@ namespace _3._8DigitalMedia
                 {
                     if (TimeSigInput == Static)
                     {
-                        
-                        if(SongLengthInput == MediumLength)
+
+                        if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Death";
                             suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                     }
                     else if (TimeSigInput == Dynamic)
                     {
-                        
+
                         if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Tech Death";
                             suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                     }
                 }
@@ -213,15 +208,15 @@ namespace _3._8DigitalMedia
                         {
                             genreKey = "Doom";
                             suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
-                            GenreDisplay(genreKey, genreDictionary,  suggestedBands);
-                            
+                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+
                         }
                         else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Death/Doom";
                             suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
-                            GenreDisplay(genreKey, genreDictionary,  suggestedBands);
-                            
+                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+
                         }
                     }
                     else if (TimeSigInput == Dynamic)
@@ -231,15 +226,15 @@ namespace _3._8DigitalMedia
                         {
                             genreKey = "Sludge";
                             suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
-                            GenreDisplay(genreKey, genreDictionary,  suggestedBands);
-                            
+                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
+
                         }
                         else if (SongLengthInput == MediumLength)
                         {
                             genreKey = "Djent";
                             suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                            
+
                         }
                     }
                 }
@@ -250,14 +245,14 @@ namespace _3._8DigitalMedia
                         genreKey = "Alt";
                         suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                        
+
                     }
                     else if (TimeSigInput == Dynamic)
                     {
                         genreKey = "Nu";
                         suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
                         GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                        
+
                     }
                 }
             }
@@ -268,9 +263,9 @@ namespace _3._8DigitalMedia
             {
                 GenreLabel.Content = "PLEASE SELECT SOME VALUES BEFORE PRESSING CALCULATE";
                 SuggestedBandsLabel.Content = "NO SUGGESTED BANDS FOR UNKNOWN GENRE";
-               
+
             }
-            
+
         }
         public void SuggestedBPMCheck()
         {
@@ -280,10 +275,10 @@ namespace _3._8DigitalMedia
             foreach (var gv in GroupedValues)
             {
                 var BPMlookup = gv.ToLookup(e => e.Value.bpm);
-                if(BPMInput == Slow)
+                if (BPMInput == Slow)
                 {
                     var selectedBPM = BPMlookup[BPM.Slow];
-                    foreach(var str in selectedBPM)
+                    foreach (var str in selectedBPM)
                     {
                         string selectedGenre = str.Key;
                         BPMValues.Add(selectedGenre);
@@ -291,7 +286,7 @@ namespace _3._8DigitalMedia
                         SuggestedByBPM.Text = combinedBPMValues;
                     }
                 }
-                else if(BPMInput == MediumBPMS)
+                else if (BPMInput == MediumBPMS)
                 {
                     var selectedBPM = BPMlookup[BPM.Medium];
                     foreach (var str in selectedBPM)
@@ -302,7 +297,7 @@ namespace _3._8DigitalMedia
                         SuggestedByBPM.Text = combinedBPMValues;
                     }
                 }
-                else if(BPMInput == Fast)
+                else if (BPMInput == Fast)
                 {
                     var selectedBPM = BPMlookup[BPM.Fast];
                     foreach (var str in selectedBPM)
@@ -313,7 +308,7 @@ namespace _3._8DigitalMedia
                         SuggestedByBPM.Text = combinedBPMValues;
                     }
                 }
-                else if(BPMInput == Insane)
+                else if (BPMInput == Insane)
                 {
                     var selectedBPM = BPMlookup[BPM.Insane];
                     foreach (var str in selectedBPM)
@@ -331,13 +326,13 @@ namespace _3._8DigitalMedia
             string TuningInput = Convert.ToString(TuningLabel.Tag);
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
             List<string> TuningValues = new List<string>();
-            foreach(var gv in GroupedValues)
+            foreach (var gv in GroupedValues)
             {
                 var Tuninglookup = gv.ToLookup(e => e.Value.tuning);
-                if(TuningInput == Standard)
+                if (TuningInput == Standard)
                 {
                     var selectedTuning = Tuninglookup[Tuning.Standard];
-                    foreach(var str in selectedTuning)
+                    foreach (var str in selectedTuning)
                     {
                         string selectedGenre = str.Key;
                         TuningValues.Add(selectedGenre);
@@ -345,7 +340,7 @@ namespace _3._8DigitalMedia
                         SuggestedByTuning.Text = combinedTuningValues;
                     }
                 }
-                else if(TuningInput == Low)
+                else if (TuningInput == Low)
                 {
                     var selectedTuning = Tuninglookup[Tuning.Low];
                     foreach (var str in selectedTuning)
@@ -363,13 +358,13 @@ namespace _3._8DigitalMedia
             string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
             List<string> TimeSigValues = new List<string>();
-            foreach(var gv in GroupedValues)
+            foreach (var gv in GroupedValues)
             {
                 var TimeSiglookup = gv.ToLookup(e => e.Value.timeSignature);
                 if (TimeSigInput == Static)
                 {
                     var selectedTimeSig = TimeSiglookup[TimeSignature.Static];
-                    foreach(var str in selectedTimeSig)
+                    foreach (var str in selectedTimeSig)
                     {
                         string selectedGenre = str.Key;
                         TimeSigValues.Add(selectedGenre);
@@ -395,13 +390,13 @@ namespace _3._8DigitalMedia
             string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
             List<string> SongLengthValues = new List<string>();
-            foreach(var gv in GroupedValues)
+            foreach (var gv in GroupedValues)
             {
                 var SongLengthlookup = gv.ToLookup(e => e.Value.songLength);
-                if(SongLengthInput == Short)
+                if (SongLengthInput == Short)
                 {
                     var selectedSongLength = SongLengthlookup[SongLength.Short];
-                    foreach(var str in selectedSongLength)
+                    foreach (var str in selectedSongLength)
                     {
                         string selectedGenre = str.Key;
                         SongLengthValues.Add(selectedGenre);
@@ -409,7 +404,7 @@ namespace _3._8DigitalMedia
                         SuggestedBySongLength.Text = combinedSongLengthValues;
                     }
                 }
-                else if(SongLengthInput == MediumLength)
+                else if (SongLengthInput == MediumLength)
                 {
                     var selectedSongLength = SongLengthlookup[SongLength.Medium];
                     foreach (var str in selectedSongLength)
@@ -420,7 +415,7 @@ namespace _3._8DigitalMedia
                         SuggestedBySongLength.Text = combinedSongLengthValues;
                     }
                 }
-                else if(SongLengthInput == Long)
+                else if (SongLengthInput == Long)
                 {
                     var selectedSongLength = SongLengthlookup[SongLength.Long];
                     foreach (var str in selectedSongLength)
@@ -431,7 +426,7 @@ namespace _3._8DigitalMedia
                         SuggestedBySongLength.Text = combinedSongLengthValues;
                     }
                 }
-                else if(SongLengthInput == Extreme)
+                else if (SongLengthInput == Extreme)
                 {
                     var selectedSongLength = SongLengthlookup[SongLength.Extreme];
                     foreach (var str in selectedSongLength)
@@ -455,7 +450,7 @@ namespace _3._8DigitalMedia
             SuggestedTimeSigCheck();
             SuggestedSongLengthCheck();
 
-            if (TuningInput == "" 
+            if (TuningInput == ""
                 && BPMInput == ""
                 && TimeSigInput == ""
                 && SongLengthInput == "")
@@ -470,10 +465,10 @@ namespace _3._8DigitalMedia
 
         public void GenreDisplay(string genreKey, Dictionary<string, Genre> genreDictionary, string suggestedBands)
         {
-            
+
             GenreLabel.Content = genreDictionary[genreKey].name;
             SuggestedBandsLabel.Content = suggestedBands;
-            
+
         }
         public enum SongLength
         {
@@ -521,7 +516,7 @@ namespace _3._8DigitalMedia
             }
         }
 
-        
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -556,6 +551,12 @@ namespace _3._8DigitalMedia
         {
             SpotifyWindow spotifyWindow = new SpotifyWindow();
             spotifyWindow.Show();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            ThemeSetter themeSetter = new ThemeSetter();
+            themeSetter.Show();
         }
     }
 }

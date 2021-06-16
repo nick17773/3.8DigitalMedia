@@ -1,16 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace _3._8DigitalMedia
 {
@@ -41,10 +30,11 @@ namespace _3._8DigitalMedia
         public DataGridWindow()
         {
             InitializeComponent();
-            GenreDataGrid.Items.Add(new DataItem { 
-                Column1 = genreDictionary["Heavy"].name , 
-                Column2 = genreDictionary["Heavy"].bpm.ToString(), 
-                Column3 = genreDictionary["Heavy"].tuning.ToString(), 
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["Heavy"].name,
+                Column2 = genreDictionary["Heavy"].bpm.ToString(),
+                Column3 = genreDictionary["Heavy"].tuning.ToString(),
                 Column4 = genreDictionary["Heavy"].timeSignature.ToString(),
                 Column5 = genreDictionary["Heavy"].songLength.ToString()
             });
@@ -225,6 +215,6 @@ namespace _3._8DigitalMedia
             summary.Show();
         }
 
-        
+
     }
 }

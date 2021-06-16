@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         FontSize="18"
         WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource MainBackgroundBrush1}"
         Title="DataGridWindow" Height="650" Width="1200">
     <Grid>
         <GroupBox Header="Genre Definitions" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Margin="10" FontSize="36" FontWeight="Bold" BorderThickness="5">

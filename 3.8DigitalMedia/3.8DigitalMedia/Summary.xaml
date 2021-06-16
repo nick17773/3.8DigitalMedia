@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
         FontSize="18"
+        Background="{DynamicResource MainBackgroundBrush1}"
         Title="Summary" Height="650" Width="1250">
     <Grid>
-        <TabControl>
+        <TabControl Background="{DynamicResource MainBackgroundBrush1}">
             <TabItem x:Name="HeavyInfo" Header="Heavy Metal">
                 <Grid>
 

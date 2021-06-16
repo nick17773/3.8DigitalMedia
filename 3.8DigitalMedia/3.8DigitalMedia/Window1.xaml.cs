@@ -1,17 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using System.Diagnostics;
 
 namespace _3._8DigitalMedia
 {
@@ -42,11 +31,11 @@ namespace _3._8DigitalMedia
                 { "Alt", new Genre("Alternative Metal", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium) },
                 { "Nu", new Genre("Nu Metal", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium) },
                 { "Djent", new Genre("Djent", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium) }
-                
+
             };
             SolidColorBrush BorderBrush = Brushes.Black;
             Thickness BorderThickness = new Thickness(2);
-            
+
             HeavyName.Content = genreDictionary["Heavy"].name;
             HeavyName.BorderBrush = BorderBrush;
             HeavyName.BorderThickness = BorderThickness;

@@ -6,14 +6,15 @@
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
         Title="StartupWindow" Width="800" Height="600" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid x:Name="MainGrid">
         <GroupBox Header="Welcome!" Margin="10">
-            <Grid Margin="10">
+            <Grid Margin="10" >
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Button Content="Button" FontSize="30" FontWeight="Normal" Click="Button_Click" Grid.Row="1" Margin="280,150,280,10"/>
+
             </Grid>
         </GroupBox>
 
