@@ -42,7 +42,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
-                    <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}" Template="{DynamicResource ComboBoxItemControlTemplate1}"/>
                     <ComboBoxItem x:Name="MediumBPM" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="FastBPM" Content="Fast" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="InsaneBPM" Content="Insane" Foreground="{DynamicResource MainTextColour}"/>
@@ -61,7 +61,7 @@
 
                 </ComboBox>
                 <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal">
-                    <ComboBoxItem x:Name="ShortSongLength" Content="Short" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="ShortSongLength" Content="Short" Foreground="{DynamicResource MainTextColour}" Template="{DynamicResource ComboBoxItemControlTemplate1}"/>
                     <ComboBoxItem x:Name="MediumSongLength" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="LongSongLength" Content="Long" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="ExtremeSongLength" Content="Extreme" Foreground="{DynamicResource MainTextColour}"/>
