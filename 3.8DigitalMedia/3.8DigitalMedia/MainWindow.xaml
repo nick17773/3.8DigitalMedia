@@ -1,16 +1,21 @@
-﻿<Window x:Class="_3._8DigitalMedia.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" x:Class="_3._8DigitalMedia.MainWindow"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         FontSize="16"
-        Background="{DynamicResource MainBackgroundBrush1}"
+        Background="{DynamicResource ResourceKey=MainBackgroundBrush1}"
         Foreground="{DynamicResource MainTextColour}"
         WindowState="Maximized"
         Title="MainWindow" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
-    
+
+    <Window.Resources>
+       
+    </Window.Resources>
+
     <Grid x:Name="MainGrid" Margin="10" UseLayoutRounding="True">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -36,30 +41,30 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal" Background="{DynamicResource MainButtonColour}"  >
-                    <ComboBoxItem x:Name="SlowBPM" Content=""/>
-                    <ComboBoxItem x:Name="MediumBPM" Content=""/>
-                    <ComboBoxItem x:Name="FastBPM" Content=""/>
-                    <ComboBoxItem x:Name="InsaneBPM" Content=""/>
+                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
+                    <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="MediumBPM" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="FastBPM" Content="Fast" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="InsaneBPM" Content="Insane" Foreground="{DynamicResource MainTextColour}"/>
 
                 </ComboBox>
-                <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" Background="{DynamicResource MainButtonColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal" >
-                    <ComboBoxItem x:Name="StandardTuning" Content=""/>
-                    <ComboBoxItem x:Name="LowTuning" Content=""/>
-                    <ComboBoxItem x:Name="SpecialTuning" Content=""/>
+                <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
+                    <ComboBoxItem x:Name="StandardTuning" Content="Standard" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="LowTuning" Content="Low" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="SpecialTuning" Content="Special" Foreground="{DynamicResource MainTextColour}"/>
 
                 </ComboBox>
-                <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" Background="{DynamicResource MainButtonColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal" >
-                    <ComboBoxItem x:Name="StaticTimeSig" Content=""/>
-                    <ComboBoxItem x:Name="DynamicTimeSig" Content=""/>
-                    <ComboBoxItem x:Name="WeirdTimeSig" Content=""/>
+                <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal">
+                    <ComboBoxItem x:Name="StaticTimeSig" Content="Static" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="DynamicTimeSig" Content="Dynamic" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="WeirdTimeSig" Content="Weird" Foreground="{DynamicResource MainTextColour}"/>
 
                 </ComboBox>
-                <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" Background="{DynamicResource MainButtonColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal" >
-                    <ComboBoxItem x:Name="ShortSongLength" Content=""/>
-                    <ComboBoxItem x:Name="MediumSongLength" Content=""/>
-                    <ComboBoxItem x:Name="LongSongLength" Content=""/>
-                    <ComboBoxItem x:Name="ExtremeSongLength" Content=""/>
+                <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal">
+                    <ComboBoxItem x:Name="ShortSongLength" Content="Short" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="MediumSongLength" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="LongSongLength" Content="Long" Foreground="{DynamicResource MainTextColour}"/>
+                    <ComboBoxItem x:Name="ExtremeSongLength" Content="Extreme" Foreground="{DynamicResource MainTextColour}"/>
 
 
                 </ComboBox>
@@ -83,8 +88,8 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" FontSize="30"/>
-                <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" FontSize="30" Grid.Row="1"/>
+                <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" FontSize="30" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" FontSize="30" Grid.Row="1" BorderBrush="{DynamicResource MainBorderColour}"/>
             </Grid>
         </Border>
         <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" FontSize="36" FontWeight="Bold" Margin="10">
@@ -131,10 +136,10 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button Content="Help" Margin="10" Click="Button_Click_3" FontSize="30"/>
-                <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" FontSize="30" Grid.Column="1"/>
-                <Button Content="Close" Margin="10" Click="Button_Click_2" FontSize="30" Grid.Column="2"/>
-                <Button Content="Button" Margin="10" Grid.Row="1" Click="Button_Click_5"/>
+                <Button Content="Help" Margin="10" Click="Button_Click_3" FontSize="30" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" FontSize="30" Grid.Column="1" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Close" Margin="10" Click="Button_Click_2" FontSize="30" Grid.Column="2" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Button" Margin="10" Grid.Row="1" Click="Button_Click_5" BorderBrush="{DynamicResource MainBorderColour}"/>
             </Grid>
         </Border>
     </Grid>
