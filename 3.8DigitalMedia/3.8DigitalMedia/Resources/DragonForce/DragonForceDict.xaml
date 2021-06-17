@@ -1,12 +1,12 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
 
-    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#cdcd22"/>
-    <SolidColorBrush x:Key="MainTextColour" Color="White"/>
-    <SolidColorBrush x:Key="MainBorderColour" Color="White"/>
-    <SolidColorBrush x:Key="MainButtonColour" Color="#FFE5E5E5"/>
-    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#FFBBBBBB"/>
-    <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="AntiqueWhite"/>
+    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#0d0337"/>
+    <SolidColorBrush x:Key="MainTextColour" Color="#f08a08"/>
+    <SolidColorBrush x:Key="MainBorderColour" Color="#ce02a1"/>
+    <SolidColorBrush x:Key="MainButtonColour" Color="#0a6ec8"/>
+    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#000752"/>
+    <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#6520b1"/>
 
     <BorderGapMaskConverter x:Key="BorderGapMaskConverter"/>
 

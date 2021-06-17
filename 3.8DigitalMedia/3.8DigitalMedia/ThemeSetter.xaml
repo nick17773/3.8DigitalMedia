@@ -19,8 +19,10 @@
     <Grid x:Name="MainGrid">
         <ComboBox  x:Name="ColourSelector" Background="{DynamicResource MainButtonColour}" HorizontalAlignment="Left" Margin="460,218,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
             <ComboBoxItem x:Name="Default" Content="Default Theme" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="Yellow" Content="Yellow" HorizontalAlignment="Left" Width="118"/>
-            <ComboBoxItem x:Name="Brown" Content="Slayer" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Dragonforce" Content="DragonForce" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Slayer" Content="Slayer" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Metallica" Content="Metallica" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="SOAD" Content="System Of a Down" HorizontalAlignment="Left" Width="118"/>
             <!--<ComboBox.Resources>
                 <SolidColorBrush x:Key="{x:Static SystemColors.WindowsBrushKey}" Color="{DynamicResource MainButtonColour}"/>
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{DynamicResource MainButtonColour}" />

@@ -24,15 +24,23 @@ namespace _3._8DigitalMedia
 
 
             
-            if (ColourSelector.SelectedItem == Yellow)
+            if (ColourSelector.SelectedItem == Dragonforce)
             {
                 
-                uriSkin = @"Resources\Yellow\Yellow.xaml";
+                uriSkin = @"Resources\DragonForce\DragonForceDict.xaml";
             }
-            else if(ColourSelector.SelectedItem == Brown)
+            else if(ColourSelector.SelectedItem == Slayer)
             {
                 
                 uriSkin = @"Resources\Slayer\SlayerDict.xaml";
+            }
+            else if (ColourSelector.SelectedItem == Metallica)
+            {
+                uriSkin = @"Resources\Metallica\MetallicaDict.xaml";
+            }
+            else if (ColourSelector.SelectedItem == SOAD)
+            {
+                uriSkin = @"Resources\SOAD\SOADDict.xaml";
             }
             else if (ColourSelector.SelectedItem == Default)
             {

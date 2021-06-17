@@ -166,7 +166,7 @@ namespace _3._8DigitalMedia
                         else if (SongLengthInput == Long)
                         {
                             genreKey = "Groove";
-                            suggestedBands = "Pantera, Damageplan, HellYeah, Lamb of God";
+                            suggestedBands = "Pantera, Damageplan, Alien Weaponry, Lamb of God";
                             GenreDisplay(genreKey, genreDictionary, suggestedBands);
 
                         }
