@@ -42,6 +42,10 @@ namespace _3._8DigitalMedia
             {
                 uriSkin = @"Resources\SOAD\SOADDict.xaml";
             }
+            else if (ColourSelector.SelectedItem == Pantera)
+            {
+                uriSkin = @"Resources\Pantera\PanteraDict.xaml";
+            }
             else if (ColourSelector.SelectedItem == Default)
             {
                 uriSkin = @"Resources\Default\DefaultTheme.xaml";

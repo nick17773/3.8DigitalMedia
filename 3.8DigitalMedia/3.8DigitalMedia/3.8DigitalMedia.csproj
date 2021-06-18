@@ -147,6 +147,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\Pantera\PanteraDict.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\Slayer\SlayerDict.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
