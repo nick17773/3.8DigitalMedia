@@ -393,7 +393,7 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
 
 
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
