@@ -210,6 +210,8 @@
     <Resource Include="Fonts\DragonForcE.ttf" />
     <Resource Include="Fonts\Pastor of Muppets.TTF" />
     <Resource Include="Fonts\shredded.ttf" />
+    <Resource Include="Fonts\Slaytanic.ttf" />
+    <Resource Include="Fonts\BentonSans ExtraCondensed Bold.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
