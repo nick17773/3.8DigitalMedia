@@ -209,6 +209,7 @@
     <None Include="3.8DigitalMedia_TemporaryKey.pfx" />
     <Resource Include="Fonts\DragonForcE.ttf" />
     <Resource Include="Fonts\Pastor of Muppets.TTF" />
+    <Resource Include="Fonts\shredded.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
