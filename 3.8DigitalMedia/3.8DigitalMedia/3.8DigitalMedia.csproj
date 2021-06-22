@@ -207,12 +207,13 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="3.8DigitalMedia_TemporaryKey.pfx" />
+    <Resource Include="Fonts\DragonForcE.ttf" />
+    <Resource Include="Fonts\Pastor of Muppets.TTF" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Resource Include="Resources\DragonForce\DragonForcE.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
