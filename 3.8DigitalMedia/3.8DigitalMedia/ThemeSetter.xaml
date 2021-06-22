@@ -24,6 +24,7 @@
             <ComboBoxItem x:Name="Metallica" Content="Metallica" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="SOAD" Content="System Of a Down" HorizontalAlignment="Left" Width="118"/>
             <ComboBoxItem x:Name="Pantera" Content="Pantera" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem x:Name="Tool" Content="Tool" HorizontalAlignment="Left" Width="118"/>
             <!--<ComboBox.Resources>
                 <SolidColorBrush x:Key="{x:Static SystemColors.WindowsBrushKey}" Color="{DynamicResource MainButtonColour}"/>
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{DynamicResource MainButtonColour}" />

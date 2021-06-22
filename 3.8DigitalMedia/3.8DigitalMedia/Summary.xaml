@@ -11,7 +11,7 @@
         Title="Summary" Height="650" Width="1250">
     <Grid>
         <TabControl Background="{DynamicResource MainBackgroundBrush1}">
-            <TabItem x:Name="HeavyInfo" Header="Heavy Metal" Style="{DynamicResource TabItemStyle1}">
+            <TabItem x:Name="HeavyInfo" Header="Heavy Metal">
                 <Grid>
 
                     <GroupBox Header="Heavy Metal" Margin="10" FontSize="36" FontWeight="Bold" UseLayoutRounding="False" Padding="5">

@@ -18,6 +18,11 @@
         <!--<Setter Property="CornerRadius" Value="5"/>-->
     </Style>
 
+    <Style TargetType="Border" x:Key="MoreOptionsBorder">
+        <Setter Property="BorderBrush" Value="{DynamicResource MainBorderColour}"/>
+        <!--<Setter Property="CornerRadius" Value="5"/>-->
+    </Style>
+    
     <Style TargetType="DataGrid">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>

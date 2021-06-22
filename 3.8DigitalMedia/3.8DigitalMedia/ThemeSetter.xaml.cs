@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows;
-using System.Diagnostics;
 
 namespace _3._8DigitalMedia
 {
@@ -9,29 +8,29 @@ namespace _3._8DigitalMedia
     /// </summary>
     public partial class ThemeSetter : Window
     {
-        
+
         string uriSkin;
         public ThemeSetter()
         {
             InitializeComponent();
         }
 
-        
+
 
         private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             var rd = new ResourceDictionary();
 
 
-            
+
             if (ColourSelector.SelectedItem == Dragonforce)
             {
-                
+
                 uriSkin = @"Resources\DragonForce\DragonForceDict.xaml";
             }
-            else if(ColourSelector.SelectedItem == Slayer)
+            else if (ColourSelector.SelectedItem == Slayer)
             {
-                
+
                 uriSkin = @"Resources\Slayer\SlayerDict.xaml";
             }
             else if (ColourSelector.SelectedItem == Metallica)
@@ -45,6 +44,10 @@ namespace _3._8DigitalMedia
             else if (ColourSelector.SelectedItem == Pantera)
             {
                 uriSkin = @"Resources\Pantera\PanteraDict.xaml";
+            }
+            else if (ColourSelector.SelectedItem == Tool)
+            {
+                uriSkin = @"Resources\Tool\ToolDict.xaml";
             }
             else if (ColourSelector.SelectedItem == Default)
             {
