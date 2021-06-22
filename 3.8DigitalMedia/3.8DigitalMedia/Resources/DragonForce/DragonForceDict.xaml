@@ -8,9 +8,7 @@
     <SolidColorBrush x:Key="MainButtonHoverColour" Color="#000752"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#6520b1"/>
 
-    <Style TargetType="Window">
-        <Setter Property="FontFamily" Value="DragonForcE"/>
-    </Style>
+    
 
     <BorderGapMaskConverter x:Key="BorderGapMaskConverter"/>
 
