@@ -212,6 +212,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Resource Include="Resources\DragonForce\DragonForcE.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
