@@ -7,10 +7,13 @@
     <SolidColorBrush x:Key="MainButtonHoverColour" Color="#c0acd0"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#2a897c"/>
 
+    <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#SystemaEncephale</FontFamily>
+
     <BorderGapMaskConverter x:Key="BorderGapMaskConverter"/>
 
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
     </Style>
 
     <Style TargetType="Border">
@@ -27,29 +30,35 @@
         <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
         <Setter Property="Background" Value="{DynamicResource MainBackgroundBrush1}"/>
         <Setter Property="BorderBrush" Value="{DynamicResource MainBorderColour}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
     </Style>
 
     <Style TargetType="DataGridRow">
         <Setter Property="Background" Value="{DynamicResource MainBackgroundBrush1}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
     </Style>
 
     <Style TargetType="DataGridRowHeader">
         <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
     </Style>
 
     <Style TargetType="DataGridColumnHeader">
         <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
     </Style>
 
     <Style TargetType="DataGridCell">
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
     </Style>
 
     <Style TargetType="Expander">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
     </Style>
 
     <Style TargetType="Button">
@@ -57,6 +66,7 @@
         <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="5"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -74,7 +84,7 @@
     </Style>
 
     <Style TargetType="TabItem">
-
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
@@ -274,7 +284,7 @@
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainButtonColour}"/>
-
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBox}">
@@ -446,6 +456,7 @@
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBoxItem}">
@@ -521,6 +532,7 @@
         <Setter Property="FontSize" Value="36"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
+        <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GroupBox}">
