@@ -9,6 +9,10 @@
 
     <BorderGapMaskConverter x:Key="BorderGapMaskConverter"/>
 
+    <Style TargetType="Window">
+        <Setter Property="FontSize" Value="24"/>
+    </Style>
+    
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
     </Style>

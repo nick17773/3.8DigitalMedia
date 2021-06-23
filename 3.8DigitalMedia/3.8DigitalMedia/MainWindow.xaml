@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" x:Class="_3._8DigitalMedia.MainWindow"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        FontSize="16"
+        FontSize="20"
         Background="{DynamicResource ResourceKey=MainBackgroundBrush1}"
         Foreground="{DynamicResource MainTextColour}"
         WindowState="Maximized"
@@ -42,7 +42,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
-                    <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}" Template="{DynamicResource ComboBoxItemControlTemplate1}"/>
+                    <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="MediumBPM" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="FastBPM" Content="Fast" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="InsaneBPM" Content="Insane" Foreground="{DynamicResource MainTextColour}"/>
@@ -61,17 +61,17 @@
 
                 </ComboBox>
                 <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal">
-                    <ComboBoxItem x:Name="ShortSongLength" Content="Short" Foreground="{DynamicResource MainTextColour}" Template="{DynamicResource ComboBoxItemControlTemplate1}"/>
+                    <ComboBoxItem x:Name="ShortSongLength" Content="Short" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="MediumSongLength" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="LongSongLength" Content="Long" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="ExtremeSongLength" Content="Extreme" Foreground="{DynamicResource MainTextColour}"/>
 
 
                 </ComboBox>
-                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10,20" FontWeight="Normal"/>
-                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="1" FontWeight="Normal"/>
-                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="2" FontWeight="Normal"/>
-                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="3" FontWeight="Normal"/>
+                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="10,20" FontWeight="Normal"/>
+                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Grid.Row="1" FontWeight="Normal"/>
+                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Grid.Row="2" FontWeight="Normal"/>
+                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Grid.Row="3" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
         <Label x:Name="BPMLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
@@ -88,8 +88,8 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" FontSize="30" BorderBrush="{DynamicResource MainBorderColour}"/>
-                <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" FontSize="30" Grid.Row="1" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" Grid.Row="1" BorderBrush="{DynamicResource MainBorderColour}"/>
             </Grid>
         </Border>
         <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" FontSize="36" FontWeight="Bold" Margin="10">
@@ -99,8 +99,8 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Margin="10" Grid.Row="1" FontWeight="Normal"/>
-                <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" Margin="10" FontWeight="Normal"/>
+                <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="10" Grid.Row="1" FontWeight="Normal"/>
+                <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="10" FontWeight="Normal"/>
                 <Expander Header="More Suggestions" Margin="10,10,10,-210" Grid.Row="2">
                     <Border Margin="10,10,10,0" Background="{DynamicResource MainBackgroundBrush1}" Style="{DynamicResource MoreOptionsBorder}" BorderThickness="5">
                         <Grid Background="{DynamicResource MainBackgroundBrush1}" Height="307">
@@ -138,9 +138,9 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button Content="Help" Margin="10" Click="Button_Click_3" FontSize="30" BorderBrush="{DynamicResource MainBorderColour}"/>
-                <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" FontSize="30" Grid.Column="1" BorderBrush="{DynamicResource MainBorderColour}"/>
-                <Button Content="Close" Margin="10" Click="Button_Click_2" FontSize="30" Grid.Column="2" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Help" Margin="10" Click="Button_Click_3" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" Grid.Column="1" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Close" Margin="10" Click="Button_Click_2" Grid.Column="2" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Button" Margin="10" Grid.Row="1" Click="Button_Click_5" BorderBrush="{DynamicResource MainBorderColour}"/>
             </Grid>
         </Border>

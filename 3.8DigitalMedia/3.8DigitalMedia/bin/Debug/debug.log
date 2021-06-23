@@ -232,3 +232,21 @@ C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [0622/151744.164:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
 C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
+[0623/150141.593:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.6452ff3e.js (1)
+[0623/150142.607:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.6452ff3e.js (1)
+[0623/150143.149:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.cda4b515.js (1)
+[0623/150143.991:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150144.010:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150144.011:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150144.073:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150144.823:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0623/150204.018:INFO:CONSOLE(1)] "SharedArrayBuffer will require cross-origin isolation as of M91, around May 2021. See https://developer.chrome.com/blog/enabling-shared-array-buffer/ for more details.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.6452ff3e.js (1)
+[0623/150204.063:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.6452ff3e.js (1)
+[0623/150204.362:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.cda4b515.js (1)
+[0623/150204.881:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150204.895:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150204.898:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150204.932:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0623/150336.371:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled

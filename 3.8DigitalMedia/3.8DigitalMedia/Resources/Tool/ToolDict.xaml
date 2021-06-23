@@ -7,13 +7,18 @@
     <SolidColorBrush x:Key="MainButtonHoverColour" Color="#c0acd0"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#2a897c"/>
 
-    <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#SystemaEncephale</FontFamily>
+    <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#Systema Encéphale</FontFamily>
 
+    <Style TargetType="Window">
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    
     <BorderGapMaskConverter x:Key="BorderGapMaskConverter"/>
 
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="24"/>
     </Style>
 
     <Style TargetType="Border">
@@ -67,6 +72,7 @@
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="5"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">

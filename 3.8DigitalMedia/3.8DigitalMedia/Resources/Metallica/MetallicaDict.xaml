@@ -11,6 +11,10 @@
 
     <BorderGapMaskConverter x:Key="BorderGapMaskConverter"/>
 
+    <Style TargetType="Window">
+        <Setter Property="FontSize" Value="20"/>
+    </Style>
+    
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
