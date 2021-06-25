@@ -49,6 +49,10 @@ namespace _3._8DigitalMedia
             {
                 uriSkin = @"Resources\Tool\ToolDict.xaml";
             }
+            else if (ColourSelector.SelectedItem == Megadeth)
+            {
+                uriSkin = @"Resources\Megadeth\MegadethDict.xaml";
+            }
             else if (ColourSelector.SelectedItem == Default)
             {
                 uriSkin = @"Resources\Default\DefaultTheme.xaml";

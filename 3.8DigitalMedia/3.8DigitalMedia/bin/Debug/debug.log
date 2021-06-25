@@ -250,3 +250,186 @@ C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [0623/150204.898:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
 [0623/150204.932:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
 [0623/150336.371:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
+[0625/101802.295:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/101802.641:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/101803.513:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101803.529:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101803.577:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101803.579:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101804.318:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0625/101952.766:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/101953.087:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/101953.819:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101953.820:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101953.831:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101953.863:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/101954.690:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0625/102024.916:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102025.139:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102311.582:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102311.585:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102311.851:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102311.916:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102311.917:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102312.213:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102312.622:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.665:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.685:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.707:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.725:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.756:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.770:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.793:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.807:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.842:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.848:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102312.887:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102313.606:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0625/102314.879:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102314.918:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102315.965:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102316.486:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102316.725:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102316.765:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102316.784:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102316.825:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102317.008:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102317.575:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102317.597:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102317.613:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102317.925:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102317.943:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102317.967:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102317.986:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102318.794:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102319.224:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102319.649:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102319.669:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102319.711:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102319.725:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102319.967:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102320.267:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102320.615:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102320.616:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102320.658:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102320.658:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102322.399:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102322.690:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102323.020:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102323.027:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102323.064:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102323.071:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102355.993:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/102356.315:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/102356.616:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102356.628:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102356.665:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102356.682:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102357.125:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102357.146:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/102506.280:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
+[0625/104425.411:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104426.528:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104426.535:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104426.695:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104427.429:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104427.770:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104428.321:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104428.338:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104428.340:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104428.382:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104428.404:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104428.676:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104429.246:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0625/104429.309:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104429.576:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104430.372:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104701.916:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104702.469:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104702.931:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104703.213:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104703.250:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104703.466:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104703.509:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104703.559:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104703.836:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104703.856:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104703.861:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104703.897:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104705.186:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0625/104715.742:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104716.119:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104716.735:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104716.737:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104716.745:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104716.812:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104717.261:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104717.335:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104724.428:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104724.809:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104725.233:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104725.244:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104725.250:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104725.280:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104832.313:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104832.762:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104833.269:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104833.302:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104833.315:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104833.325:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104833.820:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104834.223:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104834.778:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104834.791:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104834.799:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104834.853:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104835.167:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104835.619:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104835.725:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104836.086:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104836.124:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104836.135:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104836.152:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104836.169:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104836.877:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104836.928:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104836.932:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104836.971:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104837.158:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104837.178:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104838.202:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/104838.768:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/104839.251:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104839.286:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104839.295:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104839.309:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104840.516:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104840.778:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104840.785:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104841.015:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/104857.096:ERROR:gpu_init.cc(426)] Passthrough is not supported, GL is disabled
+[0625/110123.971:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/110124.192:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0625/110124.508:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/110124.685:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.b4133fc1.js (1)
+[0625/110125.514:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110125.522:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110125.541:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110125.568:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110125.655:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110125.720:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110125.840:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110125.849:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0625/110126.445:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+

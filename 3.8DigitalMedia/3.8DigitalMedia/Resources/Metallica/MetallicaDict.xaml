@@ -14,20 +14,22 @@
     <Style TargetType="Window">
         <Setter Property="FontSize" Value="20"/>
     </Style>
-    
+
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="30"/>
     </Style>
 
     <Style TargetType="Border">
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
+
         <!--<Setter Property="CornerRadius" Value="5"/>-->
     </Style>
 
     <Style TargetType="Border" x:Key="MoreOptionsBorder">
         <Setter Property="BorderBrush" Value="{DynamicResource MainBorderColour}"/>
-        <!--<Setter Property="CornerRadius" Value="5"/>-->
+        <Setter Property="CornerRadius" Value="5"/>
     </Style>
 
     <Style TargetType="DataGrid">
@@ -35,16 +37,19 @@
         <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="DataGridRow">
         <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="DataGridRowHeader">
         <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="DataGridColumnHeader">
@@ -52,17 +57,20 @@
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="DataGridCell">
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="Expander">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="Button">
@@ -71,6 +79,7 @@
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="5"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="30"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">
@@ -92,6 +101,7 @@
         <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBox}">
@@ -264,6 +274,7 @@
         <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+        <Setter Property="FontSize" Value="20"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBoxItem}">
@@ -382,7 +393,7 @@
 
     </Style>
     <Style TargetType="TabItem">
-
+        <Setter Property="FontSize" Value="20"/>
         <Setter Property="Control.Template">
             <Setter.Value>
                 <ControlTemplate>
@@ -390,15 +401,15 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-
-
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
+
+
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="Margin" Value="0"/>
-        <Setter Property="Padding" Value="6,2,6,2"/>
+        <Setter Property="Padding" Value="10"/>
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="VerticalContentAlignment" Value="Stretch"/>
         <Setter Property="Template">

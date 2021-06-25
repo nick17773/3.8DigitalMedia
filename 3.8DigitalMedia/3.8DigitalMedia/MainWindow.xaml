@@ -13,7 +13,7 @@
         Title="MainWindow" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
 
     <Window.Resources>
-       
+
     </Window.Resources>
 
     <Grid x:Name="MainGrid" Margin="10" UseLayoutRounding="True">
@@ -68,10 +68,10 @@
 
 
                 </ComboBox>
-                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="10,20" FontWeight="Normal"/>
-                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Grid.Row="1" FontWeight="Normal"/>
-                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Grid.Row="2" FontWeight="Normal"/>
-                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Grid.Row="3" FontWeight="Normal"/>
+                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,20" FontWeight="Normal" FontSize="30"/>
+                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="1" FontWeight="Normal"/>
+                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="2" FontWeight="Normal"/>
+                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="3" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
         <Label x:Name="BPMLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
@@ -99,8 +99,8 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="10" Grid.Row="1" FontWeight="Normal"/>
-                <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Margin="10" FontWeight="Normal"/>
+                <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" Grid.Row="1" FontWeight="Normal"/>
+                <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" FontWeight="Normal"/>
                 <Expander Header="More Suggestions" Margin="10,10,10,-210" Grid.Row="2">
                     <Border Margin="10,10,10,0" Background="{DynamicResource MainBackgroundBrush1}" Style="{DynamicResource MoreOptionsBorder}" BorderThickness="5">
                         <Grid Background="{DynamicResource MainBackgroundBrush1}" Height="307">
