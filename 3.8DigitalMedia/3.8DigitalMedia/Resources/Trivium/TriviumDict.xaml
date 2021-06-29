@@ -23,7 +23,7 @@
     <Style TargetType="Label" x:Key="DefinitionsLabels">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
-        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="Border">

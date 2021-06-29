@@ -68,10 +68,10 @@
 
 
                 </ComboBox>
-                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,20" FontWeight="Normal"/>
-                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Grid.Row="1" FontWeight="Normal"/>
-                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Grid.Row="2" FontWeight="Normal"/>
-                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Grid.Row="3" FontWeight="Normal"/>
+                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Margin="10,20" FontWeight="Normal"/>
+                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="1" FontWeight="Normal"/>
+                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="2" FontWeight="Normal"/>
+                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="3" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
         <Label x:Name="BPMLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>

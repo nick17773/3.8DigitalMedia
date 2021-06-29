@@ -18,6 +18,11 @@
         <Setter Property="FontSize" Value="24"/>
     </Style>
 
+    <Style TargetType="Label" x:Key="DefinitionsLabels">
+        <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
+        <Setter Property="FontSize" Value="24"/>
+    </Style>
+
     <Style TargetType="Border">
         <Setter Property="BorderBrush" Value="{DynamicResource MainBorderColour}"/>
         <!--<Setter Property="CornerRadius" Value="5"/>-->

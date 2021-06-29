@@ -20,7 +20,7 @@
         <Setter Property="FontSize" Value="30"/>
     </Style>
 
-    <Style TargetType="Label" x:Key="DefinitionsLabel">
+    <Style TargetType="Label" x:Key="DefinitionsLabels">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="FontSize" Value="30"/>
