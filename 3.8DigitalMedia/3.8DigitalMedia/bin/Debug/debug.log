@@ -433,3 +433,21 @@ C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [0625/110126.445:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
 C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
+[0629/132254.619:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0629/132255.355:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.278eac2f.js (1)
+[0629/132256.778:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132256.797:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132256.802:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132256.852:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132258.327:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[0629/132501.160:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0629/132502.101:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.278eac2f.js (1)
+[0629/132503.250:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132503.262:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132503.278:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132503.456:ERROR:ssl_client_socket_impl.cc(947)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0629/132504.981:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+

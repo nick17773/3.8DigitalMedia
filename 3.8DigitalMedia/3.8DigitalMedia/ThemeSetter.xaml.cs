@@ -53,6 +53,10 @@ namespace _3._8DigitalMedia
             {
                 uriSkin = @"Resources\Megadeth\MegadethDict.xaml";
             }
+            else if (ColourSelector.SelectedItem == Trivium)
+            {
+                uriSkin = @"Resources\Trivium\TriviumDict.xaml";
+            }
             else if (ColourSelector.SelectedItem == Default)
             {
                 uriSkin = @"Resources\Default\DefaultTheme.xaml";

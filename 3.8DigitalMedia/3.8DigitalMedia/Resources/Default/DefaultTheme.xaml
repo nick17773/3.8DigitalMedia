@@ -15,6 +15,7 @@
     
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
+        <Setter Property="FontSize" Value="24"/>
     </Style>
 
     <Style TargetType="Border">

@@ -41,7 +41,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
+                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="MediumBPM" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="FastBPM" Content="Fast" Foreground="{DynamicResource MainTextColour}"/>
@@ -68,10 +68,10 @@
 
 
                 </ComboBox>
-                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,20" FontWeight="Normal" FontSize="30"/>
-                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="1" FontWeight="Normal"/>
-                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="2" FontWeight="Normal"/>
-                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Grid.Row="3" FontWeight="Normal"/>
+                <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,20" FontWeight="Normal"/>
+                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Grid.Row="1" FontWeight="Normal"/>
+                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Grid.Row="2" FontWeight="Normal"/>
+                <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Grid.Row="3" FontWeight="Normal"/>
             </Grid>
         </GroupBox>
         <Label x:Name="BPMLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
@@ -114,11 +114,11 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <Label x:Name="SuggestedBPMLabel" Content="Suggested Genres By BPM" Margin="10" FontWeight="Normal" FontSize="24"/>
-                            <Label x:Name="SuggestedTuningLabel" Content="Suggested Genres By Tuning" Margin="10" FontWeight="Normal" Grid.Row="1" FontSize="24"/>
-                            <Label x:Name="SuggestedTimeSigLabel" Content="Suggested Genres By Time Signature" Margin="10" FontWeight="Normal" Grid.Row="2" FontSize="24"/>
+                            <Label x:Name="SuggestedBPMLabel" Content="Suggested Genres By BPM" Margin="10" FontWeight="Normal"/>
+                            <Label x:Name="SuggestedTuningLabel" Content="Suggested Genres By Tuning" Margin="10" FontWeight="Normal" Grid.Row="1"/>
+                            <Label x:Name="SuggestedTimeSigLabel" Content="Suggested Genres By Time Signature" Margin="10" FontWeight="Normal" Grid.Row="2"/>
                             <TextBlock x:Name="SuggestedByBPM" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Column="1"/>
-                            <Label x:Name="SuggestedSongLengthLabel" Content="Suggested Genres By Song Length" Margin="10" FontWeight="Normal" Grid.Row="3" FontSize="24"/>
+                            <Label x:Name="SuggestedSongLengthLabel" Content="Suggested Genres By Song Length" Margin="10" FontWeight="Normal" Grid.Row="3"/>
                             <TextBlock x:Name="SuggestedByTuning" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="1" Grid.Column="1"/>
                             <TextBlock x:Name="SuggestedByTimeSig" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="2" Grid.Column="1"/>
                             <TextBlock x:Name="SuggestedBySongLength" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="3" Grid.Column="1"/>

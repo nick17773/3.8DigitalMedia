@@ -143,6 +143,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\Trivium\TriviumDict.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\Megadeth\MegadethDict.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -218,6 +222,7 @@
     <Resource Include="Fonts\BentonSans ExtraCondensed Bold.otf" />
     <Resource Include="Fonts\SystemaEncephale.ttf" />
     <Resource Include="Fonts\Megadeth.ttf" />
+    <Resource Include="Fonts\Trivial-Regular.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
