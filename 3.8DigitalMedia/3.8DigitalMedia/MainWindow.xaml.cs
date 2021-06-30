@@ -1,5 +1,4 @@
-﻿using FirebaseAdmin;
-using Google.Apis.Auth.OAuth2;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,10 +56,9 @@ namespace _3._8DigitalMedia
 
             InitializeComponent();
 
-            FirebaseApp.Create(new AppOptions()
-            {
-                Credential = GoogleCredential.FromFile("C:/Users/n.a.russell/Downloads/service-account-file.json"),
-            });
+            
+
+
             
 
 
