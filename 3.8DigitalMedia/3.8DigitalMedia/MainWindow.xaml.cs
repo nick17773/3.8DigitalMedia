@@ -59,9 +59,9 @@ namespace _3._8DigitalMedia
 
             FirebaseApp.Create(new AppOptions()
             {
-                Credential = GoogleCredential.GetApplicationDefault(),
+                Credential = GoogleCredential.FromFile("C:/Users/n.a.russell/Downloads/service-account-file.json"),
             });
-
+            
 
 
             SlowBPM.Content = BPM.Slow;
