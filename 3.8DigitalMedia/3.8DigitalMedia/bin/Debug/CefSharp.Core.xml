@@ -777,10 +777,10 @@
             using the "disable-pack-loading" command- line switch.
             </summary>
         </member>
-        <member name="P:CefSharp.CefSettingsBase.ProductVersion">
+        <member name="P:CefSharp.CefSettingsBase.UserAgentProduct">
             <summary>
             Value that will be inserted as the product portion of the default User-Agent string. If empty the Chromium product version
-            will be used. If UserAgent is specified this value will be ignored. Also configurable using the "product-version" command-
+            will be used. If UserAgent is specified this value will be ignored. Also configurable using the "user-agent-product" command-
             line switch.
             </summary>
         </member>
@@ -908,6 +908,245 @@
             Create a new instance of <see cref="T:CefSharp.IDragData"/>
             </summary>
             <returns>DragData</returns>
+        </member>
+        <member name="T:CefSharp.Fluent.OnBeforeDownloadDelegate">
+            <summary>
+            Called before a download begins.
+            </summary>
+            <param name="chromiumWebBrowser">the ChromiumWebBrowser control</param>
+            <param name="browser">The browser instance</param>
+            <param name="downloadItem">Represents the file being downloaded.</param>
+            <param name="callback">Callback interface used to asynchronously continue a download.</param>
+        </member>
+        <member name="T:CefSharp.Fluent.OnDownloadUpdatedDelegate">
+            <summary>
+            Called when a download's status or progress information has been updated. This may be called multiple times before and after <see cref="!:OnBeforeDownload"/>.
+            </summary>
+            <param name="chromiumWebBrowser">the ChromiumWebBrowser control</param>
+            <param name="browser">The browser instance</param>
+            <param name="downloadItem">Represents the file being downloaded.</param>
+            <param name="callback">The callback used to Cancel/Pause/Resume the process</param>
+        </member>
+        <member name="T:CefSharp.Fluent.DownloadHandler">
+            <summary>
+            A <see cref="T:CefSharp.IDownloadHandler"/> implementation used by <see cref="T:CefSharp.Fluent.DownloadHandlerBuilder"/>
+            to provide a fluent means of creating a <see cref="T:CefSharp.IDownloadHandler"/>.
+            </summary>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandler.Create">
+            <summary>
+            Create a new DownloadHandler Builder
+            </summary>
+            <returns>Fluent DownloadHandler Builder</returns>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandler.UseFolder(System.String,CefSharp.Fluent.OnDownloadUpdatedDelegate)">
+            <summary>
+            Creates a new <see cref="T:CefSharp.IDownloadHandler"/> instances
+            where all downloads are automatically downloaded to the specified folder.
+            No dialog is dispolayed to the user.
+            </summary>
+            <param name="folder">folder where files are download.</param>
+            <param name="downloadUpdated">optional delegate for download updates, track progress, completion etc.</param>
+            <returns><see cref="T:CefSharp.IDownloadHandler"/> instance.</returns>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandler.AskUser(CefSharp.Fluent.OnDownloadUpdatedDelegate)">
+            <summary>
+            Creates a new <see cref="T:CefSharp.IDownloadHandler"/> instances
+            where a default "Save As" dialog is displayed to the user.
+            </summary>
+            <param name="downloadUpdated">optional delegate for download updates, track progress, completion etc.</param>
+            <returns><see cref="T:CefSharp.IDownloadHandler"/> instance.</returns>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandler.#ctor">
+            <summary>
+            Use <see cref="M:CefSharp.Fluent.DownloadHandler.Create"/> to create a new instance of the fluent builder
+            </summary>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandler.OnBeforeDownload(CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.DownloadItem,CefSharp.IBeforeDownloadCallback)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandler.OnDownloadUpdated(CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.DownloadItem,CefSharp.IDownloadItemCallback)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CefSharp.Fluent.DownloadHandlerBuilder">
+            <summary>
+            Fluent DownloadHandler Builder
+            </summary>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandlerBuilder.OnBeforeDownload(CefSharp.Fluent.OnBeforeDownloadDelegate)">
+            <summary>
+            See <see cref="M:CefSharp.IDownloadHandler.OnBeforeDownload(CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.DownloadItem,CefSharp.IBeforeDownloadCallback)"/> for details.
+            </summary>
+            <param name="action">Action to be executed when <see cref="M:CefSharp.IDownloadHandler.OnBeforeDownload(CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.DownloadItem,CefSharp.IBeforeDownloadCallback)"/>
+            is called</param>
+            <returns>
+            Fluent Builder, call <see cref="M:CefSharp.Fluent.DownloadHandlerBuilder.Build"/> to create
+            a new <see cref="T:CefSharp.IDownloadHandler"/> instance
+            </returns>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandlerBuilder.OnDownloadUpdated(CefSharp.Fluent.OnDownloadUpdatedDelegate)">
+            <summary>
+            See <see cref="M:CefSharp.IDownloadHandler.OnDownloadUpdated(CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.DownloadItem,CefSharp.IDownloadItemCallback)"/> for details.
+            </summary>
+            <param name="action">Action to be executed when <see cref="M:CefSharp.IDownloadHandler.OnDownloadUpdated(CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.DownloadItem,CefSharp.IDownloadItemCallback)"/>
+            is called</param>
+            <returns>
+            Fluent Builder, call <see cref="M:CefSharp.Fluent.DownloadHandlerBuilder.Build"/> to create
+            a new <see cref="T:CefSharp.IDownloadHandler"/> instance
+            </returns>
+        </member>
+        <member name="M:CefSharp.Fluent.DownloadHandlerBuilder.Build">
+            <summary>
+            Create a <see cref="T:CefSharp.IDownloadHandler"/> instance
+            </summary>
+            <returns> a <see cref="T:CefSharp.IDownloadHandler"/> instance</returns>
+        </member>
+        <member name="T:CefSharp.Fluent.GetAuthCredentialsDelegate">
+            <summary>
+            Called on the CEF IO thread when the browser needs credentials from the user.
+            This method will only be called for requests initiated from the browser process. 
+            </summary>
+            <param name="isProxy">indicates whether the host is a proxy server.</param>
+            <param name="host">the hostname.</param>
+            <param name="port">the port number.</param>
+            <param name="realm">realm</param>
+            <param name="scheme">scheme</param>
+            <param name="callback">is a callback for authentication information</param>
+            <returns>
+            Return true to continue the request and call <see cref="M:CefSharp.IAuthCallback.Continue(System.String,System.String)"/> when the authentication information is available.
+            If the request has an associated browser/frame then returning false will result in a call to <see cref="M:CefSharp.IRequestHandler.GetAuthCredentials(CefSharp.IWebBrowser,CefSharp.IBrowser,System.String,System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)"/> 
+            on the <see cref="T:CefSharp.IRequestHandler"/> associated with that browser, if any.
+            Otherwise, returning false will cancel the request immediately.
+            </returns>
+        </member>
+        <member name="T:CefSharp.Fluent.OnDownloadDataDelegate">
+            <summary>
+            Called when some part of the response is read. This method will not be called if the <see cref="F:CefSharp.UrlRequestFlags.NoDownloadData"/> flag is set on the request. 
+            </summary>
+            <param name="request">request</param>
+            <param name="data">A stream containing the bytes received since the last call. Cannot be used outside the scope of this method. </param>
+        </member>
+        <member name="T:CefSharp.Fluent.OnDownloadProgressDelegate">
+            <summary>
+            Notifies the client of download progress.
+            </summary>
+            <param name="request">request</param>
+            <param name="current">denotes the number of bytes received up to the call </param>
+            <param name="total">is the expected total size of the response (or -1 if not determined).</param>
+        </member>
+        <member name="T:CefSharp.Fluent.OnRequestCompleteDelegate">
+            <summary>
+            Notifies the client that the request has completed.
+            Use the <see cref="P:CefSharp.IUrlRequest.RequestStatus"/> property to determine if the
+            request was successful or not.
+            </summary>
+            <param name="request">request</param>
+        </member>
+        <member name="T:CefSharp.Fluent.OnUploadProgressDelegate">
+            <summary>
+            Notifies the client of upload progress.
+            This method will only be called if the UR_FLAG_REPORT_UPLOAD_PROGRESS flag is set on the request.
+            </summary>
+            <param name="request">request</param>
+            <param name="current">denotes the number of bytes sent so far.</param>
+            <param name="total">is the total size of uploading data (or -1 if chunked upload is enabled).</param>
+        </member>
+        <member name="T:CefSharp.Fluent.UrlRequestClient">
+            <summary>
+            Fluent UrlRequestClient
+            </summary>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClient.Create">
+            <summary>
+            Create a new UrlRequestClient Builder
+            </summary>
+            <returns>Fluent UrlRequestClient Builder</returns>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClient.#ctor">
+            <summary>
+            Use <see cref="M:CefSharp.Fluent.UrlRequestClient.Create"/> to create a new instance of the fluent builder
+            </summary>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClient.GetAuthCredentials(System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClient.OnDownloadData(CefSharp.IUrlRequest,System.IO.Stream)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClient.OnDownloadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClient.OnRequestComplete(CefSharp.IUrlRequest)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClient.OnUploadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)">
+            <inheritdoc/>
+        </member>
+        <member name="T:CefSharp.Fluent.UrlRequestClientBuilder">
+            <summary>
+            Fluent UrlRequestClient Builder
+            </summary>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClientBuilder.GetAuthCredentials(CefSharp.Fluent.GetAuthCredentialsDelegate)">
+            <summary>
+            See <see cref="M:CefSharp.IUrlRequestClient.GetAuthCredentials(System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)"/> for details
+            </summary>
+            <param name="func">function to be executed when <see cref="M:CefSharp.IUrlRequestClient.GetAuthCredentials(System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)"/>
+            is called </param>
+            <returns>
+            Fluent Builder, call <see cref="M:CefSharp.Fluent.UrlRequestClientBuilder.Build"/> to create
+            a new <see cref="T:CefSharp.IUrlRequestClient"/> instance
+            </returns>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClientBuilder.OnDownloadData(CefSharp.Fluent.OnDownloadDataDelegate)">
+            <summary>
+            See <see cref="M:CefSharp.IUrlRequestClient.OnDownloadData(CefSharp.IUrlRequest,System.IO.Stream)"/> for details.
+            </summary>
+            <param name="action">Action to be executed when <see cref="M:CefSharp.IUrlRequestClient.OnDownloadData(CefSharp.IUrlRequest,System.IO.Stream)"/>
+            is called</param>
+            <returns>
+            Fluent Builder, call <see cref="M:CefSharp.Fluent.UrlRequestClientBuilder.Build"/> to create
+            a new <see cref="T:CefSharp.IUrlRequestClient"/> instance
+            </returns>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClientBuilder.OnDownloadProgress(CefSharp.Fluent.OnDownloadProgressDelegate)">
+            <summary>
+            See <see cref="M:CefSharp.IUrlRequestClient.OnDownloadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)"/> for details.
+            </summary>
+            <param name="action">Action to be executed when <see cref="M:CefSharp.IUrlRequestClient.OnDownloadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)"/>
+            is called</param>
+            <returns>
+            Fluent Builder, call <see cref="M:CefSharp.Fluent.UrlRequestClientBuilder.Build"/> to create
+            a new <see cref="T:CefSharp.IUrlRequestClient"/> instance
+            </returns>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClientBuilder.OnRequestComplete(CefSharp.Fluent.OnRequestCompleteDelegate)">
+            <summary>
+            See <see cref="M:CefSharp.IUrlRequestClient.OnRequestComplete(CefSharp.IUrlRequest)"/> for details.
+            </summary>
+            <param name="action">Action to be executed when <see cref="M:CefSharp.IUrlRequestClient.OnRequestComplete(CefSharp.IUrlRequest)"/>
+            is called</param>
+            <returns>
+            Fluent Builder, call <see cref="M:CefSharp.Fluent.UrlRequestClientBuilder.Build"/> to create
+            a new <see cref="T:CefSharp.IUrlRequestClient"/> instance
+            </returns>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClientBuilder.OnUploadProgress(CefSharp.Fluent.OnUploadProgressDelegate)">
+            <summary>
+            See <see cref="M:CefSharp.IUrlRequestClient.OnUploadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)"/> for details.
+            </summary>
+            <param name="action">Action to be executed when <see cref="M:CefSharp.IUrlRequestClient.OnUploadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)"/>
+            is called</param>
+            <returns>
+            Fluent Builder, call <see cref="M:CefSharp.Fluent.UrlRequestClientBuilder.Build"/> to create
+            a new <see cref="T:CefSharp.IUrlRequestClient"/> instance
+            </returns>
+        </member>
+        <member name="M:CefSharp.Fluent.UrlRequestClientBuilder.Build">
+            <summary>
+            Create a <see cref="T:CefSharp.IUrlRequestClient"/> instance
+            </summary>
+            <returns> a <see cref="T:CefSharp.IUrlRequestClient"/> instance</returns>
         </member>
         <member name="T:CefSharp.ManagedCefBrowserAdapter">
             <summary>
@@ -1503,6 +1742,24 @@
             <returns>
             <see cref="T:System.Threading.Tasks.Task`1"/> that when executed returns the current <see cref="T:CefSharp.NavigationEntry"/> or null
             </returns>
+        </member>
+        <member name="M:CefSharp.WebBrowserExtensionsEx.DownloadUrl(CefSharp.IFrame,System.String,System.Action{CefSharp.IUrlRequest,System.IO.Stream})">
+            <summary>
+            Downloads the specified <paramref name="url"/> and calls <paramref name="completeHandler"/>
+            when the download is complete. Makes a GET Request.
+            </summary>
+            <param name="frame">valid frame</param>
+            <param name="url">url to download</param>
+            <param name="completeHandler">Action to be executed when the download is complete.</param>
+        </member>
+        <member name="M:CefSharp.WebBrowserExtensionsEx.DownloadUrlAsync(CefSharp.IFrame,System.String)">
+            <summary>
+            Downloads the specified <paramref name="url"/> as a <see cref="!:byte[]"/>.
+            Makes a GET Request.
+            </summary>
+            <param name="frame">valid frame</param>
+            <param name="url">url to download</param>
+            <returns>A task that can be awaited to get the <see cref="!:byte[]"/> representing the Url</returns>
         </member>
         <member name="T:CefSharp.WindowInfo">
             <inheritdoc/>

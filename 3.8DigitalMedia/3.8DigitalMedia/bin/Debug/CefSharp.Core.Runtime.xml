@@ -652,7 +652,7 @@ remote debugging URL will be http://localhost:8080. CEF can be remotely debugged
 configurable using the "remote-debugging-port" command-line switch.
 </summary>
         </member>
-        <member name="P:CefSharp.Core.CefSettingsBase.ProductVersion">
+        <member name="P:CefSharp.Core.CefSettingsBase.UserAgentProduct">
             <summary>
 Value that will be inserted as the product portion of the default User-Agent string. If empty the Chromium product version
 will be used. If UserAgent is specified this value will be ignored. Also configurable using the "user-agent-product" command-

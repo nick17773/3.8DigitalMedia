@@ -451,3 +451,12 @@ C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [0629/132504.981:WARNING:angle_platform_impl.cc(48)] HLSLCompiler.cpp:257 (compileToBinary): 
 C:\fakepath(154,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
+[0701/105533.020:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.242faebc.js (1)
+[0701/105533.396:INFO:CONSOLE(1)] "Uncaught (in promise) Error: LibraryAPI is not available for anonymous users!", source: https://open.scdn.co/cdn/build/web-player/web-player.6828c6ae.js (1)
+[0701/105534.254:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0701/105534.266:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0701/105534.269:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0701/105534.320:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0701/105535.299:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
