@@ -18,13 +18,18 @@
     <Style TargetType="Label">
         <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
-        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="FontSize" Value="16"/>
     </Style>
 
     <Style TargetType="Label" x:Key="DefinitionsLabels">
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="FontSize" Value="24"/>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="ThemeSetterBlock">
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
     </Style>
 
     <Style TargetType="Border">

@@ -36,6 +36,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -72,12 +73,22 @@
                 <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="1" FontWeight="Normal"/>
                 <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="2" FontWeight="Normal"/>
                 <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="3" FontWeight="Normal"/>
+                <Label Content="Instrumentation" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource ResourceKey=DefinitionsLabels}" Grid.Row="4" FontWeight="Normal"/>
+                <ComboBox x:Name="InstrumentBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4" Padding="5" FontWeight="Normal">
+                    <ComboBoxItem x:Name="Classic" Content="Classic" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ComboBoxItem x:Name="Orchestral" Content="Orchestral" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ComboBoxItem x:Name="TraditionalFolk" Content="Traditional Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ComboBoxItem x:Name="MongolianFolk" Content="Mongolian Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+
+                </ComboBox>
             </Grid>
         </GroupBox>
         <Label x:Name="BPMLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=BPMBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,36,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="TuningLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TuningBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,31,0,0" Grid.Row="2" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="TimeSigLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=TimeSigBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,29,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
         <Label x:Name="SongLengthLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=SongLengthBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,27,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="144"/>
+        <Label x:Name="InstrumentationLabel" Content="" Tag="{Binding SelectionBoxItem, ElementName=InstrumentBox, Mode=OneWay}" HorizontalAlignment="Left" Margin="170,96,0,0" Grid.Row="4" VerticalAlignment="Top" Width="144"/>
         <Border Grid.Column="1" Margin="10" CornerRadius="5" BorderThickness="5">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -97,13 +108,13 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
-                    <RowDefinition/>
+                    <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
                 <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" Grid.Row="1" FontWeight="Normal"/>
                 <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" FontWeight="Normal"/>
                 <Expander Header="More Suggestions" Margin="10,10,10,-210" Grid.Row="2">
                     <Border Margin="10,10,10,0" Background="{DynamicResource MainBackgroundBrush1}" Style="{DynamicResource MoreOptionsBorder}" BorderThickness="5">
-                        <Grid Background="{DynamicResource MainBackgroundBrush1}" Height="307">
+                        <Grid Background="{DynamicResource MainBackgroundBrush1}">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="219*"/>
                                 <ColumnDefinition Width="370*"/>
@@ -113,15 +124,18 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Label x:Name="SuggestedBPMLabel" Content="Suggested Genres By BPM" Margin="10" FontWeight="Normal"/>
                             <Label x:Name="SuggestedTuningLabel" Content="Suggested Genres By Tuning" Margin="10" FontWeight="Normal" Grid.Row="1"/>
                             <Label x:Name="SuggestedTimeSigLabel" Content="Suggested Genres By Time Signature" Margin="10" FontWeight="Normal" Grid.Row="2"/>
-                            <TextBlock x:Name="SuggestedByBPM" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedByBPM" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Column="1"/>
                             <Label x:Name="SuggestedSongLengthLabel" Content="Suggested Genres By Song Length" Margin="10" FontWeight="Normal" Grid.Row="3"/>
-                            <TextBlock x:Name="SuggestedByTuning" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="1" Grid.Column="1"/>
-                            <TextBlock x:Name="SuggestedByTimeSig" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="2" Grid.Column="1"/>
-                            <TextBlock x:Name="SuggestedBySongLength" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="20" Padding="0,10" Grid.Row="3" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedByTuning" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Row="1" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedByTimeSig" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Row="2" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedBySongLength" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Row="3" Grid.Column="1"/>
+                            <Label x:Name="SuggestedInstumentationLabel" Content="Suggested Genres By Instrumentation" Margin="10" FontWeight="Normal" Grid.Row="4"/>
+                            <TextBlock x:Name="SuggestedByInstrumentation" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,5" Grid.Row="4" Grid.Column="1"/>
                         </Grid>
                     </Border>
                 </Expander>
@@ -144,6 +158,7 @@
                 <Button Content="Button" Margin="10" Grid.Row="1" Click="Button_Click_5" BorderBrush="{DynamicResource MainBorderColour}"/>
             </Grid>
         </Border>
+        
     </Grid>
 
 

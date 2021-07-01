@@ -18,6 +18,11 @@
         <Setter Property="FontSize" Value="24"/>
     </Style>
 
+    <Style TargetType="TextBlock" x:Key="ThemeSetterBlock">
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
+    </Style>
+
     <Style TargetType="Label" x:Key="DefinitionsLabels">
         <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
         <Setter Property="FontSize" Value="24"/>

@@ -27,6 +27,11 @@
         <Setter Property="FontSize" Value="30"/>
     </Style>
 
+    <Style TargetType="TextBlock" x:Key="ThemeSetterBlock">
+        <Setter Property="FontSize" Value="22"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainTextColour}"/>
+    </Style>
+
     <Style TargetType="Border">
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
 

@@ -17,14 +17,14 @@
                     <RowDefinition Height="8*"/>
                 </Grid.RowDefinitions>
                 <Button Content="More Info" Margin="10,10,600,10" Click="Button_Click" FontSize="36" FontWeight="Normal"/>
-                <DataGrid 
-                x:Name="GenreDataGrid" FontSize="18" Grid.Row="1" Margin="10" FontWeight="Normal">
+                <DataGrid x:Name="GenreDataGrid" FontSize="18" Grid.Row="1" Margin="10" FontWeight="Normal">
                     <DataGrid.Columns>
                         <DataGridTextColumn  Width="*" Header="Genre" Binding="{Binding Column1}"/>
                         <DataGridTextColumn  Width="*" Header="Beats Per Minute" Binding="{Binding Column2}"/>
                         <DataGridTextColumn  Width="*" Header="Tuning" Binding="{Binding Column3}"/>
                         <DataGridTextColumn  Width="*" Header="Time Signature" Binding="{Binding Column4}"/>
                         <DataGridTextColumn  Width="*" Header="Song Length" Binding="{Binding Column5}"/>
+                        <DataGridTextColumn  Width="*" Header="Instrumentation" Binding="{Binding Column6}"/>
 
                     </DataGrid.Columns>
 

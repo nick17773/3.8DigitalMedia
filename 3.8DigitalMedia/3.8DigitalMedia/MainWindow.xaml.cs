@@ -32,23 +32,28 @@ namespace _3._8DigitalMedia
         public string Long = Convert.ToString(SongLength.Long);
         public string Extreme = Convert.ToString(SongLength.Extreme);
 
+        public string ClassicI = Convert.ToString(Instrumentation.Classic);
+        public string OrchestralI = Convert.ToString(Instrumentation.Orchestral);
+        public string TradFolk = Convert.ToString(Instrumentation.TraditionalFolk);
+        public string MongolFolk = Convert.ToString(Instrumentation.MongolianFolk);
+
         public Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>()
             {
-                { "Heavy", new Genre("Heavy Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium) },
-                { "Prog", new Genre("Progressive Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium) },
-                { "Groove", new Genre("Groove Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long) },
-                { "Thrash", new Genre("Thrash Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Medium) },
-                { "Black", new Genre("Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium) },
-                { "Death", new Genre("Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium) },
-                { "Tech Death", new Genre("Technical Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium) },
-                { "Doom", new Genre("Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Long) },
-                { "Death/Doom", new Genre("Death Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium) },
-                { "Sludge", new Genre("Sludge Metal", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Long) },
-                { "Power", new Genre("Power Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Long) },
-                { "Alt", new Genre("Alternative Metal", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium) },
-                { "Nu", new Genre("Nu Metal", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium) },
-                { "Djent", new Genre("Djent", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium) },
-                { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Short) }
+                { "Heavy", new Genre("Heavy Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
+                { "Prog", new Genre("Progressive Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
+                { "Groove", new Genre("Groove Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Classic) },
+                { "Thrash", new Genre("Thrash Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
+                { "Black", new Genre("Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
+                { "Death", new Genre("Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
+                { "Tech Death", new Genre("Technical Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
+                { "Doom", new Genre("Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Long, Instrumentation.Classic) },
+                { "Death/Doom", new Genre("Death Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
+                { "Sludge", new Genre("Sludge Metal", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Classic) },
+                { "Power", new Genre("Power Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Long, Instrumentation.Classic) },
+                { "Alt", new Genre("Alternative Metal", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
+                { "Nu", new Genre("Nu Metal", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
+                { "Djent", new Genre("Djent", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
+                { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Short, Instrumentation.Classic) }
             };
 
         public MainWindow()
@@ -74,6 +79,8 @@ namespace _3._8DigitalMedia
             LongSongLength.Content = SongLength.Long;
             ExtremeSongLength.Content = SongLength.Extreme;
 
+            
+
         }
         public void Check()
         {
@@ -88,12 +95,14 @@ namespace _3._8DigitalMedia
             string BPMInput = Convert.ToString(BPMLabel.Tag);
             string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
             string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
-
+            string InstrumentationInput = Convert.ToString(InstrumentationLabel.Tag);
            
             if (BPMInput == MediumBPMS &&
                 TuningInput == Standard &&
                 TimeSigInput == Static &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI
+                ) 
             {
                 genreKey = "Heavy";
                 suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
@@ -103,7 +112,9 @@ namespace _3._8DigitalMedia
             if (BPMInput == MediumBPMS &&
                 TuningInput == Standard &&
                 TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI
+                ) 
             {
                 genreKey = "Prog";
                 suggestedBands = "Dream Theatre, Opeth, Gojira, Mastodon";
@@ -113,7 +124,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == MediumBPMS &&
                 TuningInput == Standard &&
                 TimeSigInput == Dynamic &&
-                SongLengthInput == Long) 
+                SongLengthInput == Long &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Groove";
                 suggestedBands = "Pantera, Damageplan, Alien Weaponry, Lamb of God";
@@ -123,7 +135,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Fast &&
                 TuningInput == Standard &&
                 TimeSigInput == Static &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Thrash";
                 suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
@@ -133,7 +146,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Fast &&
                 TuningInput == Standard &&
                 TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Black";
                 suggestedBands = "Mayhem, Darkthrone, Venom, Paracoccidioidomicosisproctitissarcomucosis";
@@ -143,7 +157,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Insane &&
                 TuningInput == Standard &&
                 TimeSigInput == Static &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Death";
                 suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
@@ -153,7 +168,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Insane &&
                 TuningInput == Standard &&
                 TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Tech Death";
                 suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
@@ -163,7 +179,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Slow &&
                 TuningInput == Low &&
                 TimeSigInput == Static &&
-                SongLengthInput == Long) 
+                SongLengthInput == Long &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Doom";
                 suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
@@ -173,7 +190,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Slow &&
                 TuningInput == Low &&
                 TimeSigInput == Static &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Death/Doom";
                 suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
@@ -183,7 +201,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Slow &&
                 TuningInput == Low &&
                 TimeSigInput == Dynamic &&
-                SongLengthInput == Long) 
+                SongLengthInput == Long &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Sludge";
                 suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
@@ -193,7 +212,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Fast &&
                 TuningInput == Standard &&
                 TimeSigInput == Static &&
-                SongLengthInput == Long) 
+                SongLengthInput == Long &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Power";
                 suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
@@ -203,7 +223,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == MediumBPMS &&
                 TuningInput == Low &&
                 TimeSigInput == Static &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Alt";
                 suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
@@ -213,7 +234,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == MediumBPMS &&
                 TuningInput == Low &&
                 TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Nu";
                 suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
@@ -223,7 +245,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == Slow &&
                 TuningInput == Low &&
                 TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength) 
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Djent";
                 suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
@@ -233,7 +256,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == MediumBPMS &&
                 TuningInput == Standard &&
                 TimeSigInput == Static &&
-                SongLengthInput == Short) 
+                SongLengthInput == Short &&
+                InstrumentationInput == ClassicI) 
             {
                 genreKey = "Industrial";
                 suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
@@ -243,7 +267,8 @@ namespace _3._8DigitalMedia
             if (BPMInput == "" &&
                 TuningInput == "" &&
                 TimeSigInput == "" &&
-                SongLengthInput == "")
+                SongLengthInput == "" &&
+                InstrumentationInput == "")
             {
                 GenreLabel.Content = "PLEASE SELECT SOME VALUES BEFORE PRESSING CALCULATE";
                 SuggestedBandsLabel.Content = "NO SUGGESTED BANDS FOR UNKNOWN GENRE";
@@ -423,26 +448,84 @@ namespace _3._8DigitalMedia
                 }
             }
         }
+        public void SuggestedInstrumentationCheck() 
+        {
+            string InstrumentationInput = Convert.ToString(InstrumentationLabel.Tag);
+            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
+            List<string> InstrumentValues = new List<string>();
+            foreach (var gv in GroupedValues)
+            {
+                var InstrumentLookup = gv.ToLookup(e => e.Value.instrumentation);
+                if (InstrumentationInput == ClassicI)
+                {
+                    var selectedInstrumentation = InstrumentLookup[Instrumentation.Classic];
+                    foreach(var str in selectedInstrumentation)
+                    {
+                        string selectedGenre = str.Key;
+                        InstrumentValues.Add(selectedGenre);
+                        string combinedInstrumentationValues = String.Join(", ", InstrumentValues);
+                        SuggestedByInstrumentation.Text = combinedInstrumentationValues;
+                    }
+                }
+                else if (InstrumentationInput == OrchestralI)
+                {
+                    var selectedInstrumentation = InstrumentLookup[Instrumentation.Orchestral];
+                    foreach (var str in selectedInstrumentation)
+                    {
+                        string selectedGenre = str.Key;
+                        InstrumentValues.Add(selectedGenre);
+                        string combinedInstrumentationValues = String.Join(", ", InstrumentValues);
+                        SuggestedByInstrumentation.Text = combinedInstrumentationValues;
+                    }
+                }
+                else if (InstrumentationInput == TradFolk)
+                {
+                    var selectedInstrumentation = InstrumentLookup[Instrumentation.TraditionalFolk];
+                    foreach (var str in selectedInstrumentation)
+                    {
+                        string selectedGenre = str.Key;
+                        InstrumentValues.Add(selectedGenre);
+                        string combinedInstrumentationValues = String.Join(", ", InstrumentValues);
+                        SuggestedByInstrumentation.Text = combinedInstrumentationValues;
+                    }
+                }
+                else if (InstrumentationInput == MongolFolk)
+                {
+                    var selectedInstrumentation = InstrumentLookup[Instrumentation.MongolianFolk];
+                    foreach (var str in selectedInstrumentation)
+                    {
+                        string selectedGenre = str.Key;
+                        InstrumentValues.Add(selectedGenre);
+                        string combinedInstrumentationValues = String.Join(", ", InstrumentValues);
+                        SuggestedByInstrumentation.Text = combinedInstrumentationValues;
+                    }
+                }
+            }
+        }
         public void GenreSuggestions()
         {
             string TuningInput = Convert.ToString(TuningLabel.Tag);
             string BPMInput = Convert.ToString(BPMLabel.Tag);
             string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
             string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
+            string InstrumentationInput = Convert.ToString(InstrumentationLabel.Tag);
             SuggestedBPMCheck();
             SuggestedTuningCheck();
             SuggestedTimeSigCheck();
             SuggestedSongLengthCheck();
+            SuggestedInstrumentationCheck();
 
             if (TuningInput == ""
                 && BPMInput == ""
                 && TimeSigInput == ""
-                && SongLengthInput == "")
+                && SongLengthInput == ""
+                && InstrumentationInput == "")
             {
-                SuggestedByBPM.Text = "ERROR";
-                SuggestedBySongLength.Text = "ERROR";
-                SuggestedByTimeSig.Text = "ERROR";
-                SuggestedByTuning.Text = "ERROR";
+                SuggestedByBPM.Text = "Error";
+                SuggestedBySongLength.Text = "Error";
+                SuggestedByTimeSig.Text = "Error";
+                SuggestedByTuning.Text = "Error";
+                SuggestedByInstrumentation.Text = "Error";
             }
 
         }
@@ -482,6 +565,13 @@ namespace _3._8DigitalMedia
             Static,
             Weird
         }
+        public enum Instrumentation
+        {
+            Classic,
+            Orchestral,
+            TraditionalFolk,
+            MongolianFolk
+        }
         public class Genre
         {
             public string name;
@@ -489,14 +579,16 @@ namespace _3._8DigitalMedia
             public Tuning tuning;
             public TimeSignature timeSignature;
             public SongLength songLength;
+            public Instrumentation instrumentation; 
 
-            public Genre(string name, BPM bpm, Tuning tuning, TimeSignature timeSignature, SongLength songLength)
+            public Genre(string name, BPM bpm, Tuning tuning, TimeSignature timeSignature, SongLength songLength, Instrumentation instrumentation)
             {
                 this.name = name;
                 this.bpm = bpm;
                 this.tuning = tuning;
                 this.timeSignature = timeSignature;
                 this.songLength = songLength;
+                this.instrumentation = instrumentation;
             }
         }
 

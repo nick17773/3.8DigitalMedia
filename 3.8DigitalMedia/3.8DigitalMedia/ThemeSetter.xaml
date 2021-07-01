@@ -25,7 +25,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ComboBox  x:Name="ColourSelector" Background="{DynamicResource MainButtonColour}" SelectionChanged="ComboBox_SelectionChanged" Grid.Column="1" Margin="120,100,20,60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <ComboBox  x:Name="ColourSelector" FontSize="24" Background="{DynamicResource MainButtonColour}" SelectionChanged="ComboBox_SelectionChanged" Grid.Column="1" Margin="120,100,20,60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <ComboBoxItem x:Name="Default" Content="Default Theme"/>
             <ComboBoxItem x:Name="Dragonforce" Content="DragonForce"/>
             <ComboBoxItem x:Name="Slayer" Content="Slayer"/>
@@ -35,14 +35,10 @@
             <ComboBoxItem x:Name="Tool" Content="Tool"/>
             <ComboBoxItem x:Name="Megadeth" Content="Megadeth"/>
             <ComboBoxItem x:Name="Trivium" Content="Trivium"/>
-            <!--<ComboBox.Resources>
-                <SolidColorBrush x:Key="{x:Static SystemColors.WindowsBrushKey}" Color="{DynamicResource MainButtonColour}"/>
-                <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{DynamicResource MainButtonColour}" />
-            </ComboBox.Resources>-->
         </ComboBox>
         <GroupBox Header="Theme Settings" Grid.RowSpan="2" Margin="10">
             <Grid Margin="0">
-                <TextBlock TextWrapping="Wrap" Text="TextBlock" Margin="5" FontWeight="{DynamicResource {x:Static SystemFonts.MenuFontWeightKey}}" FontSize="16"/>
+                <TextBlock Style="{DynamicResource ThemeSetterBlock}" TextWrapping="Wrap" Margin="10" FontWeight="{DynamicResource {x:Static SystemFonts.MenuFontWeightKey}}"><Run Text="Please Select a theme from the box on the right. These themes correspond to some of the recommended bands from some of the genres."/><LineBreak/><LineBreak/><Run Text="Warning: Some themes may not be very legible due to the font choice having to line up with the band font. "/><LineBreak/><Run  Text="The slayer theme does not show numbers properly, as the only available font did not have numbers 3 through 9, including 0. 1 and 2 show, but are not easily differentiated between."/><LineBreak/><Run  Text="You have been warned. Use at your own risk."/><LineBreak/><Run/><LineBreak/><LineBreak/><Run/><LineBreak/><Run Text=" "/></TextBlock>
             </Grid>
         </GroupBox>
 
