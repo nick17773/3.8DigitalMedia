@@ -56,12 +56,6 @@ namespace _3._8DigitalMedia
 
             InitializeComponent();
 
-            
-
-
-            
-
-
             SlowBPM.Content = BPM.Slow;
             MediumBPM.Content = BPM.Medium;
             FastBPM.Content = BPM.Fast;
@@ -80,18 +74,6 @@ namespace _3._8DigitalMedia
             LongSongLength.Content = SongLength.Long;
             ExtremeSongLength.Content = SongLength.Extreme;
 
-
-
-
-
-
-
-
-
-
-
-
-
         }
         public void Check()
         {
@@ -107,160 +89,157 @@ namespace _3._8DigitalMedia
             string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
             string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
 
-            if (TuningInput == Standard)
+           
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength) 
             {
-                if (BPMInput == Fast)
-                {
-                    if (TimeSigInput == Static)
-                    {
-                        if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Thrash";
-                            suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                        else if (SongLengthInput == Long)
-                        {
-                            genreKey = "Power";
-                            suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                    else if (TimeSigInput == Dynamic)
-                    {
-                        if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Black";
-                            suggestedBands = "Mayhem, Darkthrone, Venom, Paracoccidioidomicosisproctitissarcomucosis";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                }
-                else if (BPMInput == MediumBPMS)
-                {
-                    if (TimeSigInput == Static)
-                    {
-
-                        if (SongLengthInput == Short)
-                        {
-                            genreKey = "Industrial";
-                            suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                        else if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Heavy";
-                            suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                    else if (TimeSigInput == Dynamic)
-                    {
-                        if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Prog";
-                            suggestedBands = "Dream Theatre, Opeth, Gojira, Mastodon";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                        else if (SongLengthInput == Long)
-                        {
-                            genreKey = "Groove";
-                            suggestedBands = "Pantera, Damageplan, Alien Weaponry, Lamb of God";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                }
-                else if (BPMInput == Insane)
-                {
-                    if (TimeSigInput == Static)
-                    {
-
-                        if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Death";
-                            suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                    else if (TimeSigInput == Dynamic)
-                    {
-
-                        if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Tech Death";
-                            suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                }
+                genreKey = "Heavy";
+                suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
-            else if (TuningInput == Low)
+
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Standard &&
+                TimeSigInput == Dynamic &&
+                SongLengthInput == MediumLength) 
             {
-                if (BPMInput == Slow)
-                {
-                    if (TimeSigInput == Static)
-                    {
-                        if (SongLengthInput == Long)
-                        {
-                            genreKey = "Doom";
-                            suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                        else if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Death/Doom";
-                            suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                    else if (TimeSigInput == Dynamic)
-                    {
-
-                        if (SongLengthInput == Long)
-                        {
-                            genreKey = "Sludge";
-                            suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                        else if (SongLengthInput == MediumLength)
-                        {
-                            genreKey = "Djent";
-                            suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
-                            GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                        }
-                    }
-                }
-                else if (BPMInput == MediumBPMS)
-                {
-                    if (TimeSigInput == Static)
-                    {
-                        genreKey = "Alt";
-                        suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
-                        GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                    }
-                    else if (TimeSigInput == Dynamic)
-                    {
-                        genreKey = "Nu";
-                        suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
-                        GenreDisplay(genreKey, genreDictionary, suggestedBands);
-
-                    }
-                }
+                genreKey = "Prog";
+                suggestedBands = "Dream Theatre, Opeth, Gojira, Mastodon";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
+
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Standard &&
+                TimeSigInput == Dynamic &&
+                SongLengthInput == Long) 
+            {
+                genreKey = "Groove";
+                suggestedBands = "Pantera, Damageplan, Alien Weaponry, Lamb of God";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Fast &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Thrash";
+                suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Fast &&
+                TuningInput == Standard &&
+                TimeSigInput == Dynamic &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Black";
+                suggestedBands = "Mayhem, Darkthrone, Venom, Paracoccidioidomicosisproctitissarcomucosis";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Insane &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Death";
+                suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Insane &&
+                TuningInput == Standard &&
+                TimeSigInput == Dynamic &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Tech Death";
+                suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Slow &&
+                TuningInput == Low &&
+                TimeSigInput == Static &&
+                SongLengthInput == Long) 
+            {
+                genreKey = "Doom";
+                suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Slow &&
+                TuningInput == Low &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Death/Doom";
+                suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Slow &&
+                TuningInput == Low &&
+                TimeSigInput == Dynamic &&
+                SongLengthInput == Long) 
+            {
+                genreKey = "Sludge";
+                suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Fast &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == Long) 
+            {
+                genreKey = "Power";
+                suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Low &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Alt";
+                suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Low &&
+                TimeSigInput == Dynamic &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Nu";
+                suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Slow &&
+                TuningInput == Low &&
+                TimeSigInput == Dynamic &&
+                SongLengthInput == MediumLength) 
+            {
+                genreKey = "Djent";
+                suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == Short) 
+            {
+                genreKey = "Industrial";
+                suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
             if (BPMInput == "" &&
                 TuningInput == "" &&
                 TimeSigInput == "" &&

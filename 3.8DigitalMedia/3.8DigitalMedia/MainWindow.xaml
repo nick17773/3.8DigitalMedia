@@ -41,7 +41,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
+                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="MediumBPM" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="FastBPM" Content="Fast" Foreground="{DynamicResource MainTextColour}"/>

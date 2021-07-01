@@ -12,12 +12,20 @@
 
 
     <Window.Resources>
-        
+
     </Window.Resources>
 
 
     <Grid x:Name="MainGrid">
-        <ComboBox  x:Name="ColourSelector" Background="{DynamicResource MainButtonColour}" HorizontalAlignment="Left" Margin="460,218,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ComboBox  x:Name="ColourSelector" Background="{DynamicResource MainButtonColour}" SelectionChanged="ComboBox_SelectionChanged" Grid.Column="1" Margin="120,100,20,60" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <ComboBoxItem x:Name="Default" Content="Default Theme"/>
             <ComboBoxItem x:Name="Dragonforce" Content="DragonForce"/>
             <ComboBoxItem x:Name="Slayer" Content="Slayer"/>
@@ -32,6 +40,11 @@
                 <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="{DynamicResource MainButtonColour}" />
             </ComboBox.Resources>-->
         </ComboBox>
+        <GroupBox Header="Theme Settings" Grid.RowSpan="2" Margin="10">
+            <Grid Margin="0">
+                <TextBlock TextWrapping="Wrap" Text="TextBlock" Margin="5" FontWeight="{DynamicResource {x:Static SystemFonts.MenuFontWeightKey}}" FontSize="16"/>
+            </Grid>
+        </GroupBox>
 
     </Grid>
 </Window>
