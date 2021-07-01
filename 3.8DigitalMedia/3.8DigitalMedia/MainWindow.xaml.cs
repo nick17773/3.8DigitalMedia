@@ -53,7 +53,8 @@ namespace _3._8DigitalMedia
                 { "Alt", new Genre("Alternative Metal", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
                 { "Nu", new Genre("Nu Metal", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
                 { "Djent", new Genre("Djent", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
-                { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Short, Instrumentation.Classic) }
+                { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Short, Instrumentation.Classic) },
+                { "Folk", new Genre("Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.TraditionalFolk) }
             };
 
         public MainWindow()
@@ -79,7 +80,10 @@ namespace _3._8DigitalMedia
             LongSongLength.Content = SongLength.Long;
             ExtremeSongLength.Content = SongLength.Extreme;
 
-            
+            Classic.Content = Instrumentation.Classic;
+            Orchestral.Content = Instrumentation.Orchestral;
+            TraditionalFolk.Content = Instrumentation.TraditionalFolk;
+            MongolianFolk.Content = Instrumentation.MongolianFolk;
 
         }
         public void Check()
@@ -264,7 +268,18 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == "" &&
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == TradFolk)
+            {
+                genreKey = "Folk";
+                suggestedBands = "";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+                if (BPMInput == "" &&
                 TuningInput == "" &&
                 TimeSigInput == "" &&
                 SongLengthInput == "" &&
