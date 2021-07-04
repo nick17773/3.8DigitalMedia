@@ -413,7 +413,7 @@
         </Setter>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
 
-        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontSize" Value="15"/>
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Foreground" Value="{StaticResource MainTextColour}"/>
         <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
