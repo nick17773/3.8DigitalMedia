@@ -9,7 +9,8 @@
         Background="{DynamicResource MainBackgroundBrush1}"
         Foreground="{DynamicResource MainTextColour}"
         FontSize="18"
-        Title="SpotifyWindow" Height="900" Width="1600">
+        WindowState="Maximized"
+        Title="SpotifyWindow" Height="900" Width="1750">
     <Grid>
         
         <TabControl x:Name="PlaylistTabs" Background="{DynamicResource MainBackgroundBrush1}">
@@ -137,6 +138,38 @@
             <TabItem x:Name="PaganPlaylist" Header="Pagan Metal">
                 <Grid>
                     <GroupBox Header="Pagan Metal Playlist" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="MongolPlaylist" Header="Mongolian">
+                <Grid>
+                    <GroupBox Header="Mongolian Playlist" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SymphonicBlackPlaylist" Header="Symphonic Black Metal">
+                <Grid>
+                    <GroupBox Header="Symphonic Black Metal Playlist" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SymphonicPlaylist" Header="Symphonic Metal">
+                <Grid>
+                    <GroupBox Header="Symphonic Metal Playlist" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SymphonicDeathPlaylist" Header="Symphonic Death Metal">
+                <Grid>
+                    <GroupBox Header="Symphonic Death Metal Playlist" Margin="10" FontWeight="Bold">
 
                         <wpf:ChromiumWebBrowser Margin="10" Address=""/>
                     </GroupBox>

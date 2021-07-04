@@ -29,7 +29,9 @@ namespace _3._8DigitalMedia
                 { "Viking", new Genre("Viking Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic) },
                 { "Pagan", new Genre("Pagan Metal", BPM.Slow, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic) },
                 { "Mongol", new Genre("Mongolian Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Mongolian) },
-                { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral) }
+                { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral) },
+                { "Symphonic", new Genre("Symphonic Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) },
+                { "SymphonicDeath", new Genre("Symphonic Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) }
             };
         public DataGridWindow()
         {
@@ -213,6 +215,24 @@ namespace _3._8DigitalMedia
                 Column4 = genreDictionary["SymphonicBlack"].timeSignature.ToString(),
                 Column5 = genreDictionary["SymphonicBlack"].songLength.ToString(),
                 Column6 = genreDictionary["SymphonicBlack"].instrumentation.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["Symphonic"].name,
+                Column2 = genreDictionary["Symphonic"].bpm.ToString(),
+                Column3 = genreDictionary["Symphonic"].tuning.ToString(),
+                Column4 = genreDictionary["Symphonic"].timeSignature.ToString(),
+                Column5 = genreDictionary["Symphonic"].songLength.ToString(),
+                Column6 = genreDictionary["Symphonic"].instrumentation.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["SymphonicDeath"].name,
+                Column2 = genreDictionary["SymphonicDeath"].bpm.ToString(),
+                Column3 = genreDictionary["SymphonicDeath"].tuning.ToString(),
+                Column4 = genreDictionary["SymphonicDeath"].timeSignature.ToString(),
+                Column5 = genreDictionary["SymphonicDeath"].songLength.ToString(),
+                Column6 = genreDictionary["SymphonicDeath"].instrumentation.ToString()
             });
 
 

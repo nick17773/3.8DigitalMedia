@@ -9,7 +9,7 @@
         FontSize="18"
         Background="{DynamicResource MainBackgroundBrush1}"
         Foreground="{DynamicResource MainTextColour}"
-        Title="Summary" Height="650" Width="1250">
+        Title="Summary" Height="900" Width="1500">
     <Grid>
         <TabControl Background="{DynamicResource MainBackgroundBrush1}">
             <TabItem x:Name="HeavyInfo" Header="Heavy Metal">
@@ -180,6 +180,22 @@
             <TabItem x:Name="SymphonicBlackInfo" Header="Symphonic Black Metal">
                 <Grid>
                     <GroupBox Header="Symphonic Black Metal" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_black_metal"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SymphonicInfo" Header="Symphonic Metal">
+                <Grid>
+                    <GroupBox Header="Symphonic Metal" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_black_metal"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SymphonicDeathInfo" Header="Symphonic Death Metal">
+                <Grid>
+                    <GroupBox Header="Symphonic Death Metal" Margin="10" FontWeight="Bold">
 
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_black_metal"/>
                     </GroupBox>

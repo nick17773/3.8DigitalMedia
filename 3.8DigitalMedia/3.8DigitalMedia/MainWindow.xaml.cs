@@ -59,7 +59,9 @@ namespace _3._8DigitalMedia
                 { "Viking", new Genre("Viking Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic) },
                 { "Pagan", new Genre("Pagan Metal", BPM.Slow, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic) },
                 { "Mongol", new Genre("Mongolian Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Mongolian) },
-                { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral) }
+                { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral) },
+                { "Symphonic", new Genre("Symphonic Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) },
+                { "SymphonicDeath", new Genre("Symphonic Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) }
             };
 
         public MainWindow()
@@ -94,13 +96,6 @@ namespace _3._8DigitalMedia
         }
         public void Check()
         {
-
-
-            //string TuningInput = Convert.ToString(TuningLabel.Content);
-            //string BPMInput = Convert.ToString(BPMLabel.Content);
-            //string TimeSigInput = Convert.ToString(TimeSigLabel.Content);
-            //string SongLengthInput = Convert.ToString(SongLengthLabel.Content);
-
             string TuningInput = Convert.ToString(TuningLabel.Tag);
             string BPMInput = Convert.ToString(BPMLabel.Tag);
             string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
@@ -284,6 +279,7 @@ namespace _3._8DigitalMedia
                 suggestedBands = "Alestorm, Balyios, Tyr, Wintersun";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
+            
             if (BPMInput == Slow &&
                 TuningInput == Low &&
                 TimeSigInput == Static &&
@@ -294,6 +290,7 @@ namespace _3._8DigitalMedia
                 suggestedBands = "Amon Amarth, Burzum, Satyricon, Tyr";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
+            
             if (BPMInput == Slow &&
                 TuningInput == Standard &&
                 TimeSigInput == Static &&
@@ -304,6 +301,7 @@ namespace _3._8DigitalMedia
                 suggestedBands = "Moonsorrow, Korpiklaani, Kampfar, Amon Amarth";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
+            
             if (BPMInput == MediumBPMS &&
                 TuningInput == Standard &&
                 TimeSigInput == Static &&
@@ -315,6 +313,7 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
                 
             }
+            
             if (BPMInput == Fast &&
                 TuningInput == Standard &&
                 TimeSigInput == Dynamic &&
@@ -323,6 +322,28 @@ namespace _3._8DigitalMedia
             {
                 genreKey = "SymphonicBlack";
                 suggestedBands = "Dimmu Borgir, Emperor, Carach Angren, Demonic Resurection";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == MediumBPMS &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == OrchestralI) 
+            {
+                genreKey = "Symphonic";
+                suggestedBands = "Therion, Nightwish, Rhapsody of Fire, Within Temptation";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Insane &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == MediumLength &&
+                InstrumentationInput == OrchestralI)
+            {
+                genreKey = "SymphonicDeath";
+                suggestedBands = "Children of Bodom, Fleshgod Apocalypse, Make them Suffer, Betraying the Martyrs";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
