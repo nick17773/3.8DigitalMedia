@@ -11,12 +11,7 @@
         FontSize="18"
         Title="SpotifyWindow" Height="900" Width="1600">
     <Grid>
-        <!--<GroupBox Header="GroupBox" Margin="10">
-            -->
-        <!--Address="https://open.spotify.com/playlist/1Si7miiDHC5v6Ce2zjyw4d"-->
-        <!--
-            <wpf:ChromiumWebBrowser Margin="10" Address="https://www.youtube.com/watch?v=dQw4w9WgXcQ" BorderBrush="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" BorderThickness="1"  />
-        </GroupBox>-->
+        
         <TabControl x:Name="PlaylistTabs" Background="{DynamicResource MainBackgroundBrush1}">
             <TabItem x:Name="HeavyPlaylist" Header="Heavy Metal">
                 <Grid Margin="0">
@@ -121,6 +116,29 @@
                 <Grid Margin="0">
                     <GroupBox Header="Djent Playlist" Margin="10">
                         <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6bMivgk0YBMG7PRwMRX3fA?si=255d682c3fc345f1"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="FolkPlaylist" Header="Folk Metal">
+                <Grid Margin="0">
+                    <GroupBox Header="Folk Metal Playlist" Margin="10">
+                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="VikingPlaylist" Header="Viking Metal">
+                <Grid>
+                    <GroupBox Header="Viking Metal Playlist" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="PaganPlaylist" Header="Pagan Metal">
+                <Grid>
+                    <GroupBox Header="Pagan Metal Playlist" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
                     </GroupBox>
                 </Grid>
             </TabItem>

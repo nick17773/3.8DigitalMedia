@@ -79,6 +79,7 @@
                     <ComboBoxItem x:Name="Orchestral" Content="Orchestral" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <ComboBoxItem x:Name="TraditionalFolk" Content="Traditional Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <ComboBoxItem x:Name="MongolianFolk" Content="Mongolian Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ComboBoxItem x:Name="NorseFolk" Content="Norwegian Folk" HorizontalAlignment="Left" Width="245" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
 
 
                 </ComboBox>

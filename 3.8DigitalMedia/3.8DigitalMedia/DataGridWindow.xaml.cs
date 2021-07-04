@@ -25,7 +25,11 @@ namespace _3._8DigitalMedia
                 { "Nu", new Genre("Nu Metal", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
                 { "Djent", new Genre("Djent", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
                 { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Short, Instrumentation.Classic) },
-                { "Folk", new Genre("Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.TraditionalFolk) }
+                { "Folk", new Genre("Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Folk) },
+                { "Viking", new Genre("Viking Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic) },
+                { "Pagan", new Genre("Pagan Metal", BPM.Slow, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic) },
+                { "Mongol", new Genre("Mongolian Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Mongolian) },
+                { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral) }
             };
         public DataGridWindow()
         {
@@ -165,6 +169,51 @@ namespace _3._8DigitalMedia
                 Column5 = genreDictionary["Djent"].songLength.ToString(),
                 Column6 = genreDictionary["Djent"].instrumentation.ToString()
             });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["Folk"].name,
+                Column2 = genreDictionary["Folk"].bpm.ToString(),
+                Column3 = genreDictionary["Folk"].tuning.ToString(),
+                Column4 = genreDictionary["Folk"].timeSignature.ToString(),
+                Column5 = genreDictionary["Folk"].songLength.ToString(),
+                Column6 = genreDictionary["Folk"].instrumentation.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["Viking"].name,
+                Column2 = genreDictionary["Viking"].bpm.ToString(),
+                Column3 = genreDictionary["Viking"].tuning.ToString(),
+                Column4 = genreDictionary["Viking"].timeSignature.ToString(),
+                Column5 = genreDictionary["Viking"].songLength.ToString(),
+                Column6 = genreDictionary["Viking"].instrumentation.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["Pagan"].name,
+                Column2 = genreDictionary["Pagan"].bpm.ToString(),
+                Column3 = genreDictionary["Pagan"].tuning.ToString(),
+                Column4 = genreDictionary["Pagan"].timeSignature.ToString(),
+                Column5 = genreDictionary["Pagan"].songLength.ToString(),
+                Column6 = genreDictionary["Pagan"].instrumentation.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["Mongol"].name,
+                Column2 = genreDictionary["Mongol"].bpm.ToString(),
+                Column3 = genreDictionary["Mongol"].tuning.ToString(),
+                Column4 = genreDictionary["Mongol"].timeSignature.ToString(),
+                Column5 = genreDictionary["Mongol"].songLength.ToString(),
+                Column6 = genreDictionary["Mongol"].instrumentation.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["SymphonicBlack"].name,
+                Column2 = genreDictionary["SymphonicBlack"].bpm.ToString(),
+                Column3 = genreDictionary["SymphonicBlack"].tuning.ToString(),
+                Column4 = genreDictionary["SymphonicBlack"].timeSignature.ToString(),
+                Column5 = genreDictionary["SymphonicBlack"].songLength.ToString(),
+                Column6 = genreDictionary["SymphonicBlack"].instrumentation.ToString()
+            });
 
 
 
@@ -211,8 +260,9 @@ namespace _3._8DigitalMedia
         {
             Classic,
             Orchestral,
-            TraditionalFolk,
-            MongolianFolk
+            Folk,
+            Mongolian,
+            Nordic
         }
         public class Genre
         {
