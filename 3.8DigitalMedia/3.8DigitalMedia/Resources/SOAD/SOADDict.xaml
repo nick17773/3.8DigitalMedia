@@ -1,10 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
-    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#07376e"/>
-    <SolidColorBrush x:Key="MainTextColour" Color="#d4971c"/>
-    <SolidColorBrush x:Key="MainBorderColour" Color="#992018"/>
-    <SolidColorBrush x:Key="MainButtonColour" Color="#65060c"/>
-    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#3d1213"/>
+    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#003249"/>
+    <SolidColorBrush x:Key="MainTextColour" Color="#DD852C"/>
+    <SolidColorBrush x:Key="MainBorderColour" Color="#931F1D"/>
+    <SolidColorBrush x:Key="MainButtonColour" Color="#8896AB"/>
+    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#9CAFB7"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#414575"/>
 
     <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#BentonSans ExtraCondensed Bold</FontFamily>

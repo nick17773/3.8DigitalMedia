@@ -1,10 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
-    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#0d2847"/>
-    <SolidColorBrush x:Key="MainTextColour" Color="#9A4A3A"/>
-    <SolidColorBrush x:Key="MainBorderColour" Color="#524e49"/>
-    <SolidColorBrush x:Key="MainButtonColour" Color="#858da2"/>
-    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#5e656f"/>
+    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#091B30"/>
+    <SolidColorBrush x:Key="MainTextColour" Color="#BFAFA6"/>
+    <SolidColorBrush x:Key="MainBorderColour" Color="#393632"/>
+    <SolidColorBrush x:Key="MainButtonColour" Color="#5A6275"/>
+    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#D4D2D5"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#675d66"/>
 
     <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#Megadeth Cryptic</FontFamily>

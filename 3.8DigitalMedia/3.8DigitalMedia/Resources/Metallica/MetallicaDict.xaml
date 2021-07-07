@@ -1,10 +1,10 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
     <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#26333C"/>
-    <SolidColorBrush x:Key="MainTextColour" Color="#db6535"/>
-    <SolidColorBrush x:Key="MainBorderColour" Color="#dc211c"/>
-    <SolidColorBrush x:Key="MainButtonColour" Color="#1a2235"/>
-    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#1e2433"/>
+    <SolidColorBrush x:Key="MainTextColour" Color="#941B0C"/>
+    <SolidColorBrush x:Key="MainBorderColour" Color="#1A2235"/>
+    <SolidColorBrush x:Key="MainButtonColour" Color="#7A9E9F"/>
+    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#93B7BE"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#414575"/>
 
     <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#Pastor of Muppets</FontFamily>

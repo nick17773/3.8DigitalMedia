@@ -2,11 +2,11 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
     
     <BorderGapMaskConverter x:Key="BorderGapMaskConverter"/>
-    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#810400"/>
-    <SolidColorBrush x:Key="MainTextColour" Color="#e81516"/>
-    <SolidColorBrush x:Key="MainBorderColour" Color="#d55d00"/>
-    <SolidColorBrush x:Key="MainButtonColour" Color="#620d08"/>
-    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#450805"/>
+    <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#620D08"/>
+    <SolidColorBrush x:Key="MainTextColour" Color="#CFAF63"/>
+    <SolidColorBrush x:Key="MainBorderColour" Color="#F05D23"/>
+    <SolidColorBrush x:Key="MainButtonColour" Color="#435058"/>
+    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#ACADBC"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#a71603"/>
 
     <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#Slaytanic</FontFamily>

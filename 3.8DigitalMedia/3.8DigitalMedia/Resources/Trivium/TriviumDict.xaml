@@ -2,9 +2,9 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
     <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#361617"/>
     <SolidColorBrush x:Key="MainTextColour" Color="#907a3f"/>
-    <SolidColorBrush x:Key="MainBorderColour" Color="#44251b"/>
-    <SolidColorBrush x:Key="MainButtonColour" Color="#d34703"/>
-    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#b32506"/>
+    <SolidColorBrush x:Key="MainBorderColour" Color="#546A7B"/>
+    <SolidColorBrush x:Key="MainButtonColour" Color="#AC190C"/>
+    <SolidColorBrush x:Key="MainButtonHoverColour" Color="#AA2822"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#675d66"/>
 
     <FontFamily x:Key="MainFont">pack://application:,,,/Fonts/#Trivial</FontFamily>
