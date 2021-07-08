@@ -102,6 +102,7 @@
                 </Grid.RowDefinitions>
                 <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" Grid.Row="1" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Settings" Margin="10" Click="Button_Click_5"  BorderBrush="{DynamicResource MainBorderColour}" Grid.Column="1"/>
             </Grid>
         </Border>
         <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" FontSize="36" FontWeight="Bold" Margin="10">
@@ -156,10 +157,9 @@
                 <Button Content="Help" Margin="10" Click="Button_Click_3" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" Grid.Column="1" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Close" Margin="10" Click="Button_Click_2" Grid.Column="2" BorderBrush="{DynamicResource MainBorderColour}"/>
-                <Button Content="Button" Margin="10" Grid.Row="1" Click="Button_Click_5" BorderBrush="{DynamicResource MainBorderColour}"/>
             </Grid>
         </Border>
-        
+
     </Grid>
 
 

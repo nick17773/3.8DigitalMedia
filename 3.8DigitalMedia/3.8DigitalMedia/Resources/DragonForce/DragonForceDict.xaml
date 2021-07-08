@@ -3,7 +3,7 @@
 
     <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#0d0337"/>
     <SolidColorBrush x:Key="MainTextColour" Color="#f08a08"/>
-    <SolidColorBrush x:Key="MainBorderColour" Color="#ce02a1"/>
+    <SolidColorBrush x:Key="MainBorderColour" Color="#F202BE"/>
     <SolidColorBrush x:Key="MainButtonColour" Color="#0a6ec8"/>
     <SolidColorBrush x:Key="MainButtonHoverColour" Color="#000752"/>
     <SolidColorBrush x:Key="MainComboBoxSelectedColour" Color="#6520b1"/>
