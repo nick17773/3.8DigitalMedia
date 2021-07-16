@@ -123,7 +123,7 @@
             <TabItem x:Name="FolkPlaylist" Header="Folk Metal">
                 <Grid Margin="0">
                     <GroupBox Header="Folk Metal Playlist" Margin="10">
-                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/5aWTddQwCOr25i3gL2qC7v?si=A7rqbFE8TVSn7yTHbZFP4w"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
@@ -131,7 +131,7 @@
                 <Grid>
                     <GroupBox Header="Viking Metal Playlist" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/5JnJGQYRw0xE5zVMhoccpG?si=ouJ89hJdSGiYeSMlbWWz1w"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
@@ -139,7 +139,7 @@
                 <Grid>
                     <GroupBox Header="Pagan Metal Playlist" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/2WOD1DwfA6mLMsl5vyzHvh?si=NIYm8tfCR7GC3iV3PxK2FA"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
@@ -147,7 +147,7 @@
                 <Grid>
                     <GroupBox Header="Mongolian Playlist" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/5P0jrjs62vawbdR23bIxCm?si=tuWgmyWRTimr9ME0twe_Qw"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
@@ -155,7 +155,7 @@
                 <Grid>
                     <GroupBox Header="Symphonic Black Metal Playlist" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/3uVB3cUPeBp3g2ixXUJzOk?si=SDEbXTWPRFqW9kYSwdtr1Q"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
@@ -163,7 +163,7 @@
                 <Grid>
                     <GroupBox Header="Symphonic Metal Playlist" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/31jpjUdZO0OUCZ4XlSGMjD?si=ykUyzAesThmNWE8AFAE7nw"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
@@ -171,7 +171,16 @@
                 <Grid>
                     <GroupBox Header="Symphonic Death Metal Playlist" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address=""/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/2fGUtz6wJNYPv1XyHeVpdD?si=C4696z9nR1q5IWDrgcU4YQ"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SymphonicPowerPlaylist" Header="Symphonic Power Metal">
+                <Grid>
+                    <GroupBox Header="Symphonic Power Metal Playlist" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/6M0UX4zL33fkJJkPt77pEP?si=vevx8yrORuqnmJZ_Gk_Etg"/>
+                        
                     </GroupBox>
                 </Grid>
             </TabItem>

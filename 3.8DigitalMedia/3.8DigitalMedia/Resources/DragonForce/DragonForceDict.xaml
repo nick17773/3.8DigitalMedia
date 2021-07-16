@@ -66,13 +66,13 @@
     </Style>
 
     <Style TargetType="DataGridRowHeader">
-        <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>
+        <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>
         <Setter Property="FontSize" Value="20"/>
     </Style>
 
     <Style TargetType="DataGridColumnHeader">
-        <Setter Property="Background" Value="{StaticResource MainBackgroundBrush1}"/>
+        <Setter Property="Background" Value="{StaticResource MainButtonColour}"/>
         <Setter Property="BorderBrush" Value="{StaticResource MainBorderColour}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="FontFamily" Value="{StaticResource MainFont}"/>

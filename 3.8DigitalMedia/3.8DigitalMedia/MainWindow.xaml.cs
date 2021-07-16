@@ -61,7 +61,8 @@ namespace _3._8DigitalMedia
                 { "Mongol", new Genre("Mongolian Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Mongolian) },
                 { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral) },
                 { "Symphonic", new Genre("Symphonic Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) },
-                { "SymphonicDeath", new Genre("Symphonic Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) }
+                { "SymphonicDeath", new Genre("Symphonic Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) },
+                { "SymphonicPower", new Genre("Power Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Long, Instrumentation.Orchestral) }
             };
 
         public MainWindow()
@@ -276,7 +277,7 @@ namespace _3._8DigitalMedia
                 InstrumentationInput == TradFolk)
             {
                 genreKey = "Folk";
-                suggestedBands = "Alestorm, Balyios, Tyr, Wintersun";
+                suggestedBands = "Alestorm, Korpiklaani, Tyr, Wintersun";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
             
@@ -321,7 +322,7 @@ namespace _3._8DigitalMedia
                 InstrumentationInput == OrchestralI)
             {
                 genreKey = "SymphonicBlack";
-                suggestedBands = "Dimmu Borgir, Emperor, Carach Angren, Demonic Resurection";
+                suggestedBands = "Dimmu Borgir, Emperor, Carach Angren, Cradle of Filth";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
@@ -344,6 +345,17 @@ namespace _3._8DigitalMedia
             {
                 genreKey = "SymphonicDeath";
                 suggestedBands = "Children of Bodom, Fleshgod Apocalypse, Make them Suffer, Betraying the Martyrs";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == Fast &&
+                TuningInput == Standard &&
+                TimeSigInput == Static &&
+                SongLengthInput == Long &&
+                InstrumentationInput == OrchestralI)
+            {
+                genreKey = "SymphonicPower";
+                suggestedBands = "Twilight Force, Kamelot, Rhapsody of Fire, Nightwish";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 

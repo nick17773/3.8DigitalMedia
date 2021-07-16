@@ -190,7 +190,7 @@
                 <Grid>
                     <GroupBox Header="Symphonic Metal" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_black_metal"/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
@@ -198,7 +198,15 @@
                 <Grid>
                     <GroupBox Header="Symphonic Death Metal" Margin="10" FontWeight="Bold">
 
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_black_metal"/>
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal#Symphonic_death_metal"/>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="SymphonicPowerInfo" Header="Symphonic Power Metal">
+                <Grid>
+                    <GroupBox Header="Symphonic Power Metal" Margin="10" FontWeight="Bold">
+
+                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal#Symphonic_power_metal"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
