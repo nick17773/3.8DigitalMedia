@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3.8DigitalMedia.exe" size="1648104">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3.8DigitalMedia.exe" size="3228648">
       <assemblyIdentity name="3.8DigitalMedia" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7pahULTAgZNtVUzsC7j+KzJRFpTTJqsE4xD8pujHlf0=</dsig:DigestValue>
+        <dsig:DigestValue>Sga43jIZFs+TH85K5+oiS1JbRZhQLmKX+yYXy/Q2VwY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -214,6 +214,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>2jDriLVs/UbNXpbicIph7+aBY4OZ92or/tBUiC8uk2A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Slayer\SOHIntro.wav" size="1580240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+7N9863DJHChHyy2uDYr9IhFmL7MjXJZ1R7lpA5NadE=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

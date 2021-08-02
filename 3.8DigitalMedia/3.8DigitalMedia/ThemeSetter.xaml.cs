@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Windows;
+using System.Media;
+using System.Diagnostics;
+
 
 namespace _3._8DigitalMedia
 {
@@ -10,6 +13,7 @@ namespace _3._8DigitalMedia
     {
 
         string uriSkin;
+        
         public ThemeSetter()
         {
             InitializeComponent();
@@ -20,7 +24,7 @@ namespace _3._8DigitalMedia
         private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
             var rd = new ResourceDictionary();
-
+            var soundPlayer = new SoundPlayer();
 
 
             if (ColourSelector.SelectedItem == Dragonforce)
@@ -32,6 +36,11 @@ namespace _3._8DigitalMedia
             {
 
                 uriSkin = @"Resources\Slayer\SlayerDict.xaml";
+                soundPlayer = new SoundPlayer(Properties.Resources.SOHIntro);
+                soundPlayer.Play();
+
+                
+                
             }
             else if (ColourSelector.SelectedItem == Metallica)
             {
@@ -63,6 +72,10 @@ namespace _3._8DigitalMedia
             }
             rd.MergedDictionaries.Add(Application.LoadComponent(new Uri(uriSkin, UriKind.Relative)) as ResourceDictionary);
             Application.Current.Resources = rd;
+
+            
+            
+            
         }
     }
 

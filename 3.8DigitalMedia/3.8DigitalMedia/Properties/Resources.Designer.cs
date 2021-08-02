@@ -59,5 +59,14 @@ namespace _3._8DigitalMedia.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream SOHIntro {
+            get {
+                return ResourceManager.GetStream("SOHIntro", resourceCulture);
+            }
+        }
     }
 }

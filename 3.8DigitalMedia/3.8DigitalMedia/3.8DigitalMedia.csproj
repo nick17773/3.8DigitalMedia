@@ -285,6 +285,11 @@
   <ItemGroup>
     <Resource Include="green-man-icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Slayer\SOHIntro.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
