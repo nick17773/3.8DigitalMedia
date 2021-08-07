@@ -286,6 +286,14 @@
     <Resource Include="green-man-icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Trivium - What the Dead Men Say %28AUDIO HQ%29 intro.wav" />
+    <None Include="Resources\Walk %282010 Remaster%29 intro.wav" />
+    <None Include="Resources\TOOL - Schism %28Audio%29 intro.wav" />
+    <None Include="Resources\Tornado Of Souls %28Remastered 2004%29 intro.wav" />
+    <None Include="Resources\Through The Fire And Flames intro.wav" />
+    <None Include="Resources\Slayer - South of Heaven intro.wav" />
+    <None Include="Resources\For Whom The Bell Tolls intro.wav" />
+    <None Include="Resources\Chop Suey! intro.wav" />
     <Content Include="Resources\Slayer\SOHIntro.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

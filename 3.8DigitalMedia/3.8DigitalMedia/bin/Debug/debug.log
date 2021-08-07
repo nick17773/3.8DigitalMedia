@@ -909,3 +909,7 @@ C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [0802/105600.352:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
 [0802/105600.364:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
 [0802/105600.430:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0807/144509.382:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/vendor~web-player.fd7b733a.js (1)
+[0807/144511.326:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+

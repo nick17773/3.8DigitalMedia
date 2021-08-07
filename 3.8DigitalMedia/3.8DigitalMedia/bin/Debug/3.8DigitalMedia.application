@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="3.8DigitalMedia.exe.manifest" size="12743">
+    <dependentAssembly dependencyType="install" codebase="3.8DigitalMedia.exe.manifest" size="12744">
       <assemblyIdentity name="3.8DigitalMedia.exe" version="4.0.0.11" publicKeyToken="0000000000000000" language="en-NZ" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>a4gkIdGn9d46AWi1xDDQfy1VOhncLvFWIm1MN2zfxdE=</dsig:DigestValue>
+        <dsig:DigestValue>v4PwXFMgYYTdadX4WhRuekRijwmroK+8VTfpZmjHHiA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
