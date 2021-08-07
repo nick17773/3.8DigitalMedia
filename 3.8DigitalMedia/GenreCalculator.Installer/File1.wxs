@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="1.0.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
+		<Package InstallerVersion="300" Compressed="yes"/>
+		<Media Id="1" Cabinet="myapplication.cab" EmbedCab="yes" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="APPLICATIONROOTDIRECTORY" Name="Genre Calculator"/>
+			</Directory>
+			<!-- Step 1: Define the directory structure -->
+			<Directory Id="ProgramMenuFolder">
+				<Directory Id="ApplicationProgramsFolder" Name="Genre Calculator"/>
+			</Directory>
+		</Directory>
+
+		<DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+			<Component Id="myapplication.exe" Guid="3227255a-50f3-49d8-b600-21e86cbcf5e8">
+				<File Id="myapplication.exe" Source="3.8DigitalMedia.exe" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="CefSharp.dll" Guid="2097c2df-9399-43ca-b7bf-2b7848500756">
+				<File Id="CefSharp.dll" Source="CefSharp.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="CefSharp.BrowserSubprocess.Core.dll" Guid="95473547-eb3c-4ba8-9059-aaac4dce86da">
+				<File Id="CefSharp.BrowserSubprocess.Core.dll" Source="CefSharp.BrowserSubprocess.Core.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="CefSharp.Core.dll" Guid="ad6573a3-f616-4336-9fb4-d8383f62bc42">
+				<File Id="CefSharp.Core.dll" Source="CefSharp.Core.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="CefSharp.Core.Runtime.dll" Guid="4505eeaf-5336-4cbb-b331-90a9affd62aa">
+				<File Id="CefSharp.Core.Runtime.dll" Source="CefSharp.Core.Runtime.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="CefSharp.Wpf.dll" Guid="dfd3902e-71b5-403c-8493-02ebeb9523dd">
+				<File Id="CefSharp.Wpf.dll" Source="CefSharp.Wpf.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="chrome_elf.dll" Guid="828c4b60-7f1c-4f83-9a15-6e061d739401">
+				<File Id="chrome_elf.dll" Source="chrome_elf.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="d3dcompiler_47.dll" Guid="2473b191-9a0f-49d8-ae5b-41f20389bc8e">
+				<File Id="d3dcompiler_47.dll" Source="d3dcompiler_47.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="libcef.dll" Guid="527783e7-3857-4769-8dcb-b59468b91ff6">
+				<File Id="libcef.dll" Source="libcef.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="libEGL.dll" Guid="478fc0f4-d993-44df-be07-977683b3faaf">
+				<File Id="libEGL.dll" Source="libEGL.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="libGLESv2.dll" Guid="3bb7b7d1-285e-4ac6-bdea-61cab14c04d5">
+				<File Id="libGLESv2.dll" Source="libGLESv2.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="Microsoft.Bcl.AsyncInterfaces.dll" Guid="fee57d22-2538-4fa7-8db2-27288c893a86">
+				<File Id="Microsoft.Bcl.AsyncInterfaces.dll" Source="Microsoft.Bcl.AsyncInterfaces.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="Newtonsoft.Json.dll" Guid="d3c52a13-3337-49c4-8a5a-ad4612a021b2">
+				<File Id="Newtonsoft.Json.dll" Source="Newtonsoft.Json.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="System.Buffers.dll" Guid="89dc1d77-32e4-4605-9f7a-16ee854ce8e1">
+				<File Id="System.Buffers.dll" Source="System.Buffers.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="System.Collections.Immutable.dll" Guid="faa6a9fb-d225-4776-b980-60164b2756b4">
+				<File Id="System.Collections.Immutable.dll" Source="System.Collections.Immutable.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="System.Memory.dll" Guid="390b1371-88f2-4727-8e9c-2132cd14568a">
+				<File Id="System.Memory.dll" Source="System.Memory.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+
+			<Component Id="System.Numerics.Vectors.dll" Guid="f4cc0e8c-cd0e-47ff-8cf4-ecb64dbb03ce">
+				<File Id="System.Numerics.Vectors.dll" Source="System.Numerics.Vectors.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="System.Runtime.CompilerServices.Unsafe.dll" Guid="133713a9-e75e-441c-9da4-09e2d24f706f">
+				<File Id="System.Runtime.CompilerServices.Unsafe.dll" Source="System.Runtime.CompilerServices.Unsafe.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+			<Component Id="System.Threading.Tasks.Extensions.dll" Guid="eee11ed0-c2b9-47eb-91d7-735e92cc636b">
+				<File Id="System.Threading.Tasks.Extensions.dll" Source="System.Threading.Tasks.Extensions.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
+		</DirectoryRef>
+
+		<!-- Step 2: Add the shortcut to your installer package -->
+		<DirectoryRef Id="ApplicationProgramsFolder">
+			<Component Id="ApplicationShortcut" Guid="ef8542a2-f07c-4185-bf8a-a90caca79932">
+				<Shortcut Id="ApplicationStartMenuShortcut"
+                     Name="Genre Calculator"
+                   Description="A Calculator for the numerous metal subgenres"
+                    Target="[#myapplication.exe]"
+                          WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+				<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+				<RegistryValue Root="HKCU" Key="Software\MyCompany\MyApplicationName" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+			</Component>
+		</DirectoryRef>
+
+		<Feature Id="MainApplication" Title="Main Application" Level="1">
+			<ComponentRef Id="myapplication.exe" />
+			<ComponentRef Id="CefSharp.dll"/>
+			<ComponentRef Id="CefSharp.BrowserSubprocess.Core.dll"/>
+			<ComponentRef Id="CefSharp.Core.dll"/>
+			<ComponentRef Id="CefSharp.Core.Runtime.dll"/>
+			<ComponentRef Id="CefSharp.Wpf.dll"/>
+			<ComponentRef Id="chrome_elf.dll"/>
+			<ComponentRef Id="d3dcompiler_47.dll"/>
+			<ComponentRef Id="libcef.dll"/>
+			<ComponentRef Id="libEGL.dll"/>
+			<ComponentRef Id="libGLESv2.dll"/>
+			<ComponentRef Id="Microsoft.Bcl.AsyncInterfaces.dll"/>
+			<ComponentRef Id="Newtonsoft.Json.dll"/>
+			<ComponentRef Id="System.Buffers.dll"/>
+			<ComponentRef Id="System.Collections.Immutable.dll"/>
+			<ComponentRef Id="System.Memory.dll"/>
+			<ComponentRef Id="System.Numerics.Vectors.dll"/>
+			<ComponentRef Id="System.Runtime.CompilerServices.Unsafe.dll"/>
+			<ComponentRef Id="System.Threading.Tasks.Extensions.dll"/>
+			<!-- Step 3: Tell WiX to install the shortcut -->
+			<ComponentRef Id="ApplicationShortcut" />
+		</Feature>
+	</Product>
+</Wix>
