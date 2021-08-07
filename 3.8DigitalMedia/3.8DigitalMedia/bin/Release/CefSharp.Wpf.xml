@@ -235,6 +235,15 @@
             </summary>
             <value>The browser adapter.</value>
         </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.LoadUrlAsync(System.String,System.Threading.SynchronizationContext)">
+            <inheritdoc/>
+        </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.FreeHandlersExceptLifeSpan">
+            <summary>
+            Sets the handler references to null.
+            Where required also calls Dispose().
+            </summary>
+        </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.InternalIsBrowserInitialized">
             <summary>
             Check is browser is initialized
@@ -694,7 +703,23 @@
             </summary>
             <returns>View Rectangle</returns>
         </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#GetScreenPoint(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <inheritdoc />
+        </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.GetScreenPoint(System.Int32,System.Int32,System.Int32@,System.Int32@)">
+            <summary>
+            Called to retrieve the translation from view coordinates to actual screen coordinates. 
+            </summary>
+            <param name="viewX">x</param>
+            <param name="viewY">y</param>
+            <param name="screenX">screen x</param>
+            <param name="screenY">screen y</param>
+            <returns>Return true if the screen coordinates were provided.</returns>
+        </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#StartDragging(CefSharp.IDragData,CefSharp.Enums.DragOperationsMask,System.Int32,System.Int32)">
+            <inheritdoc />
+        </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.StartDragging(CefSharp.IDragData,CefSharp.Enums.DragOperationsMask,System.Int32,System.Int32)">
             <summary>
             Called when the user starts dragging content in the web view. 
             OS APIs that run a system message loop may be used within the StartDragging call.
@@ -707,6 +732,9 @@
             <param name="y">is the drag start location in screen coordinates</param>
             <returns>Return true to handle the drag operation.</returns>
         </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#UpdateDragCursor(CefSharp.Enums.DragOperationsMask)">
+            <inheritdoc />
+        </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.UpdateDragCursor(CefSharp.Enums.DragOperationsMask)">
             <summary>
             Called when the web view wants to update the mouse cursor during a drag &amp; drop operation.
@@ -714,13 +742,7 @@
             <param name="operation">describes the allowed operation (none, move, copy, link). </param>
         </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#OnAcceleratedPaint(CefSharp.PaintElementType,CefSharp.Structs.Rect,System.IntPtr)">
-            <summary>
-            Called when an element has been rendered to the shared texture handle.
-            This method is only called when <see cref="P:CefSharp.IWindowInfo.SharedTextureEnabled"/> is set to true
-            </summary>
-            <param name="type">indicates whether the element is the view or the popup widget.</param>
-            <param name="dirtyRect">contains the set of rectangles in pixel coordinates that need to be repainted</param>
-            <param name="sharedHandle">is the handle for a D3D11 Texture2D that can be accessed via ID3D11Device using the OpenSharedResource method.</param>
+            <inheritdoc />
         </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.OnAcceleratedPaint(System.Boolean,CefSharp.Structs.Rect,System.IntPtr)">
             <summary>
@@ -732,14 +754,7 @@
             <param name="sharedHandle">is the handle for a D3D11 Texture2D that can be accessed via ID3D11Device using the OpenSharedResource method.</param>
         </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#OnPaint(CefSharp.PaintElementType,CefSharp.Structs.Rect,System.IntPtr,System.Int32,System.Int32)">
-            <summary>
-            Called when an element should be painted.
-            </summary>
-            <param name="type">indicates whether the element is the view or the popup widget.</param>
-            <param name="dirtyRect">contains the set of rectangles in pixel coordinates that need to be repainted</param>
-            <param name="buffer">The bitmap will be will be  width * height *4 bytes in size and represents a BGRA image with an upper-left origin</param>
-            <param name="width">width</param>
-            <param name="height">height</param>
+            <inheritdoc />
         </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.OnPaint(System.Boolean,CefSharp.Structs.Rect,System.IntPtr,System.Int32,System.Int32)">
             <summary>
@@ -776,6 +791,9 @@
             <param name="isOpen">if set to <c>true</c> [is open].</param>
         </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#OnCursorChange(System.IntPtr,CefSharp.Enums.CursorType,CefSharp.Structs.CursorInfo)">
+            <inheritdoc />
+        </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.OnCursorChange(System.IntPtr,CefSharp.Enums.CursorType,CefSharp.Structs.CursorInfo)">
             <summary>
             Sets the cursor.
             </summary>
@@ -783,12 +801,18 @@
             <param name="type">The type.</param>
             <param name="customCursorInfo">custom cursor information</param>
         </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#OnImeCompositionRangeChanged(CefSharp.Structs.Range,CefSharp.Structs.Rect[])">
+            <inheritdoc />
+        </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.OnImeCompositionRangeChanged(CefSharp.Structs.Range,CefSharp.Structs.Rect[])">
             <summary>
             Called when the IME composition range has changed.
             </summary>
             <param name="selectedRange">is the range of characters that have been selected</param>
             <param name="characterBounds">is the bounds of each character in view coordinates.</param>
+        </member>
+        <member name="M:CefSharp.Wpf.ChromiumWebBrowser.CefSharp#Internals#IRenderWebBrowser#OnVirtualKeyboardRequested(CefSharp.IBrowser,CefSharp.Enums.TextInputMode)">
+            <inheritdoc />
         </member>
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.OnVirtualKeyboardRequested(CefSharp.IBrowser,CefSharp.Enums.TextInputMode)">
             <summary>
@@ -1339,6 +1363,8 @@
         <member name="M:CefSharp.Wpf.ChromiumWebBrowser.NotifyDpiChange(System.Single)">
             <summary>
             Manually notify the browser the DPI of the parent window has changed.
+            The tested/expected values for <paramref name="newDpi"/> are 1.0, 1.25, 1.5, 2.0 as these
+            correspond to 96, 120, 144, 192 DPI (referred to as 100%, 125%, 150%, 200% in the Windows GUI).
             </summary>
             <param name="newDpi">new DPI</param>
             <remarks>.Net 4.6.2 adds HwndSource.DpiChanged which could be used to automatically

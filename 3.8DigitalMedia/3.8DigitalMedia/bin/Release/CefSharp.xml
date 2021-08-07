@@ -684,6 +684,49 @@
             <param name="errorCode">error code</param>
             <param name="errorMessage">error message</param>
         </member>
+        <member name="T:CefSharp.CefRuntime">
+            <summary>
+            CefRuntime - Used to simplify loading of the CefSharp architecture specific resources.
+            Typical use case would be when you are targeting AnyCPU
+            </summary>
+        </member>
+        <member name="M:CefSharp.CefRuntime.SubscribeAnyCpuAssemblyResolver(System.String)">
+            <summary>
+            When using AnyCPU the architecture specific version of CefSharp.Core.Runtime.dll
+            needs to be loaded (x64/x86).
+            This method subscribes to the <see cref="E:System.AppDomain.AssemblyResolve"/> event
+            for <see cref="P:System.AppDomain.CurrentDomain"/> and loads the CefSharp.Core.Runtime.dll
+            based on <see cref="P:System.Environment.Is64BitProcess"/>.
+            This method MUST be called before you call Cef.Initialize, create your first ChromiumWebBrowser instance, basically
+            before anything CefSharp related happens. This method is part of CefSharp.dll which is an AnyCPU library and
+            doesn't have any references to the CefSharp.Core.Runtime.dll so it's safe to use.
+            </summary>
+            <param name="basePath">
+            The path containing the x64/x86 folders which contain the CefSharp/CEF resources.
+            If null then AppDomain.CurrentDomain.SetupInformation.ApplicationBase will be used as the path.
+            (</param>
+        </member>
+        <member name="M:CefSharp.CefRuntime.UnsubscribeAnyCpuAssemblyResolver">
+            <summary>
+            Unsubscribe  from the <see cref="E:System.AppDomain.AssemblyResolve"/> event
+            for <see cref="P:System.AppDomain.CurrentDomain"/> that was added in <see cref="!:UseAnyCpuAssemblyResolver"/>
+            </summary>
+        </member>
+        <member name="M:CefSharp.CefRuntime.LoadCefSharpCoreRuntimeAnyCpu(System.String)">
+            <summary>
+            When using AnyCPU the architecture specific version of CefSharp.Core.Runtime.dll
+            needs to be loaded (x64/x86).
+            This method calls <see cref="M:System.Reflection.Assembly.LoadFile(System.String)"/> to immediately load CefSharp.Core.Runtime.dll
+            based on <see cref="P:System.Environment.Is64BitProcess"/>.
+            This method MUST be called before you call Cef.Initialize, create your first ChromiumWebBrowser instance, basically
+            before anything CefSharp related happens. This method is part of CefSharp.dll which is an AnyCPU library and
+            doesn't have any references to the CefSharp.Core.Runtime.dll so it's safe to use.
+            </summary>
+            <param name="basePath">
+            The path containing the x64/x86 folders which contain the CefSharp/CEF resources.
+            If null then AppDomain.CurrentDomain.SetupInformation.ApplicationBase will be used as the path.
+            (</param>
+        </member>
         <member name="T:CefSharp.DefaultApp">
             <summary>
             Default implementation of <see cref="T:CefSharp.IApp"/> which represents the CefApp class.
@@ -2630,6 +2673,11 @@
             Request
             </summary>
         </member>
+        <member name="P:CefSharp.DevTools.Audits.CorsIssueDetails.InitiatorOrigin">
+            <summary>
+            InitiatorOrigin
+            </summary>
+        </member>
         <member name="P:CefSharp.DevTools.Audits.CorsIssueDetails.resourceIPAddressSpace">
             <summary>
             ResourceIPAddressSpace
@@ -3364,13 +3412,22 @@
             <param name = "browserContextId">BrowserContext to reset permissions. When omitted, default browser context is used.</param>
             <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
-        <member name="M:CefSharp.DevTools.Browser.BrowserClient.SetDownloadBehaviorAsync(System.String,System.String,System.String)">
+        <member name="M:CefSharp.DevTools.Browser.BrowserClient.SetDownloadBehaviorAsync(System.String,System.String,System.String,System.Nullable{System.Boolean})">
             <summary>
             Set the behavior when downloading a file.
             </summary>
             <param name = "behavior">Whether to allow all or deny all download requests, or use default Chrome behavior ifavailable (otherwise deny). |allowAndName| allows download and names files according totheir dowmload guids.</param>
             <param name = "browserContextId">BrowserContext to set download behavior. When omitted, default browser context is used.</param>
             <param name = "downloadPath">The default path to save downloaded files to. This is requred if behavior is set to 'allow'or 'allowAndName'.</param>
+            <param name = "eventsEnabled">Whether to emit download events (defaults to false).</param>
+            <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
+        </member>
+        <member name="M:CefSharp.DevTools.Browser.BrowserClient.CancelDownloadAsync(System.String,System.String)">
+            <summary>
+            Cancel a download if in progress
+            </summary>
+            <param name = "guid">Global unique identifier of the download.</param>
+            <param name = "browserContextId">BrowserContext to perform the action in. When omitted, default browser context is used.</param>
             <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
         <member name="M:CefSharp.DevTools.Browser.BrowserClient.CloseAsync">
@@ -7674,6 +7731,48 @@
             forward
             </summary>
         </member>
+        <member name="T:CefSharp.DevTools.Input.DragDataItem">
+            <summary>
+            DragDataItem
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Input.DragDataItem.MimeType">
+            <summary>
+            Mime type of the dragged data.
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Input.DragDataItem.Data">
+            <summary>
+            Depending of the value of `mimeType`, it contains the dragged link,
+            text, HTML markup or any other data.
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Input.DragDataItem.Title">
+            <summary>
+            Title associated with a link. Only valid when `mimeType` == &quot;text/uri-list&quot;.
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Input.DragDataItem.BaseURL">
+            <summary>
+            Stores the base URL for the contained markup. Only valid when `mimeType`
+            == &quot;text/html&quot;.
+            </summary>
+        </member>
+        <member name="T:CefSharp.DevTools.Input.DragData">
+            <summary>
+            DragData
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Input.DragData.Items">
+            <summary>
+            Items
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Input.DragData.DragOperationsMask">
+            <summary>
+            Bit field representing allowed drag operations. Copy = 1, Link = 2, Move = 16
+            </summary>
+        </member>
         <member name="T:CefSharp.DevTools.Input.InputClient">
             <summary>
             Input
@@ -7684,6 +7783,17 @@
             Input
             </summary>
             <param name = "client">DevToolsClient</param>
+        </member>
+        <member name="M:CefSharp.DevTools.Input.InputClient.DispatchDragEventAsync(System.String,System.Int64,System.Int64,CefSharp.DevTools.Input.DragData,System.Nullable{System.Int32})">
+            <summary>
+            Dispatches a drag event into the page.
+            </summary>
+            <param name = "type">Type of the drag event.</param>
+            <param name = "x">X coordinate of the event relative to the main frame's viewport in CSS pixels.</param>
+            <param name = "y">Y coordinate of the event relative to the main frame's viewport in CSS pixels. 0 refers tothe top of the viewport and Y increases as it proceeds towards the bottom of the viewport.</param>
+            <param name = "data">data</param>
+            <param name = "modifiers">Bit field representing pressed modifier keys. Alt=1, Ctrl=2, Meta/Command=4, Shift=8(default: 0).</param>
+            <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
         <member name="M:CefSharp.DevTools.Input.InputClient.DispatchKeyEventAsync(System.String,System.Nullable{System.Int32},System.Nullable{System.Int64},System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.String[])">
             <summary>
@@ -7766,6 +7876,14 @@
             Ignores input events (useful while auditing page).
             </summary>
             <param name = "ignore">Ignores input events processing when set to true.</param>
+            <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
+        </member>
+        <member name="M:CefSharp.DevTools.Input.InputClient.SetInterceptDragsAsync(System.Boolean)">
+            <summary>
+            Prevents default drag and drop behavior and instead emits `Input.dragIntercepted` events.
+            Drag and drop behavior can be directly controlled via `Input.dispatchDragEvent`.
+            </summary>
+            <param name = "enabled">enabled</param>
             <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
         <member name="M:CefSharp.DevTools.Input.InputClient.SynthesizePinchGestureAsync(System.Int64,System.Int64,System.Int64,System.Nullable{System.Int32},System.Nullable{CefSharp.DevTools.Input.GestureSourceType})">
@@ -9070,11 +9188,6 @@
             content-type
             </summary>
         </member>
-        <member name="F:CefSharp.DevTools.Network.BlockedReason.CollapsedByClient">
-            <summary>
-            collapsed-by-client
-            </summary>
-        </member>
         <member name="F:CefSharp.DevTools.Network.BlockedReason.CoepFrameResourceNeedsCoepHeader">
             <summary>
             coep-frame-resource-needs-coep-header
@@ -10159,6 +10272,26 @@
             Errors occurred while handling the signed exchagne.
             </summary>
         </member>
+        <member name="T:CefSharp.DevTools.Network.ContentEncoding">
+            <summary>
+            List of content encodings supported by the backend.
+            </summary>
+        </member>
+        <member name="F:CefSharp.DevTools.Network.ContentEncoding.Deflate">
+            <summary>
+            deflate
+            </summary>
+        </member>
+        <member name="F:CefSharp.DevTools.Network.ContentEncoding.Gzip">
+            <summary>
+            gzip
+            </summary>
+        </member>
+        <member name="F:CefSharp.DevTools.Network.ContentEncoding.Br">
+            <summary>
+            br
+            </summary>
+        </member>
         <member name="T:CefSharp.DevTools.Network.PrivateNetworkRequestPolicy">
             <summary>
             PrivateNetworkRequestPolicy
@@ -10282,6 +10415,11 @@
         <member name="F:CefSharp.DevTools.Network.CrossOriginEmbedderPolicyValue.None">
             <summary>
             None
+            </summary>
+        </member>
+        <member name="F:CefSharp.DevTools.Network.CrossOriginEmbedderPolicyValue.CorsOrCredentialless">
+            <summary>
+            CorsOrCredentialless
             </summary>
         </member>
         <member name="F:CefSharp.DevTools.Network.CrossOriginEmbedderPolicyValue.RequireCorp">
@@ -10511,6 +10649,19 @@
             Network
             </summary>
             <param name = "client">DevToolsClient</param>
+        </member>
+        <member name="M:CefSharp.DevTools.Network.NetworkClient.SetAcceptedEncodingsAsync(CefSharp.DevTools.Network.ContentEncoding[])">
+            <summary>
+            Sets a list of content encodings that will be accepted. Empty list means no encoding is accepted.
+            </summary>
+            <param name = "encodings">List of accepted content encodings.</param>
+            <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
+        </member>
+        <member name="M:CefSharp.DevTools.Network.NetworkClient.ClearAcceptedEncodingsOverrideAsync">
+            <summary>
+            Clears accepted encodings set by setAcceptedEncodings
+            </summary>
+            <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
         <member name="M:CefSharp.DevTools.Network.NetworkClient.ClearBrowserCacheAsync">
             <summary>
@@ -11107,6 +11258,46 @@
             Identifier of the node to highlight.
             </summary>
         </member>
+        <member name="T:CefSharp.DevTools.Overlay.ScrollSnapContainerHighlightConfig">
+            <summary>
+            ScrollSnapContainerHighlightConfig
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Overlay.ScrollSnapContainerHighlightConfig.SnapportBorder">
+            <summary>
+            The style of the snapport border (default: transparent)
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Overlay.ScrollSnapContainerHighlightConfig.SnapAreaBorder">
+            <summary>
+            The style of the snap area border (default: transparent)
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Overlay.ScrollSnapContainerHighlightConfig.ScrollMarginColor">
+            <summary>
+            The margin highlight fill color (default: transparent).
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Overlay.ScrollSnapContainerHighlightConfig.ScrollPaddingColor">
+            <summary>
+            The padding highlight fill color (default: transparent).
+            </summary>
+        </member>
+        <member name="T:CefSharp.DevTools.Overlay.ScrollSnapHighlightConfig">
+            <summary>
+            ScrollSnapHighlightConfig
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Overlay.ScrollSnapHighlightConfig.ScrollSnapContainerHighlightConfig">
+            <summary>
+            A descriptor for the highlight appearance of scroll snap containers.
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Overlay.ScrollSnapHighlightConfig.NodeId">
+            <summary>
+            Identifier of the node to highlight.
+            </summary>
+        </member>
         <member name="T:CefSharp.DevTools.Overlay.HingeConfig">
             <summary>
             Configuration for dual screen hinge
@@ -11343,6 +11534,13 @@
             SetShowFlexOverlays
             </summary>
             <param name = "flexNodeHighlightConfigs">An array of node identifiers and descriptors for the highlight appearance.</param>
+            <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
+        </member>
+        <member name="M:CefSharp.DevTools.Overlay.OverlayClient.SetShowScrollSnapOverlaysAsync(System.Collections.Generic.IList{CefSharp.DevTools.Overlay.ScrollSnapHighlightConfig})">
+            <summary>
+            SetShowScrollSnapOverlays
+            </summary>
+            <param name = "scrollSnapHighlightConfigs">An array of node identifiers and descriptors for the highlight appearance.</param>
             <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
         <member name="M:CefSharp.DevTools.Overlay.OverlayClient.SetShowPaintRectsAsync(System.Boolean)">
@@ -12458,6 +12656,22 @@
             unsafeUrl
             </summary>
         </member>
+        <member name="T:CefSharp.DevTools.Page.CompilationCacheParams">
+            <summary>
+            Per-script compilation cache parameters for `Page.produceCompilationCache`
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Page.CompilationCacheParams.Url">
+            <summary>
+            The URL of the script to produce a compilation cache entry for.
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Page.CompilationCacheParams.Eager">
+            <summary>
+            A hint to the backend whether eager compilation is recommended.
+            (the actual compilation mode used is upon backend discretion).
+            </summary>
+        </member>
         <member name="T:CefSharp.DevTools.Page.AddScriptToEvaluateOnNewDocumentResponse">
             <summary>
             AddScriptToEvaluateOnNewDocumentResponse
@@ -12571,6 +12785,21 @@
         <member name="P:CefSharp.DevTools.Page.GetLayoutMetricsResponse.ContentSize">
             <summary>
             contentSize
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Page.GetLayoutMetricsResponse.CssLayoutViewport">
+            <summary>
+            cssLayoutViewport
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Page.GetLayoutMetricsResponse.CssVisualViewport">
+            <summary>
+            cssVisualViewport
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Page.GetLayoutMetricsResponse.CssContentSize">
+            <summary>
+            cssContentSize
             </summary>
         </member>
         <member name="T:CefSharp.DevTools.Page.GetNavigationHistoryResponse">
@@ -12967,8 +13196,24 @@
         <member name="M:CefSharp.DevTools.Page.PageClient.SetProduceCompilationCacheAsync(System.Boolean)">
             <summary>
             Forces compilation cache to be generated for every subresource script.
+            See also: `Page.produceCompilationCache`.
             </summary>
             <param name = "enabled">enabled</param>
+            <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
+        </member>
+        <member name="M:CefSharp.DevTools.Page.PageClient.ProduceCompilationCacheAsync(System.Collections.Generic.IList{CefSharp.DevTools.Page.CompilationCacheParams})">
+            <summary>
+            Requests backend to produce compilation cache for the specified scripts.
+            Unlike setProduceCompilationCache, this allows client to only produce cache
+            for specific scripts. `scripts` are appeneded to the list of scripts
+            for which the cache for would produced. Disabling compilation cache with
+            `setProduceCompilationCache` would reset all pending cache requests.
+            The list may also be reset during page navigation.
+            When script with a matching URL is encountered, the cache is optionally
+            produced upon backend discretion, based on internal heuristics.
+            See also: `Page.compilationCacheProduced`.
+            </summary>
+            <param name = "scripts">scripts</param>
             <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
         <member name="M:CefSharp.DevTools.Page.PageClient.AddCompilationCacheAsync(System.String,System.Byte[])">
@@ -13945,6 +14190,16 @@
             tokens
             </summary>
         </member>
+        <member name="T:CefSharp.DevTools.Storage.ClearTrustTokensResponse">
+            <summary>
+            ClearTrustTokensResponse
+            </summary>
+        </member>
+        <member name="P:CefSharp.DevTools.Storage.ClearTrustTokensResponse.DidDeleteTokens">
+            <summary>
+            didDeleteTokens
+            </summary>
+        </member>
         <member name="T:CefSharp.DevTools.Storage.StorageClient">
             <summary>
             Storage
@@ -14035,6 +14290,14 @@
             current browsing context.
             </summary>
             <returns>returns System.Threading.Tasks.Task&lt;GetTrustTokensResponse&gt;</returns>
+        </member>
+        <member name="M:CefSharp.DevTools.Storage.StorageClient.ClearTrustTokensAsync(System.String)">
+            <summary>
+            Removes all Trust Tokens issued by the provided issuerOrigin.
+            Leaves other stored data, including the issuer&apos;s Redemption Records, intact.
+            </summary>
+            <param name = "issuerOrigin">issuerOrigin</param>
+            <returns>returns System.Threading.Tasks.Task&lt;ClearTrustTokensResponse&gt;</returns>
         </member>
         <member name="T:CefSharp.DevTools.SystemInfo.GPUDevice">
             <summary>
@@ -14549,7 +14812,7 @@
             <summary>
             Creates a new page.
             </summary>
-            <param name = "url">The initial URL the page will be navigated to.</param>
+            <param name = "url">The initial URL the page will be navigated to. An empty string indicates about:blank.</param>
             <param name = "width">Frame width in DIP (headless chrome only).</param>
             <param name = "height">Frame height in DIP (headless chrome only).</param>
             <param name = "browserContextId">The browser context to create the page in.</param>
@@ -14712,6 +14975,30 @@
             detailed
             </summary>
         </member>
+        <member name="T:CefSharp.DevTools.Tracing.TracingBackend">
+            <summary>
+            Backend type to use for tracing. `chrome` uses the Chrome-integrated
+            tracing service and is supported on all platforms. `system` is only
+            supported on Chrome OS and uses the Perfetto system tracing service.
+            `auto` chooses `system` when the perfettoConfig provided to Tracing.start
+            specifies at least one non-Chrome data source; otherwise uses `chrome`.
+            </summary>
+        </member>
+        <member name="F:CefSharp.DevTools.Tracing.TracingBackend.Auto">
+            <summary>
+            auto
+            </summary>
+        </member>
+        <member name="F:CefSharp.DevTools.Tracing.TracingBackend.Chrome">
+            <summary>
+            chrome
+            </summary>
+        </member>
+        <member name="F:CefSharp.DevTools.Tracing.TracingBackend.System">
+            <summary>
+            system
+            </summary>
+        </member>
         <member name="T:CefSharp.DevTools.Tracing.GetCategoriesResponse">
             <summary>
             GetCategoriesResponse
@@ -14775,7 +15062,7 @@
             <param name = "levelOfDetail">Specifies level of details in memory dump. Defaults to "detailed".</param>
             <returns>returns System.Threading.Tasks.Task&lt;RequestMemoryDumpResponse&gt;</returns>
         </member>
-        <member name="M:CefSharp.DevTools.Tracing.TracingClient.StartAsync(System.String,System.String,System.Nullable{System.Int64},System.String,System.Nullable{CefSharp.DevTools.Tracing.StreamFormat},System.Nullable{CefSharp.DevTools.Tracing.StreamCompression},CefSharp.DevTools.Tracing.TraceConfig,System.Byte[])">
+        <member name="M:CefSharp.DevTools.Tracing.TracingClient.StartAsync(System.String,System.String,System.Nullable{System.Int64},System.String,System.Nullable{CefSharp.DevTools.Tracing.StreamFormat},System.Nullable{CefSharp.DevTools.Tracing.StreamCompression},CefSharp.DevTools.Tracing.TraceConfig,System.Byte[],System.Nullable{CefSharp.DevTools.Tracing.TracingBackend})">
             <summary>
             Start trace events collection.
             </summary>
@@ -14787,6 +15074,7 @@
             <param name = "streamCompression">Compression format to use. This only applies when using `ReturnAsStream`transfer mode (defaults to `none`)</param>
             <param name = "traceConfig">traceConfig</param>
             <param name = "perfettoConfig">Base64-encoded serialized perfetto.protos.TraceConfig protobuf messageWhen specified, the parameters `categories`, `options`, `traceConfig`are ignored.</param>
+            <param name = "tracingBackend">Backend type (defaults to `auto`)</param>
             <returns>returns System.Threading.Tasks.Task&lt;DevToolsMethodResponse&gt;</returns>
         </member>
         <member name="T:CefSharp.DevTools.Fetch.RequestStage">
@@ -18826,6 +19114,12 @@
             All methods will be called on the CEF UI thread
             </summary>
         </member>
+        <member name="P:CefSharp.Handler.AudioHandler.IsDisposed">
+            <summary>
+            Gets a value indicating this <see cref="T:CefSharp.Handler.AudioHandler"/> instance
+            has been disposed.
+            </summary>
+        </member>
         <member name="M:CefSharp.Handler.AudioHandler.CefSharp#IAudioHandler#GetAudioParameters(CefSharp.IWebBrowser,CefSharp.IBrowser,CefSharp.Structs.AudioParameters@)">
             <inheritdoc/>
         </member>
@@ -18894,6 +19188,15 @@
             <param name="chromiumWebBrowser">the ChromiumWebBrowser control</param>
             <param name="browser">the browser object</param>
             <param name="errorMessage">error message</param>
+        </member>
+        <member name="M:CefSharp.Handler.AudioHandler.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and managed resources
+            </summary>
+            <param name="disposing"><see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:CefSharp.Handler.AudioHandler.Dispose">
+            <inheritdoc />
         </member>
         <member name="T:CefSharp.Handler.BrowserProcessHandler">
             <summary>
@@ -21063,7 +21366,16 @@
         <member name="M:CefSharp.Internals.TaskExtensions.TrySetResultAsync``1(System.Threading.Tasks.TaskCompletionSource{``0},``0)">
             <summary>
             Set the TaskCompletionSource in an async fashion. This prevents the Task Continuation being executed sync on the same thread
-            This is required otherwise contintinuations will happen on CEF UI threads
+            This is required otherwise continuations will happen on CEF UI threads
+            </summary>
+            <typeparam name="TResult">Generic param</typeparam>
+            <param name="taskCompletionSource">tcs</param>
+            <param name="result">result</param>
+        </member>
+        <member name="M:CefSharp.Internals.TaskExtensions.TrySetExceptionAsync``1(System.Threading.Tasks.TaskCompletionSource{``0},System.Exception)">
+            <summary>
+            Calls <see cref="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)"/> in an async fashion. This prevents the Task Continuation being executed sync on the same thread
+            This is required otherwise continuations will happen on CEF UI threads
             </summary>
             <typeparam name="TResult">Generic param</typeparam>
             <param name="taskCompletionSource">tcs</param>
@@ -21255,9 +21567,154 @@
             Generic callback interface used for managing the lifespan of a registration.
             </summary>
         </member>
+        <member name="T:CefSharp.LoadUrlAsyncResponse">
+            <summary>
+            Response returned from <see cref="M:CefSharp.IWebBrowser.LoadUrlAsync(System.String,System.Threading.SynchronizationContext)"/>
+            </summary>
+        </member>
+        <member name="P:CefSharp.LoadUrlAsyncResponse.ErrorCode">
+            <summary>
+            Error Code. If the network request was made successfully this value will be <see cref="F:CefSharp.CefErrorCode.None"/>
+            (no error occured)
+            </summary>
+        </member>
+        <member name="P:CefSharp.LoadUrlAsyncResponse.HttpStatusCode">
+            <summary>
+            Http Status Code. If <see cref="P:CefSharp.LoadUrlAsyncResponse.ErrorCode"/> is not equal to <see cref="F:CefSharp.CefErrorCode.None"/>
+            then this value will be -1.
+            </summary>
+        </member>
+        <member name="P:CefSharp.LoadUrlAsyncResponse.Success">
+            <summary>
+            If <see cref="P:CefSharp.LoadUrlAsyncResponse.ErrorCode"/> is equal to <see cref="F:CefSharp.CefErrorCode.None"/> and
+            <see cref="P:CefSharp.LoadUrlAsyncResponse.HttpStatusCode"/> is equal to 200 (OK) then the main frame loaded without
+            critical error. 
+            </summary>
+        </member>
+        <member name="M:CefSharp.LoadUrlAsyncResponse.#ctor(CefSharp.CefErrorCode,System.Int32)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="errorCode">CEF Error Code</param>
+            <param name="httpStatusCode">Http Status Code</param>
+        </member>
+        <member name="T:CefSharp.UrlRequestClient">
+            <summary>
+            Interface that should be implemented by the CefURLRequest client.
+            The methods of this class will be called on the same thread that created the request unless otherwise documented. 
+            </summary>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.CefSharp#IUrlRequestClient#GetAuthCredentials(System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)">
+            <summary>
+            Called on the CEF IO thread when the browser needs credentials from the user.
+            This method will only be called for requests initiated from the browser process. 
+            </summary>
+            <param name="isProxy">indicates whether the host is a proxy server.</param>
+            <param name="host">the hostname.</param>
+            <param name="port">the port number.</param>
+            <param name="realm">realm</param>
+            <param name="scheme">scheme</param>
+            <param name="callback">is a callback for authentication information</param>
+            <returns>
+            Return true to continue the request and call <see cref="M:CefSharp.IAuthCallback.Continue(System.String,System.String)"/> when the authentication information is available.
+            If the request has an associated browser/frame then returning false will result in a call to <see cref="M:CefSharp.IRequestHandler.GetAuthCredentials(CefSharp.IWebBrowser,CefSharp.IBrowser,System.String,System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)"/> 
+            on the <see cref="T:CefSharp.IRequestHandler"/> associated with that browser, if any.
+            Otherwise, returning false will cancel the request immediately.
+            </returns>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.GetAuthCredentials(System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)">
+            <summary>
+            Called on the CEF IO thread when the browser needs credentials from the user.
+            This method will only be called for requests initiated from the browser process. 
+            </summary>
+            <param name="isProxy">indicates whether the host is a proxy server.</param>
+            <param name="host">the hostname.</param>
+            <param name="port">the port number.</param>
+            <param name="realm">realm</param>
+            <param name="scheme">scheme</param>
+            <param name="callback">is a callback for authentication information</param>
+            <returns>
+            Return true to continue the request and call <see cref="M:CefSharp.IAuthCallback.Continue(System.String,System.String)"/> when the authentication information is available.
+            If the request has an associated browser/frame then returning false will result in a call to <see cref="M:CefSharp.IRequestHandler.GetAuthCredentials(CefSharp.IWebBrowser,CefSharp.IBrowser,System.String,System.Boolean,System.String,System.Int32,System.String,System.String,CefSharp.IAuthCallback)"/> 
+            on the <see cref="T:CefSharp.IRequestHandler"/> associated with that browser, if any.
+            Otherwise, returning false will cancel the request immediately.
+            </returns>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.CefSharp#IUrlRequestClient#OnDownloadData(CefSharp.IUrlRequest,System.IO.Stream)">
+            <summary>
+            Called when some part of the response is read. This method will not be called if the <see cref="F:CefSharp.UrlRequestFlags.NoDownloadData"/> flag is set on the request. 
+            </summary>
+            <param name="request">request</param>
+            <param name="data">A stream containing the bytes received since the last call. Cannot be used outside the scope of this method. </param>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.OnDownloadData(CefSharp.IUrlRequest,System.IO.Stream)">
+            <summary>
+            Called when some part of the response is read. This method will not be called if the <see cref="F:CefSharp.UrlRequestFlags.NoDownloadData"/> flag is set on the request. 
+            </summary>
+            <param name="request">request</param>
+            <param name="data">A stream containing the bytes received since the last call. Cannot be used outside the scope of this method. </param>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.CefSharp#IUrlRequestClient#OnDownloadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)">
+            <summary>
+            Notifies the client of download progress.
+            </summary>
+            <param name="request">request</param>
+            <param name="current">denotes the number of bytes received up to the call </param>
+            <param name="total">is the expected total size of the response (or -1 if not determined).</param>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.OnDownloadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)">
+            <summary>
+            Notifies the client of download progress.
+            </summary>
+            <param name="request">request</param>
+            <param name="current">denotes the number of bytes received up to the call </param>
+            <param name="total">is the expected total size of the response (or -1 if not determined).</param>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.CefSharp#IUrlRequestClient#OnRequestComplete(CefSharp.IUrlRequest)">
+            <summary>
+            Notifies the client that the request has completed.
+            Use the <see cref="P:CefSharp.IUrlRequest.RequestStatus"/> property to determine if the
+            request was successful or not.
+            </summary>
+            <param name="request">request</param>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.OnRequestComplete(CefSharp.IUrlRequest)">
+            <summary>
+            Notifies the client that the request has completed.
+            Use the <see cref="P:CefSharp.IUrlRequest.RequestStatus"/> property to determine if the
+            request was successful or not.
+            </summary>
+            <param name="request">request</param>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.CefSharp#IUrlRequestClient#OnUploadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)">
+            <summary>
+            Notifies the client of upload progress.
+            This method will only be called if the UR_FLAG_REPORT_UPLOAD_PROGRESS flag is set on the request.
+            </summary>
+            <param name="request">request</param>
+            <param name="current">denotes the number of bytes sent so far.</param>
+            <param name="total">is the total size of uploading data (or -1 if chunked upload is enabled).</param>
+        </member>
+        <member name="M:CefSharp.UrlRequestClient.OnUploadProgress(CefSharp.IUrlRequest,System.Int64,System.Int64)">
+            <summary>
+            Notifies the client of upload progress.
+            This method will only be called if the UR_FLAG_REPORT_UPLOAD_PROGRESS flag is set on the request.
+            </summary>
+            <param name="request">request</param>
+            <param name="current">denotes the number of bytes sent so far.</param>
+            <param name="total">is the total size of uploading data (or -1 if chunked upload is enabled).</param>
+        </member>
         <member name="T:CefSharp.JavascriptBinding.JavascriptBindingSettings">
             <summary>
             Javascript Binding Settings
+            </summary>
+        </member>
+        <member name="P:CefSharp.JavascriptBinding.JavascriptBindingSettings.JavascriptBindingApiEnabled">
+            <summary>
+            The Javascript methods that CefSharp provides in relation to JavaScript Binding are
+            created using a Global (window) Object. Settings this property allows you to disable
+            the creation of this object. Features like EvaluateScriptAsPromiseAsync that rely on
+            the creation of this object will no longer function.
             </summary>
         </member>
         <member name="P:CefSharp.JavascriptBinding.JavascriptBindingSettings.JavascriptBindingApiGlobalObjectName">
@@ -21288,11 +21745,6 @@
             the <see cref="M:CefSharp.ModelBinding.IAsyncMethodInterceptor.InterceptAsync(System.Func{System.Object[],System.Object},System.Object[],System.String)"/>
             method is call for all methods (the default is to call InterceptAsync only for methods that return a Task).
             This only applies when <see cref="P:CefSharp.BindingOptions.MethodInterceptor"/> is of type <see cref="T:CefSharp.ModelBinding.IAsyncMethodInterceptor"/>
-            </summary>
-        </member>
-        <member name="M:CefSharp.JavascriptBinding.JavascriptBindingSettings.#ctor">
-            <summary>
-            Default Constructor
             </summary>
         </member>
         <member name="T:CefSharp.JavascriptBinding.CamelCaseJavascriptNameConverter">
@@ -25132,25 +25584,40 @@
         </member>
         <member name="F:CefSharp.CefThreadIds.TID_UI">
             <summary>
-            The CEF UI thread in the browser. In CefSharp this is ALWAYS
-            separate from the application's main thread (and thus the main 
-            WinForm UI thread).
+            The CEF UI thread in the browser. In CefSharp this is by default
+            different from your main applications UI Thread
+            (e.g. WPF/WinForms UI Threads). Only when MultiThreadedMessageLoop
+            is false will this be the same as your app UI Thread.
             </summary>
         </member>
-        <member name="F:CefSharp.CefThreadIds.TID_DB">
+        <member name="F:CefSharp.CefThreadIds.TID_FILE_BACKGROUND">
             <summary>
-            Used to interact with the database.
+            Used for blocking tasks (e.g. file system access) where the user won't
+            notice if the task takes an arbitrarily long time to complete. All tasks
+            posted after <see cref="M:CefSharp.IBrowserProcessHandler.OnContextInitialized"/>
+            and before Cef.Shutdown() are guaranteed to run.
             </summary>
         </member>
-        <member name="F:CefSharp.CefThreadIds.TID_FILE">
+        <member name="F:CefSharp.CefThreadIds.TID_FILE_USER_VISIBLE">
             <summary>
-            Used to interact with the file system.
+            Used for blocking tasks (e.g. file system access) that affect UI or
+            responsiveness of future user interactions. Do not use if an immediate
+            response to a user interaction is expected. All tasks posted after
+            <see cref="M:CefSharp.IBrowserProcessHandler.OnContextInitialized"/> and before Cef.Shutdown()
+            are guaranteed to run.
+            Examples:
+            - Updating the UI to reflect progress on a long task.
+            - Loading data that might be shown in the UI after a future user
+              interaction.
             </summary>
         </member>
         <member name="F:CefSharp.CefThreadIds.TID_FILE_USER_BLOCKING">
             <summary>
-            Used for file system operations that block user interactions.
-            Responsiveness of this thread affects users.
+            Used for blocking tasks (e.g. file system access) that affect UI
+            immediately after a user interaction. All tasks posted after
+            <see cref="M:CefSharp.IBrowserProcessHandler.OnContextInitialized"/> and before Cef.Shutdown()
+            are guaranteed to run.
+            Example: Generating data shown in the UI immediately after a click.
             </summary>
         </member>
         <member name="F:CefSharp.CefThreadIds.TID_PROCESS_LAUNCHER">
@@ -25158,19 +25625,20 @@
             Used to launch and terminate browser processes.
             </summary>
         </member>
-        <member name="F:CefSharp.CefThreadIds.TID_CACHE">
-            <summary>
-            Used to handle slow HTTP cache operations.
-            </summary>
-        </member>
         <member name="F:CefSharp.CefThreadIds.TID_IO">
             <summary>
-            Used to process IPC and network messages.
+            Used to process IPC and network messages. Do not perform blocking tasks on
+            this thread. All tasks posted after <see cref="M:CefSharp.IBrowserProcessHandler.OnContextInitialized"/>
+            and before Cef.Shutdown() are guaranteed to run.
             </summary>
         </member>
         <member name="F:CefSharp.CefThreadIds.TID_RENDERER">
             <summary>
             The main thread in the renderer. Used for all WebKit and V8 interaction.
+            Tasks may be posted to this thread after
+            CefRenderProcessHandler::OnWebKitInitialized but are not guaranteed to
+            run before sub-process termination (sub-processes may be killed at any time
+            without warning).
             </summary>
         </member>
         <member name="T:CefSharp.CertStatus">
@@ -25931,9 +26399,8 @@
         </member>
         <member name="F:CefSharp.TransitionType.Explicit">
             <summary>
-            Source is some other "explicit" navigation action such as creating a new 
-            browser or using the LoadURL function. This is also the default value
-            for navigations where the actual type is unknown.
+            Source is some other "explicit" navigation. This is the default value for
+            navigations where the actual type is unknown. See also <see cref="F:CefSharp.TransitionType.DirectLoad"/>.
             </summary>
         </member>
         <member name="F:CefSharp.TransitionType.AutoSubFrame">
@@ -25981,6 +26448,12 @@
         <member name="F:CefSharp.TransitionType.ForwardBack">
             <summary>
             Used the Forward or Back function to navigate among browsing history.
+            Will be ORed to the transition type for the original load.
+            </summary>
+        </member>
+        <member name="F:CefSharp.TransitionType.DirectLoad">
+            <summary>
+            Loaded a URL directly via CreateBrowser, LoadURL or LoadRequest.
             </summary>
         </member>
         <member name="F:CefSharp.TransitionType.ChainStart">
@@ -28745,15 +29218,6 @@
             Set default values for CefSharpSettings
             </summary>
         </member>
-        <member name="P:CefSharp.CefSharpSettings.LegacyJavascriptBindingEnabled">
-            <summary>
-            Objects registered using <see cref="M:CefSharp.IJavascriptObjectRepository.Register(System.String,System.Object,System.Boolean,CefSharp.BindingOptions)"/>
-            will be automatically bound when a V8Context is created. (Soon as the Javascript
-            context is created for a browser). This behaviour is like that seen with Javascript
-            Binding in version 57 and earlier.
-            NOTE: MUST be set before creating your first ChromiumWebBrowser instance.
-            </summary>
-        </member>
         <member name="P:CefSharp.CefSharpSettings.WcfEnabled">
             <summary>
             WCF is used by JavascriptObjectRepository.Register(isAsync: false) feature for
@@ -29524,7 +29988,7 @@
         </member>
         <member name="M:CefSharp.IBrowserHost.StartDownload(System.String)">
             <summary>
-            Download the file at url using IDownloadHandler. 
+            Download the file at url using <see cref="T:CefSharp.IDownloadHandler"/>. 
             </summary>
             <param name="url">url to download</param>
         </member>
@@ -31032,6 +31496,25 @@
             <see cref="T:System.Threading.Tasks.Task`1"/> that when executed returns the main frame display text as a string.
             </returns>
         </member>
+        <member name="M:CefSharp.WebBrowserExtensions.StartDownload(CefSharp.IWebBrowser,System.String)">
+            <summary>
+            Download the file at url using <see cref="T:CefSharp.IDownloadHandler"/>. 
+            </summary>
+            <param name="browser">The ChromiumWebBrowser instance this method extends.</param>
+            <param name="url">url to download</param>
+        </member>
+        <member name="M:CefSharp.WebBrowserExtensions.LoadUrlAsync(CefSharp.IWebBrowser,System.String,System.Threading.SynchronizationContext)">
+            <summary>
+            See <see cref="M:CefSharp.IWebBrowser.LoadUrlAsync(System.String,System.Threading.SynchronizationContext)"/> for details
+            </summary>
+            <param name="chromiumWebBrowser">ChromiumWebBrowser instance (cannot be null)</param>
+            <summary>
+            Load the <paramref name="url"/> in the main frame of the browser
+            </summary>
+            <param name="url">url to load</param>
+            <param name="ctx">SynchronizationContext to execute the continuation on, if null then the ThreadPool will be used.</param>
+            <returns>See <see cref="M:CefSharp.IWebBrowser.LoadUrlAsync(System.String,System.Threading.SynchronizationContext)"/> for details</returns>
+        </member>
         <member name="M:CefSharp.WebBrowserExtensions.ExecuteScriptAsync(CefSharp.IWebBrowser,System.String,System.Object[])">
             <summary>
             Execute some Javascript code in the context of this WebBrowser. As the method name implies, the script will be executed
@@ -31810,9 +32293,20 @@
         </member>
         <member name="M:CefSharp.IWebBrowser.Load(System.String)">
             <summary>
-            Loads the specified URL.
+            Loads the specified <paramref name="url"/> in the Main Frame
             </summary>
             <param name="url">The URL to be loaded.</param>
+        </member>
+        <member name="M:CefSharp.IWebBrowser.LoadUrlAsync(System.String,System.Threading.SynchronizationContext)">
+            <summary>
+            Load the <paramref name="url"/> in the main frame of the browser
+            </summary>
+            <param name="url">url to load</param>
+            <param name="ctx">SynchronizationContext to execute the continuation on, if null then the ThreadPool will be used.</param>
+            <returns>
+            A <see cref="!:Task&lt;int&gt;"/> that can be awaited to load the <paramref name="url"/> and return the HttpStatusCode and <see cref="T:CefSharp.CefErrorCode"/>.
+            A HttpStatusCode equal to 200 and <see cref="F:CefSharp.CefErrorCode.None"/> is considered a success.
+            </returns>
         </member>
         <member name="P:CefSharp.IWebBrowser.JavascriptObjectRepository">
             <summary>
