@@ -29,7 +29,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <GroupBox Header="Definitions" Grid.RowSpan="3" Margin="10" Grid.Row="1" FontSize="36" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontWeight="Bold">
+        <GroupBox Header="Definitions" Grid.RowSpan="4" Margin="10" Grid.Row="1" FontSize="36" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontWeight="Bold">
             <Grid Margin="10" UseLayoutRounding="True">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -52,13 +52,13 @@
                 <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="StandardTuning" Content="Standard" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="LowTuning" Content="Low" Foreground="{DynamicResource MainTextColour}"/>
-                    <ComboBoxItem x:Name="SpecialTuning" Content="Special" Foreground="{DynamicResource MainTextColour}"/>
+                    
 
                 </ComboBox>
                 <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="StaticTimeSig" Content="Static" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="DynamicTimeSig" Content="Dynamic" Foreground="{DynamicResource MainTextColour}"/>
-                    <ComboBoxItem x:Name="WeirdTimeSig" Content="Weird" Foreground="{DynamicResource MainTextColour}"/>
+                    
 
                 </ComboBox>
                 <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal">
@@ -105,16 +105,16 @@
                 <Button Content="Settings" Margin="10" Click="Button_Click_5"  BorderBrush="{DynamicResource MainBorderColour}" Grid.Column="1"/>
             </Grid>
         </Border>
-        <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="3" FontSize="36" FontWeight="Bold" Margin="10">
+        <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="4" FontSize="36" FontWeight="Bold" Margin="10">
             <Grid Margin="10">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="4*"/>
                 </Grid.RowDefinitions>
                 <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" Grid.Row="1" FontWeight="Normal"/>
                 <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" FontWeight="Normal"/>
-                <Expander Header="More Suggestions" Margin="10,10,10,-210" Grid.Row="2">
+                <Expander Header="More Suggestions" Margin="10,10,10,0" Grid.Row="2">
                     <Border Margin="10,10,10,0" Background="{DynamicResource MainBackgroundBrush1}" Style="{DynamicResource MoreOptionsBorder}" BorderThickness="5">
                         <Grid Background="{DynamicResource MainBackgroundBrush1}">
                             <Grid.ColumnDefinitions>

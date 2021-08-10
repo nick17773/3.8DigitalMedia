@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="1.0.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
+	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="1.1.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
 		<Package InstallerVersion="300" Compressed="yes"/>
 		<Media Id="1" Cabinet="myapplication.cab" EmbedCab="yes" />
 

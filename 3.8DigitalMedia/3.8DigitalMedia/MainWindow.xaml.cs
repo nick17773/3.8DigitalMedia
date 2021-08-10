@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using System.Diagnostics;
 
 namespace _3._8DigitalMedia
 {
@@ -77,11 +78,11 @@ namespace _3._8DigitalMedia
 
             StandardTuning.Content = Tuning.Standard;
             LowTuning.Content = Tuning.Low;
-            SpecialTuning.Content = Tuning.Special;
+            
 
             StaticTimeSig.Content = TimeSignature.Static;
             DynamicTimeSig.Content = TimeSignature.Dynamic;
-            WeirdTimeSig.Content = TimeSignature.Weird;
+            
 
             ShortSongLength.Content = SongLength.Short;
             MediumSongLength.Content = SongLength.Medium;
@@ -94,6 +95,185 @@ namespace _3._8DigitalMedia
             MongolianFolk.Content = Instrumentation.Mongolian;
             NorseFolk.Content = Instrumentation.Nordic;
 
+            TotalChecker();
+
+
+        }
+
+        public void TotalChecker()
+        {
+            var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
+            List<string> AllTuningStandardValues = new List<string>();
+            List<string> AllTuningLowValues = new List<string>();
+            List<string> AllBPMSlowValues = new List<string>();
+            List<string> AllBPMMediumValues = new List<string>();
+            List<string> AllBPMFastValues = new List<string>();
+            List<string> AllBPMInsaneValues = new List<string>();
+            List<string> AllTimeSigStaticValues = new List<string>();
+            List<string> AllTimeSigDynamicValues = new List<string>();
+            List<string> AllSongLenShortValues = new List<string>();
+            List<string> AllSongLenMediumValues = new List<string>();
+            List<string> AllSongLenLongValues = new List<string>();
+            List<string> AllSongLenExtremeValues = new List<string>();
+            List<string> AllInstClassicValues = new List<string>();
+            List<string> AllInstOrchestralValues = new List<string>();
+            List<string> AllInstFolkValues = new List<string>();
+            List<string> AllInstMongolValues = new List<string>();
+            List<string> AllInstNorseValues = new List<string>();
+
+            bool allCheck = true;
+            foreach (var agv in GroupedValues)
+            {
+                var allTuningLookup = agv.ToLookup(e => e.Value.tuning);
+                var allBPMLookup = agv.ToLookup(e => e.Value.bpm);
+                var allTimeSigLookup = agv.ToLookup(e => e.Value.timeSignature);
+                var allSongLenLookup = agv.ToLookup(e => e.Value.songLength);
+                var allInstLookup = agv.ToLookup(e => e.Value.instrumentation);
+
+                var StandardTuningCheck = allTuningLookup[Tuning.Standard];
+                var LowTuningCheck = allTuningLookup[Tuning.Low];
+
+                var SlowBPMCheck = allBPMLookup[BPM.Slow];
+                var MediumBPMCheck = allBPMLookup[BPM.Medium];
+                var FastBPMCheck = allBPMLookup[BPM.Fast];
+                var InsaneBPMCheck = allBPMLookup[BPM.Insane];
+
+                var StaticTimeSigCheck = allTimeSigLookup[TimeSignature.Static];
+                var DynamicTimeSigCheck = allTimeSigLookup[TimeSignature.Dynamic];
+
+                var ShortSongLengthCheck = allSongLenLookup[SongLength.Short];
+                var MediumSongLengthCheck = allSongLenLookup[SongLength.Medium];
+                var LongSongLengthCheck = allSongLenLookup[SongLength.Long];
+                var ExtremeSongLengthCheck = allSongLenLookup[SongLength.Extreme];
+
+                var ClassicInstCheck = allInstLookup[Instrumentation.Classic];
+                var OrchestralInstCheck = allInstLookup[Instrumentation.Orchestral];
+                var FolkInstCheck = allInstLookup[Instrumentation.Folk];
+                var MongolInstCheck = allInstLookup[Instrumentation.Mongolian];
+                var NorseInstCheck = allInstLookup[Instrumentation.Nordic];
+
+                foreach (var CheckStr in StandardTuningCheck)
+                    {
+                        string selectedTuning = CheckStr.Key;
+                        AllTuningStandardValues.Add(selectedTuning);
+                        int StdrdCheck = AllTuningStandardValues.Count();
+                        StandardTuning.Content = Tuning.Standard + $" ({StdrdCheck})";
+                    }
+                foreach (var CheckStr in LowTuningCheck)
+                    {
+                        string selectedTuning = CheckStr.Key;
+                        AllTuningLowValues.Add(selectedTuning);
+                        int LowCheck = AllTuningLowValues.Count();
+                        LowTuning.Content = Tuning.Low + $" ({LowCheck})";
+                    }
+                foreach (var CheckStr in SlowBPMCheck)
+                {
+                    string selectedBPM = CheckStr.Key;
+                    AllBPMSlowValues.Add(selectedBPM);
+                    int SlowCheck = AllBPMSlowValues.Count();
+                    SlowBPM.Content = BPM.Slow + $" ({SlowCheck})";
+                }
+                foreach (var CheckStr in MediumBPMCheck)
+                {
+                    string selectedTuning = CheckStr.Key;
+                    AllBPMMediumValues.Add(selectedTuning);
+                    int BPMMediumCheck = AllBPMMediumValues.Count();
+                    MediumBPM.Content = BPM.Medium + $" ({BPMMediumCheck})";
+                }
+                foreach (var CheckStr in FastBPMCheck)
+                {
+                    string selectedBPM = CheckStr.Key;
+                    AllBPMFastValues.Add(selectedBPM);
+                    int FastCheck = AllBPMFastValues.Count();
+                    FastBPM.Content = BPM.Fast + $" ({FastCheck})";
+                }
+                foreach (var CheckStr in InsaneBPMCheck)
+                {
+                    string selectedBPM = CheckStr.Key;
+                    AllBPMInsaneValues.Add(selectedBPM);
+                    int InsaneCheck = AllBPMInsaneValues.Count();
+                    InsaneBPM.Content = BPM.Insane + $" ({InsaneCheck})";
+                }
+                foreach (var CheckStr in StaticTimeSigCheck)
+                {
+                    string selectedTimeSig = CheckStr.Key;
+                    AllTimeSigStaticValues.Add(selectedTimeSig);
+                    int StaticCheck = AllTimeSigStaticValues.Count();
+                    StaticTimeSig.Content = TimeSignature.Static + $" ({StaticCheck})";
+                }
+                foreach (var CheckStr in DynamicTimeSigCheck)
+                {
+                    string selectedTimeSig = CheckStr.Key;
+                    AllTimeSigDynamicValues.Add(selectedTimeSig);
+                    int DynamicCheck = AllTimeSigDynamicValues.Count();
+                    DynamicTimeSig.Content = TimeSignature.Dynamic + $" ({DynamicCheck})";
+                }
+                foreach (var CheckStr in ShortSongLengthCheck)
+                {
+                    string selectedSongLength = CheckStr.Key;
+                    AllSongLenShortValues.Add(selectedSongLength);
+                    int ShortCheck = AllSongLenShortValues.Count();
+                    ShortSongLength.Content = SongLength.Short + $" ({ShortCheck})";
+                }
+                foreach (var CheckStr in MediumSongLengthCheck)
+                {
+                    string selectedSongLength = CheckStr.Key;
+                    AllSongLenMediumValues.Add(selectedSongLength);
+                    int SongLenMediumCheck = AllSongLenMediumValues.Count();
+                    MediumSongLength.Content = SongLength.Medium + $" ({SongLenMediumCheck})";
+                }
+                foreach (var CheckStr in LongSongLengthCheck)
+                {
+                    string selectedSongLength = CheckStr.Key;
+                    AllSongLenLongValues.Add(selectedSongLength);
+                    int LongCheck = AllSongLenLongValues.Count();
+                    LongSongLength.Content = SongLength.Long + $" ({LongCheck})";
+                }
+                foreach (var CheckStr in ExtremeSongLengthCheck)
+                {
+                    string selectedSongLength = CheckStr.Key;
+                    AllSongLenExtremeValues.Add(selectedSongLength);
+                    int ExtremeCheck = AllSongLenExtremeValues.Count();
+                    ExtremeSongLength.Content = SongLength.Extreme + $" ({ExtremeCheck})";
+                }
+                foreach (var CheckStr in ClassicInstCheck)
+                {
+                    string selectedInstrumentation = CheckStr.Key;
+                    AllInstClassicValues.Add(selectedInstrumentation);
+                    int ClassicCheck = AllInstClassicValues.Count();
+                    Classic.Content = Instrumentation.Classic + $" ({ClassicCheck})";
+                }
+                foreach (var CheckStr in OrchestralInstCheck)
+                {
+                    string selectedInstrumentation = CheckStr.Key;
+                    AllInstOrchestralValues.Add(selectedInstrumentation);
+                    int OrchestralCheck = AllInstOrchestralValues.Count();
+                    Orchestral.Content = Instrumentation.Orchestral + $" ({OrchestralCheck})";
+                }
+                foreach (var CheckStr in FolkInstCheck)
+                {
+                    string selectedInstrumentation = CheckStr.Key;
+                    AllInstFolkValues.Add(selectedInstrumentation);
+                    int FolkCheck = AllInstFolkValues.Count();
+                    TraditionalFolk.Content = Instrumentation.Folk + $" ({FolkCheck})";
+                }
+                foreach (var CheckStr in MongolInstCheck)
+                {
+                    string selectedInstrumentation = CheckStr.Key;
+                    AllInstMongolValues.Add(selectedInstrumentation);
+                    int MongolCheck = AllInstMongolValues.Count();
+                    MongolianFolk.Content = Instrumentation.Mongolian + $" ({MongolCheck})";
+                }
+                foreach (var CheckStr in NorseInstCheck)
+                {
+                    string selectedInstrumentation = CheckStr.Key;
+                    AllInstNorseValues.Add(selectedInstrumentation);
+                    int NorseCheck = AllInstNorseValues.Count();
+                    NorseFolk.Content = Instrumentation.Nordic + $" ({NorseCheck})";
+                }
+
+
+            }
         }
         public void Check()
         {
@@ -442,6 +622,7 @@ namespace _3._8DigitalMedia
                         TuningValues.Add(selectedGenre);
                         string combinedTuningValues = String.Join(", ", TuningValues);
                         SuggestedByTuning.Text = combinedTuningValues;
+                        
                     }
                 }
                 else if (TuningInput == Low)
@@ -705,6 +886,7 @@ namespace _3._8DigitalMedia
         {
             Check();
             GenreSuggestions();
+            //TotalChecker();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
