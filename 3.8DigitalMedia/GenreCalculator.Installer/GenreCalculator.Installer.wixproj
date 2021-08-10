@@ -19,16 +19,6 @@
     <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\3.8DigitalMedia\3.8DigitalMedia.csproj">
-      <Name>3.8DigitalMedia</Name>
-      <Project>{6d5bd1cc-9861-4c57-a89c-ac3ca1b61498}</Project>
-      <Private>True</Private>
-      <DoNotHarvest>True</DoNotHarvest>
-      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
-      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="3.8DigitalMedia.exe" />
     <Content Include="CefSharp.BrowserSubprocess.Core.dll" />
     <Content Include="CefSharp.Core.dll" />
@@ -51,6 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="File1.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\3.8DigitalMedia\3.8DigitalMedia.csproj">
+      <Name>3.8DigitalMedia</Name>
+      <Project>{6d5bd1cc-9861-4c57-a89c-ac3ca1b61498}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" Condition=" '$(WixTargetsPath)' != '' " />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets" Condition=" '$(WixTargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets') " />
