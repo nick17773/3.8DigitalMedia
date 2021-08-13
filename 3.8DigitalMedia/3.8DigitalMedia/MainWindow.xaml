@@ -4,17 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
-        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2" x:Class="_3._8DigitalMedia.MainWindow"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+        xmlns:TS="clr-namespace:ToggleSwitch;assembly=ToggleSwitch"
+        
+        
+        x:Class="_3._8DigitalMedia.MainWindow"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
         FontSize="20"
         Background="{DynamicResource ResourceKey=MainBackgroundBrush1}"
         Foreground="{DynamicResource MainTextColour}"
         WindowState="Maximized"
         Title="MainWindow" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
-
-    <Window.Resources>
-
-    </Window.Resources>
 
     <Grid x:Name="MainGrid" Margin="10" UseLayoutRounding="True">
         <Grid.RowDefinitions>
@@ -52,13 +52,13 @@
                 <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="StandardTuning" Content="Standard" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="LowTuning" Content="Low" Foreground="{DynamicResource MainTextColour}"/>
-                    
+
 
                 </ComboBox>
                 <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="StaticTimeSig" Content="Static" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="DynamicTimeSig" Content="Dynamic" Foreground="{DynamicResource MainTextColour}"/>
-                    
+
 
                 </ComboBox>
                 <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal">
@@ -70,8 +70,8 @@
 
                 </ComboBox>
                 <Label Content="Beats Per Minute" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Margin="10,20" FontWeight="Normal"/>
-                <Label Content="Tuning" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="1" FontWeight="Normal"/>
-                <Label Content="Time Signature" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="2" FontWeight="Normal"/>
+                <Label x:Name="TuningTitleLabel" Content="Tuning (DISABLED)" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="1" FontWeight="Normal"/>
+                <Label x:Name="TimeSigTitleLabel" Content="Time Signature&#xD;&#xA;  (DISABLED)" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="2" FontWeight="Normal"/>
                 <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="3" FontWeight="Normal"/>
                 <Label Content="Instrumentation" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource ResourceKey=DefinitionsLabels}" Grid.Row="4" FontWeight="Normal"/>
                 <ComboBox x:Name="InstrumentBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4" Padding="5" FontWeight="Normal">
@@ -103,6 +103,9 @@
                 <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" Grid.Row="1" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Settings" Margin="10" Click="Button_Click_5"  BorderBrush="{DynamicResource MainBorderColour}" Grid.Column="1"/>
+                <TS:HorizontalToggleSwitch Grid.Row="1" Grid.Column="1" Elasticity="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="40,20" CheckedBackground="{DynamicResource MainComboBoxSelectedColour}" CheckedForeground="{DynamicResource MainTextColour}" ThumbBrush="{DynamicResource MainButtonColour}" UncheckedBackground="{DynamicResource MainBackgroundBrush1}" UncheckedForeground="{DynamicResource MainTextColour}" BorderBrush="{DynamicResource MainBorderColour}" UncheckedContent="Basic" CheckedContent="Advanced" Unchecked="BasicSet" Checked="AdvancedSet"></TS:HorizontalToggleSwitch>
+                
+
             </Grid>
         </Border>
         <GroupBox Header="Genre Output" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="4" FontSize="36" FontWeight="Bold" Margin="10">
@@ -156,7 +159,7 @@
                 </Grid.RowDefinitions>
                 <Button Content="Help" Margin="10" Click="Button_Click_3" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" Grid.Column="1" BorderBrush="{DynamicResource MainBorderColour}"/>
-                <Button Content="Close" Margin="10" Click="Button_Click_2" Grid.Column="2" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Exit" Margin="10" Click="Button_Click_2" Grid.Column="2" BorderBrush="{DynamicResource MainBorderColour}"/>
             </Grid>
         </Border>
 

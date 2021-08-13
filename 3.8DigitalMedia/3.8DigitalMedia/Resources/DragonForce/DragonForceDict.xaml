@@ -1,5 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+                    xmlns:TS="clr-namespace:ToggleSwitch;assembly=ToggleSwitch"
+                    xmlns:Borders="clr-namespace:ToggleSwitch.Borders;assembly=ToggleSwitch" xmlns:Utils="clr-namespace:ToggleSwitch.Utils;assembly=ToggleSwitch">
 
     <SolidColorBrush x:Key="MainBackgroundBrush1" Color="#0d0337"/>
     <SolidColorBrush x:Key="MainTextColour" Color="#f08a08"/>
@@ -607,5 +609,7 @@
 
     </Style>
 
+
+    
 
 </ResourceDictionary>

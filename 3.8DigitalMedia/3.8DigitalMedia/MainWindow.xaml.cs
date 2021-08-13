@@ -96,7 +96,11 @@ namespace _3._8DigitalMedia
             NorseFolk.Content = Instrumentation.Nordic;
 
             TotalChecker();
-
+            TuningBox.IsEnabled = false;
+            TimeSigBox.IsEnabled = false;
+            TimeSigBox.Visibility = Visibility.Hidden;
+            TuningBox.Visibility = Visibility.Hidden;
+            
 
         }
 
@@ -283,11 +287,11 @@ namespace _3._8DigitalMedia
             string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
             string InstrumentationInput = Convert.ToString(InstrumentationLabel.Tag);
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic
                 )
             {
                 genreKey = "Heavy";
@@ -295,11 +299,11 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Standard &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic
                 )
             {
                 genreKey = "Prog";
@@ -307,187 +311,187 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Standard &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == Long &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Groove";
                 suggestedBands = "Pantera, Damageplan, Alien Weaponry, Lamb of God";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Fast &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == FastBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Thrash";
                 suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Fast &&
-                TuningInput == Standard &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == FastBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Black";
                 suggestedBands = "Mayhem, Darkthrone, Venom, Paracoccidioidomicosisproctitissarcomucosis";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Insane &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == InsaneBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Death";
                 suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Insane &&
-                TuningInput == Standard &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == InsaneBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Tech Death";
                 suggestedBands = "Death, Pestilence, Atheist, Nocturnus";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Slow &&
-                TuningInput == Low &&
-                TimeSigInput == Static &&
-                SongLengthInput == Long &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == SlowBPM &&
+                TuningBox.SelectedItem == LowTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Doom";
                 suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Slow &&
-                TuningInput == Low &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == SlowBPM &&
+                TuningBox.SelectedItem == LowTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Death/Doom";
                 suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Slow &&
-                TuningInput == Low &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == Long &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == SlowBPM &&
+                TuningBox.SelectedItem == LowTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Sludge";
                 suggestedBands = "Eyehategod, Crowbar, Buzzoven, Acid Bath";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Fast &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == Long &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == FastBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Power";
                 suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Low &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == LowTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Alt";
                 suggestedBands = "Alice in Chains, Faith No More, Tool, System of a Down";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Low &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == LowTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Nu";
                 suggestedBands = "Linkin Park, Slipknot, Korn, Disturbed";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Slow &&
-                TuningInput == Low &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == SlowBPM &&
+                TuningBox.SelectedItem == LowTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Djent";
                 suggestedBands = "Born of Osiris, Meshuggah, Periphery, Animals As Leaders";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == Short &&
-                InstrumentationInput == ClassicI)
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == ShortSongLength &&
+                InstrumentBox.SelectedItem == Classic)
             {
                 genreKey = "Industrial";
                 suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == TradFolk)
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == TraditionalFolk)
             {
                 genreKey = "Folk";
                 suggestedBands = "Alestorm, Korpiklaani, Tyr, Wintersun";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
             
-            if (BPMInput == Slow &&
-                TuningInput == Low &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == VikingrFolk)
+            if (BPMBox.SelectedItem == SlowBPM &&
+                TuningBox.SelectedItem == LowTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == NorseFolk)
             {
                 genreKey = "Viking";
                 suggestedBands = "Amon Amarth, Burzum, Satyricon, Tyr";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
             
-            if (BPMInput == Slow &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == VikingrFolk)
+            if (BPMBox.SelectedItem == SlowBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == NorseFolk)
             {
                 genreKey = "Pagan";
                 suggestedBands = "Moonsorrow, Korpiklaani, Kampfar, Amon Amarth";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
             
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == MongolFolk)
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == MongolianFolk)
             {
                 genreKey = "Mongol";
                 suggestedBands = "The HU, Tengger Cavalry, Growl of Clown, Hurd";
@@ -495,44 +499,44 @@ namespace _3._8DigitalMedia
                 
             }
             
-            if (BPMInput == Fast &&
-                TuningInput == Standard &&
-                TimeSigInput == Dynamic &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == OrchestralI)
+            if (BPMBox.SelectedItem == FastBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == DynamicTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Orchestral)
             {
                 genreKey = "SymphonicBlack";
                 suggestedBands = "Dimmu Borgir, Emperor, Carach Angren, Cradle of Filth";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == MediumBPMS &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == OrchestralI) 
+            if (BPMBox.SelectedItem == MediumBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Orchestral) 
             {
                 genreKey = "Symphonic";
                 suggestedBands = "Therion, Nightwish, Rhapsody of Fire, Within Temptation";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Insane &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == MediumLength &&
-                InstrumentationInput == OrchestralI)
+            if (BPMBox.SelectedItem == InsaneBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Orchestral)
             {
                 genreKey = "SymphonicDeath";
                 suggestedBands = "Children of Bodom, Fleshgod Apocalypse, Make them Suffer, Betraying the Martyrs";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            if (BPMInput == Fast &&
-                TuningInput == Standard &&
-                TimeSigInput == Static &&
-                SongLengthInput == Long &&
-                InstrumentationInput == OrchestralI)
+            if (BPMBox.SelectedItem == FastBPM &&
+                TuningBox.SelectedItem == StandardTuning &&
+                TimeSigBox.SelectedItem == StaticTimeSig &&
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Orchestral)
             {
                 genreKey = "SymphonicPower";
                 suggestedBands = "Twilight Force, Kamelot, Rhapsody of Fire, Nightwish";
@@ -887,6 +891,11 @@ namespace _3._8DigitalMedia
             Check();
             GenreSuggestions();
             //TotalChecker();
+            if (TimeSigBox.IsEnabled == false)
+            {
+                BasicCheck();
+                GenreSuggestions();
+            }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -924,6 +933,222 @@ namespace _3._8DigitalMedia
             themeSetter.Show();
         }
 
+        private void BasicSet(object sender, RoutedEventArgs e)
+        {
+            TuningBox.IsEnabled = false;
+            TimeSigBox.IsEnabled = false;
+            TimeSigBox.Visibility = Visibility.Hidden;
+            TuningBox.Visibility = Visibility.Hidden;
+            TimeSigTitleLabel.Content = @"Time Signature
+  (DISABLED)";
+            TuningTitleLabel.Content = @"Tuning
+(DISABLED)";
+        }
 
+        private void AdvancedSet(object sender, RoutedEventArgs e)
+        {
+            TuningBox.IsEnabled = true;
+            TimeSigBox.IsEnabled = true;
+            TimeSigBox.Visibility = Visibility.Visible;
+            TuningBox.Visibility = Visibility.Visible;
+            TimeSigTitleLabel.Content = "Time Signature";
+            TuningTitleLabel.Content = "Tuning";
+        }
+
+        private void BasicCheck()
+        {
+            string TuningInput = Convert.ToString(TuningLabel.Tag);
+            string BPMInput = Convert.ToString(BPMLabel.Tag);
+            string TimeSigInput = Convert.ToString(TimeSigLabel.Tag);
+            string SongLengthInput = Convert.ToString(SongLengthLabel.Tag);
+            string InstrumentationInput = Convert.ToString(InstrumentationLabel.Tag);
+
+            if (BPMBox.SelectedItem == MediumBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic
+                )
+            {
+                genreKey = "Heavy";
+                suggestedBands = "Black Sabbath, Iron Maiden, Judas Priest, Dio";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            
+
+            if (BPMBox.SelectedItem == MediumBPM &&
+                
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Classic)
+            {
+                genreKey = "Groove";
+                suggestedBands = "Pantera, Damageplan, Alien Weaponry, Lamb of God";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == FastBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
+            {
+                genreKey = "Thrash";
+                suggestedBands = "Anthrax, Slayer, Megadeth, Metallica";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            
+
+            if (BPMBox.SelectedItem == InsaneBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
+            {
+                genreKey = "Death";
+                suggestedBands = "Death, Possessed, Feared, XavlegbmaofffassssitimiwoamndutroabcwapwaeiippohfffX";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            
+
+            if (BPMBox.SelectedItem == SlowBPM &&
+                
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Classic)
+            {
+                genreKey = "Doom";
+                suggestedBands = "Pagan Altar, Witchfinder General, Pentagram, Trouble";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == SlowBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Classic)
+            {
+                genreKey = "Death/Doom";
+                suggestedBands = "Paradise Lost, Anathema, Mournful Congregation, The Eternal";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            
+
+            if (BPMBox.SelectedItem == FastBPM &&
+                
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Classic)
+            {
+                genreKey = "Power";
+                suggestedBands = "DragonForce, Helloween, Powerwolf, Sabaton";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            
+
+            
+
+            
+
+            if (BPMBox.SelectedItem == MediumBPM &&
+                
+                SongLengthBox.SelectedItem == ShortSongLength &&
+                InstrumentBox.SelectedItem == Classic)
+            {
+                genreKey = "Industrial";
+                suggestedBands = "Rammstein, Nine Inch Nails, Ministry, Rob Zombie";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == MediumBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == TraditionalFolk)
+            {
+                genreKey = "Folk";
+                suggestedBands = "Alestorm, Korpiklaani, Tyr, Wintersun";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == SlowBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == NorseFolk)
+            {
+                genreKey = "Viking";
+                suggestedBands = "Amon Amarth, Burzum, Satyricon, Tyr";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == SlowBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == NorseFolk)
+            {
+                genreKey = "Pagan";
+                suggestedBands = "Moonsorrow, Korpiklaani, Kampfar, Amon Amarth";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == MediumBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == MongolianFolk)
+            {
+                genreKey = "Mongol";
+                suggestedBands = "The HU, Tengger Cavalry, Growl of Clown, Hurd";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+
+            }
+
+            if (BPMBox.SelectedItem == FastBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Orchestral)
+            {
+                genreKey = "SymphonicBlack";
+                suggestedBands = "Dimmu Borgir, Emperor, Carach Angren, Cradle of Filth";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == MediumBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Orchestral)
+            {
+                genreKey = "Symphonic";
+                suggestedBands = "Therion, Nightwish, Rhapsody of Fire, Within Temptation";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == InsaneBPM &&
+                
+                SongLengthBox.SelectedItem == MediumSongLength &&
+                InstrumentBox.SelectedItem == Orchestral)
+            {
+                genreKey = "SymphonicDeath";
+                suggestedBands = "Children of Bodom, Fleshgod Apocalypse, Make them Suffer, Betraying the Martyrs";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == FastBPM &&
+                
+                SongLengthBox.SelectedItem == LongSongLength &&
+                InstrumentBox.SelectedItem == Orchestral)
+            {
+                genreKey = "SymphonicPower";
+                suggestedBands = "Twilight Force, Kamelot, Rhapsody of Fire, Nightwish";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMInput == "" &&
+            TuningInput == "" &&
+            TimeSigInput == "" &&
+            SongLengthInput == "" &&
+            InstrumentationInput == "")
+            {
+                GenreLabel.Content = "PLEASE SELECT SOME VALUES BEFORE PRESSING CALCULATE";
+                SuggestedBandsLabel.Content = "NO SUGGESTED BANDS FOR UNKNOWN GENRE";
+
+            }
+        }
     }
 }

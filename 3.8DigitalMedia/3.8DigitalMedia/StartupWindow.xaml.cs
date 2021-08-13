@@ -14,8 +14,8 @@ namespace _3._8DigitalMedia
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mW = new MainWindow();
-            mW.Show();
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
 
         }

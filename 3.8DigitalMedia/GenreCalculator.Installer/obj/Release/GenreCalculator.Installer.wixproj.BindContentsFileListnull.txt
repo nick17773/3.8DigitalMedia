@@ -17,3 +17,4 @@ System.Memory.dll
 System.Numerics.Vectors.dll
 System.Runtime.CompilerServices.Unsafe.dll
 System.Threading.Tasks.Extensions.dll
+ToggleSwitch.dll

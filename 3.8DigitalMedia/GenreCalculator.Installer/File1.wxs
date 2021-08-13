@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="1.0.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
-		<Package InstallerVersion="300" Compressed="yes"/>
+	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="1.5.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
+		<Package InstallerVersion="300" Compressed="yes" Manufacturer="Nicholas Russell"/>
 		<Media Id="1" Cabinet="myapplication.cab" EmbedCab="yes" />
 
 		<Directory Id="TARGETDIR" Name="SourceDir">
@@ -73,6 +73,9 @@
 			<Component Id="System.Threading.Tasks.Extensions.dll" Guid="eee11ed0-c2b9-47eb-91d7-735e92cc636b">
 				<File Id="System.Threading.Tasks.Extensions.dll" Source="System.Threading.Tasks.Extensions.dll" KeyPath="yes" Checksum="yes"/>
 			</Component>
+			<Component Id="ToggleSwitch.dll" Guid="3be8d038-fb30-11eb-9a03-0242ac130003">
+				<File Id="ToggleSwitch.dll" Source="ToggleSwitch.dll" KeyPath="yes" Checksum="yes"/>
+			</Component>
 		</DirectoryRef>
 
 		<!-- Step 2: Add the shortcut to your installer package -->
@@ -109,6 +112,7 @@
 			<ComponentRef Id="System.Numerics.Vectors.dll"/>
 			<ComponentRef Id="System.Runtime.CompilerServices.Unsafe.dll"/>
 			<ComponentRef Id="System.Threading.Tasks.Extensions.dll"/>
+			<ComponentRef Id="ToggleSwitch.dll"/>
 			<!-- Step 3: Tell WiX to install the shortcut -->
 			<ComponentRef Id="ApplicationShortcut" />
 		</Feature>
