@@ -1150,5 +1150,16 @@ namespace _3._8DigitalMedia
 
             }
         }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            TuningBox.SelectedIndex = -1;
+            TimeSigBox.SelectedIndex = -1;
+            BPMBox.SelectedIndex = -1;
+            SongLengthBox.SelectedIndex = -1;
+            InstrumentBox.SelectedIndex = -1;
+            GenreLabel.Content = "Genre Will Appear Here";
+            SuggestedBandsLabel.Content = "";
+        }
     }
 }

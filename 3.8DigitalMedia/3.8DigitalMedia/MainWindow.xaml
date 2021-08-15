@@ -103,7 +103,7 @@
                 <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" Grid.Row="1" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Settings" Margin="10" Click="Button_Click_5"  BorderBrush="{DynamicResource MainBorderColour}" Grid.Column="1"/>
-                <TS:HorizontalToggleSwitch Grid.Row="1" Grid.Column="1" Elasticity="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="40,20" CheckedBackground="{DynamicResource MainComboBoxSelectedColour}" CheckedForeground="{DynamicResource MainTextColour}" ThumbBrush="{DynamicResource MainButtonColour}" UncheckedBackground="{DynamicResource MainBackgroundBrush1}" UncheckedForeground="{DynamicResource MainTextColour}" BorderBrush="{DynamicResource MainBorderColour}" UncheckedContent="Basic" CheckedContent="Advanced" Unchecked="BasicSet" Checked="AdvancedSet"></TS:HorizontalToggleSwitch>
+                <TS:HorizontalToggleSwitch Grid.Row="1" Grid.Column="1" Elasticity="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="10,20" CheckedBackground="{DynamicResource MainComboBoxSelectedColour}" CheckedForeground="{DynamicResource MainTextColour}" ThumbBrush="{DynamicResource MainButtonColour}" UncheckedBackground="{DynamicResource MainBackgroundBrush1}" UncheckedForeground="{DynamicResource MainTextColour}" BorderBrush="{DynamicResource MainBorderColour}" UncheckedContent="Basic" CheckedContent="Advanced" Unchecked="BasicSet" Checked="AdvancedSet"></TS:HorizontalToggleSwitch>
                 
 
             </Grid>
@@ -160,6 +160,7 @@
                 <Button Content="Help" Margin="10" Click="Button_Click_3" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Show Spotify Playlists" Margin="10" Click="Button_Click_4" Grid.Column="1" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Exit" Margin="10" Click="Button_Click_2" Grid.Column="2" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button Content="Clear" Margin="10" Grid.Row="1" Click="Button_Click_6"/>
             </Grid>
         </Border>
 
