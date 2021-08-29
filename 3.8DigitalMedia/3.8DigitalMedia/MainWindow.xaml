@@ -29,7 +29,7 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <GroupBox Header="Definitions" Grid.RowSpan="4" Margin="10" Grid.Row="1" FontSize="36" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontWeight="Bold">
+        <GroupBox Header="Definitions (Start Here!)" Grid.RowSpan="4" Margin="10" Grid.Row="1" FontSize="36" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" FontWeight="Bold">
             <Grid Margin="10" UseLayoutRounding="True">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
@@ -42,30 +42,30 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <ComboBox x:Name="BPMBox"  Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
+                <ComboBox x:Name="BPMBox"  Margin="10,20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="SlowBPM" Content="Slow" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="MediumBPM" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="FastBPM" Content="Fast" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="InsaneBPM" Content="Insane" Foreground="{DynamicResource MainTextColour}"/>
 
                 </ComboBox>
-                <ComboBox x:Name="TuningBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
+                <ComboBox x:Name="TuningBox" Margin="10,20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Padding="5" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="StandardTuning" Content="Standard" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="LowTuning" Content="Low" Foreground="{DynamicResource MainTextColour}"/>
 
 
                 </ComboBox>
-                <ComboBox x:Name="TimeSigBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal">
+                <ComboBox x:Name="TimeSigBox" Margin="10,20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" Padding="5" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True" FontWeight="Normal">
                     <ComboBoxItem x:Name="StaticTimeSig" Content="Static" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="DynamicTimeSig" Content="Dynamic" Foreground="{DynamicResource MainTextColour}"/>
 
 
                 </ComboBox>
-                <ComboBox x:Name="SongLengthBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal">
-                    <ComboBoxItem x:Name="ShortSongLength" Content="Short" Foreground="{DynamicResource MainTextColour}"/>
+                <ComboBox x:Name="SongLengthBox" Margin="10,20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3" Padding="5" FontWeight="Normal">
+                    
                     <ComboBoxItem x:Name="MediumSongLength" Content="Medium" Foreground="{DynamicResource MainTextColour}"/>
                     <ComboBoxItem x:Name="LongSongLength" Content="Long" Foreground="{DynamicResource MainTextColour}"/>
-                    <ComboBoxItem x:Name="ExtremeSongLength" Content="Extreme" Foreground="{DynamicResource MainTextColour}"/>
+                    
 
 
                 </ComboBox>
@@ -74,13 +74,13 @@
                 <Label x:Name="TimeSigTitleLabel" Content="Time Signature&#xD;&#xA;  (DISABLED)" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="2" FontWeight="Normal"/>
                 <Label Content="Song Length" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource DefinitionsLabels}" Grid.Row="3" FontWeight="Normal"/>
                 <Label Content="Instrumentation" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource ResourceKey=DefinitionsLabels}" Grid.Row="4" FontWeight="Normal"/>
-                <ComboBox x:Name="InstrumentBox" Margin="20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4" Padding="5" FontWeight="Normal">
+                <ComboBox x:Name="InstrumentBox" Margin="10,20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4" Padding="5" FontWeight="Normal">
                     <ComboBoxItem x:Name="Classic" Content="Classic" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <ComboBoxItem x:Name="Orchestral" Content="Orchestral" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <ComboBoxItem x:Name="TraditionalFolk" Content="Traditional Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <ComboBoxItem x:Name="MongolianFolk" Content="Mongolian Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-                    <ComboBoxItem x:Name="NorseFolk" Content="Norwegian Folk" HorizontalAlignment="Left" Width="245" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-
+                    <ComboBoxItem x:Name="NorseFolk" Content="Norwegian Folk" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="Techno" Content="Techno" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
 
                 </ComboBox>
             </Grid>
@@ -100,11 +100,11 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" BorderBrush="{DynamicResource MainBorderColour}"/>
+                <Button x:Name="GeneratorButton" Content="Click to Calculate Genre" Click="Button_Click" Margin="10" BorderBrush="{DynamicResource MainBorderColour}" FontWeight="Bold"/>
                 <Button Content="Show Genre Definitions" Margin="10" Click="Button_Click_1" Grid.Row="1" BorderBrush="{DynamicResource MainBorderColour}"/>
                 <Button Content="Settings" Margin="10" Click="Button_Click_5"  BorderBrush="{DynamicResource MainBorderColour}" Grid.Column="1"/>
-                <TS:HorizontalToggleSwitch Grid.Row="1" Grid.Column="1" Elasticity="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Margin="10,20" CheckedBackground="{DynamicResource MainComboBoxSelectedColour}" CheckedForeground="{DynamicResource MainTextColour}" ThumbBrush="{DynamicResource MainButtonColour}" UncheckedBackground="{DynamicResource MainBackgroundBrush1}" UncheckedForeground="{DynamicResource MainTextColour}" BorderBrush="{DynamicResource MainBorderColour}" UncheckedContent="Basic" CheckedContent="Advanced" Unchecked="BasicSet" Checked="AdvancedSet"></TS:HorizontalToggleSwitch>
-                
+                <TS:HorizontalToggleSwitch FontSize="18" FontFamily="{DynamicResource MainFont}" Grid.Row="1" Grid.Column="1" Elasticity="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="Auto" Margin="10,20" CheckedBackground="{DynamicResource MainComboBoxSelectedColour}" CheckedForeground="{DynamicResource MainTextColour}" ThumbBrush="{DynamicResource MainButtonColour}" UncheckedBackground="{DynamicResource MainBackgroundBrush1}" UncheckedForeground="{DynamicResource MainTextColour}" BorderBrush="{DynamicResource MainBorderColour}" UncheckedContent="Basic" CheckedContent="Advanced" Unchecked="BasicSet" Checked="AdvancedSet" Width="Auto"/>
+
 
             </Grid>
         </Border>
