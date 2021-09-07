@@ -144,3 +144,10 @@ C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia_Content.g.cs
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\Resources\Slayer\SOHIntro.wav
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Debug\3.8DigitalMedia.csproj.AssemblyReference.cache
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\ControlzEx.dll
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\ToggleSwitch.dll
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\ControlzEx.pdb
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\ControlzEx.xml
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\bin\Debug\Microsoft.Xaml.Behaviors.xml
