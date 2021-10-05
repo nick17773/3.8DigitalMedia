@@ -13,203 +13,276 @@
         Title="Summary" Height="900" Width="1500">
     <Grid>
         <TabControl Background="{DynamicResource MainBackgroundBrush1}">
-            <TabItem x:Name="HeavyInfo" Header="Heavy Metal">
+
+            
+            
+            
+            
+            
+            
+
+            <TabItem Header="Heavy">
                 <Grid>
+                    <TabControl x:Name="HeavyTabStack" Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="HeavyInfo" Header="Heavy Metal">
+                            <Grid>
 
-                    <GroupBox Header="Heavy Metal" Margin="10" FontWeight="Bold" >
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Heavy_metal_music"/>
-                    </GroupBox>
+                                <GroupBox Header="Heavy Metal" Margin="10" FontWeight="Bold" >
 
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Heavy_metal_music"/>
+                                </GroupBox>
+
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="IndustrialInfo" Header="Industrial Metal">
+                            <Grid>
+
+                                <GroupBox Header="Industrial Metal" Margin="10"  FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Industrial_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="FolkInfo" Header="Folk Metal">
+                            <Grid>
+                                <GroupBox Header="Folk Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Folk_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+
+                        <TabItem x:Name="MongolInfo" Header="Mongolian">
+                            <Grid>
+                                <GroupBox Header="Mongolian Music/Folk Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Music_of_Mongolia"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="SymphonicInfo" Header="Symphonic Metal">
+                            <Grid>
+                                <GroupBox Header="Symphonic Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="ProgInfo" Header="Progressive Metal">
-                <Grid>
 
-                    <GroupBox Header="Progressive Metal" Margin="10"  FontWeight="Bold" >
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Progressive_metal"/>
-                    </GroupBox>
+            <TabItem Header="Progressive">
+                <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="ProgInfo" Header="Progressive Metal">
+                            <Grid>
+
+                                <GroupBox Header="Progressive Metal" Margin="10"  FontWeight="Bold" >
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Progressive_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="DjentInfo" Header="Djent">
+                            <Grid>
+                                <GroupBox Header="Djent" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Djent"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="GrooveInfo" Header="Groove Metal">
-                <Grid>
 
-                    <GroupBox Header="Groove Metal" Margin="10"  FontWeight="Bold" >
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Groove_metal"/>
-                    </GroupBox>
+
+
+            <TabItem Header="Thrash">
+                <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="ThrashInfo" Header="Thrash Metal">
+                            <Grid>
+
+                                <GroupBox Header="Thrash Metal" Margin="10"  FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Thrash_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+
+                        <TabItem x:Name="GrooveInfo" Header="Groove Metal">
+                            <Grid>
+
+                                <GroupBox Header="Groove Metal" Margin="10"  FontWeight="Bold" >
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Groove_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="IndustrialInfo" Header="Industrial Metal">
+            <TabItem Header="Black">
                 <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="BlackInfo" Header="Black Metal">
+                            <Grid>
 
-                    <GroupBox Header="Industrial Metal" Margin="10"  FontWeight="Bold">
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Industrial_metal"/>
-                    </GroupBox>
+                                <GroupBox Header="Black Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Black_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="SymphonicBlackInfo" Header="Symphonic Black Metal">
+                            <Grid>
+                                <GroupBox Header="Symphonic Black Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_black_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="ThrashInfo" Header="Thrash Metal">
+            <TabItem Header="Power">
                 <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="PowerInfo" Header="Power Metal">
+                            <Grid>
 
-                    <GroupBox Header="Thrash Metal" Margin="10"  FontWeight="Bold">
-                       
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Thrash_metal"/>
-                    </GroupBox>
+                                <GroupBox Header="Power Metal" Margin="10"  FontWeight="Bold" >
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Power_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="SymphonicPowerInfo" Header="Symphonic Power Metal">
+                            <Grid>
+                                <GroupBox Header="Symphonic Power Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal#Symphonic_power_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="BlackInfo" Header="Black Metal">
-                <Grid>
 
-                    <GroupBox Header="Black Metal" Margin="10" FontWeight="Bold">
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Black_metal"/>
-                    </GroupBox>
+            <TabItem x:Name="DeathTabStack" Header="Death">
+                <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="DeathInfo" Header="Death Metal">
+                            <Grid>
+
+                                <GroupBox Header="Death Metal" Margin="10"  FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Death_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="TechDeathInfo" Header="Technical Death Metal">
+                            <Grid>
+
+                                <GroupBox Header="Technical Death Metal" Margin="10"  FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Technical_death_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="SymphonicDeathInfo" Header="Symphonic Death Metal">
+                            <Grid>
+                                <GroupBox Header="Symphonic Death Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal#Symphonic_death_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="PowerInfo" Header="Power Metal">
+            <TabItem x:Name="DoomTabStack" Header="Doom">
                 <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="DoomInfo" Header="Doom Metal">
+                            <Grid>
 
-                    <GroupBox Header="Power Metal" Margin="10"  FontWeight="Bold" >
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Power_metal"/>
-                    </GroupBox>
+                                <GroupBox Header="Doom Metal" Margin="10"  FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Doom_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="DeathDoomInfo" Header="Death/Doom Metal">
+                            <Grid>
+
+                                <GroupBox Header="Death/Doom Metal" Margin="10" FontSize="36" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Death-doom"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="SludgeInfo" Header="Sludge Metal">
+                            <Grid>
+
+                                <GroupBox Header="Sludge Metal" Margin="10"  FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Sludge_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="DeathInfo" Header="Death Metal">
+            <TabItem Header="Alternative">
                 <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="AltInfo" Header="Alternative Metal">
+                            <Grid>
 
-                    <GroupBox Header="Death Metal" Margin="10"  FontWeight="Bold">
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Death_metal"/>
-                    </GroupBox>
+                                <GroupBox Header="Alternative Metal" Margin="10"  FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Alternative_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="NuInfo" Header="Nu Metal">
+                            <Grid>
+
+                                <GroupBox Header="Nu Metal" Margin="10" FontWeight="Bold">
+
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Nu_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
-            <TabItem x:Name="TechDeathInfo" Header="Technical Death Metal">
-                <Grid>
 
-                    <GroupBox Header="Technical Death Metal" Margin="10"  FontWeight="Bold">
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Technical_death_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="DoomInfo" Header="Doom Metal">
-                <Grid>
 
-                    <GroupBox Header="Doom Metal" Margin="10"  FontWeight="Bold">
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Doom_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="DeathDoomInfo" Header="Death/Doom Metal">
+            <TabItem Header="Nordic">
                 <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="VikingInfo" Header="Viking Metal">
+                            <Grid>
+                                <GroupBox Header="Viking Metal" Margin="10" FontWeight="Bold">
 
-                    <GroupBox Header="Death/Doom Metal" Margin="10" FontSize="36" FontWeight="Bold">
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Death-doom"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="SludgeInfo" Header="Sludge Metal">
-                <Grid>
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Viking_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="PaganInfo" Header="Pagan Metal">
+                            <Grid>
+                                <GroupBox Header="Pagan Metal" Margin="10" FontWeight="Bold">
 
-                    <GroupBox Header="Sludge Metal" Margin="10"  FontWeight="Bold">
-                       
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Sludge_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="AltInfo" Header="Alternative Metal">
-                <Grid>
-
-                    <GroupBox Header="Alternative Metal" Margin="10"  FontWeight="Bold">
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Alternative_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="NuInfo" Header="Nu Metal">
-                <Grid>
-
-                    <GroupBox Header="Nu Metal" Margin="10" FontWeight="Bold">
-                       
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Nu_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="DjentInfo" Header="Djent">
-                <Grid>
-                    <GroupBox Header="Djent" Margin="10" FontWeight="Bold">
-                        
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Djent"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="FolkInfo" Header="Folk Metal">
-                <Grid>
-                    <GroupBox Header="Folk Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Folk_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="VikingInfo" Header="Viking Metal">
-                <Grid>
-                    <GroupBox Header="Viking Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Viking_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="PaganInfo" Header="Pagan Metal">
-                <Grid>
-                    <GroupBox Header="Pagan Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Pagan_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="MongolInfo" Header="Mongolian">
-                <Grid>
-                    <GroupBox Header="Mongolian Music/Folk Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Music_of_Mongolia"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="SymphonicBlackInfo" Header="Symphonic Black Metal">
-                <Grid>
-                    <GroupBox Header="Symphonic Black Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_black_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="SymphonicInfo" Header="Symphonic Metal">
-                <Grid>
-                    <GroupBox Header="Symphonic Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="SymphonicDeathInfo" Header="Symphonic Death Metal">
-                <Grid>
-                    <GroupBox Header="Symphonic Death Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal#Symphonic_death_metal"/>
-                    </GroupBox>
-                </Grid>
-            </TabItem>
-            <TabItem x:Name="SymphonicPowerInfo" Header="Symphonic Power Metal">
-                <Grid>
-                    <GroupBox Header="Symphonic Power Metal" Margin="10" FontWeight="Bold">
-
-                        <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Symphonic_metal#Symphonic_power_metal"/>
-                    </GroupBox>
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Pagan_metal"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
                 </Grid>
             </TabItem>
         </TabControl>
+        
+        
     </Grid>
 </Window>
