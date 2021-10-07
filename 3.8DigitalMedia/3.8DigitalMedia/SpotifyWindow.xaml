@@ -245,13 +245,58 @@
                     </TabControl>
                 </Grid>
             </TabItem>
-            
-            
-            
-            
-            
-            
-            
+            <TabItem Header="Rock">
+                <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="HardRockPlaylist" Header="Hard Rock">
+                            <Grid>
+                                <GroupBox Header="Hard Rock Playlist" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/28hi2ogYFC8oUjcwTM4YYA?si=66e880697afb4e7e"/>
+                                    
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="ProgRockPlaylist" Header="Progressive Rock">
+                            <Grid>
+                                <GroupBox Header="Progressive Rock Playlist" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/2r5tgZtzQP5rd4cTi7zmu0?si=ffe8b2b28bc24c1b"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="MathRockPlaylist" Header="Math Rock">
+                            <Grid>
+                                <GroupBox Header="Math Rock Playlist" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/0KVB2QR4GOQ9y0OoQ173wR?si=4856fdcd83464e75"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="AltRockPlaylist" Header="Alternative Rock">
+                            <Grid>
+                                <GroupBox Header="Alternative Rock Playlist" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/00x5zutFcuTIlTNiUA514X?si=b0f216e87d834f7e"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="GrungePlaylist" Header="Grunge">
+                            <Grid>
+                                <GroupBox Header="Grunge Playlist" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/27btCqzvRil1B1wZskN8W7?si=11b3c4f58fc044f6"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+
+
+
+
+
+
         </TabControl>
     </Grid>
 </Window>

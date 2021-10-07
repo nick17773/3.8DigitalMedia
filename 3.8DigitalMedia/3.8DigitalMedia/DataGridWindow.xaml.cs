@@ -10,29 +10,34 @@ namespace _3._8DigitalMedia
     {
         public Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>()
             {
-                { "Heavy", new Genre("Heavy Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
-                { "Prog", new Genre("Progressive Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
-                { "Groove", new Genre("Groove Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Classic) },
-                { "Thrash", new Genre("Thrash Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
-                { "Black", new Genre("Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
-                { "Death", new Genre("Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
-                { "Tech Death", new Genre("Technical Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
-                { "Doom", new Genre("Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Long, Instrumentation.Classic) },
-                { "Death/Doom", new Genre("Death Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
-                { "Sludge", new Genre("Sludge Metal", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Classic) },
-                { "Power", new Genre("Power Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Long, Instrumentation.Classic) },
-                { "Alt", new Genre("Alternative Metal", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Classic) },
-                { "Nu", new Genre("Nu Metal", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
-                { "Djent", new Genre("Djent", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Classic) },
-                { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Techno) },
-                { "Folk", new Genre("Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Folk) },
-                { "Viking", new Genre("Viking Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic) },
-                { "Pagan", new Genre("Pagan Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Long, Instrumentation.Nordic) },
-                { "Mongol", new Genre("Mongolian Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Mongolian) },
-                { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral) },
-                { "Symphonic", new Genre("Symphonic Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) },
-                { "SymphonicDeath", new Genre("Symphonic Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral) },
-                { "SymphonicPower", new Genre("Symphonic Power Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Long, Instrumentation.Orchestral) }
+                { "Heavy", new Genre("Heavy Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.UK) },
+                { "Prog", new Genre("Progressive Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Groove", new Genre("Groove Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Thrash", new Genre("Thrash Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Black", new Genre("Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Metal, CountryOrigin.Finland) },
+                { "Death", new Genre("Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Tech Death", new Genre("Technical Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Doom", new Genre("Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Long, Instrumentation.Metal, CountryOrigin.UK) },
+                { "Death/Doom", new Genre("Death Doom Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.UK) },
+                { "Sludge", new Genre("Sludge Metal", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Power", new Genre("Power Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Long, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Alt", new Genre("Alternative Metal", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Nu", new Genre("Nu Metal", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Metal, CountryOrigin.USA) },
+                { "Djent", new Genre("Djent", BPM.Slow, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Metal, CountryOrigin.Sweden) },
+                { "Industrial", new Genre("Industrial Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Techno, CountryOrigin.Germany) },
+                { "Folk", new Genre("Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Folk, CountryOrigin.Sweden) },
+                { "Viking", new Genre("Viking Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Nordic, CountryOrigin.Norway) },
+                { "Pagan", new Genre("Pagan Metal", BPM.Slow, Tuning.Low, TimeSignature.Static, SongLength.Long, Instrumentation.Nordic, CountryOrigin.Norway) },
+                { "Mongol", new Genre("Mongolian Folk Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Folk, CountryOrigin.Mongolia) },
+                { "SymphonicBlack", new Genre("Symphonic Black Metal", BPM.Fast, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Orchestral, CountryOrigin.Finland) },
+                { "Symphonic", new Genre("Symphonic Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral, CountryOrigin.USA) },
+                { "SymphonicDeath", new Genre("Symphonic Death Metal", BPM.Insane, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Orchestral, CountryOrigin.USA) },
+                { "SymphonicPower", new Genre("Symphonic Power Metal", BPM.Fast, Tuning.Standard, TimeSignature.Static, SongLength.Long, Instrumentation.Orchestral, CountryOrigin.USA) },
+                { "HardRock", new Genre("Hard Rock", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Rock, CountryOrigin.UK) },
+                { "ProgRock", new Genre("Progressive Rock", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Rock, CountryOrigin.UK) },
+                { "MathRock", new Genre("Math Rock", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Rock, CountryOrigin.USA) },
+                { "AltRock", new Genre("Alternative Rock", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Rock, CountryOrigin.UK) },
+                { "Grunge", new Genre("Grunge", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Rock, CountryOrigin.USA) },
             };
         public DataGridWindow()
         {
@@ -44,7 +49,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Heavy"].tuning.ToString(),
                 Column4 = genreDictionary["Heavy"].timeSignature.ToString(),
                 Column5 = genreDictionary["Heavy"].songLength.ToString(),
-                Column6 = genreDictionary["Heavy"].instrumentation.ToString()
+                Column6 = genreDictionary["Heavy"].instrumentation.ToString(),
+                Column7 = genreDictionary["Heavy"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -53,7 +59,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Prog"].tuning.ToString(),
                 Column4 = genreDictionary["Prog"].timeSignature.ToString(),
                 Column5 = genreDictionary["Prog"].songLength.ToString(),
-                Column6 = genreDictionary["Prog"].instrumentation.ToString()
+                Column6 = genreDictionary["Prog"].instrumentation.ToString(),
+                Column7 = genreDictionary["Prog"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -62,7 +69,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Groove"].tuning.ToString(),
                 Column4 = genreDictionary["Groove"].timeSignature.ToString(),
                 Column5 = genreDictionary["Groove"].songLength.ToString(),
-                Column6 = genreDictionary["Groove"].instrumentation.ToString()
+                Column6 = genreDictionary["Groove"].instrumentation.ToString(),
+                Column7 = genreDictionary["Groove"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -71,7 +79,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Industrial"].tuning.ToString(),
                 Column4 = genreDictionary["Industrial"].timeSignature.ToString(),
                 Column5 = genreDictionary["Industrial"].songLength.ToString(),
-                Column6 = genreDictionary["Industrial"].instrumentation.ToString()
+                Column6 = genreDictionary["Industrial"].instrumentation.ToString(),
+                Column7 = genreDictionary["Industrial"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -80,7 +89,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Thrash"].tuning.ToString(),
                 Column4 = genreDictionary["Thrash"].timeSignature.ToString(),
                 Column5 = genreDictionary["Thrash"].songLength.ToString(),
-                Column6 = genreDictionary["Thrash"].instrumentation.ToString()
+                Column6 = genreDictionary["Thrash"].instrumentation.ToString(),
+                Column7 = genreDictionary["Thrash"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -89,7 +99,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Black"].tuning.ToString(),
                 Column4 = genreDictionary["Black"].timeSignature.ToString(),
                 Column5 = genreDictionary["Black"].songLength.ToString(),
-                Column6 = genreDictionary["Black"].instrumentation.ToString()
+                Column6 = genreDictionary["Black"].instrumentation.ToString(),
+                Column7 = genreDictionary["Black"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -98,7 +109,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Power"].tuning.ToString(),
                 Column4 = genreDictionary["Power"].timeSignature.ToString(),
                 Column5 = genreDictionary["Power"].songLength.ToString(),
-                Column6 = genreDictionary["Power"].instrumentation.ToString()
+                Column6 = genreDictionary["Power"].instrumentation.ToString(),
+                Column7 = genreDictionary["Power"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -107,7 +119,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Death"].tuning.ToString(),
                 Column4 = genreDictionary["Death"].timeSignature.ToString(),
                 Column5 = genreDictionary["Death"].songLength.ToString(),
-                Column6 = genreDictionary["Death"].instrumentation.ToString()
+                Column6 = genreDictionary["Death"].instrumentation.ToString(),
+                Column7 = genreDictionary["Death"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -116,7 +129,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Tech Death"].tuning.ToString(),
                 Column4 = genreDictionary["Tech Death"].timeSignature.ToString(),
                 Column5 = genreDictionary["Tech Death"].songLength.ToString(),
-                Column6 = genreDictionary["Tech Death"].instrumentation.ToString()
+                Column6 = genreDictionary["Tech Death"].instrumentation.ToString(),
+                Column7 = genreDictionary["Tech Death"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -125,7 +139,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Doom"].tuning.ToString(),
                 Column4 = genreDictionary["Doom"].timeSignature.ToString(),
                 Column5 = genreDictionary["Doom"].songLength.ToString(),
-                Column6 = genreDictionary["Doom"].instrumentation.ToString()
+                Column6 = genreDictionary["Doom"].instrumentation.ToString(),
+                Column7 = genreDictionary["Doom"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -134,7 +149,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Death/Doom"].tuning.ToString(),
                 Column4 = genreDictionary["Death/Doom"].timeSignature.ToString(),
                 Column5 = genreDictionary["Death/Doom"].songLength.ToString(),
-                Column6 = genreDictionary["Death/Doom"].instrumentation.ToString()
+                Column6 = genreDictionary["Death/Doom"].instrumentation.ToString(),
+                Column7 = genreDictionary["Death/Doom"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -143,7 +159,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Sludge"].tuning.ToString(),
                 Column4 = genreDictionary["Sludge"].timeSignature.ToString(),
                 Column5 = genreDictionary["Sludge"].songLength.ToString(),
-                Column6 = genreDictionary["Sludge"].instrumentation.ToString()
+                Column6 = genreDictionary["Sludge"].instrumentation.ToString(),
+                Column7 = genreDictionary["Sludge"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -152,7 +169,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Alt"].tuning.ToString(),
                 Column4 = genreDictionary["Alt"].timeSignature.ToString(),
                 Column5 = genreDictionary["Alt"].songLength.ToString(),
-                Column6 = genreDictionary["Alt"].instrumentation.ToString()
+                Column6 = genreDictionary["Alt"].instrumentation.ToString(),
+                Column7 = genreDictionary["Alt"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -161,7 +179,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Nu"].tuning.ToString(),
                 Column4 = genreDictionary["Nu"].timeSignature.ToString(),
                 Column5 = genreDictionary["Nu"].songLength.ToString(),
-                Column6 = genreDictionary["Nu"].instrumentation.ToString()
+                Column6 = genreDictionary["Nu"].instrumentation.ToString(),
+                Column7 = genreDictionary["Nu"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -170,7 +189,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Djent"].tuning.ToString(),
                 Column4 = genreDictionary["Djent"].timeSignature.ToString(),
                 Column5 = genreDictionary["Djent"].songLength.ToString(),
-                Column6 = genreDictionary["Djent"].instrumentation.ToString()
+                Column6 = genreDictionary["Djent"].instrumentation.ToString(),
+                Column7 = genreDictionary["Djent"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -179,7 +199,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Folk"].tuning.ToString(),
                 Column4 = genreDictionary["Folk"].timeSignature.ToString(),
                 Column5 = genreDictionary["Folk"].songLength.ToString(),
-                Column6 = genreDictionary["Folk"].instrumentation.ToString()
+                Column6 = genreDictionary["Folk"].instrumentation.ToString(),
+                Column7 = genreDictionary["Folk"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -188,7 +209,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Viking"].tuning.ToString(),
                 Column4 = genreDictionary["Viking"].timeSignature.ToString(),
                 Column5 = genreDictionary["Viking"].songLength.ToString(),
-                Column6 = genreDictionary["Viking"].instrumentation.ToString()
+                Column6 = genreDictionary["Viking"].instrumentation.ToString(),
+                Column7 = genreDictionary["Viking"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -197,7 +219,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Pagan"].tuning.ToString(),
                 Column4 = genreDictionary["Pagan"].timeSignature.ToString(),
                 Column5 = genreDictionary["Pagan"].songLength.ToString(),
-                Column6 = genreDictionary["Pagan"].instrumentation.ToString()
+                Column6 = genreDictionary["Pagan"].instrumentation.ToString(),
+                Column7 = genreDictionary["Pagan"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -206,7 +229,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Mongol"].tuning.ToString(),
                 Column4 = genreDictionary["Mongol"].timeSignature.ToString(),
                 Column5 = genreDictionary["Mongol"].songLength.ToString(),
-                Column6 = genreDictionary["Mongol"].instrumentation.ToString()
+                Column6 = genreDictionary["Mongol"].instrumentation.ToString(),
+                Column7 = genreDictionary["Mongol"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -215,7 +239,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["SymphonicBlack"].tuning.ToString(),
                 Column4 = genreDictionary["SymphonicBlack"].timeSignature.ToString(),
                 Column5 = genreDictionary["SymphonicBlack"].songLength.ToString(),
-                Column6 = genreDictionary["SymphonicBlack"].instrumentation.ToString()
+                Column6 = genreDictionary["SymphonicBlack"].instrumentation.ToString(),
+                Column7 = genreDictionary["SymphonicBlack"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -224,7 +249,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["Symphonic"].tuning.ToString(),
                 Column4 = genreDictionary["Symphonic"].timeSignature.ToString(),
                 Column5 = genreDictionary["Symphonic"].songLength.ToString(),
-                Column6 = genreDictionary["Symphonic"].instrumentation.ToString()
+                Column6 = genreDictionary["Symphonic"].instrumentation.ToString(),
+                Column7 = genreDictionary["Symphonic"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -233,7 +259,8 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["SymphonicDeath"].tuning.ToString(),
                 Column4 = genreDictionary["SymphonicDeath"].timeSignature.ToString(),
                 Column5 = genreDictionary["SymphonicDeath"].songLength.ToString(),
-                Column6 = genreDictionary["SymphonicDeath"].instrumentation.ToString()
+                Column6 = genreDictionary["SymphonicDeath"].instrumentation.ToString(),
+                Column7 = genreDictionary["SymphonicDeath"].originCountry.ToString()
             });
             GenreDataGrid.Items.Add(new DataItem
             {
@@ -242,9 +269,59 @@ namespace _3._8DigitalMedia
                 Column3 = genreDictionary["SymphonicPower"].tuning.ToString(),
                 Column4 = genreDictionary["SymphonicPower"].timeSignature.ToString(),
                 Column5 = genreDictionary["SymphonicPower"].songLength.ToString(),
-                Column6 = genreDictionary["SymphonicPower"].instrumentation.ToString()
+                Column6 = genreDictionary["SymphonicPower"].instrumentation.ToString(),
+                Column7 = genreDictionary["SymphonicPower"].originCountry.ToString()
             });
-
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["HardRock"].name,
+                Column2 = genreDictionary["HardRock"].bpm.ToString(),
+                Column3 = genreDictionary["HardRock"].tuning.ToString(),
+                Column4 = genreDictionary["HardRock"].timeSignature.ToString(),
+                Column5 = genreDictionary["HardRock"].songLength.ToString(),
+                Column6 = genreDictionary["HardRock"].instrumentation.ToString(),
+                Column7 = genreDictionary["HardRock"].originCountry.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["ProgRock"].name,
+                Column2 = genreDictionary["ProgRock"].bpm.ToString(),
+                Column3 = genreDictionary["ProgRock"].tuning.ToString(),
+                Column4 = genreDictionary["ProgRock"].timeSignature.ToString(),
+                Column5 = genreDictionary["ProgRock"].songLength.ToString(),
+                Column6 = genreDictionary["ProgRock"].instrumentation.ToString(),
+                Column7 = genreDictionary["ProgRock"].originCountry.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["MathRock"].name,
+                Column2 = genreDictionary["MathRock"].bpm.ToString(),
+                Column3 = genreDictionary["MathRock"].tuning.ToString(),
+                Column4 = genreDictionary["MathRock"].timeSignature.ToString(),
+                Column5 = genreDictionary["MathRock"].songLength.ToString(),
+                Column6 = genreDictionary["MathRock"].instrumentation.ToString(),
+                Column7 = genreDictionary["MathRock"].originCountry.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["AltRock"].name,
+                Column2 = genreDictionary["AltRock"].bpm.ToString(),
+                Column3 = genreDictionary["AltRock"].tuning.ToString(),
+                Column4 = genreDictionary["AltRock"].timeSignature.ToString(),
+                Column5 = genreDictionary["AltRock"].songLength.ToString(),
+                Column6 = genreDictionary["AltRock"].instrumentation.ToString(),
+                Column7 = genreDictionary["AltRock"].originCountry.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["Grunge"].name,
+                Column2 = genreDictionary["Grunge"].bpm.ToString(),
+                Column3 = genreDictionary["Grunge"].tuning.ToString(),
+                Column4 = genreDictionary["Grunge"].timeSignature.ToString(),
+                Column5 = genreDictionary["Grunge"].songLength.ToString(),
+                Column6 = genreDictionary["Grunge"].instrumentation.ToString(),
+                Column7 = genreDictionary["Grunge"].originCountry.ToString()
+            });
 
 
 
@@ -257,13 +334,14 @@ namespace _3._8DigitalMedia
             public string Column4 { get; set; }
             public string Column5 { get; set; }
             public string Column6 { get; set; }
+            public string Column7 { get; set; }
         }
         public enum SongLength
         {
-            Short,
+            
             Medium,
-            Long,
-            Extreme
+            Long
+            
         }
 
         public enum BPM
@@ -277,23 +355,35 @@ namespace _3._8DigitalMedia
         {
             Standard,
             Low,
-            Special
+            
         }
 
         public enum TimeSignature
         {
             Dynamic,
-            Static,
-            Weird
+            Static
+           
         }
         public enum Instrumentation
         {
-            Classic,
+            Metal,
             Orchestral,
             Folk,
-            Mongolian,
+            
             Nordic,
-            Techno
+            Techno,
+            Rock
+        }
+        public enum CountryOrigin
+        {
+            USA,
+            UK,
+            Norway,
+            Finland,
+            NZ,
+            Mongolia,
+            Sweden,
+            Germany
         }
         public class Genre
         {
@@ -303,8 +393,8 @@ namespace _3._8DigitalMedia
             public TimeSignature timeSignature;
             public SongLength songLength;
             public Instrumentation instrumentation;
-
-            public Genre(string name, BPM bpm, Tuning tuning, TimeSignature timeSignature, SongLength songLength, Instrumentation instrumentation)
+            public CountryOrigin originCountry;
+            public Genre(string name, BPM bpm, Tuning tuning, TimeSignature timeSignature, SongLength songLength, Instrumentation instrumentation, CountryOrigin originCountry)
             {
                 this.name = name;
                 this.bpm = bpm;
@@ -312,6 +402,7 @@ namespace _3._8DigitalMedia
                 this.timeSignature = timeSignature;
                 this.songLength = songLength;
                 this.instrumentation = instrumentation;
+                this.originCountry = originCountry;
             }
         }
 

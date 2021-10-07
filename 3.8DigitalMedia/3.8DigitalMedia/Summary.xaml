@@ -281,6 +281,52 @@
                     </TabControl>
                 </Grid>
             </TabItem>
+            <TabItem Header="Rock">
+                <Grid>
+                    <TabControl Background="{DynamicResource MainBackgroundBrush1}">
+                        <TabItem x:Name="HardRockInfo" Header="Hard Rock">
+                            <Grid>
+                                <GroupBox Header="Hard Rock" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Hard_rock"/>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="ProgRockInfo" Header="Progressive Rock">
+                            <Grid>
+                                <GroupBox Header="Progressive Rock" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Progressive_rock"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="MathRockInfo" Header="Math Rock">
+                            <Grid>
+                                <GroupBox Header="Math Rock" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Math_rock"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="AltRockInfo" Header="Alternative Rock">
+                            <Grid>
+                                <GroupBox Header="Alternative Rock" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Alternative_rock"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="GrungeInfo" Header="Grunge">
+                            <Grid>
+                                <GroupBox Header="Grunge" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Grunge"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            
         </TabControl>
         
         

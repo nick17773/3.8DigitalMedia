@@ -353,3 +353,58 @@ C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [1006/120514.740:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
 C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
+[1006/122601.875:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.bdab3b79.js (1)
+[1006/122604.350:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1006/122648.358:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.bdab3b79.js (1)
+[1006/122756.370:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled
+[1007/100456.436:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/100458.613:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/100655.644:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled
+[1007/100704.087:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.6458bee0.js (1)
+[1007/100706.687:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.6458bee0.js (1)
+[1007/100708.893:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1007/101808.606:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/101809.277:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/101810.478:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/101812.320:INFO:CONSOLE(2)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.hoverIntent%2Cui%7Cmediawiki.UtilitiesTime%7Cmediawiki.language.names%7Cmw.EmbedPlayer%2CEmbedPlayerNative%2CMediaWikiPlayerSupport%2CTimedText&skin=vector&version=nugzv (2)
+[1007/101839.753:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.6458bee0.js (1)
+[1007/101840.217:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.6458bee0.js (1)
+[1007/101842.428:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1007/101906.274:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/101908.196:INFO:CONSOLE(1)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.ui%7Cmw.EmbedPlayer&skin=vector&version=1utzn (1)
+[1007/103120.200:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.6458bee0.js (1)
+[1007/103120.357:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.6458bee0.js (1)
+[1007/103121.357:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.6458bee0.js (1)
+[1007/103123.540:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1007/111029.744:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/111030.407:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/111033.126:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/111034.636:INFO:CONSOLE(2)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.hoverIntent%2Cui%7Cmediawiki.UtilitiesTime%7Cmediawiki.language.names%7Cmw.EmbedPlayer%2CEmbedPlayerNative%2CMediaWikiPlayerSupport%2CTimedText&skin=vector&version=nugzv (2)
+[1007/111036.100:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1007/111047.268:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/111047.807:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/111049.135:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/111051.290:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1007/111054.693:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/111103.115:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/125256.899:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/125257.129:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/125259.567:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/125302.345:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/125304.036:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.14a848fc.js (1)
+[1007/125306.069:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+

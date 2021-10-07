@@ -25,6 +25,7 @@
                         <DataGridTextColumn  Width="*" Header="Time Signature" Binding="{Binding Column4}"/>
                         <DataGridTextColumn  Width="0.5*" Header="Length" Binding="{Binding Column5}"/>
                         <DataGridTextColumn  Width="*" Header="Instrumentation" Binding="{Binding Column6}"/>
+                        <DataGridTextColumn  Width="*" Header="Country" Binding="{Binding Column7}"/>
 
                     </DataGrid.Columns>
 

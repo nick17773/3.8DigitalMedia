@@ -37,6 +37,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -76,12 +77,27 @@
                 <Label Content="Instrumentation" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource ResourceKey=DefinitionsLabels}" Grid.Row="4" FontWeight="Normal"/>
                 <ComboBox x:Name="InstrumentBox" Margin="10,20" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="4" Padding="5" FontWeight="Normal" SelectionChanged="OutputFunnel">
                     <ComboBoxItem x:Name="Classic" Content="Classic" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <ComboBoxItem x:Name="Rock" Content="Rock" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
                     <ComboBoxItem x:Name="Orchestral" Content="Orchestral" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-                    <ComboBoxItem x:Name="TraditionalFolk" Content="Traditional Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-                    <ComboBoxItem x:Name="MongolianFolk" Content="Mongolian Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                     <ComboBoxItem x:Name="NorseFolk" Content="Norwegian Folk" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="TraditionalFolk" Content="Traditional Folk" Foreground="{DynamicResource MainTextColour}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    
+                    
                     <ComboBoxItem x:Name="Techno" Content="Techno" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    
 
+                </ComboBox>
+                <Label Content="Origin Country" Margin="10,20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource ResourceKey=DefinitionsLabels}" Grid.Row="5" FontWeight="Normal"/>
+                <ComboBox x:Name="CountryBox" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="5" FontWeight="Normal" SelectionChanged="OutputFunnel" Grid.Column="1" Margin="10,20" Grid.Row="5">
+                    <ComboBoxItem x:Name="USA" Content="United States of America" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="UK" Content="United Kingdom" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="NZ" Content="New Zealand" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="NOR" Content="Norway" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="SWE" Content="Sweden" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="FIN" Content="Finland" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="GER" Content="Germany" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    <ComboBoxItem x:Name="MON" Content="Mongolia" Foreground="{DynamicResource MainTextColour}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+                    
                 </ComboBox>
             </Grid>
         </GroupBox>
@@ -113,13 +129,13 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
-                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="5*"/>
                 </Grid.RowDefinitions>
                 <Label x:Name="SuggestedBandsLabel" Content="" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" Grid.Row="1" FontWeight="Normal"/>
                 <Label x:Name="GenreLabel" Content="Genre Will Appear Here" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="30" Margin="10" FontWeight="Normal"/>
-                <Expander Header="More Suggestions" Margin="10,10,10,0" Grid.Row="2">
+                <Expander Header="More Suggestions" Margin="5,10,5,0" Grid.Row="2">
                     <Border Margin="10,10,10,0" Background="{DynamicResource MainBackgroundBrush1}" Style="{DynamicResource MoreOptionsBorder}" BorderThickness="5">
-                        <Grid Background="{DynamicResource MainBackgroundBrush1}">
+                        <Grid Background="{DynamicResource MainBackgroundBrush1}" ScrollViewer.CanContentScroll="True" Margin="0">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="219*"/>
                                 <ColumnDefinition Width="370*"/>
@@ -130,17 +146,20 @@
                                 <RowDefinition/>
                                 <RowDefinition/>
                                 <RowDefinition/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
                             <Label x:Name="SuggestedBPMLabel" Content="Suggested Genres By BPM" Margin="10" FontWeight="Normal"/>
                             <Label x:Name="SuggestedTuningLabel" Content="Suggested Genres By Tuning" Margin="10" FontWeight="Normal" Grid.Row="1"/>
                             <Label x:Name="SuggestedTimeSigLabel" Content="Suggested Genres By Time Signature" Margin="10" FontWeight="Normal" Grid.Row="2"/>
-                            <TextBlock x:Name="SuggestedByBPM" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedByBPM" TextWrapping="Wrap" Margin="5" FontWeight="Normal" FontSize="16" Padding="0,10" Grid.Column="1"/>
                             <Label x:Name="SuggestedSongLengthLabel" Content="Suggested Genres By Song Length" Margin="10" FontWeight="Normal" Grid.Row="3"/>
-                            <TextBlock x:Name="SuggestedByTuning" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Row="1" Grid.Column="1"/>
-                            <TextBlock x:Name="SuggestedByTimeSig" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Row="2" Grid.Column="1"/>
-                            <TextBlock x:Name="SuggestedBySongLength" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,10" Grid.Row="3" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedByTuning" TextWrapping="Wrap" Margin="5" FontWeight="Normal" FontSize="16" Padding="0,10" Grid.Row="1" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedByTimeSig" TextWrapping="Wrap" Margin="5" FontWeight="Normal" FontSize="16" Padding="0,10" Grid.Row="2" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedBySongLength" TextWrapping="Wrap" Margin="5" FontWeight="Normal" FontSize="16" Padding="0,10" Grid.Row="3" Grid.Column="1"/>
                             <Label x:Name="SuggestedInstumentationLabel" Content="Suggested Genres By Instrumentation" Margin="10" FontWeight="Normal" Grid.Row="4"/>
-                            <TextBlock x:Name="SuggestedByInstrumentation" TextWrapping="Wrap" Margin="10" FontWeight="Normal" FontSize="18" Padding="0,5" Grid.Row="4" Grid.Column="1"/>
+                            <TextBlock x:Name="SuggestedByInstrumentation" TextWrapping="Wrap" Margin="5" FontWeight="Normal" FontSize="16" Padding="0,5" Grid.Row="4" Grid.Column="1"/>
+                            <Label x:Name="SuggestedByCountryLabel" Content="Suggested Genres By Origin Country" Margin="10" FontWeight="Normal" Grid.Row="5"/>
+                            <TextBlock x:Name="SuggestedByCountry" TextWrapping="Wrap" Margin="5" FontWeight="Normal" FontSize="16" Padding="0,5" Grid.Row="5" Grid.Column="1"/>
                         </Grid>
                     </Border>
                 </Expander>
