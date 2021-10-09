@@ -408,3 +408,8 @@ C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [1007/125306.069:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
 C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
+[1008/094851.481:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.45beed01.js (1)
+[1008/094853.459:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1008/095048.081:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled

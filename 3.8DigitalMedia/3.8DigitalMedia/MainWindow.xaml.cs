@@ -1548,36 +1548,50 @@ namespace _3._8DigitalMedia
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
-                Rock.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
 
             }
 
-            else if (BPMBox.SelectedItem == SlowBPM) 
+            if (BPMBox.SelectedItem == SlowBPM) 
             {
                 StandardTuning.IsEnabled = false;
-                Orchestral.IsEnabled = false;
-                TraditionalFolk.IsEnabled = false;
-               
-                Techno.IsEnabled = false;
                 LowTuning.IsEnabled = true;
-                MediumSongLength.IsEnabled = true;
-                LongSongLength.IsEnabled = true;
-                NorseFolk.IsEnabled = true;
-                Classic.IsEnabled = true;
-                StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
                 SlowBPM.IsEnabled = true;
                 MediumBPM.IsEnabled = true;
                 FastBPM.IsEnabled = true;
                 InsaneBPM.IsEnabled = true;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = false;
+                NorseFolk.IsEnabled = true;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = false;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else if (BPMBox.SelectedItem == MediumBPM)
+            if (BPMBox.SelectedItem == MediumBPM)
             {
-                NorseFolk.IsEnabled = false;
                 StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = true;
                 SlowBPM.IsEnabled = true;
@@ -1588,91 +1602,130 @@ namespace _3._8DigitalMedia
                 DynamicTimeSig.IsEnabled = true;
                 Classic.IsEnabled = true;
                 Orchestral.IsEnabled = true;
+                NorseFolk.IsEnabled = false;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
                 Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
             }
-            else if (BPMBox.SelectedItem == FastBPM)
+            if (BPMBox.SelectedItem == FastBPM)
             {
-                LowTuning.IsEnabled = false;
-                NorseFolk.IsEnabled = false;
-                TraditionalFolk.IsEnabled = false;
-                
-                Techno.IsEnabled = false;
                 StandardTuning.IsEnabled = true;
-                StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
-                MediumSongLength.IsEnabled = true;
-                LongSongLength.IsEnabled = true;
-                Classic.IsEnabled = true;
-                Orchestral.IsEnabled = true;
+                LowTuning.IsEnabled = false;
                 SlowBPM.IsEnabled = true;
                 MediumBPM.IsEnabled = true;
                 FastBPM.IsEnabled = true;
                 InsaneBPM.IsEnabled = true;
-            }
-            else if (BPMBox.SelectedItem == InsaneBPM)
-            {
-                LowTuning.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = false;
                 TraditionalFolk.IsEnabled = false;
-                
                 Techno.IsEnabled = false;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = false;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
+            }
+            if (BPMBox.SelectedItem == InsaneBPM)
+            {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = true;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = true;
+                InsaneBPM.IsEnabled = true;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = true;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = false;
-                Classic.IsEnabled = true;
-                Orchestral.IsEnabled = true;
-                MediumSongLength.IsEnabled = true;
-                StandardTuning.IsEnabled = true;
-                StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
-                SlowBPM.IsEnabled = true;
-                MediumBPM.IsEnabled = true;
-                FastBPM.IsEnabled = true;
-                InsaneBPM.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = false;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = false;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else if (TuningBox.SelectedItem == StandardTuning)
+            if (TuningBox.SelectedItem == StandardTuning)
             {
-                SlowBPM.IsEnabled = false;
-                NorseFolk.IsEnabled = false;
-                MediumBPM.IsEnabled = true;
-                FastBPM.IsEnabled = true;
-                InsaneBPM.IsEnabled = true;
-                StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
                 StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = true;
-                MediumSongLength.IsEnabled = true;
-                LongSongLength.IsEnabled = true;
+                SlowBPM.IsEnabled = false;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = true;
+                InsaneBPM.IsEnabled = true;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
                 Classic.IsEnabled = true;
                 Orchestral.IsEnabled = true;
+                NorseFolk.IsEnabled = false;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
                 Rock.IsEnabled = true;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
             }
-            else if (TuningBox.SelectedItem == LowTuning)
+            if (TuningBox.SelectedItem == LowTuning)
             {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = true;
+                MediumBPM.IsEnabled = true;
                 FastBPM.IsEnabled = false;
                 InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
                 Orchestral.IsEnabled = false;
-                TraditionalFolk.IsEnabled = false;
-                
-                Techno.IsEnabled = false;
-                Classic.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
-                SlowBPM.IsEnabled = true;
-                MediumBPM.IsEnabled = true;
-                StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
-                StandardTuning.IsEnabled = true;
-                LowTuning.IsEnabled = true;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else if (TimeSigBox.SelectedItem == StaticTimeSig)
+            if (TimeSigBox.SelectedItem == StaticTimeSig)
             {
                 StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = true;
@@ -1686,32 +1739,101 @@ namespace _3._8DigitalMedia
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
                 Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
             }
-            else if (TimeSigBox.SelectedItem == DynamicTimeSig)
+            if (TimeSigBox.SelectedItem == DynamicTimeSig)
             {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = true;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = true;
+                InsaneBPM.IsEnabled = true;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = false;
                 TraditionalFolk.IsEnabled = false;
-                
                 Techno.IsEnabled = false;
+                Rock.IsEnabled = true;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
+            }
+            //else if (SongLengthBox.SelectedItem == MediumSongLength)
+            //{
+            //    StandardTuning.IsEnabled = true;
+            //    LowTuning.IsEnabled = true;
+            //    SlowBPM.IsEnabled = true;
+            //    MediumBPM.IsEnabled = true;
+            //    FastBPM.IsEnabled = true;
+            //    InsaneBPM.IsEnabled = true;
+            //    StaticTimeSig.IsEnabled = true;
+            //    DynamicTimeSig.IsEnabled = true;
+            //    Classic.IsEnabled = true;
+            //    Orchestral.IsEnabled = true;
+            //    NorseFolk.IsEnabled = true;
+            //    TraditionalFolk.IsEnabled = true;
+            //    Techno.IsEnabled = true;
+            //    Rock.IsEnabled = true;
+            //    MediumSongLength.IsEnabled = true;
+            //    LongSongLength.IsEnabled = true;
+            //    USA.IsEnabled = true;
+            //    UK.IsEnabled = true;
+            //    NZ.IsEnabled = true;
+            //    NOR.IsEnabled = true;
+            //    SWE.IsEnabled = true;
+            //    FIN.IsEnabled = true;
+            //    GER.IsEnabled = true;
+            //    MON.IsEnabled = true;
+            //}
+            if (SongLengthBox.SelectedItem == LongSongLength)
+            {
                 StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = true;
                 SlowBPM.IsEnabled = true;
                 MediumBPM.IsEnabled = true;
                 FastBPM.IsEnabled = true;
-                InsaneBPM.IsEnabled = true;
+                InsaneBPM.IsEnabled = false;
                 StaticTimeSig.IsEnabled = true;
                 DynamicTimeSig.IsEnabled = true;
                 Classic.IsEnabled = true;
                 Orchestral.IsEnabled = true;
+                NorseFolk.IsEnabled = true;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = false;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else if (SongLengthBox.SelectedItem == MediumSongLength)
+            if (InstrumentBox.SelectedItem == Classic)
             {
                 StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = true;
@@ -1725,37 +1847,24 @@ namespace _3._8DigitalMedia
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
                 Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else if (SongLengthBox.SelectedItem == LongSongLength)
-            {
-                InsaneBPM.IsEnabled = false;
-                TraditionalFolk.IsEnabled = false;
-                
-                Techno.IsEnabled = false;
-
-                StandardTuning.IsEnabled = true;
-                LowTuning.IsEnabled = true;
-                SlowBPM.IsEnabled = true;
-                MediumBPM.IsEnabled = true;
-                FastBPM.IsEnabled = true;
-                StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
-                Classic.IsEnabled = true;
-                Orchestral.IsEnabled = true;
-                NorseFolk.IsEnabled = true;
-                MediumSongLength.IsEnabled = true;
-                LongSongLength.IsEnabled = true;
-            }
-            else if (InstrumentBox.SelectedItem == Classic)
+            if (InstrumentBox.SelectedItem == Orchestral)
             {
                 StandardTuning.IsEnabled = true;
-                LowTuning.IsEnabled = true;
-                SlowBPM.IsEnabled = true;
+                LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = false;
                 MediumBPM.IsEnabled = true;
                 FastBPM.IsEnabled = true;
                 InsaneBPM.IsEnabled = true;
@@ -1765,125 +1874,184 @@ namespace _3._8DigitalMedia
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-               
                 Techno.IsEnabled = true;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = false;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = false;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else if (InstrumentBox.SelectedItem == Orchestral)
+            if (InstrumentBox.SelectedItem == TraditionalFolk)
             {
-                SlowBPM.IsEnabled = false;
-                LowTuning.IsEnabled = false;
                 StandardTuning.IsEnabled = true;
-                MediumBPM.IsEnabled = true;
-                FastBPM.IsEnabled = true;
-                InsaneBPM.IsEnabled = true;
-                StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
-                Classic.IsEnabled = true;
-                Orchestral.IsEnabled = true;
-                NorseFolk.IsEnabled = true;
-                TraditionalFolk.IsEnabled = true;
-               
-                Techno.IsEnabled = true;
-                MediumSongLength.IsEnabled = true;
-                LongSongLength.IsEnabled = true;
-            }
-            else if (InstrumentBox.SelectedItem == TraditionalFolk)
-            {
-                SlowBPM.IsEnabled = false;
                 LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = false;
+                MediumBPM.IsEnabled = true;
                 FastBPM.IsEnabled = false;
                 InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
                 DynamicTimeSig.IsEnabled = false;
-                LongSongLength.IsEnabled = false;
-                StandardTuning.IsEnabled = true;
-                
-                MediumBPM.IsEnabled = true;
-                
-                
-                StaticTimeSig.IsEnabled = true;
-                
                 Classic.IsEnabled = true;
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
-                
+                LongSongLength.IsEnabled = false;
+                USA.IsEnabled = false;
+                UK.IsEnabled = false;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = false;
+                MON.IsEnabled = true;
+
             }
             
-            else if (InstrumentBox.SelectedItem == NorseFolk)
+            if (InstrumentBox.SelectedItem == NorseFolk)
             {
+                StandardTuning.IsEnabled = false;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = true;
                 MediumBPM.IsEnabled = false;
                 FastBPM.IsEnabled = false;
                 InsaneBPM.IsEnabled = false;
-                StandardTuning.IsEnabled = false;
-                DynamicTimeSig.IsEnabled = false;
-                
-                LowTuning.IsEnabled = true;
-                SlowBPM.IsEnabled = true;
-                
-                
                 StaticTimeSig.IsEnabled = true;
-                
+                DynamicTimeSig.IsEnabled = false;
                 Classic.IsEnabled = true;
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
+                USA.IsEnabled = false;
+                UK.IsEnabled = false;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = false;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else if (InstrumentBox.SelectedItem == Techno)
+            if (InstrumentBox.SelectedItem == Techno)
             {
-                SlowBPM.IsEnabled = false;
+                StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = false;
+                MediumBPM.IsEnabled = true;
                 FastBPM.IsEnabled = false;
                 InsaneBPM.IsEnabled = false;
-                DynamicTimeSig.IsEnabled = false;
-                LongSongLength.IsEnabled = false;
-                StandardTuning.IsEnabled = true;
-
-
-                MediumBPM.IsEnabled = true;
-
                 StaticTimeSig.IsEnabled = true;
-
+                DynamicTimeSig.IsEnabled = false;
                 Classic.IsEnabled = true;
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = false;
+                USA.IsEnabled = false;
+                UK.IsEnabled = false;
+                NZ.IsEnabled = false;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = false;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = true;
+                MON.IsEnabled = false;
             }
-            else if (InstrumentBox.SelectedItem == Rock)
+            if (InstrumentBox.SelectedItem == Rock)
             {
-                //SlowBPM.IsEnabled = false;
-                //LowTuning.IsEnabled = false;
-                //FastBPM.IsEnabled = false;
-                //InsaneBPM.IsEnabled = false;
-                //DynamicTimeSig.IsEnabled = false;
-                //LongSongLength.IsEnabled = false;
-                //StandardTuning.IsEnabled = true;
-
-
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = false;
                 MediumBPM.IsEnabled = true;
-
+                FastBPM.IsEnabled = false;
+                InsaneBPM.IsEnabled = false;
                 StaticTimeSig.IsEnabled = true;
-
-                //Classic.IsEnabled = true;
-                //Orchestral.IsEnabled = true;
-                //NorseFolk.IsEnabled = true;
-                //TraditionalFolk.IsEnabled = true;
-                
-                //Techno.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = true;
+                NorseFolk.IsEnabled = true;
+                TraditionalFolk.IsEnabled = true;
+                Techno.IsEnabled = true;
+                Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = false;
+                SWE.IsEnabled = false;
+                FIN.IsEnabled = false;
+                GER.IsEnabled = false;
+                MON.IsEnabled = false;
             }
-            else 
+            if (CountryBox.SelectedItem == USA)
+            {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = true;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = true;
+                InsaneBPM.IsEnabled = true;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = true;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = true;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
+            }
+            if (CountryBox.SelectedItem == UK)
+            {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = false;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = false;
+                InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = false;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = true;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
+            }
+            if (CountryBox.SelectedItem == NZ) //need this for later
             {
                 StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = true;
@@ -1897,13 +2065,182 @@ namespace _3._8DigitalMedia
                 Orchestral.IsEnabled = true;
                 NorseFolk.IsEnabled = true;
                 TraditionalFolk.IsEnabled = true;
-                
                 Techno.IsEnabled = true;
                 Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
                 LongSongLength.IsEnabled = true;
-
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
             }
+            if (CountryBox.SelectedItem == NOR)
+            {
+                StandardTuning.IsEnabled = false;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = true;
+                MediumBPM.IsEnabled = false;
+                FastBPM.IsEnabled = false;
+                InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = false;
+                Classic.IsEnabled = false;
+                Orchestral.IsEnabled = false;
+                NorseFolk.IsEnabled = true;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = true;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
+            }
+            if (CountryBox.SelectedItem == SWE)
+            {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = true;
+                SlowBPM.IsEnabled = true;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = false;
+                InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = false;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = true;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = false;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
+            }
+            if (CountryBox.SelectedItem == FIN)
+            {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = false;
+                MediumBPM.IsEnabled = false;
+                FastBPM.IsEnabled = true;
+                InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = false;
+                DynamicTimeSig.IsEnabled = true;
+                Classic.IsEnabled = true;
+                Orchestral.IsEnabled = true;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = false;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
+            }
+            if (CountryBox.SelectedItem == GER)
+            {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = false;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = false;
+                InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = false;
+                Classic.IsEnabled = false;
+                Orchestral.IsEnabled = false;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = true;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = false;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
+            }
+            if (CountryBox.SelectedItem == MON)
+            {
+                StandardTuning.IsEnabled = true;
+                LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = false;
+                MediumBPM.IsEnabled = true;
+                FastBPM.IsEnabled = false;
+                InsaneBPM.IsEnabled = false;
+                StaticTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = false;
+                Classic.IsEnabled = false;
+                Orchestral.IsEnabled = false;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = true;
+                Techno.IsEnabled = false;
+                Rock.IsEnabled = false;
+                MediumSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = false;
+                USA.IsEnabled = true;
+                UK.IsEnabled = true;
+                NZ.IsEnabled = true;
+                NOR.IsEnabled = true;
+                SWE.IsEnabled = true;
+                FIN.IsEnabled = true;
+                GER.IsEnabled = true;
+                MON.IsEnabled = true;
+            }
+            
+            //else 
+            //{
+            //    StandardTuning.IsEnabled = true;
+            //    LowTuning.IsEnabled = true;
+            //    SlowBPM.IsEnabled = true;
+            //    MediumBPM.IsEnabled = true;
+            //    FastBPM.IsEnabled = true;
+            //    InsaneBPM.IsEnabled = true;
+            //    StaticTimeSig.IsEnabled = true;
+            //    DynamicTimeSig.IsEnabled = true;
+            //    Classic.IsEnabled = true;
+            //    Orchestral.IsEnabled = true;
+            //    NorseFolk.IsEnabled = true;
+            //    TraditionalFolk.IsEnabled = true;
+            //    Techno.IsEnabled = true;
+            //    Rock.IsEnabled = true;
+            //    MediumSongLength.IsEnabled = true;
+            //    LongSongLength.IsEnabled = true;
+            //    USA.IsEnabled = true;
+            //    UK.IsEnabled = true;
+            //    NZ.IsEnabled = true;
+            //    NOR.IsEnabled = true;
+            //    SWE.IsEnabled = true;
+            //    FIN.IsEnabled = true;
+            //    GER.IsEnabled = true;
+            //    MON.IsEnabled = true;
+            //}
             
         }
 
