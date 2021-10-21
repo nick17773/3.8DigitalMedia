@@ -38,6 +38,8 @@ namespace _3._8DigitalMedia
                 { "MathRock", new Genre("Math Rock", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Rock, CountryOrigin.USA) },
                 { "AltRock", new Genre("Alternative Rock", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Rock, CountryOrigin.UK) },
                 { "Grunge", new Genre("Grunge", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Rock, CountryOrigin.USA) },
+                { "KiwiRock", new Genre("New Zealand (Kiwi) Rock", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Rock, CountryOrigin.NZ) },
+                { "KiwiMetal", new Genre("New Zealand (Kiwi) Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.NZ) }
             };
         public DataGridWindow()
         {
@@ -321,6 +323,26 @@ namespace _3._8DigitalMedia
                 Column5 = genreDictionary["Grunge"].songLength.ToString(),
                 Column6 = genreDictionary["Grunge"].instrumentation.ToString(),
                 Column7 = genreDictionary["Grunge"].originCountry.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["KiwiRock"].name,
+                Column2 = genreDictionary["KiwiRock"].bpm.ToString(),
+                Column3 = genreDictionary["KiwiRock"].tuning.ToString(),
+                Column4 = genreDictionary["KiwiRock"].timeSignature.ToString(),
+                Column5 = genreDictionary["KiwiRock"].songLength.ToString(),
+                Column6 = genreDictionary["KiwiRock"].instrumentation.ToString(),
+                Column7 = genreDictionary["KiwiRock"].originCountry.ToString()
+            });
+            GenreDataGrid.Items.Add(new DataItem
+            {
+                Column1 = genreDictionary["KiwiMetal"].name,
+                Column2 = genreDictionary["KiwiMetal"].bpm.ToString(),
+                Column3 = genreDictionary["KiwiMetal"].tuning.ToString(),
+                Column4 = genreDictionary["KiwiMetal"].timeSignature.ToString(),
+                Column5 = genreDictionary["KiwiMetal"].songLength.ToString(),
+                Column6 = genreDictionary["KiwiMetal"].instrumentation.ToString(),
+                Column7 = genreDictionary["KiwiMetal"].originCountry.ToString()
             });
 
 

@@ -413,3 +413,17 @@ C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), con
 C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
 [1008/095048.081:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled
+[1021/153038.519:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.a6e61853.js (1)
+[1021/153039.651:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.a6e61853.js (1)
+[1021/153042.003:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1021/153047.435:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.a6e61853.js (1)
+[1021/153107.747:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1021/153110.423:INFO:CONSOLE(2)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.hoverIntent%2Cui%7Cmediawiki.UtilitiesTime%7Cmediawiki.language.names%7Cmw.EmbedPlayer%2CEmbedPlayerNative%2CMediaWikiPlayerSupport%2CTimedText&skin=vector&version=ob4v9 (2)
+[1021/153116.288:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1021/153127.124:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1021/153135.209:WARNING:spdy_session.cc(3526)] Received HEADERS for invalid stream 71
+[1021/153135.809:WARNING:spdy_session.cc(3526)] Received HEADERS for invalid stream 73
+[1021/153234.400:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled

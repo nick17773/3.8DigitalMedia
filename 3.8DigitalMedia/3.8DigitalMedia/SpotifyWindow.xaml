@@ -291,6 +291,28 @@
                     </TabControl>
                 </Grid>
             </TabItem>
+            <TabItem Header="New Zealand (Kiwi)">
+                <Grid>
+                <TabControl>
+                        <TabItem x:Name="KiwiRockPlaylist" Header="NZ (Kiwi) Rock">
+                            <Grid>
+                                <GroupBox Header="NZ (Kiwi) Rock Playlist" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/0XNjjg8TP0IIhQ55j3nsLz?si=4a2a89b3021b40cf"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="KiwiMetalPlaylist" Header="NZ (Kiwi) Metal">
+                            <Grid>
+                                <GroupBox Header="NZ (Kiwi) Metal Playlist" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://open.spotify.com/playlist/1EJPFPpk12T46MkUHSEgHg?si=e6d48037f4ec4847"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                </TabControl>
+                </Grid>
+            </TabItem>
 
 
 

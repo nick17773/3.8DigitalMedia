@@ -71,6 +71,8 @@ namespace _3._8DigitalMedia
                 { "MathRock", new Genre("Math Rock", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Long, Instrumentation.Rock, CountryOrigin.USA) },
                 { "AltRock", new Genre("Alternative Rock", BPM.Medium, Tuning.Low, TimeSignature.Static, SongLength.Medium, Instrumentation.Rock, CountryOrigin.UK) },
                 { "Grunge", new Genre("Grunge", BPM.Medium, Tuning.Low, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Rock, CountryOrigin.USA) },
+                { "KiwiRock", new Genre("New Zealand (Kiwi) Rock", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Rock, CountryOrigin.NZ) },
+                { "KiwiMetal", new Genre("New Zealand (Kiwi) Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.NZ) }
             };
 
         public MainWindow()
@@ -721,6 +723,29 @@ namespace _3._8DigitalMedia
             {
                 genreKey = "Grunge";
                 suggestedBands = "Nirvana, Pearl Jam, Soundgarden, Stone Temple Pilots";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
+            if (BPMBox.SelectedItem == MediumBPM &&
+               TuningBox.SelectedItem == StandardTuning &&
+               TimeSigBox.SelectedItem == StaticTimeSig &&
+               SongLengthBox.SelectedItem == MediumSongLength &&
+               InstrumentBox.SelectedItem == Rock &&
+               CountryBox.SelectedItem == NZ)
+            {
+                genreKey = "KiwiRock";
+                suggestedBands = "Supergroove, Split Enz, Six60, Flight of the Conchords";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+            if (BPMBox.SelectedItem == MediumBPM &&
+               TuningBox.SelectedItem == StandardTuning &&
+               TimeSigBox.SelectedItem == StaticTimeSig &&
+               SongLengthBox.SelectedItem == MediumSongLength &&
+               InstrumentBox.SelectedItem == Classic &&
+               CountryBox.SelectedItem == NZ)
+            {
+                genreKey = "KiwiMetal";
+                suggestedBands = "Devilskin, Alien Weaponry, Blindspott, Shihad";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 

@@ -326,7 +326,29 @@
                     </TabControl>
                 </Grid>
             </TabItem>
-            
+            <TabItem Header="New Zealand (Kiwi)">
+                <Grid>
+                    <TabControl>
+                        <TabItem x:Name="KiwiRockInfo" Header="NZ (Kiwi) Rock">
+                            <Grid>
+                                <GroupBox Header="NZ (Kiwi) Rock" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Rock_music_in_New_Zealand"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                        <TabItem x:Name="KiwiMetalInfo" Header="NZ (Kiwi) Metal">
+                            <Grid>
+                                <GroupBox Header="NZ (Kiwi) Metal" Margin="10" FontWeight="Bold">
+                                    <wpf:ChromiumWebBrowser Margin="10" Address="https://en.wikipedia.org/wiki/Music_of_New_Zealand#Heavy_metal"/>
+
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+
         </TabControl>
         
         
