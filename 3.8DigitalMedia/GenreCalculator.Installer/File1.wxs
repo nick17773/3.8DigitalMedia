@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="1.5.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
+	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="4.0.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
 		<Package InstallerVersion="300" Compressed="yes" Manufacturer="Nicholas Russell"/>
 		<Media Id="1" Cabinet="myapplication.cab" EmbedCab="yes" />
 
@@ -85,7 +85,7 @@
 			<Component Id="ApplicationShortcut" Guid="ef8542a2-f07c-4185-bf8a-a90caca79932">
 				<Shortcut Id="ApplicationStartMenuShortcut"
                      Name="Genre Calculator"
-                     Description="A Calculator for the numerous metal subgenres"
+                     Description="A Calculator for the numerous metal/rock subgenres"
                     Target="[#myapplication.exe]"
                           WorkingDirectory="APPLICATIONROOTDIRECTORY"
 						  />
@@ -97,7 +97,7 @@
 			<Component Id="ApplicationShortcutDesktop" Guid="*">
 				<Shortcut Id="ApplicationDesktopShortcut"
 					Name="Genre Calculator"
-					Description="A Genre Calculator"
+					Description="A Calculator for the numerous metal/rock subgenres"
 					Target="[#myapplication.exe]"
 					WorkingDirectory="MYAPPDIRPROPERTY"/>
 				<RemoveFolder Id="DesktopFolder" On="uninstall"/>
