@@ -71,7 +71,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>green-man-icon.ico</ApplicationIcon>
+    <ApplicationIcon>icon2.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>
@@ -164,9 +164,6 @@
     <Compile Include="ThemeSetter.xaml.cs">
       <DependentUpon>ThemeSetter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
     <Page Include="DataGridWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -239,10 +236,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -307,6 +300,7 @@
     <None Include="Resources\Slayer - South of Heaven intro.wav" />
     <None Include="Resources\For Whom The Bell Tolls intro.wav" />
     <None Include="Resources\Chop Suey! intro.wav" />
+    <Resource Include="icon2.ico" />
     <Content Include="Resources\Slayer\SOHIntro.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

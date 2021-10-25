@@ -688,7 +688,7 @@ namespace _3._8DigitalMedia
                 )
             {
                 genreKey = "ProgRock";
-                suggestedBands = "Yes, Emmerson Lake & Palmer, Pink Floyd, Rush";
+                suggestedBands = "Yes, Emerson Lake & Palmer, Pink Floyd, Rush";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
             if (BPMBox.SelectedItem == MediumBPM &&
@@ -710,7 +710,7 @@ namespace _3._8DigitalMedia
                 CountryBox.SelectedItem == UK)
             {
                 genreKey = "AltRock";
-                suggestedBands = "blink-182, Blur, Fall Out Boy, Evanesance";
+                suggestedBands = "blink-182, Blur, Fall Out Boy, Evanescence";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 

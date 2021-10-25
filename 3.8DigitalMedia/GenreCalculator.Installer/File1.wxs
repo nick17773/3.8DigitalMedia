@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="4.0.0.0" Language="1033" Name="Genre Calculator" Manufacturer="Nicholas Russell">
+	<Product Id="*" UpgradeCode="3227255a-50f3-49d8-b600-21e86cbcf5e8" Version="4.1.0.0" Language="1033" Name="GenreCalc" Manufacturer="Nicholas Russell">
 		<Package InstallerVersion="300" Compressed="yes" Manufacturer="Nicholas Russell"/>
 		<Media Id="1" Cabinet="myapplication.cab" EmbedCab="yes" />
 
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
-				<Directory Id="APPLICATIONROOTDIRECTORY" Name="Genre Calculator"/>
+				<Directory Id="APPLICATIONROOTDIRECTORY" Name="GenreCalc"/>
 			</Directory>
 			<!-- Step 1: Define the directory structure -->
 			<Directory Id="ProgramMenuFolder">
-				<Directory Id="ApplicationProgramsFolder" Name="Genre Calculator"/>
+				<Directory Id="ApplicationProgramsFolder" Name="GenreCalc"/>
 			</Directory>
 			<Directory Id="DesktopFolder" Name="Desktop"></Directory>
 			
@@ -84,7 +84,7 @@
 		<DirectoryRef Id="ApplicationProgramsFolder">
 			<Component Id="ApplicationShortcut" Guid="ef8542a2-f07c-4185-bf8a-a90caca79932">
 				<Shortcut Id="ApplicationStartMenuShortcut"
-                     Name="Genre Calculator"
+                     Name="GenreCalc"
                      Description="A Calculator for the numerous metal/rock subgenres"
                     Target="[#myapplication.exe]"
                           WorkingDirectory="APPLICATIONROOTDIRECTORY"
@@ -96,7 +96,7 @@
 		<DirectoryRef Id="DesktopFolder">
 			<Component Id="ApplicationShortcutDesktop" Guid="*">
 				<Shortcut Id="ApplicationDesktopShortcut"
-					Name="Genre Calculator"
+					Name="GenreCalc"
 					Description="A Calculator for the numerous metal/rock subgenres"
 					Target="[#myapplication.exe]"
 					WorkingDirectory="MYAPPDIRPROPERTY"/>

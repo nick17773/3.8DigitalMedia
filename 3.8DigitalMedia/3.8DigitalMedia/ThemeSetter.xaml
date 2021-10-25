@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Foreground="{DynamicResource MainTextColour}"
         Background="{DynamicResource MainBackgroundBrush1}"
-        Title="ThemeSetter" Height="450" Width="800">
+        Title="Theme Settings - GenreCalc" Height="450" Width="800">
 
 
     <Window.Resources>

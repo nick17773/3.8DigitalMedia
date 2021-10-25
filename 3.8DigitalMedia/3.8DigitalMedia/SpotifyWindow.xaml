@@ -10,7 +10,7 @@
         Foreground="{DynamicResource MainTextColour}"
         FontSize="18"
         WindowState="Maximized"
-        Title="SpotifyWindow" Height="900" Width="1750">
+        Title="Spotify Playlists - GenreCalc" Height="900" Width="1750">
     <Grid>
 
         <TabControl x:Name="PlaylistTabs" Background="{DynamicResource MainBackgroundBrush1}">

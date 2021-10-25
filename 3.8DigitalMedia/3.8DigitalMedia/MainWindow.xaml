@@ -14,7 +14,7 @@
         Background="{DynamicResource ResourceKey=MainBackgroundBrush1}"
         Foreground="{DynamicResource MainTextColour}"
         WindowState="Maximized"
-        Title="MainWindow" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+        Title="Main Window - GenreCalc" Height="1056" Width="1936" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
 
     <Grid x:Name="MainGrid" Margin="10" UseLayoutRounding="True">
         <Grid.RowDefinitions>

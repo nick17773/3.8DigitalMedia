@@ -10,7 +10,7 @@
         WindowState="Maximized"
         Background="{DynamicResource MainBackgroundBrush1}"
         Foreground="{DynamicResource MainTextColour}"
-        Title="Summary" Height="900" Width="1500">
+        Title="Summary - GenreCalc" Height="900" Width="1500">
     <Grid>
         <TabControl Background="{DynamicResource MainBackgroundBrush1}">
 

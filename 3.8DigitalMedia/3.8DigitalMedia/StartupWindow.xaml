@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_3._8DigitalMedia"
         mc:Ignorable="d"
-        Title="StartupWindow" Width="800" Height="600" WindowStartupLocation="CenterScreen">
+        Title="Startup Window - GenreCalc" Width="800" Height="600" WindowStartupLocation="CenterScreen">
     <Grid x:Name="MainGrid">
         <GroupBox Header="Welcome!" Margin="10">
             <Grid Margin="10" >
@@ -19,7 +19,7 @@
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
                 <Button Content="Continue" FontSize="30" FontWeight="Normal" Click="Button_Click" Grid.Row="1" Grid.Column="1" Margin="10"/>
-                <TextBlock Margin="10" TextWrapping="Wrap" Grid.ColumnSpan="3" FontSize="16" FontWeight="{DynamicResource {x:Static SystemFonts.MenuFontWeightKey}}"><Run FontSize="18" Text="This is a Genre Calculator for the various Metal Subgenres, featuring a Basic and Advanced algorithm, Spotify playlists and Genre Information from Wikipedia."/><LineBreak/><Run FontSize="18"/><LineBreak/><Run FontSize="18" Text="None of the music featured in this app is mine, and all rights still remain with the original producers and artists."/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="36" Text="WARNING: "/><LineBreak/><Run/><LineBreak/><Run FontSize="18" Text="Due to the nature of some of the subgenres featured in this calculator, some content may not be suitable for all ages or audiences. Content may range from graphic and vulgar imagery to bigoted and racist statements. Viewer discretion is advised."/><Run FontSize="18" Text=" I do not claim responsibility for any faces melted during the use of this app. "/></TextBlock>
+                <TextBlock Margin="10" TextWrapping="Wrap" Grid.ColumnSpan="3" FontSize="16" FontWeight="{DynamicResource {x:Static SystemFonts.MenuFontWeightKey}}"><Run FontSize="20" Text="This is a Genre Calculator for the various "/><Run FontSize="20" Text="music"/><Run FontSize="20" Text=" subgenres, featuring a Basic and Advanced algorithm, Spotify playlists and Genre Information from Wikipedia."/><LineBreak/><LineBreak/><Run FontSize="20" Text="None of the music featured in this app "/><Run FontSize="20" Text="belong to GenreCalc"/><Run FontSize="20" Text=", and all rights still remain with the original producers and artists."/><LineBreak/><LineBreak/><Run FontWeight="Bold" FontSize="36" Text="WARNING: "/><LineBreak/><Run/><LineBreak/><Run FontSize="20" Text="Due to the nature of some of the subgenres featured in this calculator, some content may be inappropriate or offensive to some audiences. "/><Run FontSize="20" Text="Viewer discretion is advised. I do not claim responsibility for any faces melted during the use of this app. "/></TextBlock>
 
             </Grid>
         </GroupBox>

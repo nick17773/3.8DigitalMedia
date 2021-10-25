@@ -120,7 +120,6 @@ C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\StartupWindow.g.cs
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\Summary.g.cs
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\ThemeSetter.g.cs
-C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\Window1.g.cs
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\App.g.cs
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\3.8DigitalMedia_Content.g.cs
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\3.8DigitalMedia_MarkupCompile.cache
@@ -133,7 +132,6 @@ C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\StartupWindow.baml
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\Summary.baml
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\ThemeSetter.baml
-C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\Window1.baml
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\3.8DigitalMedia.g.resources
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\_3._8DigitalMedia.Properties.Resources.resources
 C:\Users\n.a.russell\Documents\Documents\Yr13 2021\CompSci\3.8DM\3.8DigitalMedia\3.8DigitalMedia\3.8DigitalMedia\obj\Release\3.8DigitalMedia.csproj.GenerateResource.cache
