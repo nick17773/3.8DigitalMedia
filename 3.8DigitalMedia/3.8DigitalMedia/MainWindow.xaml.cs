@@ -12,7 +12,7 @@ namespace _3._8DigitalMedia
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window // where all of the public variables are set 
     {
         public string genreKey;
         public string suggestedBands;
@@ -41,7 +41,7 @@ namespace _3._8DigitalMedia
         
         public string VikingrFolk = Convert.ToString(Instrumentation.Nordic);
 
-        public Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>()
+        public Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>() // the holy grail of the project, which stores all of the genres in an easily updatable format
             {
                 { "Heavy", new Genre("Heavy Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.UK) },
                 { "Prog", new Genre("Progressive Metal", BPM.Medium, Tuning.Standard, TimeSignature.Dynamic, SongLength.Medium, Instrumentation.Metal, CountryOrigin.USA) },
@@ -75,7 +75,7 @@ namespace _3._8DigitalMedia
                 { "KiwiMetal", new Genre("New Zealand (Kiwi) Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.NZ) }
             };
 
-        public MainWindow()
+        public MainWindow() // the main window
         {
             
             InitializeComponent();
@@ -116,7 +116,7 @@ namespace _3._8DigitalMedia
 
         }
 
-        public void TotalChecker()
+        public void TotalChecker() // checks the amount of genres that have x atribute in their definition, and adds the number to the option on the box accordingly
         {
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
             List<string> AllTuningStandardValues = new List<string>();
@@ -382,7 +382,7 @@ namespace _3._8DigitalMedia
             }
             
         }
-        public void Check()
+        public void Check() // the main algorithim, with the time signature & tuning options enabled
         {
             string TuningInput = Convert.ToString(TuningLabel.Tag);
             string BPMInput = Convert.ToString(BPMLabel.Tag);
@@ -762,7 +762,7 @@ namespace _3._8DigitalMedia
             }
 
         }
-        public void SuggestedBPMCheck()
+        public void SuggestedBPMCheck() // checks genres by BPM
         {
             var BPMInput = BPMBox.SelectedItem;
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
@@ -816,7 +816,7 @@ namespace _3._8DigitalMedia
                 }
             }
         }
-        public void SuggestedTuningCheck()
+        public void SuggestedTuningCheck() // checks genres by tuning
         {
             var TuningInput = TuningBox.SelectedItem;
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
@@ -849,7 +849,7 @@ namespace _3._8DigitalMedia
                 }
             }
         }
-        public void SuggestedTimeSigCheck()
+        public void SuggestedTimeSigCheck() // checks genres by time signature
         {
             var TimeSigInput = TimeSigBox.SelectedItem;
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
@@ -881,7 +881,7 @@ namespace _3._8DigitalMedia
                 }
             }
         }
-        public void SuggestedSongLengthCheck()
+        public void SuggestedSongLengthCheck() // checks genres by song length
         {
             var SongLengthInput = SongLengthBox.SelectedItem;
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
@@ -935,7 +935,7 @@ namespace _3._8DigitalMedia
                 //}
             }
         }
-        public void SuggestedInstrumentationCheck()
+        public void SuggestedInstrumentationCheck() // checks genres by instrumentation
         {
             var InstrumentationInput = InstrumentBox.SelectedItem;
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
@@ -1012,7 +1012,7 @@ namespace _3._8DigitalMedia
                 }
             }
         }
-        public void SuggestedCountryCheck()
+        public void SuggestedCountryCheck() // checks genres by country
         {
             var CountryInput = CountryBox.SelectedItem;
             var GroupedValues = genreDictionary.GroupBy(x => x.Value.bpm);
@@ -1110,7 +1110,7 @@ namespace _3._8DigitalMedia
                 }
             }
         }
-        public void GenreSuggestions()
+        public void GenreSuggestions() // runs the suggested by ~ functions
         {
             string TuningInput = Convert.ToString(TuningLabel.Tag);
             string BPMInput = Convert.ToString(BPMLabel.Tag);
@@ -1142,14 +1142,14 @@ namespace _3._8DigitalMedia
 
         }
 
-        public void GenreDisplay(string genreKey, Dictionary<string, Genre> genreDictionary, string suggestedBands)
+        public void GenreDisplay(string genreKey, Dictionary<string, Genre> genreDictionary, string suggestedBands) // displays the output
         {
 
             GenreLabel.Content = genreDictionary[genreKey].name;
             SuggestedBandsLabel.Content = suggestedBands;
 
         }
-        public enum SongLength
+        public enum SongLength // enums for the song length
         {
 
             Medium,
@@ -1157,27 +1157,27 @@ namespace _3._8DigitalMedia
 
         }
 
-        public enum BPM
+        public enum BPM // enums for the BPM
         {
             Slow,
             Medium,
             Fast,
             Insane
         }
-        public enum Tuning
+        public enum Tuning // enums for the tuning
         {
             Standard,
             Low,
 
         }
 
-        public enum TimeSignature
+        public enum TimeSignature // enums for the time signature
         {
             Dynamic,
             Static
 
         }
-        public enum Instrumentation
+        public enum Instrumentation // enums for the instrumentation
         {
             Metal,
             Orchestral,
@@ -1187,7 +1187,7 @@ namespace _3._8DigitalMedia
             Techno,
             Rock
         }
-        public enum CountryOrigin
+        public enum CountryOrigin // enums for the country of origin
         {
             USA,
             UK,
@@ -1198,7 +1198,7 @@ namespace _3._8DigitalMedia
             Sweden,
             Germany
         }
-        public class Genre
+        public class Genre // the class that defines each genre, based on the above enums
         {
             public string name;
             public BPM bpm;
@@ -1221,7 +1221,7 @@ namespace _3._8DigitalMedia
 
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) // runs the algorithims
         {
             Check();
             GenreSuggestions();
@@ -1233,7 +1233,7 @@ namespace _3._8DigitalMedia
             }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e) // opens the data grid window
         {
             //Window1 genreWindow = new Window1();
             //genreWindow.Show();
@@ -1241,7 +1241,7 @@ namespace _3._8DigitalMedia
             newGenreWindow.Show();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e) // closes the application
         {
             string ShutdownTitle = "Application Shutting down";
             string ShutdownMessage = "Application is shutting down. All windows will close momentarily";
@@ -1249,26 +1249,26 @@ namespace _3._8DigitalMedia
             Application.Current.Shutdown();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void Button_Click_3(object sender, RoutedEventArgs e) // opens the help window
         {
             //Show help window
             HelpWindow helpWindow = new HelpWindow();
             helpWindow.ShowDialog();
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void Button_Click_4(object sender, RoutedEventArgs e) // opens the spotify window
         {
             SpotifyWindow spotifyWindow = new SpotifyWindow();
             spotifyWindow.Show();
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
+        private void Button_Click_5(object sender, RoutedEventArgs e) // opens the theme window
         {
             ThemeSetter themeSetter = new ThemeSetter();
             themeSetter.Show();
         }
 
-        private void BasicSet(object sender, RoutedEventArgs e)
+        private void BasicSet(object sender, RoutedEventArgs e) // this disables the time signature and tuning boxes to make the algorithim easier to use, on by default.
         {
             TuningBox.IsEnabled = false;
             TimeSigBox.IsEnabled = false;
@@ -1279,7 +1279,7 @@ namespace _3._8DigitalMedia
 (DISABLED)";
         }
 
-        private void AdvancedSet(object sender, RoutedEventArgs e)
+        private void AdvancedSet(object sender, RoutedEventArgs e) // this function turns on the tuning and time signature boxes, which are more advanced concepts/settings
         {
             TuningBox.IsEnabled = true;
             TimeSigBox.IsEnabled = true;
@@ -1288,7 +1288,7 @@ namespace _3._8DigitalMedia
             TuningTitleLabel.Content = "Tuning";
         }
 
-        private void BasicCheck()
+        private void BasicCheck() // the basic version of the check function
         {
             string TuningInput = Convert.ToString(TuningLabel.Tag);
             string BPMInput = Convert.ToString(BPMLabel.Tag);
@@ -1518,6 +1518,27 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
+            if (BPMBox.SelectedItem == MediumBPM &&
+              
+               SongLengthBox.SelectedItem == MediumSongLength &&
+               InstrumentBox.SelectedItem == Rock &&
+               CountryBox.SelectedItem == NZ)
+            {
+                genreKey = "KiwiRock";
+                suggestedBands = "Supergroove, Split Enz, Six60, Flight of the Conchords";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+            if (BPMBox.SelectedItem == MediumBPM &&
+               
+               SongLengthBox.SelectedItem == MediumSongLength &&
+               InstrumentBox.SelectedItem == Classic &&
+               CountryBox.SelectedItem == NZ)
+            {
+                genreKey = "KiwiMetal";
+                suggestedBands = "Devilskin, Alien Weaponry, Blindspott, Shihad";
+                GenreDisplay(genreKey, genreDictionary, suggestedBands);
+            }
+
 
             if (BPMInput == "" &&
             TuningInput == "" &&
@@ -1535,7 +1556,7 @@ namespace _3._8DigitalMedia
         
         
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
+        private void Button_Click_6(object sender, RoutedEventArgs e) // this is the clear function
         {
             TuningBox.SelectedIndex = -1;
             TimeSigBox.SelectedIndex = -1;
@@ -1553,7 +1574,7 @@ namespace _3._8DigitalMedia
             SuggestedByCountry.Text = "";
         }
 
-        private void OutputFunnel(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        private void OutputFunnel(object sender, System.Windows.Controls.SelectionChangedEventArgs e) // this function will funnel the user's inputs into desired selections that will correspond to the programmed genres, which reduces errors.
         {
             if (BPMBox.SelectedIndex == -1 &&
                 TuningBox.SelectedIndex == -1 &&
@@ -1804,7 +1825,7 @@ namespace _3._8DigitalMedia
                 GER.IsEnabled = false;
                 MON.IsEnabled = false;
             }
-            //else if (SongLengthBox.SelectedItem == MediumSongLength)
+            //else if (SongLengthBox.SelectedItem == MediumSongLength)  # this is enabled for all regardless, as there are no genres without this option, hence it is not needed here.
             //{
             //    StandardTuning.IsEnabled = true;
             //    LowTuning.IsEnabled = true;
@@ -2076,24 +2097,24 @@ namespace _3._8DigitalMedia
                 GER.IsEnabled = true;
                 MON.IsEnabled = true;
             }
-            if (CountryBox.SelectedItem == NZ) //need this for later
+            if (CountryBox.SelectedItem == NZ) 
             {
                 StandardTuning.IsEnabled = true;
-                LowTuning.IsEnabled = true;
-                SlowBPM.IsEnabled = true;
+                LowTuning.IsEnabled = false;
+                SlowBPM.IsEnabled = false;
                 MediumBPM.IsEnabled = true;
-                FastBPM.IsEnabled = true;
-                InsaneBPM.IsEnabled = true;
+                FastBPM.IsEnabled = false;
+                InsaneBPM.IsEnabled = false;
                 StaticTimeSig.IsEnabled = true;
-                DynamicTimeSig.IsEnabled = true;
+                DynamicTimeSig.IsEnabled = false;
                 Classic.IsEnabled = true;
-                Orchestral.IsEnabled = true;
-                NorseFolk.IsEnabled = true;
-                TraditionalFolk.IsEnabled = true;
-                Techno.IsEnabled = true;
+                Orchestral.IsEnabled = false;
+                NorseFolk.IsEnabled = false;
+                TraditionalFolk.IsEnabled = false;
+                Techno.IsEnabled = false;
                 Rock.IsEnabled = true;
                 MediumSongLength.IsEnabled = true;
-                LongSongLength.IsEnabled = true;
+                LongSongLength.IsEnabled = false;
                 USA.IsEnabled = true;
                 UK.IsEnabled = true;
                 NZ.IsEnabled = true;
