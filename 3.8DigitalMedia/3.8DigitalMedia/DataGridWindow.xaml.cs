@@ -41,7 +41,7 @@ namespace _3._8DigitalMedia
                 { "KiwiRock", new Genre("New Zealand (Kiwi) Rock", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Rock, CountryOrigin.NZ) },
                 { "KiwiMetal", new Genre("New Zealand (Kiwi) Metal", BPM.Medium, Tuning.Standard, TimeSignature.Static, SongLength.Medium, Instrumentation.Metal, CountryOrigin.NZ) }
             };
-        public DataGridWindow()
+        public DataGridWindow() // adds all of the data to the data grid columns based on the above dictionary
         {
             InitializeComponent();
             GenreDataGrid.Items.Add(new DataItem
@@ -348,7 +348,7 @@ namespace _3._8DigitalMedia
 
 
         }
-        public class DataItem
+        public class DataItem // creates the columns for the grid
         {
             public string Column1 { get; set; }
             public string Column2 { get; set; }
@@ -360,10 +360,10 @@ namespace _3._8DigitalMedia
         }
         public enum SongLength
         {
-            
+
             Medium,
             Long
-            
+
         }
 
         public enum BPM
@@ -377,21 +377,21 @@ namespace _3._8DigitalMedia
         {
             Standard,
             Low,
-            
+
         }
 
         public enum TimeSignature
         {
             Dynamic,
             Static
-           
+
         }
         public enum Instrumentation
         {
             Metal,
             Orchestral,
             Folk,
-            
+
             Nordic,
             Techno,
             Rock
@@ -428,7 +428,7 @@ namespace _3._8DigitalMedia
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e) // opens the summary window
         {
             Summary summary = new Summary();
             summary.Show();

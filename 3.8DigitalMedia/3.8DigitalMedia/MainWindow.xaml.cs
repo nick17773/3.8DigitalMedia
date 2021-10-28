@@ -3,9 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
-using System.Diagnostics;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace _3._8DigitalMedia
 {
@@ -24,21 +21,21 @@ namespace _3._8DigitalMedia
 
         public string Standard = Convert.ToString(Tuning.Standard);
         public string Low = Convert.ToString(Tuning.Low);
-        
+
 
         public string Static = Convert.ToString(TimeSignature.Static);
         public string Dynamic = Convert.ToString(TimeSignature.Dynamic);
-        
 
-        
+
+
         public string MediumLength = Convert.ToString(SongLength.Medium);
         public string Long = Convert.ToString(SongLength.Long);
-       
+
 
         public string ClassicI = Convert.ToString(Instrumentation.Metal);
         public string OrchestralI = Convert.ToString(Instrumentation.Orchestral);
         public string TradFolk = Convert.ToString(Instrumentation.Folk);
-        
+
         public string VikingrFolk = Convert.ToString(Instrumentation.Nordic);
 
         public Dictionary<string, Genre> genreDictionary = new Dictionary<string, Genre>() // the holy grail of the project, which stores all of the genres in an easily updatable format
@@ -77,9 +74,9 @@ namespace _3._8DigitalMedia
 
         public MainWindow() // the main window
         {
-            
+
             InitializeComponent();
-            
+
             SlowBPM.Content = BPM.Slow;
             MediumBPM.Content = BPM.Medium;
             FastBPM.Content = BPM.Fast;
@@ -87,11 +84,9 @@ namespace _3._8DigitalMedia
 
             StandardTuning.Content = Tuning.Standard;
             LowTuning.Content = Tuning.Low;
-            
 
             StaticTimeSig.Content = TimeSignature.Static;
             DynamicTimeSig.Content = TimeSignature.Dynamic;
-            
 
             //ShortSongLength.Content = SongLength.Short;
             MediumSongLength.Content = SongLength.Medium;
@@ -101,18 +96,12 @@ namespace _3._8DigitalMedia
             Classic.Content = Instrumentation.Metal;
             Orchestral.Content = Instrumentation.Orchestral;
             TraditionalFolk.Content = Instrumentation.Folk;
-            
-            NorseFolk.Content = Instrumentation.Nordic;
 
-            
+            NorseFolk.Content = Instrumentation.Nordic;
 
             TotalChecker();
             TuningBox.IsEnabled = false;
             TimeSigBox.IsEnabled = false;
-            
-
-            
-
 
         }
 
@@ -169,10 +158,10 @@ namespace _3._8DigitalMedia
                 var StaticTimeSigCheck = allTimeSigLookup[TimeSignature.Static];
                 var DynamicTimeSigCheck = allTimeSigLookup[TimeSignature.Dynamic];
 
-                
+
                 var MediumSongLengthCheck = allSongLenLookup[SongLength.Medium];
                 var LongSongLengthCheck = allSongLenLookup[SongLength.Long];
-                
+
 
                 var ClassicInstCheck = allInstLookup[Instrumentation.Metal];
                 var OrchestralInstCheck = allInstLookup[Instrumentation.Orchestral];
@@ -194,19 +183,19 @@ namespace _3._8DigitalMedia
 
 
                 foreach (var CheckStr in StandardTuningCheck)
-                    {
-                        string selectedTuning = CheckStr.Key;
-                        AllTuningStandardValues.Add(selectedTuning);
-                        int StdrdCheck = AllTuningStandardValues.Count();
-                        StandardTuning.Content = Tuning.Standard + $" ({StdrdCheck} Genres)";
-                    }
+                {
+                    string selectedTuning = CheckStr.Key;
+                    AllTuningStandardValues.Add(selectedTuning);
+                    int StdrdCheck = AllTuningStandardValues.Count();
+                    StandardTuning.Content = Tuning.Standard + $" ({StdrdCheck} Genres)";
+                }
                 foreach (var CheckStr in LowTuningCheck)
-                    {
-                        string selectedTuning = CheckStr.Key;
-                        AllTuningLowValues.Add(selectedTuning);
-                        int LowCheck = AllTuningLowValues.Count();
-                        LowTuning.Content = Tuning.Low + $" ({LowCheck} Genres)";
-                    }
+                {
+                    string selectedTuning = CheckStr.Key;
+                    AllTuningLowValues.Add(selectedTuning);
+                    int LowCheck = AllTuningLowValues.Count();
+                    LowTuning.Content = Tuning.Low + $" ({LowCheck} Genres)";
+                }
                 foreach (var CheckStr in SlowBPMCheck)
                 {
                     string selectedBPM = CheckStr.Key;
@@ -298,7 +287,7 @@ namespace _3._8DigitalMedia
                     int FolkCheck = AllInstFolkValues.Count();
                     TraditionalFolk.Content = Instrumentation.Folk + $" ({FolkCheck} Genres)";
                 }
-                
+
                 foreach (var CheckStr in NorseInstCheck)
                 {
                     string selectedInstrumentation = CheckStr.Key;
@@ -380,7 +369,7 @@ namespace _3._8DigitalMedia
 
 
             }
-            
+
         }
         public void Check() // the main algorithim, with the time signature & tuning options enabled
         {
@@ -582,7 +571,7 @@ namespace _3._8DigitalMedia
                 suggestedBands = "Alestorm, Korpiklaani, Tyr, Wintersun";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
-            
+
             if (BPMBox.SelectedItem == SlowBPM &&
                 TuningBox.SelectedItem == LowTuning &&
                 TimeSigBox.SelectedItem == StaticTimeSig &&
@@ -594,7 +583,7 @@ namespace _3._8DigitalMedia
                 suggestedBands = "Amon Amarth, Burzum, Satyricon, Tyr";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
-            
+
             if (BPMBox.SelectedItem == SlowBPM &&
                 TuningBox.SelectedItem == LowTuning &&
                 TimeSigBox.SelectedItem == StaticTimeSig &&
@@ -606,7 +595,7 @@ namespace _3._8DigitalMedia
                 suggestedBands = "Moonsorrow, Korpiklaani, Kampfar, Amon Amarth";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
-            
+
             if (BPMBox.SelectedItem == MediumBPM &&
                 TuningBox.SelectedItem == StandardTuning &&
                 TimeSigBox.SelectedItem == StaticTimeSig &&
@@ -617,9 +606,9 @@ namespace _3._8DigitalMedia
                 genreKey = "Mongol";
                 suggestedBands = "The HU, Tengger Cavalry, Growl of Clown, Hurd";
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
-                
+
             }
-            
+
             if (BPMBox.SelectedItem == FastBPM &&
                 TuningBox.SelectedItem == StandardTuning &&
                 TimeSigBox.SelectedItem == DynamicTimeSig &&
@@ -637,7 +626,7 @@ namespace _3._8DigitalMedia
                 TimeSigBox.SelectedItem == StaticTimeSig &&
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Orchestral &&
-                CountryBox.SelectedItem == USA) 
+                CountryBox.SelectedItem == USA)
             {
                 genreKey = "Symphonic";
                 suggestedBands = "Therion, Nightwish, Rhapsody of Fire, Within Temptation";
@@ -833,7 +822,7 @@ namespace _3._8DigitalMedia
                         TuningValues.Add(selectedGenre);
                         string combinedTuningValues = String.Join(", ", TuningValues);
                         SuggestedByTuning.Text = combinedTuningValues;
-                        
+
                     }
                 }
                 else if (TuningInput == LowTuning)
@@ -976,7 +965,7 @@ namespace _3._8DigitalMedia
                         SuggestedByInstrumentation.Text = combinedInstrumentationValues;
                     }
                 }
-                
+
                 else if (InstrumentationInput == NorseFolk)
                 {
                     var selectedInstrumentation = InstrumentLookup[Instrumentation.Nordic];
@@ -1272,7 +1261,7 @@ namespace _3._8DigitalMedia
         {
             TuningBox.IsEnabled = false;
             TimeSigBox.IsEnabled = false;
-            
+
             TimeSigTitleLabel.Content = @"Time Signature
   (DISABLED)";
             TuningTitleLabel.Content = @"Tuning
@@ -1283,7 +1272,7 @@ namespace _3._8DigitalMedia
         {
             TuningBox.IsEnabled = true;
             TimeSigBox.IsEnabled = true;
-            
+
             TimeSigTitleLabel.Content = "Time Signature";
             TuningTitleLabel.Content = "Tuning";
         }
@@ -1297,7 +1286,7 @@ namespace _3._8DigitalMedia
             string InstrumentationInput = Convert.ToString(InstrumentationLabel.Tag);
 
             if (BPMBox.SelectedItem == MediumBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == UK)
@@ -1307,10 +1296,10 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            
+
 
             if (BPMBox.SelectedItem == MediumBPM &&
-                
+
                 SongLengthBox.SelectedItem == LongSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == USA)
@@ -1321,7 +1310,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == FastBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == USA)
@@ -1332,7 +1321,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == FastBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == FIN)
@@ -1345,7 +1334,7 @@ namespace _3._8DigitalMedia
 
 
             if (BPMBox.SelectedItem == InsaneBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == USA)
@@ -1355,10 +1344,10 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            
+
 
             if (BPMBox.SelectedItem == SlowBPM &&
-                
+
                 SongLengthBox.SelectedItem == LongSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == UK)
@@ -1369,7 +1358,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == SlowBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == UK)
@@ -1379,10 +1368,10 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            
+
 
             if (BPMBox.SelectedItem == FastBPM &&
-                
+
                 SongLengthBox.SelectedItem == LongSongLength &&
                 InstrumentBox.SelectedItem == Classic &&
                 CountryBox.SelectedItem == USA)
@@ -1392,14 +1381,14 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
 
-            
 
-            
 
-            
+
+
+
 
             if (BPMBox.SelectedItem == MediumBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Techno &&
                 CountryBox.SelectedItem == GER)
@@ -1410,7 +1399,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == MediumBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == TraditionalFolk &&
                 CountryBox.SelectedItem == SWE)
@@ -1421,7 +1410,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == SlowBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == NorseFolk &&
                 CountryBox.SelectedItem == NOR)
@@ -1432,7 +1421,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == SlowBPM &&
-                
+
                 SongLengthBox.SelectedItem == LongSongLength &&
                 InstrumentBox.SelectedItem == NorseFolk &&
                 CountryBox.SelectedItem == NOR)
@@ -1443,7 +1432,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == MediumBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == TraditionalFolk &&
                 CountryBox.SelectedItem == MON)
@@ -1455,7 +1444,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == FastBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Orchestral &&
                 CountryBox.SelectedItem == FIN)
@@ -1466,7 +1455,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == MediumBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Orchestral &&
                 CountryBox.SelectedItem == USA)
@@ -1477,7 +1466,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == InsaneBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Orchestral &&
                 CountryBox.SelectedItem == USA)
@@ -1488,7 +1477,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == FastBPM &&
-                
+
                 SongLengthBox.SelectedItem == LongSongLength &&
                 InstrumentBox.SelectedItem == Orchestral &&
                 CountryBox.SelectedItem == USA)
@@ -1498,7 +1487,7 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
             if (BPMBox.SelectedItem == MediumBPM &&
-                
+
                 SongLengthBox.SelectedItem == MediumSongLength &&
                 InstrumentBox.SelectedItem == Rock &&
                 CountryBox.SelectedItem == UK)
@@ -1519,7 +1508,7 @@ namespace _3._8DigitalMedia
             }
 
             if (BPMBox.SelectedItem == MediumBPM &&
-              
+
                SongLengthBox.SelectedItem == MediumSongLength &&
                InstrumentBox.SelectedItem == Rock &&
                CountryBox.SelectedItem == NZ)
@@ -1529,7 +1518,7 @@ namespace _3._8DigitalMedia
                 GenreDisplay(genreKey, genreDictionary, suggestedBands);
             }
             if (BPMBox.SelectedItem == MediumBPM &&
-               
+
                SongLengthBox.SelectedItem == MediumSongLength &&
                InstrumentBox.SelectedItem == Classic &&
                CountryBox.SelectedItem == NZ)
@@ -1553,8 +1542,8 @@ namespace _3._8DigitalMedia
         }
 
 
-        
-        
+
+
 
         private void Button_Click_6(object sender, RoutedEventArgs e) // this is the clear function
         {
@@ -1609,7 +1598,7 @@ namespace _3._8DigitalMedia
 
             }
 
-            if (BPMBox.SelectedItem == SlowBPM) 
+            if (BPMBox.SelectedItem == SlowBPM)
             {
                 StandardTuning.IsEnabled = false;
                 LowTuning.IsEnabled = true;
@@ -1961,7 +1950,7 @@ namespace _3._8DigitalMedia
                 MON.IsEnabled = true;
 
             }
-            
+
             if (InstrumentBox.SelectedItem == NorseFolk)
             {
                 StandardTuning.IsEnabled = false;
@@ -2097,7 +2086,7 @@ namespace _3._8DigitalMedia
                 GER.IsEnabled = true;
                 MON.IsEnabled = true;
             }
-            if (CountryBox.SelectedItem == NZ) 
+            if (CountryBox.SelectedItem == NZ)
             {
                 StandardTuning.IsEnabled = true;
                 LowTuning.IsEnabled = false;
@@ -2259,7 +2248,7 @@ namespace _3._8DigitalMedia
                 GER.IsEnabled = true;
                 MON.IsEnabled = true;
             }
-            
+
             //else 
             //{
             //    StandardTuning.IsEnabled = true;
@@ -2287,9 +2276,9 @@ namespace _3._8DigitalMedia
             //    GER.IsEnabled = true;
             //    MON.IsEnabled = true;
             //}
-            
+
         }
 
-        
+
     }
 }

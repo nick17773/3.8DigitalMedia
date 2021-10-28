@@ -913,3 +913,7 @@ C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [0807/144511.326:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
 C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
+[1029/113940.168:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/113942.224:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
