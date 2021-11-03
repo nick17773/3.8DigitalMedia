@@ -448,3 +448,42 @@ C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [1029/112929.015:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
 C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
 
+[1029/123759.125:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123802.102:INFO:CONSOLE(2)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.hoverIntent%2Cui%7Cmediawiki.UtilitiesTime%7Cmediawiki.language.names%7Cmw.EmbedPlayer%2CEmbedPlayerNative%2CMediaWikiPlayerSupport%2CTimedText&skin=vector&version=1bdbi (2)
+[1029/123808.699:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123809.916:INFO:CONSOLE(1)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.ui%7Cmw.EmbedPlayer&skin=vector&version=8hjv0 (1)
+[1029/123812.234:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123816.272:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123820.149:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123821.277:INFO:CONSOLE(1)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.ui%7Cmw.EmbedPlayer&skin=vector&version=8hjv0 (1)
+[1029/123823.977:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123828.851:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123832.582:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123834.730:INFO:CONSOLE(1)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.ui%7Cmw.EmbedPlayer&skin=vector&version=8hjv0 (1)
+[1029/123836.331:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123838.247:INFO:CONSOLE(1)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.ui%7Cmw.EmbedPlayer&skin=vector&version=8hjv0 (1)
+[1029/123841.179:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123845.092:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/123849.341:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1029/124158.059:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124200.260:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1029/124210.205:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124218.296:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124225.418:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124232.594:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124239.424:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124244.629:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124249.451:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124256.550:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124302.241:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124308.675:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124326.141:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
+[1029/124356.538:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled
+[1029/124404.914:WARNING:spdy_session.cc(3526)] Received HEADERS for invalid stream 25
