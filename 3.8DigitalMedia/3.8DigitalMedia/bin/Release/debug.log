@@ -487,3 +487,31 @@ C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), con
 [1029/124326.141:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.dbb69cc2.js (1)
 [1029/124356.538:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled
 [1029/124404.914:WARNING:spdy_session.cc(3526)] Received HEADERS for invalid stream 25
+[1104/121032.715:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.", source:  (0)
+[1104/121037.370:INFO:CONSOLE(2)] "This page is using the deprecated ResourceLoader module "jquery.ui".
+Please use OOUI instead.", source: https://en.wikipedia.org/w/load.php?lang=en&modules=jquery.hoverIntent%2Cui%7Cmediawiki.UtilitiesTime%7Cmediawiki.language.names%7Cmw.EmbedPlayer%2CEmbedPlayerNative%2CMediaWikiPlayerSupport%2CTimedText&skin=vector&version=1bdbi (2)
+[1104/121129.687:WARNING:spdy_session.cc(3526)] Received HEADERS for invalid stream 53
+[1104/121231.702:ERROR:gpu_init.cc(440)] Passthrough is not supported, GL is disabled
+[1104/121404.740:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.82d24d99.js (1)
+[1104/121406.973:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121406.990:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121406.993:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121407.042:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121407.721:WARNING:angle_platform_impl.cc(49)] HLSLCompiler.cpp:257 (compileToBinary): 
+C:\fakepath(140,7-80): warning X3557: loop only executes for 1 iteration(s), consider removing [loop]
+
+[1104/121415.242:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.82d24d99.js (1)
+[1104/121416.393:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121416.418:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121416.432:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121416.523:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121417.609:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121417.643:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121425.800:WARNING:spdy_session.cc(3526)] Received HEADERS for invalid stream 37
+[1104/121426.895:INFO:CONSOLE(39)] "Refused to connect to 'https://stats.g.doubleclick.net/j/collect?t=dc&aip=1&_r=3&v=1&_v=j93&tid=UA-5784146-31&cid=1941752431.1635981248&jid=939788355&gjid=707368905&_gid=960616541.1635981248&_u=QCCAiEABBAAAAE~&z=576226657' because it violates the following Content Security Policy directive: "connect-src 'self' https://*.spotify.com https://www.google-analytics.com https://cdn.cookielaw.org https://*.onetrust.com".
+", source: https://www.google-analytics.com/analytics.js (39)
+[1104/121436.053:INFO:CONSOLE(1)] "It is recommended that a robustness level be specified. Not specifying the robustness level could result in unexpected behavior.", source: https://open.scdn.co/cdn/build/web-player/web-player.82d24d99.js (1)
+[1104/121437.134:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121437.145:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121437.158:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
+[1104/121437.191:ERROR:ssl_client_socket_impl.cc(980)] handshake failed; returned -1, SSL error code 1, net_error -101
